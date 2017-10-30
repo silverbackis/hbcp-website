@@ -1,96 +1,81 @@
 {% extends 'adminlayout.html.twig' %}
 {% block body %}
-<div class="page-wrapper">
-   <div class="container-fluid">
-				<!-- Row -->
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="panel panel-default card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-									<h6 class="panel-title txt-dark">News</h6>
-								</div>
+<!-- Row -->
+<div class="row">
+	<div class="col-sm-12">
+		<div class="panel panel-default card-view">
+			<div class="panel-heading">
+				<div class="pull-left">
+					<h6 class="panel-title txt-dark">News</h6>
+				</div>
 
-								<div class="pull-right">
-									<a href="{{ url('homepage') }}admin/createnew"><button type="button" class="btn btn-success">Create A New </button></a>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div class="panel-body">
-									<div class="table-wrap">
-										<div class="table-responsive">
-											<table id="datable_1" class="table table-hover display  pb-30" >
-										<thead>
-										<tr>
-												<th>S.No</th>
-												<th>Title</th>
-												<th>Author</th>
-												<th>Created</th>
-												<th>Modified</th>
-												<th>Imagepath</th>
-												<th>Imagecredit</th>
-											     <th>Actions</th>
-													</tr>
-												</thead>
-												<tfoot>
-													<tr>
-												<th>S.No</th>
-												<th>Title</th>
-												<th>Author</th>
-												<th>Created</th>
-												<th>Modified</th>
-												<th>Imagepath</th>
-												<th>Imagecredit</th>
-												<th>Actions</th>
-													</tr>
-												</tfoot>
-												<tbody>
-                                                  {% set myVal = 1 %}
-
-                                        {% for todo in todos %}
-										<tr>
-										<td>{{ myVal }}</td>
-										<td>{{ todo.name }}</td>
-										<td>{{ todo.author }}</td>
-										<td>{{ todo.added |date("d/m/Y") }} </td>
-										<td>{{ todo.lastModified | date("d/m/Y") }}</td>
+				<div class="pull-right">
+					<a href="{{ path('news_item') }}"><button type="button" class="btn btn-success">Create News Post</button></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-wrapper collapse in">
+				<div class="panel-body">
+					<div class="table-wrap">
+						<div class="table-responsive">
+							<table id="datable_1" class="table table-hover display  pb-30" >
+								<thead>
+								<tr>
+									<th>Title</th>
+									<th>Author</th>
+									<th>Created</th>
+									<th>Modified</th>
+									<th>Imagepath</th>
+									<th>Imagecredit</th>
+									<th>Actions</th>
+								</tr>
+								</thead>
+								<tfoot>
+								<tr>
+									<th>Title</th>
+									<th>Author</th>
+									<th>Created</th>
+									<th>Modified</th>
+									<th>Imagepath</th>
+									<th>Imagecredit</th>
+									<th>Actions</th>
+								</tr>
+								</tfoot>
+								<tbody>
+                {% for news_post in news_posts %}
+									<tr>
+										<td>{{ news_post.name }}</td>
+										<td>{{ news_post.author }}</td>
+										<td>{{ news_post.created |date("d/m/Y H:i") }} </td>
+										<td>{{ news_post.updated | date("d/m/Y H:i") }}</td>
 										<td>
-                                         
-                                    {% if todo.imagePath is not empty %}
-
-
-										<img src={{ url('homepage') }}uploads/newsimages/{{ todo.imagePath }}  width=50 height=50 />
-
-                                      {% else %}
-                                        <img src={{ url('homepage') }}uploads/newsimages/nonewsimage.png  width=50 height=50 />
-
-                                        {%endif%}
-
-
+                      {% if news_post.imagePath %}
+												<img src="{{ news_post.imagePath }}"  width="50" height="50" />
+                      {% else %}
+												n/a
+                      {%endif%}
 										</td>
-									   <td>{{ todo.imageCredit }}</td>
-									   <td><a  class="confirmation" href ="{{ url('homepage') }}admin/news/delete/{{todo.id}}"><button class="btn btn-danger btn-icon-anim btn-circle">
-                                             <i class="icon-trash"></i>
-                                                        </button></a>
-                                                        <a href="{{ url('homepage') }}admin/news/edit/{{todo.id}}">
-                                        <button class="btn btn-warning btn-icon-anim btn-circle">
-                                         <i class="fa fa-pencil"></i>
-                                         </button></a>
-                                                        </td>
-										</tr>
-													 {% set myVal = myVal + 1 %}
-
-													{% endfor %}
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>	
+										<td>{{ news_post.imageCredit }}</td>
+										<td>
+											<a  class="confirmation" href ="{{ path('news_delete', {news: news_post.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
+													<i class="icon-trash"></i>
+												</button>
+											</a>
+											<a href="{{ path('news_item', {news: news_post.id}) }}">
+												<button class="btn btn-warning btn-icon-anim btn-circle">
+													<i class="fa fa-pencil"></i>
+												</button>
+											</a>
+										</td>
+									</tr>
+                {% endfor %}
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
-				<!-- /Row -->
+			</div>
+		</div>
+		<!-- /Row -->
 
-				 {% endblock %}
+    {% endblock %}

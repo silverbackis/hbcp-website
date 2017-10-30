@@ -77,3 +77,11 @@ fos_user:
     from_email:
         address: "%mailer_user%"
         sender_name: "Human Behaviour Change Project (HBCP)"
+
+ivory_ck_editor:
+    configs:
+        my_config:
+            toolbar: minimal
+    toolbars:
+        configs:
+            minimal: [ [ 'Bold','Italic','Underline','StrikeThrough','-','Undo','Redo','-','Cut','Copy','Paste','Find','Replace' ] ]

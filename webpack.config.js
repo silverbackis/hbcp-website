@@ -3,6 +3,7 @@ let Encore = require('@symfony/webpack-encore');
 Encore
   .autoProvidejQuery()
   .addStyleEntry('global', './app/Resources/scss/global.scss')
+  .addStyleEntry('style', './web/src/scss/style.scss')
   .enableSassLoader()
   .enablePostCssLoader((options) => {
     options.config = {

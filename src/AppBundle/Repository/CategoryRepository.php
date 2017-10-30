@@ -13,7 +13,7 @@ use Doctrine\Common\Collections\ArrayCollection;
 class CategoryRepository extends \Doctrine\ORM\EntityRepository
 {
     private $deepest = [];
-    public function findDeepestChildren()
+    public function findDeepestChildren($fixed = true)
     {
         $categories = $this->findBy([
             'parent' => null
@@ -25,19 +25,29 @@ class CategoryRepository extends \Doctrine\ORM\EntityRepository
          */
         foreach ($categories as $category)
         {
-            $this->checkChildren($category);
+            $this->checkChildren($category, $fixed);
         }
         return $this->deepest;
     }
-    private function checkChildren (Category $category)
+    private function checkChildren (Category $category, $fixed)
     {
         if (count($category->getChildren())) {
+            $acceptableChildren = 0;
+            /**
+             * @var Category $child
+             */
             foreach ($category->getChildren() as $child)
             {
-                $this->checkChildren($child);
+                if ($fixed && !$child->getFixed()) {
+                    continue;
+                }
+                $acceptableChildren++;
+                $this->checkChildren($child, $fixed);
             }
-        } else {
-            $this->deepest[] = $category;
+            if ($acceptableChildren) {
+                return;
+            }
         }
+        $this->deepest[] = $category;
     }
 }

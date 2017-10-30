@@ -3,13 +3,16 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Component\Validator\Context\ExecutionContextInterface;
 
 /**
  * News
  *
  * @ORM\Table(name="news")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\NewsRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class News
 {
@@ -36,27 +39,13 @@ class News
      */
     private $author;
 
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="added", type="datetime", nullable=true)
-     */
-    private $added;
-
-    /**
-     * @var \DateTime
-     *
-     * @ORM\Column(name="last_modified", type="datetime", nullable=true)
-     */
-    private $lastModified;
-
      /**
      * @var string
      *
-     * @ORM\Column(name="image_path", type="text")
+     * @ORM\Column(name="image_path", type="text", nullable=true)
     * @Assert\File(mimeTypes={ "image/jpeg", "image/png" })
      */
-    private $imagePath;
+    private $image;
 
     /**
      * @var string
@@ -71,8 +60,54 @@ class News
      *
      * @ORM\Column(name="news_content", type="text", nullable=true)
      */
-    private $newsContent;   
+    private $newsContent;
 
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime")
+     */
+    private $created;
+
+    /**
+     * @var \DateTime
+     *
+     * @ORM\Column(type="datetime")
+     */
+    private $updated;
+
+    /**
+     * @Assert\Callback
+     */
+    public function validate (ExecutionContextInterface $context, $payload)
+    {
+        if ($this->getImage())
+        {
+            if (!$this->getImageCredit())
+            {
+                $context->buildViolation('An image credit is required when you upload an image')
+                    ->atPath('imageCredit')
+                    ->addViolation();
+            }
+        }
+    }
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function prePersist()
+    {
+        $this->created = new \DateTime();
+        $this->updated = new \DateTime();
+    }
+
+    /**
+     * @ORM\PreUpdate()
+     */
+    public function preUpdate()
+    {
+        $this->updated = new \DateTime();
+    }
 
     /**
      * Get id
@@ -133,41 +168,13 @@ class News
     }
 
     /**
-     * Set added
-     *
-     * @param \DateTime $added
-     *
-     * @return News
-     */
-    public function setAdded($added)
-    {
-        $this->added = $added;
-
-        return $this;
-    }
-
-    /**
      * Get added
      *
      * @return \DateTime
      */
-    public function getAdded()
+    public function getCreated()
     {
-        return $this->added;
-    }
-
-    /**
-     * Set lastModified
-     *
-     * @param \DateTime $lastModified
-     *
-     * @return News
-     */
-    public function setLastModified($lastModified)
-    {
-        $this->lastModified = $lastModified;
-
-        return $this;
+        return $this->created;
     }
 
     /**
@@ -175,33 +182,37 @@ class News
      *
      * @return \DateTime
      */
-    public function getLastModified()
+    public function getUpdated()
     {
-        return $this->lastModified;
+        return $this->updated;
     }
 
     /**
-     * Set imagePath
+     * Set image
      *
-     * @param string $imagePath
+     * @param null|string $imagePath
      *
      * @return News
      */
-    public function setImagePath($imagePath)
+    public function setImage(File $image = null)
     {
-        $this->imagePath = $imagePath;
-
+        $this->image = $image;
         return $this;
     }
 
     /**
-     * Get imagePath
+     * Get image
      *
-     * @return string
+     * @return null|File
      */
+    public function getImage()
+    {
+        return $this->image ? new File($this->image) : null;
+    }
+
     public function getImagePath()
     {
-        return $this->imagePath;
+        return $this->image ? explode('/web', $this->image)[1] : null;
     }
 
     /**

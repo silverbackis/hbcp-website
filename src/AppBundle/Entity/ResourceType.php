@@ -9,6 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table(name="resource_type")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ResourceTypeRepository")
+ * @ORM\HasLifecycleCallbacks()
  */
 class ResourceType
 {
@@ -31,17 +32,34 @@ class ResourceType
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="createdtime", type="datetime")
+     * @ORM\Column(type="datetime")
      */
-    private $createdtime;
+    private $created;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updatedtime", type="datetime")
+     * @ORM\Column(type="datetime")
      */
-    private $updatedtime;
+    private $updated;
 
+
+    /**
+     * @ORM\PrePersist()
+     */
+    public function prePersist()
+    {
+        $this->created = new \DateTime();
+        $this->updated = new \DateTime();
+    }
+
+    /**
+     * @ORM\PreUpdate()
+     */
+    public function preUpdate()
+    {
+        $this->updated = new \DateTime();
+    }
 
     /**
      * Get id
@@ -78,51 +96,22 @@ class ResourceType
     }
 
     /**
-     * Set createdtime
-     *
-     * @param \DateTime $createdtime
-     *
-     * @return ResourceType
-     */
-    public function setCreatedtime($createdtime)
-    {
-        $this->createdtime = $createdtime;
-
-        return $this;
-    }
-
-    /**
-     * Get createdtime
+     * Get created
      *
      * @return \DateTime
      */
-    public function getCreatedtime()
+    public function getCreated()
     {
-        return $this->createdtime;
+        return $this->created;
     }
 
     /**
-     * Set updatedtime
-     *
-     * @param \DateTime $updatedtime
-     *
-     * @return ResourceType
-     */
-    public function setUpdatedtime($updatedtime)
-    {
-        $this->updatedtime = $updatedtime;
-
-        return $this;
-    }
-
-    /**
-     * Get updatedtime
+     * Get lastModified
      *
      * @return \DateTime
      */
-    public function getUpdatedtime()
+    public function getUpdated()
     {
-        return $this->updatedtime;
+        return $this->updated;
     }
 }
-

@@ -75,15 +75,15 @@ Project:	KENNY
 /****************************/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Varela+Round);
 @import "../../vendors/bower_components/bootstrap/dist/css/bootstrap.min.css";
-@import "font-awesome.min.css";	
-@import "themify-icons.css";	
-@import "animate.css";	
-@import "simple-line-icons.css";	
-@import "linea-icon.css";	
-@import "pe-icon-7-stroke.css";	
-@import "pe-icon-7-styles.css";	
-@import "filter.css";	
-@import "lightgallery.css";	
+@import "../../../node_modules/font-awesome/scss/font-awesome.scss";
+@import '../../dist/css/themify-icons';
+@import "../../dist/css/animate.css";
+@import "../../dist/css/simple-line-icons.css";
+@import "../../dist/css/linea-icon.css";
+@import "../../dist/css/pe-icon-7-stroke.css";
+@import "../../dist/css/pe-icon-7-styles.css";
+@import "../../dist/css/filter.css";
+@import "../../../node_modules/lightgallery/src/sass/lightgallery";
 @import "../../vendors/bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";	
 @import "../../vendors/bower_components/awesome-bootstrap-checkbox/awesome-bootstrap-checkbox.css";	
 @import "mixins.scss";	
@@ -93,8 +93,8 @@ $yellow:#fcb03b;
 $red:#f15b26;
 $blue:#566FC9;
 $pink:#ea65a2;
-$black:#2f2c2c;
-$grey:#adadad;
+$black:#000;
+$grey:#333;
 $white:#fff;
 $light_grey:#eee;
 $font_main: 'Varela Round', sans-serif;
@@ -3209,7 +3209,7 @@ table.footable > tbody > tr.footable-empty > td {
 
 .ct-chart-bar .ct-label.ct-horizontal.ct-end {
 	font-family:$font_main;
-	color:#black;
+	color: $black;
 }
 /*Easy pie chart*/
 .easypiechart {
@@ -3961,7 +3961,7 @@ a.compose-mail {
 .irs-bar, 
 .irs-bar-edge,
 .irs-slider {
-	 background:url("../img/range/sprite-skin-modern.png");
+	 background:url("../../dist/img/range/sprite-skin-modern.png");
 }
 .irs-slider {
 	background-position: 0 -120px;
@@ -4817,7 +4817,7 @@ a.compose-mail {
 .profile-box {
 	.profile-info-wrap {
 		position:relative;
-		background-image:url("../img/gallery/mock6.jpg");
+		background-image:url("../../dist/img/gallery/mock6.jpg");
 		.profile-info {
 			position:relative;
 			z-index:1;
@@ -5057,7 +5057,7 @@ a.compose-mail {
 }
 button.fc-agendaDay-button,
 button.fc-month-button,
-button.fc-agendaWeek-button,
+button.fc-agendaWeek-button
  {
 	@extend .btn;
 	@extend .btn-success;
@@ -5298,7 +5298,7 @@ ul.inbox-nav li a:hover, ul.inbox-nav li.active a, ul.inbox-nav li a:focus {
 }
 .chk-all {
 	.checkbox {
-		 min-height: auto !important;
+		 min-height: 0 !important;
 			padding-bottom: 0 !important;
 			padding-top: 0 !important;
 		}

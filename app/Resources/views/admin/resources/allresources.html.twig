@@ -1,99 +1,84 @@
 {% extends 'adminlayout.html.twig' %}
 {% block body %}
-<div class="page-wrapper">
-   <div class="container-fluid">
+<!-- Row -->
+<div class="row">
+	<div class="col-sm-12">
+		<div class="panel panel-default card-view">
+			<div class="panel-heading">
+				<div class="pull-left">
+					<h6 class="panel-title txt-dark">Resources</h6>
+				</div>
 
-				
-				<!-- Row -->
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="panel panel-default card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-									<h6 class="panel-title txt-dark">Resources</h6>
-								</div>
-
-								<div class="pull-right">
-									<a href="{{ url('homepage') }}admin/resource/createnew"><button type="button" class="btn btn-success">Create A New </button></a>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div class="panel-body">
-									<div class="table-wrap">
-										<div class="table-responsive">
-											<table id="datable_1" class="table table-hover display  pb-30" >
-										<thead>
-										<tr>
-												<th>S.No</th>
-												<th>Title</th>
-												<th>Type</th>
-												<th>Path Url</th>
-												<th>Category</th>
-											<th>Type 0f Resource(if available)</th>
-												<th>Added Date</th>
-												<th>Modified Date</th>
-											     <th>Actions</th>
-												</tr>
-												</thead>
-												<tfoot>
-													<tr>
-											<th>S.No</th>
-												<th>Title</th>
-												<th>Type</th>
-												<th>Path Url</th>
-												<th>Category</th>
-											<th>Type 0f Resource(if available)</th>
-												<th>Added Date</th>
-												<th>Modified Date</th>
-											     <th>Actions</th>													</tr>
-												</tfoot>
-												<tbody>
-                                                  {% set myVal = 1 %}
-                                                   {% set mycat = 0 %} 
-                       {% set catcount = catdata | length %}
-               {% set heirchycount =  resourcetype | length %}               
-                                         {% for todo in alldatas %}
-										<tr>
-										<td>{{ myVal }}</td>
+				<div class="pull-right">
+					<a href="{{ url('homepage') }}admin/resource/createnew"><button type="button" class="btn btn-success">Create A New </button></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="panel-wrapper collapse in">
+				<div class="panel-body">
+					<div class="table-wrap">
+						<div class="table-responsive">
+							<table id="datable_1" class="table table-hover display  pb-30" >
+								<thead>
+									<tr>
+										<th>Title</th>
+										<th>Type</th>
+										<th>Path Url</th>
+										<th>Category</th>
+										<th>Type Of Resource</th>
+										<th>Added Date</th>
+										<th>Modified Date</th>
+										<th>Actions</th>
+									</tr>
+								</thead>
+								<tfoot>
+									<tr>
+										<th>Title</th>
+										<th>Type</th>
+										<th>Path Url</th>
+										<th>Category</th>
+										<th>Type Of Resource</th>
+										<th>Added Date</th>
+										<th>Modified Date</th>
+										<th>Actions</th>
+									</tr>
+								</tfoot>
+								<tbody>
+                {% for todo in alldatas %}
+									<tr>
 										<td>{{ todo.title }}</td>
-										 <td>{{ todo.pathType }}</td>
+										<td>{{ todo.pathType }}</td>
 										<td>{{ todo.path  }}</td>
-                                    <td>
-                           {% if catcount > 0%}
-                                    {{ catdata[mycat] }}
-                            {%endif%}
-                                    </td>
 										<td>
-                             {% if heirchycount > 0%}
-										{{ resourcetype[mycat] }}
-                               {%endif%}
+                      {% if catcount > 0%}
+                        {{ catdata[mycat] }}
+                      {%endif%}
 										</td>
+										<td>
+                      {% if heirchycount > 0%}
+                        {{ resourcetype[mycat] }}
+                      {%endif%}
+										</td>
+										<td>{{ todo.created |date("d/m/Y H:i")  }} </td>
+										<td>{{ todo.updated | date("d/m/Y H:i")  }}</td>
 
-										<td>{{ todo.addedDatetime |date("d/m/Y")  }} </td>
-										<td>{{ todo.modifiedDatetime | date("d/m/Y")  }}</td>
-									
-									   <td><a  class="confirmation" href ="{{ url('homepage') }}admin/resource/delete/{{todo.id}}"><button class="btn btn-danger btn-icon-anim btn-circle">
-                                             <i class="icon-trash"></i>
-                                                        </button></a>
-                                                        <a href="{{ url('homepage') }}admin/resources/edit/{{todo.id}}">
-                                        <button class="btn btn-warning btn-icon-anim btn-circle">
-                                         <i class="fa fa-pencil"></i>
-                                         </button></a>
-                                                        </td>
-										</tr>
-													 {% set myVal = myVal + 1 %}
-                                                   {% set mycat = mycat + 1 %}
-													{% endfor %}
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>	
+										<td><a  class="confirmation" href ="{{ url('homepage') }}admin/resource/delete/{{todo.id}}"><button class="btn btn-danger btn-icon-anim btn-circle">
+													<i class="icon-trash"></i>
+												</button></a>
+											<a href="{{ url('homepage') }}admin/resources/edit/{{todo.id}}">
+												<button class="btn btn-warning btn-icon-anim btn-circle">
+													<i class="fa fa-pencil"></i>
+												</button></a>
+										</td>
+									</tr>
+                {% endfor %}
+								</tbody>
+							</table>
+						</div>
 					</div>
 				</div>
-				<!-- /Row -->
+			</div>
+		</div>
+		<!-- /Row -->
 
-				 {% endblock %}
+    {% endblock %}

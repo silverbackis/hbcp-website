@@ -12,23 +12,14 @@
 
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-
   <link href="{{ asset('vendors/bower_components/morris.js/morris.css') }}" rel="stylesheet" type="text/css"/>
-
-
   <link href="{{ asset('vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet"
         type="text/css"/>
-
-  <link href="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css') }}" rel="stylesheet"
-        type="text/css">
-  <link href="{{ asset('vendors/bower_components/dropzone/dist/dropzone.css') }}" rel="stylesheet" type="text/css"/>
-
-  <link href="{{ asset('dist/css/style.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css') }}" rel="stylesheet" type="text/css">
+  <link href="{{ asset('build/style.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-
 <div class="preloader-it">
   <div class="la-anim-1"></div>
 </div>
@@ -51,10 +42,9 @@
           <li>
             <a href="{{ path('fos_user_profile_edit') }}"><i class="fa fa-fw fa-user"></i> Profile Edit</a>
           </li>
-
           <li class="divider"></li>
           <li>
-            <a href="{{ url('homepage') }}logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+            <a href="{{ path('fos_user_security_logout') }}"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
           </li>
         </ul>
       </li>
@@ -80,14 +70,14 @@
     <ul class="nav navbar-nav side-nav nicescroll-bar">
       <li>
         <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><i
-              class="icon-picture mr-10"></i>News Dashboard <span class="pull-right"><i
+              class="icon-picture mr-10"></i>News Posts<span class="pull-right"><i
                 class="fa fa-fw fa-angle-down"></i></span></a>
         <ul id="dashboard_dr" class="collapse collapse-level-1">
           <li>
-            <a class="active" href="{{ url('homepage') }}admin/allnews">All News</a>
+            <a class="active" href="{{ path('news_list') }}">All News</a>
           </li>
           <li>
-            <a class="active" href="{{ url('homepage') }}admin/createnew">Create New</a>
+            <a class="active" href="{{ path('news_item') }}">Create News Post</a>
           </li>
         </ul>
       </li>
@@ -96,22 +86,22 @@
               class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
         <ul id="app_dr" class="collapse collapse-level-1">
           <li>
-            <a href="{{ url('homepage') }}admin/cats/all">All Categories</a>
+            <a href="{{ path('categories') }}">All Categories</a>
           </li>
           <li>
-            <a href="{{ url('homepage') }}admin/cat/create">Create A Category</a>
+            <a href="{{ path('category_edit') }}">Create A Category</a>
           </li>
         </ul>
       </li>
       <li>
         <a href="javascript:void(0);" data-toggle="collapse" data-target="#kpp_dr"><i class="icon-grid mr-10"></i>Resource
-          Type Section <span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
+          Type<span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
         <ul id="kpp_dr" class="collapse collapse-level-1">
           <li>
-            <a href="{{ url('homepage') }}admin/resourcetype/all">All Resource Types</a>
+            <a href="{{ path('resource_type_list') }}">All Resource Types</a>
           </li>
           <li>
-            <a href="{{ url('homepage') }}admin/resourcetype/create">Create A Resource Type</a>
+            <a href="{{ path('resource_type_item') }}">Create A Resource Type</a>
           </li>
         </ul>
       </li>
@@ -130,7 +120,19 @@
       </li>
     </ul>
   </div>
-  {% block body %}{% endblock %}
+  <div class="page-wrapper">
+    <div class="container-fluid">
+      {% for label, messages in app.flashes(['warning', 'error', 'success', 'notice']) %}
+        {% set css_label = label == 'notice' ? 'success' : label %}
+        {% for message in messages %}
+          <div class="alert alert-{{ css_label }} mb-0">
+            {{ message }}
+          </div>
+        {% endfor %}
+      {% endfor %}
+      {% block body %}{% endblock %}
+    </div>
+  </div>
 </div>
 <script src="{{ asset('vendors/bower_components/jquery/dist/jquery.min.js') }}"></script>
 <script src="{{ asset('vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>

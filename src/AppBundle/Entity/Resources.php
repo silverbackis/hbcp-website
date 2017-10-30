@@ -45,20 +45,10 @@ class Resources
     /**
      * @var int
      *
-     * @ORM\Column(name="category", type="bigint")
+     * @ORM\ManyToOne(targetEntity="Category", inversedBy="resources")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
      */
     public $category;
-
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="categoryid", type="integer")
-     * @ORM\ManyToOne(targetEntity="Category", inversedBy="resources")
-     * @ORM\JoinColumn(name="categoryid", referencedColumnName="id")
-     */
-    public $categoryid;
-
-
 
     /**
      * @var int
@@ -265,32 +255,6 @@ class Resources
     {
         return $this->modifiedDatetime;
     }
-
-    /**
-     * Set categoryid
-     *
-     * @param integer $categoryid
-     *
-     * @return Resources
-     */
-    public function setCategoryid($categoryid)
-    {
-        $this->categoryid = $categoryid;
-
-        return $this;
-    }
-
-    /**
-     * Get categoryid
-     *
-     * @return int
-     */
-    public function getCategoryid()
-    {
-        return $this->categoryid;
-    }
-
-    
 
      /**
      * Set resourceInformation

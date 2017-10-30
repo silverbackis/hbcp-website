@@ -50,19 +50,19 @@ class Category
      *
      * @ORM\Column(name="fixed", type="boolean")
      */
-    private $fixed;
+    private $fixed = false;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="created", type="datetime")
+     * @ORM\Column(type="datetime")
      */
     private $created;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updated", type="datetime")
+     * @ORM\Column(type="datetime")
      */
     private $updated;
 
@@ -188,7 +188,7 @@ class Category
     /**
      * @ORM\PreUpdate()
      */
-    public function preupdate()
+    public function preUpdate()
     {
         $this->updated = new \DateTime();
     }
@@ -255,9 +255,12 @@ class Category
         return $this->children;
     }
 
-    public function getBreadcrumbs()
+    public function getBreadcrumbs($includeSelf = null)
     {
-        $names = [$this->getName()];
+        $names = [];
+        if ($includeSelf === true || (is_null($includeSelf) && $this->getFixed())) {
+            $names[] = $this->getName();
+        }
         $parent = $this->getParent();
         while($parent) {
             $names[] = $parent->getName();

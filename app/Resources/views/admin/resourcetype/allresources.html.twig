@@ -1,77 +1,64 @@
 {% extends 'adminlayout.html.twig' %}
 {% block body %}
-<div class="page-wrapper">
-   <div class="container-fluid">
+	<!-- Row -->
+	<div class="row">
+	<div class="col-sm-12">
+	<div class="panel panel-default card-view">
+		<div class="panel-heading">
+			<div class="pull-left">
+				<h6 class="panel-title txt-dark">Resource Type</h6>
+			</div>
+			<div class="pull-right">
+				<a href="{{ path('resource_type_item') }}"><button type="button" class="btn btn-success">Create New Resource Type</button></a>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+		<div class="panel-wrapper collapse in">
+			<div class="panel-body">
+				<div class="table-wrap">
+					<div class="table-responsive">
+						<table id="datable_1" class="table table-hover display  pb-30" >
+							<thead>
+							<tr>
+								<th>Name</th>
+								<th>Created</th>
+								<th>Modified</th>
+								<th>Actions</th>
+							</tr>
+							</thead>
 
-				
-				<!-- Row -->
-				<div class="row">
-					<div class="col-sm-12">
-						<div class="panel panel-default card-view">
-							<div class="panel-heading">
-								<div class="pull-left">
-									<h6 class="panel-title txt-dark">Resource Type</h6>
-								</div>
-								<div class="pull-right">
-									<a href="{{ url('homepage') }}admin/resourcetype/create"><button type="button" class="btn btn-success">Create A New </button></a>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="panel-wrapper collapse in">
-								<div class="panel-body">
-									<div class="table-wrap">
-										<div class="table-responsive">
-											<table id="datable_1" class="table table-hover display  pb-30" >
-										<thead>
-										        <tr>
-												<th>S.No</th>
-												<th>Name</th>
-												<th>Created</th>
-												<th>Modified</th>
-												<th>Actions</th>
-												</tr>
-												</thead>
+							<tfoot>
+							<tr>
+								<th>Name</th>
+								<th>Created</th>
+								<th>Modified</th>
+								<th>Actions</th>
+							</tr>
+							</tfoot>
+							<tbody>
+              {% for resource_type in resources_types %}
+								<tr>
+									<td>{{ resource_type.name }}</td>
+									<td>{{ resource_type.created |date("d/m/Y H:i") }} </td>
+									<td>{{ resource_type.updated | date("d/m/Y H:i") }}</td>
+									<td>
+										<a href="{{ path('resource_type_item', {resourceType: resource_type.id}) }}">
+											<button class="btn btn-warning btn-icon-anim btn-circle">
+												<i class="fa fa-pencil"></i>
+											</button></a>
 
-												<tfoot>
-												<tr>
-												<th>S.No</th>
-												<th>Name</th>
-												<th>Created</th>
-												<th>Modified</th>
-												<th>Actions</th>
-												</tr>
-												</tfoot>
-												<tbody>
-                                                  {% set myVal = 1 %}
-
-                                        {% for resource in resourcestypes %}
-										<tr>
-										<td>{{ myVal }}</td>
-										<td>{{ resource.name }}</td>
-										<td>{{resource.createdtime |date("d/m/Y")  }} </td>
-										<td>{{ resource.updatedtime | date("d/m/Y")  }}</td>
-										<td>
-										<a href="{{ url('homepage') }}admin/resourcetype/edit/{{resource.id}}">
-                                        <button class="btn btn-warning btn-icon-anim btn-circle">
-                                         <i class="fa fa-pencil"></i>
-                                         </button></a>
-
-										<a class="confirmation" href ="{{ url('homepage') }}admin/resourcetype/delete/{{resource.id}}"><button class="btn btn-danger btn-icon-anim btn-circle">
-                                             <i class="icon-trash"></i>
-                                                        </button></a>
-                                                        </td>
-										</tr>
-													 {% set myVal = myVal + 1 %}
-
-													{% endfor %}
-												</tbody>
-											</table>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>	
+										<a class="confirmation" href ="{{ path('resource_type_delete', {resourceType: resource_type.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
+												<i class="icon-trash"></i>
+											</button></a>
+									</td>
+								</tr>
+              {% endfor %}
+							</tbody>
+						</table>
 					</div>
 				</div>
-				<!-- /Row -->
-				 {% endblock %}
+			</div>
+		</div>
+	</div>
+	<!-- /Row -->
+{% endblock %}
