@@ -1,0 +1,85 @@
+{% extends "adminlayout.html.twig" %}
+{% block body %}
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-default card-view">
+<div class="panel-heading">
+<div class="pull-left">
+<h6 class="panel-title txt-dark">Create  A  News</h6>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="panel-wrapper collapse in">
+<div class="panel-body">
+<div class="row">
+<div class="col-md-12">
+<div class="form-wrap">
+{% if app.session.flashBag.has('urlinvalid') %}
+        <div class="alert alert-danger fade in" role="alert">
+            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+            {% for msg in app.session.flashBag.get('urlinvalid') %}
+                {{ msg }}
+            {% endfor %}
+        </div>
+    {% endif %}
+ <form action="{{ app.request.uri }}" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="nameofresource">Title of Resource:</label>
+    <input type="text" class="form-control" id="nameofresource" name="resourcename" value="{{resourcedata.title}}" required>
+  </div>
+  <div class="form-group">
+  <label for="typeofpath">Link Type:</label>
+  <select class="form-control" name="pathtype" id="typeofpath" required>
+  <option value="">--Please Select Link Type--</option>
+    <option value="dropbox" {% if resourcedata.pathType == 'dropbox' %} selected = "selected" {% endif %} >DropBox</option>
+    <option value="website" {% if resourcedata.pathType == 'website' %} selected = "selected" {% endif %}>Website</option>
+     <option value="tool" {% if resourcedata.pathType == 'tool' %} selected = "selected" {% endif %}>Tool</option>
+   </select>
+  </div> 
+
+ <div class="form-group catype" style="{% if resourcedata.pathType == 'dropbox' %}display:block; {%else%} display:none; {%endif%}  ">
+  <label for="resourcetype">Resourcetype:</label>
+  <select class="form-control" name="resourcetype" id="resourcetype" required="required">
+  {%for  restype in resourcetypes %}
+  <option value="{{ restype.id }} " {% if restype.id == resourcedata.resourceType %} selected = "selected"  {% endif %} >{{ restype.name}}</option>
+  {% endfor %}
+   </select>
+  </div>
+
+  <div class="form-group" >
+  <label for="resourcetype">Link:</label>
+ <input type="textarea" name="dropboxurl" class="form-control" value="{{ resourcedata.path }}" required/>
+
+  </div>
+
+   <div class="form-group">
+  <label for="topcatedit">Main Category:</label>
+  <select class="form-control" id="topcatedit"  name="topcategoryid">
+  {%for  keys,cats in resourcecategory %}
+  <option value="{{ keys }}" {% if keys == resourcedata.categoryid %} selected="selected"
+  {%endif%}>{{ cats }}</option>
+  {% endfor %}
+   </select>
+  </div>
+
+ 
+
+  <div class="form-group">
+  <label for="unlockcatedit">Sub Categories:</label>
+  <select class="form-control" id="unlockcatedit" name="catname"  required>
+  {%for  resourceunlocked in resourceunlockeds %}
+  <option value="{{ resourceunlocked.id }}" toparent="{{resourceunlocked.parentId }}"  {% if resourceunlocked.id == resourcedata.category %} selected="selected" style="display:block;" {%else%} style="display:none"; {%endif%}          >{{ resourceunlocked.name }}</option>
+  {% endfor %}
+   </select>
+  </div>
+
+<button type="submit" class="btn btn-default">Submit</button>
+</form> 
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  {% endblock %}

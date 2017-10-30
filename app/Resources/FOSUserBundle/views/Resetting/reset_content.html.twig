@@ -1,0 +1,39 @@
+<div class="wrapper pa-0">
+	<!-- Main Content -->
+	<div class="page-wrapper pa-0 ma-0">
+		<div class="container-fluid">
+			<!-- Row -->
+			<div class="table-struct full-width full-height" style="">
+				<div class="table-cell vertical-align-middle">
+					<div class="auth-form  ml-auto mr-auto no-float">
+						<div class="panel panel-default card-view mb-0">
+							<div class="panel-body">
+								<div class="row">
+									<div class="col-sm-12 col-xs-12">
+										<div class="form-wrap">
+
+											{% trans_default_domain 'FOSUserBundle' %}
+
+													{{ form_start(form, { 'action': path('fos_user_resetting_reset', {'token': token}), 'attr': { 'class': 'fos_user_resetting_reset' } }) }}
+														    {{ form_widget(form) }}
+														    <div class="form-group"> <button class="btn btn-success btn-block" type="submit" value="{{ 'resetting.reset.submit'|trans }}" />submit
+														        </button>
+														    </div>
+													{{ form_end(form) }}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+	#fos_user_resetting_form label {color: #2f2c2c;margin-bottom: 10px !important; }
+#fos_user_resetting_form input{border: 1px solid #eee; border-radius: 0; border-top-right-radius: 0px; border-bottom-right-radius: 0px; box-shadow: none; color: #2f2c2c; height: 42px;width: 100%;margin-bottom: 10px;padding-left: 10px;padding-right: 10px;}
+
+
+</style>

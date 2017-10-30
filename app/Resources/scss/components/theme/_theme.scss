@@ -1,0 +1,35 @@
+
+/*****************************
+--------------------------
+Block-level-style 
+(Header-footer)
+--------------------------
+*****************************/
+@import "blocks/theme.header";
+ 
+@import "blocks/theme.footer";
+
+/*****************************
+--------------------------
+Inner-page-style
+--------------------------
+*****************************/
+
+@import "pages/theme.home";
+@import "pages/theme.behavioural-science";
+@import "pages/theme.behavioural-science-2";
+@import "pages/theme.behavioural-science-3";
+@import "pages/theme.Computer-science";
+@import "pages/theme.grant-holders-and-project-team";
+@import "pages/theme.latest-news";
+@import "pages/theme.contact-us";
+@import "pages/theme.sa";
+@import "pages/theme.all-resources";
+@import "pages/theme.news-article";
+@import "pages/theme.detail-page";
+
+
+
+
+
+

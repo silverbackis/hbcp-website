@@ -1,0 +1,42 @@
+{% extends "adminlayout.html.twig" %}
+{% block body %}
+<div class="row">
+<div class="col-md-12">
+<div class="panel panel-default card-view">
+<div class="panel-heading">
+<div class="pull-left">
+<h6 class="panel-title txt-dark">Form Validation</h6>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="panel-wrapper collapse in">
+<div class="panel-body">
+<div class="row">
+<div class="col-md-12">
+<div class="form-wrap">
+<form action="{{ app.request.uri }}" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label for="nameofresource">Title of Category:</label>
+    <input type="text" class="form-control" id="nameofcatgory" name="categoryname"  value="{{catinfos.name}}" required>
+  </div>
+
+  <div class="form-group">
+  <label for="typeofpath">Parent Category:</label>
+  <select class="form-control" name="parentid" id="catsparent" required>
+
+  {% for key,value in deepcats %}
+  <option value="{{ key }}"  {% if catinfos.parentId == key %} selected = "selected" {%endif%} >{{value}}</option>
+  {%endfor%}
+   </select>
+  </div> 
+
+<button type="submit" class="btn btn-default">Submit</button>
+</form> 
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+  {% endblock %}

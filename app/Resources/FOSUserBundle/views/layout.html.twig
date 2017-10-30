@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      <link href="{{ asset('vendors/bower_components/jasny-bootstrap/dist/css/jasny-bootstrap.min.css') }}" rel="stylesheet" type="text/css"/> 
+
+      <!-- Custom CSS -->
+        <link href="{{ asset('dist/css/style.css') }}" rel="stylesheet" type="text/css">   
+    </head>
+    <body>
+        
+
+      
+
+        <div >
+            <div class="text-center" style="font-size:24px;display:inline-block;margin-top:10px; width:100%;">
+            {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
+                {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |
+                <a href="{{ path('fos_user_security_logout') }}">
+                    {{ 'layout.logout'|trans({}, 'FOSUserBundle') }}
+                </a>
+            {% else %}
+                <a href="{{ path('fos_user_security_login') }}">{{ 'layout.login'|trans({}, 'FOSUserBundle') }}</a>
+            {% endif %}
+        </div>
+            {% block fos_user_content %}
+            {% endblock fos_user_content %}
+        </div>
+
+        <!-- jQuery -->
+        <script src="{{ asset('vendors/bower_components/jquery/dist/jquery.min.js') }}"></script>
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="{{ asset('vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+        <script src="{{ asset('vendors/bower_components/jasny-bootstrap/dist/js/jasny-bootstrap.min.js') }}"></script>
+        
+        <!-- Slimscroll JavaScript -->
+        <script src="{{ asset('dist/js/jquery.slimscroll.js') }}"></script>
+    
+        <!-- Fancy Dropdown JS -->
+        <script src="{{ asset('dist/js/dropdown-bootstrap-extended.js') }}"></script>
+        
+        <!-- Init JavaScript -->
+        <script src="{{ asset('dist/js/init.js') }}"></script>
+
+
+    </body>
+</html>

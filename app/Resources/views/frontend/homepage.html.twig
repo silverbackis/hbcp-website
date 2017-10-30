@@ -1,0 +1,90 @@
+{% extends 'home.html.twig' %}
+{% block body %}
+
+<section class="slider">
+    <div class="container">
+        <div class="row">
+        <div class="col-md-6 col-sm-8 pad-0">
+            <h2>
+                <span>Advancing and Applying the science of Behaviour Change through Machine-Learning</span>
+                <img class="hidden visible-xs" src="{{ asset('bundles/app/images/mob-home.png') }}" alt="mob-home">
+            </h2>
+            <p>The Human Behaviour Change Project is a collaboration between world leading institution to create and develop a Machine Learning Programme that can analyse and literature and no more text</p>
+        </div>
+        </div>
+    </div>
+</section>
+<section class="logo-bar">
+    <p class="text-center">
+        <img src="{{ asset('bundles/app/images/home-sponsors.svg') }}" alt="home-sponsors">
+    </p>
+</section>
+<section class="block block-1 light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                <img src="{{ asset('bundles/app/images/homegraphic-bc.svg') }}" alt="Homegraphic Behavioural Science">
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <h2>Behavioural Science</h2>
+                <p>This part of the project involves developing and applying a system for structuring knowledge about behaviou change interventions.</p>
+                <a href="{{ path('behavioursciencediagram') }}" class="btn">Behavioural Science Resources</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+    <section class="block block-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="{{ asset('bundles/app/images/homegraphic-cs.svg') }}" alt="Homegraphic Computer Science">
+            </div>
+            <div class="col-sm-6">
+                <h2>Computer Science</h2>
+                <p>This department involves developing automated systems for reading the research literature and synthesising evidence.</p>
+                <a href="{{ path('computerscience') }}" class="btn">Computer Science Resources</a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="block block-2 light">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-push-6">
+                <img src="{{ asset('bundles/app/images/homegraphic-sa.svg') }}" alt="Homegraphic System Architecture">
+            </div>
+            <div class="col-sm-6 col-sm-pull-6">
+                <h2>System Architecture</h2>
+                <p>The system architects develop and evaluate an interface for computers and humans to interact with the knowledge system.</p>
+                <a href="{{ path('systemarchitect') }}" class="btn">System Architecture Resources</a>
+            </div> 
+        </div>
+    </div>
+</section>
+<section class="block block-3 text-center bg-img ">
+    <div class="container ">
+        <div class="row">
+            <div class="custom-block bg-icon">
+                <div class="icon">
+                    <img src="{{ asset('bundles/app/images/homeicon-team.svg') }}" alt="team-icon">
+                </div>
+                <h2>Who's Involved</h2>
+                <p>The project is managed investigators based in academic institutions from around the world and those involved are at the forefront of the technical and managerial aspects of the project.</p>
+                <a href="{{ path('projecteam') }}" class="btn">Grant Holders & Project Team</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="custom-block bg-icon-2">
+                <div class="icon">
+                    <img src="{{ asset('bundles/app/images/homeicon-news.svg') }}" alt="news-icon">
+                </div>
+                <h2>HBCP News</h2>
+                <p>Keep up to date with the latest news from the HBCP ranging from the progress of the project to confrences previews and review, comments on machine learning press releases and much more.</p>
+                <a href="{{ path('latestnews') }}" class="btn">Latest News</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

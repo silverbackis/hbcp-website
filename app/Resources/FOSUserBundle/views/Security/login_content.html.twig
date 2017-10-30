@@ -1,0 +1,66 @@
+<div class="wrapper pa-0">
+<!-- Main Content -->
+<div class="page-wrapper pa-0 ma-0">
+<div class="container-fluid">
+<!-- Row -->
+<div class="table-struct full-width full-height">
+<div class="table-cell vertical-align-middle">
+<div class="auth-form  ml-auto mr-auto no-float">
+{% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+{% endif %}
+<div class="panel panel-default card-view mb-0">
+<div class="panel-heading">
+<div class="pull-left">
+<h6 class="panel-title txt-dark">Sign In</h6>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="panel-wrapper collapse in">
+<div class="panel-body">
+<div class="row">
+<div class="col-sm-12 col-xs-12">
+    <div class="form-wrap">
+<form  action="{{ path("fos_user_security_check") }}" method="post">
+    {% if csrf_token %}
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+    {% endif %}
+        <div class="form-group">
+        <label class="control-label mb-10" for="exampleInputEmail_2">Email address</label>
+        <div class="input-group">
+        <input type="text"  class="form-control" id="exampleInputEmail_2" name="_username"  placeholder="Enter Username" required="required" />
+        <div class="input-group-addon"><i class="icon-envelope-open"></i></div>
+        </div>
+        </div>
+        
+        <div class="form-group">
+        <label class="control-label mb-10" for="exampleInputpwd_2">Password</label>
+        <div class="input-group">
+        <input type="password"  class="form-control"  id="exampleInputpwd_2" name="_password"  placeholder="Enter pwd" required="required" />
+         <div class="input-group-addon">
+          <i class="icon-lock"></i></div>
+        </div></div>
+                                                            
+        <div class="form-group">
+        <div class="checkbox checkbox-success pr-10 pull-left">
+       <input id="remember_me"  name="_remember_me"  type="checkbox" value="on">
+       <label for="remember_me">remember me</label>
+       </div>
+       <a class="capitalize-font txt-danger block pt-5 pull-right" href="{{ url('homepage') }}resetting/request  ">forgot password</a>
+        <div class="clearfix"></div>
+        </div>
+        
+        <div class="form-group">
+        <button type="submit"  name="_submit" class="btn btn-success btn-block">sign in</button>
+        </div>
+      
+                                                        
+        </form>
+        </div></div></div></div></div></div>
+        </div></div>
+        </div>
+        <!-- /Row -->   
+        </div>
+        </div>
+            <!-- /Main Content -->
+        </div>

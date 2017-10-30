@@ -1,0 +1,156 @@
+{% extends 'home.html.twig' %}
+{% block body %}
+<section class="slider slider-7">
+ <div class="container">
+        <div class="row">
+        <div class="col-md-6 col-sm-8 pad-0">
+            <h2>
+                <span>System Architecture</span>
+                <img class="hidden visible-xs" src="{{ asset('bundles/app/images/homegraphic-cs.svg') }}" alt="mob-home">
+            </h2>
+            <p>The Human Behaviour Change Project is a collaboration between world leading institution to create and develop a Machine Learning Programme that can analyse and literature and no more text</p>
+             </div>
+        </div>
+    </div>
+</section>
+
+<section class="cs-section text-center">
+    <div id="exTab2" class="">
+        <div class="">
+             <ul class="nav nav-tabs cs-tab">
+            <li>
+        <a href="{{ absolute_url(path('allresources')) }}" >Project</a>
+            </li>
+            <li><a href="{{ path('behaviouralscience') }}" >Behavioural Science</a>
+            </li>
+               <li>
+        <a href="{{ path('computerscience') }}" >Computer Science</a>
+            </li>
+            <li class="active"><a   href="{{ path('systemarchitect') }}">System Architecture</a>
+            </li>
+        </ul>
+        <div class="">
+        <div class="col-sm-12 col-xs-12 col-md-12 cs-tab">
+            <span class="d-hd">Department</span>
+         <div class="select-box-department">
+                   <select class="pagechanger">
+                    <option value="1" urlid ="{{ path('allresources') }}" > Project</option>
+                    <option value="2" urlid="{{ path('behaviouralscience') }}"  > Behavioural Science</option>
+                    <option value="3" urlid="{{ path('computerscience') }}">Computer Science</option>
+                    <option value="4" urlid="{{ path('systemarchitect') }}" >System Architecture</option>
+                </select>
+        </div>
+    </div>
+</div>
+            <div class="tab-content ">
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 dropdown">
+                        <button id="dp">Filter Resources (3 applied)</button>
+                    </div>
+                </div>
+            </div>
+              
+                <div class="tab-pane active" id="3">
+                    <div class="">
+                        
+                        <div class="">
+                            <div class=" pad-35 sh" >
+                                <div class="container">
+                                <div class="row">
+                            <div class="col-md-4 col-sm-12 col-xs-12 t-center">
+                               <div class=" text-right inline-div"> <span>Category</span></div>
+
+                                <div class="select-box">
+                                    <select class="selectpicker" id ="catnames">
+                                         <option value="">-Select-</option>
+                                        {% for catskey,cats in allcomputerscats %}
+                                    <option value="{{catskey}}"> {{cats}}</option>
+                                       {% endfor %}
+                                    </select>
+                            </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 t-center">
+                                <div class=" text-right inline-div"><span>Resource</span></div>
+
+                                <div class="select-box text-cnetr">
+                                    <select class="selectpicker" id= "resourceid">
+                                        <option value="" >-Select-</option>
+                                {% for allresourcetype in allresourcetypes%}
+                                   <option value="{{allresourcetype.id}}">{{allresourcetype.name}}</option>
+                                       {% endfor%}
+                                    </select>
+                            </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 col-xs-12 t-center">
+                                <div class=" text-right inline-div"><span>sort by</span></div>
+
+                                <div class="select-box-2 ">
+                                    <select class="selectpicker" id="datesorter">
+                <option value="asc" > Date (Asc To Desc)</option>
+                <option value="desc" selected="selected"> Date (Desc To Asc)</option>
+                </select>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                            <div class="clearfix"></div>
+                                
+                                
+                                       <!--- Tab Body Start -->
+ 
+           <div class="sortedata">
+            
+             {% for csresource in  csresources %}
+
+
+            <div class="panel-body recoon" data-id='{{ csresource.added_datetime |date("m/d/Y")}}'  cat-id='{{ csresource.category }}' res-id= '{{ csresource.resource_type }}'>
+            <div class="container">
+            <span class="text-download">
+            <p>{{ csresource.added_datetime |date("d/m/Y")}}</p>
+            <span> {{csresource.title}}
+
+            {%  if csresource.path_type == 'dropbox' %}
+           
+            <a class="link-text">
+           {% if csresource.resource_type != 0  %}
+             {% for resourcename in  allresourcetypes %}
+                       {%if csresource.resource_type == resourcename.id %}
+                         {{ resourcename.name }}
+                         {%endif%}
+              {% endfor %}
+            {% endif %}      
+            </a>
+            {%  elseif  csresource.path_type == 'website' %}
+             <a class="link-text"> Website</a>
+             {%  elseif  csresource.path_type == 'tool' %}
+                 <a class="link-text">HBCP Tool</a>
+             {%endif%}
+            </span>
+            <a href="#" class="api-btn">{{csresource.name}}</a>
+            </span>
+            <span class="btn-download">
+            {%  if csresource.path_type == 'dropbox' %}
+            <a href=" {{ path('homepage') }}resources/{{csresource.name|slugify }}/{{csresource.id}}" target="_blank">Download</a>
+            {% elseif  csresource.path_type == 'tool' %}
+            <a href="{{csresource.path}}" target="_blank">Open Tool</a>
+        {% elseif  csresource.path_type == 'website' %}
+            <a href="{{csresource.path}}" target="_blank">View</a>
+            {% endif%}
+            </span>
+            </div>
+            </div>
+           
+           {% endfor %} 
+      
+        
+          </div>
+                            
+                            
+        </div></div></div>
+  </div>
+    </div>
+    </div>
+</section>
+    {% endblock %}

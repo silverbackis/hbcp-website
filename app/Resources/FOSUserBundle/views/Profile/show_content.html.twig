@@ -1,0 +1,29 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div class="wrapper pa-0">
+	<!-- Main Content -->
+	<div class="page-wrapper pa-0 ma-0">
+		<div class="container-fluid">
+			<!-- Row -->
+			<div class="table-struct full-width full-height" style="">
+				<div class="table-cell vertical-align-middle">
+					<div class="auth-form  ml-auto mr-auto no-float">
+						<div class="panel panel-default card-view mb-0">
+							<div class="panel-heading">
+								<div class="form-group">
+									<div class="fos_user_user_show">
+									    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+									    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<style>
+.table-struct.full-width.full-height{height: auto !important;
+margin-top: 10% !important;} 
+</style>

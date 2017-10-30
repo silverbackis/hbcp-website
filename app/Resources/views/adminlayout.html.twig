@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <title>HBCP</title>
+  <meta name="description" content="Kenny is a Dashboard & Admin Site Responsive Template by hencework."/>
+  <meta name="keywords"
+        content="admin, admin dashboard, admin template, cms, crm, Kenny Admin, kennyadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application"/>
+  <meta name="author" content="hencework"/>
+
+
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+
+  <link href="{{ asset('vendors/bower_components/morris.js/morris.css') }}" rel="stylesheet" type="text/css"/>
+
+
+  <link href="{{ asset('vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet"
+        type="text/css"/>
+
+  <link href="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css') }}" rel="stylesheet"
+        type="text/css">
+  <link href="{{ asset('vendors/bower_components/dropzone/dist/dropzone.css') }}" rel="stylesheet" type="text/css"/>
+
+  <link href="{{ asset('dist/css/style.css') }}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div class="preloader-it">
+  <div class="la-anim-1"></div>
+</div>
+<div class="wrapper">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <a id="toggle_nav_btn" class="toggle-left-nav-btn inline-block mr-20 pull-left" href="javascript:void(0);"><i
+          class="fa fa-bars"></i></a>
+    <a href="{{ url('homepage') }}admin/dashboard"><img class="brand-img pull-left"
+                                                        src="{{ asset('vendors/logo.svg') }}" height='30px'
+                                                        alt="brand"/></a>
+    <ul class="nav navbar-right top-nav pull-right">
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropdown-toggle pr-0" data-toggle="dropdown"><img
+              src="{{ asset('dist/img/user1.png') }}" alt="user_auth" class="user-auth-img img-circle"/><span
+              class="user-online-status"></span></a>
+        <ul class="dropdown-menu user-auth-dropdown" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
+          <li>
+            <a href="{{ path('fos_user_profile_show') }}"><i class="fa fa-fw fa-user"></i> Profile</a>
+          </li>
+          <li>
+            <a href="{{ path('fos_user_profile_edit') }}"><i class="fa fa-fw fa-user"></i> Profile Edit</a>
+          </li>
+
+          <li class="divider"></li>
+          <li>
+            <a href="{{ url('homepage') }}logout"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <div class="collapse navbar-search-overlap" id="site_navbar_search">
+      <form role="search">
+        <div class="form-group mb-0">
+          <div class="input-search">
+            <div class="input-group">
+              <input type="text" id="overlay_search" name="overlay-search" class="form-control pl-30"
+                     placeholder="Search">
+              <span class="input-group-addon pr-30">
+    <a href="javascript:void(0)" class="close-input-overlay" data-target="#site_navbar_search" data-toggle="collapse"
+       aria-label="Close" aria-expanded="true"><i class="fa fa-times"></i></a>
+  </span>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav> {# end of navbar #}
+  <div class="fixed-sidebar-left">
+    <ul class="nav navbar-nav side-nav nicescroll-bar">
+      <li>
+        <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><i
+              class="icon-picture mr-10"></i>News Dashboard <span class="pull-right"><i
+                class="fa fa-fw fa-angle-down"></i></span></a>
+        <ul id="dashboard_dr" class="collapse collapse-level-1">
+          <li>
+            <a class="active" href="{{ url('homepage') }}admin/allnews">All News</a>
+          </li>
+          <li>
+            <a class="active" href="{{ url('homepage') }}admin/createnew">Create New</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><i class="icon-grid mr-10"></i>Category<span
+              class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
+        <ul id="app_dr" class="collapse collapse-level-1">
+          <li>
+            <a href="{{ url('homepage') }}admin/cats/all">All Categories</a>
+          </li>
+          <li>
+            <a href="{{ url('homepage') }}admin/cat/create">Create A Category</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#kpp_dr"><i class="icon-grid mr-10"></i>Resource
+          Type Section <span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
+        <ul id="kpp_dr" class="collapse collapse-level-1">
+          <li>
+            <a href="{{ url('homepage') }}admin/resourcetype/all">All Resource Types</a>
+          </li>
+          <li>
+            <a href="{{ url('homepage') }}admin/resourcetype/create">Create A Resource Type</a>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <a href="javascript:void(0);" data-toggle="collapse" data-target="#kppp_dr"><i class="icon-grid mr-10"></i>Resource
+          Section <span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
+        <ul id="kppp_dr" class="collapse collapse-level-1">
+          <li>
+            <a href="{{ url('homepage') }}admin/allresources">All Resources</a>
+          </li>
+          <li>
+            <a href="{{ url('homepage') }}admin/resource/createnew">Create A Resource </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  {% block body %}{% endblock %}
+</div>
+<script src="{{ asset('vendors/bower_components/jquery/dist/jquery.min.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('dist/js/dataTables-data.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/datatables/media/js/jquery.dataTables.min.js') }}"></script>
+<script src="{{ asset('dist/js/jquery.slimscroll.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/moment/min/moment.min.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/simpleWeather/jquery.simpleWeather.min.js') }}"></script>
+<script src="{{ asset('dist/js/simpleweather-data.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/waypoints/lib/jquery.waypoints.min.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/Counter-Up/jquery.counterup.min.js') }}"></script>
+<script src="{{ asset('dist/js/dropdown-bootstrap-extended.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/dropzone/dist/dropzone.js') }}"></script>
+<script src="{{ asset('vendors/chart.js/Chart.min.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/raphael/raphael.min.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/morris.js/morris.min.js') }}"></script>
+<script src="{{ asset('dist/js/morris-data.js') }}"></script>
+<script src="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js') }}"></script>
+<script src="{{ asset('dist/js/init.js') }}"></script>
+<script src="{{ asset('dist/js/dashboard_data.js') }}"></script>
+<script>
+  $('body').on('click', '.confirmation', function () {
+    return confirm('Are you sure?');
+  });
+
+  $('#typeofpath').on('change', function () {
+    var rok = $(this).val();
+    if (rok == 'dropbox') {
+      $('.catype').css('display', 'block');
+
+    }
+    else {
+      $('.catype').css('display', 'none');
+    }
+  });
+
+
+  $(document).ready(function () {
+    $("#topcat").change(function () {
+      var option = $('option:selected', this).val();
+      $("#unlockcat")
+        .find("option")
+        .show()
+        .not("option[toparent~='" + option + "']").hide();
+
+      $("#unlockcat").val(
+        $("#unlockcat").find("option:visible:first").val());
+    }).change();
+
+
+    $("#topcatedit").on('change', function () {
+
+      var option = $('option:selected', this).val();
+      $("#unlockcatedit")
+        .find("option")
+        .show()
+        .not("option[toparent~='" + option + "']").hide();
+
+      $("#unlockcatedit").val(
+        $("#unlockcatedit").find("option:visible:first").val());
+    });
+  });
+</script>
+<script>
+  jQuery(document).ready(function () {
+    jQuery(".overlay-1").on("click", function () {
+      jQuery(this).removeClass("overlay-inline");
+      jQuery(this).addClass("overlay-inline");
+    });
+  });
+</script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('.navbar-toggle').click(function () {
+      $('.navbar-toggle').toggleClass('blue');
+    });
+  });
+</script>
+<style>
+  .footer {
+    position: relative !important;
+  }
+</style>
+</body>
+
+</html>

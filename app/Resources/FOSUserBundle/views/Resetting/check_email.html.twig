@@ -1,0 +1,33 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+
+<style type="text/css">
+.table-struct.full-width.full-height{height: auto !important;
+margin-top: 10% !important;} </style>
+<div class="wrapper pa-0">
+	<!-- Main Content -->
+	<div class="page-wrapper pa-0 ma-0">
+		<div class="container-fluid">
+			<!-- Row -->
+			<div class="table-struct full-width full-height" style="">
+				<div class="table-cell vertical-align-middle">
+					<div class="auth-form  ml-auto mr-auto no-float">
+						<div class="panel panel-default card-view mb-0">
+							<div class="panel-heading">
+								<div>
+									<p style="color: #888;">
+									{{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime})|nl2br }}
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

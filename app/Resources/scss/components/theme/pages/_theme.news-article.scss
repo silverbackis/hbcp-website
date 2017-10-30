@@ -1,0 +1,235 @@
+.article-slider{
+	
+	background-image:url(../images/news-article.png) !important;	
+	background-position: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 50px 0px 80px 0px;
+    color: $color-white;
+   	a{
+   		color: $color-white;
+	    text-decoration: none;
+	    font-size: 14px;
+	    margin-left:20px;
+	    font-weight:300;
+	    position:relative;
+	    display:inline-block;
+	    &:before{
+	    	        content: "";
+				    background-image: url(../images/arrow-back-white.svg);
+				    background-size: cover;
+				    /* padding: 9px; */
+				    /* margin: 3px 0 0 6px; */
+				    /* position: absolute; */
+				    /* left: -23px; */
+				    HEIGHT: 15PX;
+				    DISPLAY: INLINE-BLOCK;
+				    MARGIN-RIGHT: 6px;
+				    VERTICAL-ALIGN: MIDDLE;
+				    WIDTH: 10PX;
+				    DISPLAY: INLINE-BLOCK;
+
+
+
+	    }
+   	}
+   	h2{
+   		font-weight:300;
+   	}
+   	p{ font-weight: 300; font-size: 16px; line-height: 25px; margin-top: 10px;}
+	}
+.dropbox-section{
+	padding:50px 0 70px;
+	.drop-img{
+		img{
+			max-width:100%;
+		}
+	}
+	.drop-txt{
+		p{
+			font-size: 16px;
+	    color: $drop-txt-color;
+		}
+	}
+	.download-btn{
+		background-color: $btn-bg;
+	    color: $color-white;
+	    display:block;
+	    max-width:420px;
+	    margin-top:20px;
+	    margin-bottom:43px;
+	    text-align:center;
+	    text-decoration:none;
+	    padding: 10px 20px 10px 40px;
+	    position: relative;
+	    border: none;
+	    min-width: 250px;
+	    
+	    	&:before {
+			    content: "";
+			    position: absolute;
+			    background-color: $btn-shadow;
+			    bottom: -3px;
+			    left: 0;
+			    right: 0;
+			    top: 0;
+			    z-index: -1;
+			    border-radius: 4px;
+			}
+			p{
+				font-size: 20px;
+			    font-weight: 300;
+			    margin: 0;
+			    position:relative;
+			    &:before{
+		    	       content: "";
+					    background-image: url(../images/resource-download.svg);
+					    background-size: 100% 100%;
+					    height: 35px;
+					    position: relative;
+					    margin-top: 0;
+					    margin-right: 6px;
+					    vertical-align: middle;
+					    top: 5px;
+					    background-repeat: no-repeat;
+					    width: 35px;
+					    display: inline-block;
+		    }
+			}
+	    
+	}
+	.drop-main-heading{
+		font-size: 14px;
+	    text-align: right;
+	    padding:0;
+	    color: $drop-heading;
+	    
+	}
+	.drop-sub-heading{
+	    	color:$border-bottom-color;
+	    	text-align:left;
+	    	font-size: 14px;
+	    }
+}	
+.share-resource{
+	text-align:center;
+	padding:50px 0;
+		.input-group{
+		input{
+			width: 100%;
+			height: 35px;
+			border: 1px solid $border-color;
+			border-radius: 10px 0 0 10px;
+			 padding: 0 20px;
+			background: $color-white;
+			color:$border-bottom-color;
+			font-size:13px;
+			border-right: none;
+		}
+		.copy-btn{
+		      background: none;
+			    height: 35px;
+			    color: $color-blue;
+			    border-radius: 0 14px 014px 0;
+			    padding: 0 20px;
+			    border: 1px solid $border-color;
+			    border-left: none;
+
+		}
+	}
+	h2{
+	    color: $color-blue;
+    	font-size: 24px;
+	}
+	p{
+		    font-size: 20px;
+    color: $color-blue;
+    margin-top:15px;
+    margin-bottom:15px;
+	}
+	.link-bar{
+	.link-input{
+		    border-right: none !important;
+		    border: 1px solid $border-color;
+		    display: block;
+		    width: 100%;
+		    padding: 0 20px;
+		    border-radius: 14px 0 0 13px;
+		    height: 35px;
+		    font-size: 13px;
+	}
+
+		
+	}
+	.social-icons{
+		padding: 0;
+
+		li{
+			    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+		}
+	}
+}
+.back-btn{
+	padding:40px 0;
+	text-align:center;
+	a{
+		background-color: $btn-bg;
+	    color: $color-white !important;
+	    padding: 10px 20px;
+	    position: relative;
+	    border: none;
+        box-shadow: 0px 5px 0px 0px $btn-shadow;
+	    min-width: 250px;
+	    text-decoration:none;
+	        transition: 0.5s all;
+    	&:before{
+	    	    content: "";
+			    background-image: url(../images/right-arrow.png);
+			    background-size: cover;
+			    padding: 9px;
+			    margin: 3px 0 0 6px;
+			    position: absolute;
+			    left: 30px;
+   				 top: 7px;
+	    }
+	    &:focus{
+	    	color:$color-white !important;
+	    }
+	    &:hover {
+    background: $btn-hover;
+}
+	}
+}
+@media(max-width:768px){
+	.back-btn{
+		display:none;
+	}
+	.share-resource{
+		display:none;
+	}
+	.dropbox-section{
+		.download-btn{
+			padding: 10px 20px 10px 40px;
+			margin:25px auto;
+			p{
+				&:before{
+					float:left;
+				}
+			}
+		}
+	}
+}
+@media(max-width:440px){
+	.dropbox-section{
+		.download-btn{
+			p{
+				font-size:18px;
+				&:before{
+					left:0;
+				}
+			}
+		}
+	}
+}
