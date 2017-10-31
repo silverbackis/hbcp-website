@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Serializer\Annotation\Groups;
 
 /**
  * Category
@@ -20,7 +21,7 @@ class Category
      * @ORM\Column(name="id", type="integer")
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="AUTO")
-     *
+     * @Groups({"cat_select"})
      */
     public $id;
 
@@ -28,6 +29,7 @@ class Category
      * @var string
      *
      * @ORM\Column(name="name", type="string", length=255)
+     * @Groups({"cat_select"})
      */
     private $name;
 
@@ -47,8 +49,8 @@ class Category
 
     /**
      * @var int
-     *
      * @ORM\Column(name="fixed", type="boolean")
+     * @Groups({"cat_select"})
      */
     private $fixed = false;
 
@@ -65,6 +67,11 @@ class Category
      * @ORM\Column(type="datetime")
      */
     private $updated;
+
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Resource", mappedBy="category")
+     */
+    private $resources;
 
     /**
      * Constructor
@@ -268,5 +275,39 @@ class Category
         }
         $names = array_reverse($names);
         return join (" > ", $names);
+    }
+
+    /**
+     * Add resource
+     *
+     * @param \AppBundle\Entity\Resource $resource
+     *
+     * @return Category
+     */
+    public function addResource(\AppBundle\Entity\Resource $resource)
+    {
+        $this->resources[] = $resource;
+
+        return $this;
+    }
+
+    /**
+     * Remove resource
+     *
+     * @param \AppBundle\Entity\Resource $resource
+     */
+    public function removeResource(\AppBundle\Entity\Resource $resource)
+    {
+        $this->resources->removeElement($resource);
+    }
+
+    /**
+     * Get resources
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getResources()
+    {
+        return $this->resources;
     }
 }

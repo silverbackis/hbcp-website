@@ -44,14 +44,14 @@
 											<td>{{ category.created |date("d/m/Y H:i") }} </td>
 											<td>{{ category.updated | date("d/m/Y H:i")  }}</td>
 											<td>
-												<a class="confirmation" href ="{{ path('category_delete', {category: category.id}) }}">
-													<button class="btn btn-danger btn-icon-anim btn-circle">
-														<i class="icon-trash"></i>
-													</button>
-												</a>
 												<a href="{{ path('category_edit', {category: category.id}) }}">
 													<button class="btn btn-warning btn-icon-anim btn-circle">
 														<i class="fa fa-pencil"></i>
+													</button>
+												</a>
+												<a class="confirmation" href ="{{ path('category_delete', {category: category.id}) }}">
+													<button class="btn btn-danger btn-icon-anim btn-circle">
+														<i class="icon-trash"></i>
 													</button>
 												</a>
 											</td>

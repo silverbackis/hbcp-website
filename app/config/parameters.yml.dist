@@ -18,3 +18,4 @@ parameters:
     # A secret key that's used to generate certain security-related tokens
     secret: ThisTokenIsNotSoSecretChangeIt
     news_directory: '%kernel.project_dir%/web/uploads/newsimages'
+    dropbox_oauth: ~

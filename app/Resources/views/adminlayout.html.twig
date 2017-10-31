@@ -3,18 +3,12 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <title>HBCP</title>
-  <meta name="description" content="Kenny is a Dashboard & Admin Site Responsive Template by hencework."/>
-  <meta name="keywords"
-        content="admin, admin dashboard, admin template, cms, crm, Kenny Admin, kennyadmin, premium admin templates, responsive admin, sass, panel, software, ui, visualization, web app, application"/>
-  <meta name="author" content="hencework"/>
-
+  <title>Human Behaviour Change Project Admin</title>
 
   <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="{{ asset('vendors/bower_components/morris.js/morris.css') }}" rel="stylesheet" type="text/css"/>
-  <link href="{{ asset('vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet"
-        type="text/css"/>
+  <link href="{{ asset('vendors/bower_components/datatables/media/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css"/>
   <link href="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.css') }}" rel="stylesheet" type="text/css">
   <link href="{{ asset('build/style.css') }}" rel="stylesheet" type="text/css">
 </head>
@@ -68,55 +62,18 @@
   </nav> {# end of navbar #}
   <div class="fixed-sidebar-left">
     <ul class="nav navbar-nav side-nav nicescroll-bar">
+      {% set route = app.request.get('_route') %}
       <li>
-        <a class="active" href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard_dr"><i
-              class="icon-picture mr-10"></i>News Posts<span class="pull-right"><i
-                class="fa fa-fw fa-angle-down"></i></span></a>
-        <ul id="dashboard_dr" class="collapse collapse-level-1">
-          <li>
-            <a class="active" href="{{ path('news_list') }}">All News</a>
-          </li>
-          <li>
-            <a class="active" href="{{ path('news_item') }}">Create News Post</a>
-          </li>
-        </ul>
+        <a {% if route == 'news_list' %}class="active" {% endif %}href="{{ path('news_list') }}"><i class="icon-picture mr-10"></i>News Posts</a>
       </li>
       <li>
-        <a href="javascript:void(0);" data-toggle="collapse" data-target="#app_dr"><i class="icon-grid mr-10"></i>Category<span
-              class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
-        <ul id="app_dr" class="collapse collapse-level-1">
-          <li>
-            <a href="{{ path('categories') }}">All Categories</a>
-          </li>
-          <li>
-            <a href="{{ path('category_edit') }}">Create A Category</a>
-          </li>
-        </ul>
+        <a {% if route == 'categories' %}class="active" {% endif %}href="{{ path('categories') }}"><i class="icon-grid mr-10"></i>Category</a>
       </li>
       <li>
-        <a href="javascript:void(0);" data-toggle="collapse" data-target="#kpp_dr"><i class="icon-grid mr-10"></i>Resource
-          Type<span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
-        <ul id="kpp_dr" class="collapse collapse-level-1">
-          <li>
-            <a href="{{ path('resource_type_list') }}">All Resource Types</a>
-          </li>
-          <li>
-            <a href="{{ path('resource_type_item') }}">Create A Resource Type</a>
-          </li>
-        </ul>
+        <a {% if route == 'resource_type_list' %}class="active" {% endif %}href="{{ path('resource_type_list') }}"><i class="icon-grid mr-10"></i>Resource Type</a>
       </li>
-
       <li>
-        <a href="javascript:void(0);" data-toggle="collapse" data-target="#kppp_dr"><i class="icon-grid mr-10"></i>Resource
-          Section <span class="pull-right"><i class="fa fa-fw fa-angle-down"></i></span></a>
-        <ul id="kppp_dr" class="collapse collapse-level-1">
-          <li>
-            <a href="{{ url('homepage') }}admin/allresources">All Resources</a>
-          </li>
-          <li>
-            <a href="{{ url('homepage') }}admin/resource/createnew">Create A Resource </a>
-          </li>
-        </ul>
+        <a {% if route == 'resources_list' %}class="active" {% endif %}href="{{ path('resources_list') }}"><i class="icon-grid mr-10"></i>Resource Section</a>
       </li>
     </ul>
   </div>
@@ -153,55 +110,10 @@
 <script src="{{ asset('vendors/bower_components/jquery-toast-plugin/dist/jquery.toast.min.js') }}"></script>
 <script src="{{ asset('dist/js/init.js') }}"></script>
 <script src="{{ asset('dist/js/dashboard_data.js') }}"></script>
+{% block javascripts %}{% endblock %}
 <script>
   $('body').on('click', '.confirmation', function () {
     return confirm('Are you sure?');
-  });
-
-  $('#typeofpath').on('change', function () {
-    var rok = $(this).val();
-    if (rok == 'dropbox') {
-      $('.catype').css('display', 'block');
-
-    }
-    else {
-      $('.catype').css('display', 'none');
-    }
-  });
-
-
-  $(document).ready(function () {
-    $("#topcat").change(function () {
-      var option = $('option:selected', this).val();
-      $("#unlockcat")
-        .find("option")
-        .show()
-        .not("option[toparent~='" + option + "']").hide();
-
-      $("#unlockcat").val(
-        $("#unlockcat").find("option:visible:first").val());
-    }).change();
-
-
-    $("#topcatedit").on('change', function () {
-
-      var option = $('option:selected', this).val();
-      $("#unlockcatedit")
-        .find("option")
-        .show()
-        .not("option[toparent~='" + option + "']").hide();
-
-      $("#unlockcatedit").val(
-        $("#unlockcatedit").find("option:visible:first").val());
-    });
-  });
-</script>
-<script>
-  jQuery(document).ready(function () {
-    jQuery(".overlay-1").on("click", function () {
-      jQuery(this).removeClass("overlay-inline");
-      jQuery(this).addClass("overlay-inline");
-    });
   });
 </script>
 <script type="text/javascript">

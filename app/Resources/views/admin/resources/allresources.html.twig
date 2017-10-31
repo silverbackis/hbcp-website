@@ -10,7 +10,7 @@
 				</div>
 
 				<div class="pull-right">
-					<a href="{{ url('homepage') }}admin/resource/createnew"><button type="button" class="btn btn-success">Create A New </button></a>
+					<a href="{{ path('resource') }}"><button type="button" class="btn btn-success">Create A New </button></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -23,7 +23,6 @@
 									<tr>
 										<th>Title</th>
 										<th>Type</th>
-										<th>Path Url</th>
 										<th>Category</th>
 										<th>Type Of Resource</th>
 										<th>Added Date</th>
@@ -35,7 +34,6 @@
 									<tr>
 										<th>Title</th>
 										<th>Type</th>
-										<th>Path Url</th>
 										<th>Category</th>
 										<th>Type Of Resource</th>
 										<th>Added Date</th>
@@ -44,31 +42,29 @@
 									</tr>
 								</tfoot>
 								<tbody>
-                {% for todo in alldatas %}
+                {% for resource in resources %}
 									<tr>
-										<td>{{ todo.title }}</td>
-										<td>{{ todo.pathType }}</td>
-										<td>{{ todo.path  }}</td>
+										<td>{{ resource.title }}</td>
+										<td>{{ resource.pathType }}</td>
 										<td>
-                      {% if catcount > 0%}
-                        {{ catdata[mycat] }}
-                      {%endif%}
+											{{ resource.category.name }}
 										</td>
 										<td>
-                      {% if heirchycount > 0%}
-                        {{ resourcetype[mycat] }}
-                      {%endif%}
+											{{ resource.resourceType.name|default('none') }}
 										</td>
-										<td>{{ todo.created |date("d/m/Y H:i")  }} </td>
-										<td>{{ todo.updated | date("d/m/Y H:i")  }}</td>
+										<td>{{ resource.created |date("d/m/Y H:i")  }} </td>
+										<td>{{ resource.updated | date("d/m/Y H:i")  }}</td>
 
-										<td><a  class="confirmation" href ="{{ url('homepage') }}admin/resource/delete/{{todo.id}}"><button class="btn btn-danger btn-icon-anim btn-circle">
-													<i class="icon-trash"></i>
-												</button></a>
-											<a href="{{ url('homepage') }}admin/resources/edit/{{todo.id}}">
+										<td>
+											<a href="{{ path('resource', {resource: resource.id}) }}">
 												<button class="btn btn-warning btn-icon-anim btn-circle">
 													<i class="fa fa-pencil"></i>
-												</button></a>
+												</button>
+											</a>
+											<a  class="confirmation" href=""><button class="btn btn-danger btn-icon-anim btn-circle">
+													<i class="icon-trash"></i>
+												</button>
+											</a>
 										</td>
 									</tr>
                 {% endfor %}

@@ -69,7 +69,6 @@ class AdminNewsPostsController extends Controller
                 $news->setImage($oldImage);
             }
 
-
             $em = $this->getDoctrine()->getManager();
             $em->persist($news);
             $em->flush();

@@ -1,87 +1,58 @@
 {% extends "adminlayout.html.twig" %}
+{% block javascripts %}
+  <script type="application/javascript">
+   var $resourceCategory = $('#resource_category');
+   var $resourceCategoryGroup = $resourceCategory.parents('.form-group');
+   var $resourceTopCategory = $('#resource_topCategory');
+   $resourceTopCategory.on('change', () => {
+     if ($resourceTopCategory.val() === '') {
+       $resourceCategoryGroup.hide();
+     } else {
+       $resourceCategoryGroup.show();
+       var choices = $.parseJSON($('option:selected', $resourceTopCategory).attr('data-choices'));
+       $resourceCategory.empty();
+       $.each(choices, function() {
+         $('<option />', {
+           value: this.id,
+           html: this.fixed ? 'General' : this.name
+         }).appendTo($resourceCategory)
+       })
+     }
+   });
+   if ($resourceTopCategory.val() === '') {
+     $resourceCategoryGroup.hide();
+   }
+  </script>
+{% endblock %}
 {% block body %}
-<div class="row">
-<div class="col-md-12">
-<div class="panel panel-default card-view">
-<div class="panel-heading">
-<div class="pull-left">
-<h6 class="panel-title txt-dark">Create  A  News</h6>
-</div>
-<div class="clearfix"></div>
-</div>
-<div class="panel-wrapper collapse in">
-<div class="panel-body">
-<div class="row">
-<div class="col-md-12">
-<div class="form-wrap">
-{% if app.session.flashBag.has('urlinvalid') %}
-        <div class="alert alert-danger fade in" role="alert">
-            <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-            {% for msg in app.session.flashBag.get('urlinvalid') %}
-                {{ msg }}
-            {% endfor %}
+ <div class="row">
+  <div class="col-md-12">
+   <div class="panel panel-default card-view">
+    <div class="panel-heading">
+     <div class="pull-left">
+      <h6 class="panel-title txt-dark">{{ new ? 'Create' : 'Modify' }} Resource</h6>
+     </div>
+     <div class="clearfix"></div>
+    </div>
+    <div class="panel-wrapper collapse in">
+     <div class="panel-body">
+      <div class="row">
+       <div class="col-md-12">
+        <div class="form-wrap">
+          {{ form_start(form) }}
+          {{ form_row(form.title) }}
+          {{ form_row(form.resourceType) }}
+          {{ form_row(form.topCategory) }}
+          {{ form_row(form.category) }}
+          {{ form_row(form.pathType) }}
+          {{ form_row(form.path) }}
+          {{ form_end(form) }}
         </div>
-    {% endif %}
-
- <form action="{{ url('homepage') }}admin/resource/savenew" method="post" enctype="multipart/form-data">
-  <div class="form-group">
-    <label for="nameofresource">Title of Resource:</label>
-    <input type="text" class="form-control" id="nameofresource" name="resourcename" required>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
   </div>
-  <div class="form-group">
-  <label for="typeofpath">Link Type:</label>
-  <select class="form-control" name="pathtype" id="typeofpath" required>
-  <option value="">--Please Select Link Type--</option>
-    <option value="dropbox">DropBox</option>
-    <option value="website">Website</option>
-     <option value="tool">Tool</option>
-   </select>
-  </div> 
-
- <div class="form-group catype" style="display:none;">
-  <label for="resourcetype">Resourcetype:</label>
-  <select class="form-control" name="resourcetype" id="resourcetype">
-  {%for  restype in resourcetypes %}
-  <option value="{{ restype.id }}">{{ restype.name}}</option>
-  {% endfor %}
-   </select>
-  </div>
-
- 
-
-  <div class="form-group" >
-  <label for="dropboxlink">Link:</label>
- <input type="textarea" name="dropboxurl" id="dropboxlink" class="form-control" required/>
-
-  </div>
-
-   <div class="form-group">
-  <label for="topcat">Main Category:</label>
-  <select class="form-control" id="topcat" name="topcategoryid">
-  {%for  keys,cats in resourcecategory %}
-  <option value="{{ keys }}">{{ cats }}</option>
-  {% endfor %}
-   </select>
-  </div>
-
- 
-
-  <div class="form-group">
-  <label for="unlockcat">Sub Categories:</label>
-  <select class="form-control" name="catname" id="unlockcat" required>
-  {%for  resourceunlocked in resourceunlockeds %}
-  <option value="{{ resourceunlocked.id }}" toparent="{{resourceunlocked.parentId }}">{{ resourceunlocked.name }}</option>
-  {% endfor %}
-   </select>
-  </div>
-
-<button type="submit" class="btn btn-default">Submit</button>
-</form> 
-</div>
-</div></div>
-</div>
-</div>
-</div>
-</div>
-</div>
-  {% endblock %}
+ </div>
+{% endblock %}

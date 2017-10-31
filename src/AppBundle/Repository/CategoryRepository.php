@@ -48,6 +48,9 @@ class CategoryRepository extends \Doctrine\ORM\EntityRepository
                 return;
             }
         }
-        $this->deepest[] = $category;
+        if ($fixed || !$category->getFixed())
+        {
+            $this->deepest[] = $category;
+        }
     }
 }

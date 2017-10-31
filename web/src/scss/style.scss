@@ -93,8 +93,8 @@ $yellow:#fcb03b;
 $red:#f15b26;
 $blue:#566FC9;
 $pink:#ea65a2;
-$black:#000;
-$grey:#333;
+$black:#111;
+$grey:#777;
 $white:#fff;
 $light_grey:#eee;
 $font_main: 'Varela Round', sans-serif;
@@ -1603,7 +1603,7 @@ footer {
 	}
 }
 .control-label {
-	color:$black;
+	color:$grey;
 }
 .input-group-addon {
 	background: transparent none repeat scroll 0 0;
@@ -4074,7 +4074,7 @@ a.compose-mail {
 }	
 /*Panel*/
 .panel-title {
-	@extend h6;
+	@extend h4;
 }
 .panel {
 	.panel-heading { 

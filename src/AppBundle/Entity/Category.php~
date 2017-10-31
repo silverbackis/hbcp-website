@@ -41,7 +41,7 @@ class Category
 
     /**
      * @var ArrayCollection
-     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Category", mappedBy="parent")
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Category", mappedBy="parent", fetch="EAGER")
      */
     public $children;
 
@@ -50,21 +50,34 @@ class Category
      *
      * @ORM\Column(name="fixed", type="boolean")
      */
-    private $fixed;
+    private $fixed = false;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="created", type="datetime")
+     * @ORM\Column(type="datetime")
      */
     private $created;
 
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="updated", type="datetime")
+     * @ORM\Column(type="datetime")
      */
     private $updated;
+
+    /**
+     * @ORM\OneToMany(targetEntity="AppBundle\Entity\Resource", mappedBy="category")
+     */
+    private $resources;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->children = new \Doctrine\Common\Collections\ArrayCollection();
+    }
 
     /**
      * Get id
@@ -180,8 +193,85 @@ class Category
     /**
      * @ORM\PreUpdate()
      */
-    public function preupdate()
+    public function preUpdate()
     {
         $this->updated = new \DateTime();
+    }
+
+    /**
+     * Set created
+     *
+     * @param \DateTime $created
+     *
+     * @return Category
+     */
+    public function setCreated($created)
+    {
+        $this->created = $created;
+
+        return $this;
+    }
+
+    /**
+     * Set updated
+     *
+     * @param \DateTime $updated
+     *
+     * @return Category
+     */
+    public function setUpdated($updated)
+    {
+        $this->updated = $updated;
+
+        return $this;
+    }
+
+    /**
+     * Add child
+     *
+     * @param \AppBundle\Entity\Category $child
+     *
+     * @return Category
+     */
+    public function addChild(\AppBundle\Entity\Category $child)
+    {
+        $this->children[] = $child;
+
+        return $this;
+    }
+
+    /**
+     * Remove child
+     *
+     * @param \AppBundle\Entity\Category $child
+     */
+    public function removeChild(\AppBundle\Entity\Category $child)
+    {
+        $this->children->removeElement($child);
+    }
+
+    /**
+     * Get children
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getChildren()
+    {
+        return $this->children;
+    }
+
+    public function getBreadcrumbs($includeSelf = null)
+    {
+        $names = [];
+        if ($includeSelf === true || (is_null($includeSelf) && $this->getFixed())) {
+            $names[] = $this->getName();
+        }
+        $parent = $this->getParent();
+        while($parent) {
+            $names[] = $parent->getName();
+            $parent = $parent->getParent();
+        }
+        $names = array_reverse($names);
+        return join (" > ", $names);
     }
 }
