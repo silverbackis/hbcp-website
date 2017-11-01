@@ -3,7 +3,7 @@
 }
 
 .slider-2 {
-@extend .slider;
+  @extend .slider;
   background-image: url(../images/bg-bs-header.png) !important;
   background-position: 100%;
   background-size: cover;
@@ -31,7 +31,7 @@
     padding: 10px 20px;
     position: relative;
     border: none;
-    box-shadow: 0px 5px 0px 0px $btn-shadow;
+    box-shadow: 0 5px 0 0 $btn-shadow;
     transition: 0.5s all;
     &:hover {
       background: $btn-hover;
@@ -62,13 +62,13 @@
     padding: 46px;
     background-size: 100% 100%;
     p {
-      padding: 0px 48px;
+      padding: 0 48px;
       font-weight: 400;
       font-size: 18px;
       margin-top: 0;
       max-width: 266px;
       margin: 0 auto;
-      color:$color-blue;
+      color: $color-blue;
       line-height: 25px;
       margin-bottom: 20px;
     }
@@ -111,11 +111,11 @@
 }
 
 .arrow-up {
-  padding: 0px 48px;
+  padding: 0 48px;
   font-weight: 400;
   font-size: 18px;
   margin-top: 90px;
-  color:$color-blue;
+  color: $color-blue;
   line-height: 25px;
 
   margin-bottom: 50px;
@@ -148,7 +148,7 @@
     }
     .explain-button {
       p {
-        padding: 0px 0 !important;
+        padding: 0 0 !important;
         font-size: 12px;
         margin-bottom: 10px;
         line-height: 1.1;
@@ -177,7 +177,7 @@
     }
     .explain-button {
       p {
-        padding: 0px 0 !important;
+        padding: 0 0 !important;
         font-size: 12px;
         margin-bottom: 10px;
         line-height: 1.1;
@@ -405,11 +405,11 @@
   }
   .inner-tri-mech.out-come a .layer {
     position: relative;
-    left: 0px;
+    left: 0;
     z-index: 999;
   }
   .inner-tri-mech.out-come a .overlay-1 {
-    left: 0px;
+    left: 0;
     z-index: 999;
   }
   .inner-tri-mech {

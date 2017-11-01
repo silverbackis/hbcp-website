@@ -1,19 +1,20 @@
 
-.detail-slider{
-	    padding: 50px 0px 30px 0px !important;
-	    h3{
-	    	font-weight:400;
-	    }
-	    img{
-	    	border:3px solid $color-white;
-	    	max-width:100%;
-	    }
+.detail-slider {
+  padding: 50px 0 30px 0 !important;
+  h3 {
+    font-weight: 400;
+  }
+  img {
+    border: 3px solid $color-white;
+    max-width: 100%;
+  }
 }
-.detail-page-content{
-	p{
-		font-size:16px;
-		img{
-			max-width:100%;
-		}
-	}
+
+.detail-page-content {
+  p {
+    font-size: 16px;
+    img {
+      max-width: 100%;
+    }
+  }
 }

@@ -1,8 +1,17 @@
 @import "bootstrap";
 @import "bootstrap-select";
-@import "components/theme/theme";
-@import "components/tools/tools";
 @import "components/_variables";
+@import "components/tools/tools";
+@import "components/theme/theme";
 
-body{font-family: 'Roboto', sans-serif; font-size: 100%; font-weight: 400 !important;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
-.Roboto-c{font-family: 'Roboto Condensed', sans-serif;}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  font-weight: 400 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.Roboto-c {
+  font-family: 'Roboto Condensed', sans-serif;
+}
