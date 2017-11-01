@@ -3,6 +3,8 @@
   "devDependencies": {
     "@symfony/webpack-encore": "^0.16.0",
     "autoprefixer": "^7.1.6",
+    "bootstrap-sass": "^3.3.7",
+    "bootstrap-select": "^1.12.4",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6"
@@ -20,5 +22,8 @@
     "lg-zoom": "^1.1.0",
     "lightgallery": "^1.6.4"
   },
-  "browserslist": [ "last 4 versions", "> 0.5%" ]
+  "browserslist": [
+    "last 4 versions",
+    "> 0.5%"
+  ]
 }

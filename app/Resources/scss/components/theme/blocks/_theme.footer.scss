@@ -42,13 +42,9 @@
         color: $hbcp-blue;
         font-size: 14px;
       }
-    }
-    li::last-child {
-      position: relative;
-      margin-right: 5px;
-      padding-right: 15px;
-      vertical-align: bottom;
-
+      &:last-child {
+        margin-right: 20px;
+      }
     }
   }
   .bottom-footer {

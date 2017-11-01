@@ -50,3 +50,89 @@ $font-size_base: 16px;
     color: $white;
   }
 }
+
+@mixin hbcp-jumbotron {
+  display: table;
+  width: 100%;
+  background: 100% 50% no-repeat;
+  background-size: cover;
+  color: $white;
+  border-radius: 0;
+  min-height: 320px;
+  margin-bottom: 0;
+
+  .jumbotron-valign {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .jumbotron-header {
+    display: table;
+    position: relative;
+    > span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+
+  .jumbotron-header,
+  .jumbotron-info {
+    padding-right: 540px;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 30px;
+  }
+
+  p {
+    color: $pale-blue;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  .jumbotron-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    width: 123px;
+    height: auto;
+    margin-top: -62px;
+  }
+
+  @media (max-width: $screen-md-min) {
+    min-height: 0;
+    padding: 0;
+    background: linear-gradient(-14deg, $hbcp-blue, $btn-shadow);
+
+    .jumbotron-info {
+      background: $btn-shadow;
+      margin: 0;
+      padding: 30px 25px;
+    }
+    .jumbotron-header {
+      padding-left: 25px;
+      padding-right: 213px;
+      min-height: 163px;
+      margin: 20px 0;
+    }
+    h2 {
+      font-size: 28px;
+    }
+  }
+  @media (max-width: $screen-sm-min) {
+    .jumbotron-icon {
+      width: 83px;
+      margin-top: -41px;
+    }
+    .jumbotron-header {
+      font-size: 18px;
+      padding-right: 133px;
+      min-height: 83px;
+    }
+    .jumbotron-info {
+      font-size: 14px;
+    }
+  }
+}

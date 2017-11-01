@@ -4,7 +4,7 @@
 
 .slider-2 {
   @extend .slider;
-  background-image: url(../images/bg-bs-header.png) !important;
+  background-image: url(/bundles/app/images/bg-bs-header.png) !important;
   background-position: 100%;
   background-size: cover;
 
@@ -56,7 +56,7 @@
 
   }
   .explain-button {
-    background: url(../images/bs-explainbg.svg);
+    background: url(/bundles/app/images/bs-explainbg.svg);
     background-repeat: no-repeat;
     background-position: center;
     padding: 46px;
@@ -122,7 +122,7 @@
   position: relative;
   &:before {
     content: "";
-    background-image: url(../images/bs-arrow.svg);
+    background-image: url(/bundles/app/images/bs-arrow.svg);
     position: absolute;
     background-size: cover;
     width: 38px;

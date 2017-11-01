@@ -1,13 +1,16 @@
 @import "components/_variables";
-@import "bootstrap";
-@import "bootstrap-select";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~bootstrap-select/sass/bootstrap-select";
 @import "components/tools/tools";
 @import "components/theme/theme";
+
+body, html {
+  min-width: 320px;
+}
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;
-  font-weight: 400 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: $gray;
@@ -20,6 +23,10 @@ body {
 .container-website {
   max-width: 1500px;
   padding: 0;
+  border: 1px solid $gray-lighter;
+  border-top: 0;
+  border-bottom: 0;
+  overflow: hidden;
 
   .container-fluid {
     max-width: 1280px;
@@ -47,43 +54,7 @@ body {
   }
   h2 {
     color: $blue;
-  }
-
-  &.block-3 {
-    .bg-icon {
-      &:before {
-        /*    content: url(images/homeicon-team.svg);*/
-        left: 0;
-        top: 0;
-        position: relative;
-        transform: scale(5);
-      }
-
-    }
-    .custom-block.bg-icon-2 {
-      position: relative;
-      &:after {
-        background: url(/bundles/app/images/homeicon-newsbg.svg);
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        /* background-color: white; */
-        content: "";
-        position: absolute;
-        padding: 30%;
-        right: -66%;
-        bottom: -22%;
-        display: inline-block;
-        /* padding: 167px; */
-      }
-    }
-    .custom-block {
-      max-width: 600px;
-      width: 100%;
-      margin: auto;
-      h2 {
-        color: $blue;
-      }
-    }
+    font-weight: normal;
   }
   img {
     max-width: 100%;

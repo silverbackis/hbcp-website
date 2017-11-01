@@ -1,6 +1,6 @@
 .slider-4 {
 
-  background-image: url(../images/bg-team-header.png) !important;
+  background-image: url(/bundles/app/images/bg-team-header.png) !important;
   background-position: 100%;
   background-size: cover;
 }
@@ -33,7 +33,7 @@
       margin-bottom: 20px;
       &:before {
         content: "";
-        background: url(../images/team-website.svg);
+        background: url(/bundles/app/images/team-website.svg);
         background-size: 100% 100%;
         background-size: 100% 100%;
         padding: 7px;

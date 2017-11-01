@@ -1,32 +1,10 @@
-.mar-0 {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
-.float {
-  float: left;
-  width: 100%;
-}
-
-.slider {
-  background-image: url(../images/bg-home-header.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 100px 0;
-  color: $white;
-  h2 {
-    margin-top: 0
-  }
-  p {
-    padding-right: 100px;
-    font-weight: 300;
-    font-size: 16px;
-    margin-top: 20px;
-  }
-  .pad-0 {
-    padding-left: 4%;
-  }
+.container-fluid .jumbotron {
+  @include hbcp-jumbotron;
+  background-image: url(/bundles/app/images/bg-home-header.png);
 }
 
 .logo-bar {
@@ -37,13 +15,100 @@
   }
 }
 
+.block-feature {
+  p {
+    margin-left: 0;
+  }
+  &.light {
+    background: $gray-lighter;
+  }
+}
+
+.block-bottom {
+  overflow: hidden;
+  .custom-block {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+    &.team:before,
+    &.news:before {
+      content: "";
+      position: absolute;
+    }
+    &.team:before {
+      right: 100%;
+      margin-right: -180px;
+      top: -220px;
+      background: url(/bundles/app/images/homeicon-teambg.svg) 0 0 no-repeat;
+      background-size: 100% auto;
+      width: 582px;
+      height: 582px;
+      @media (max-width: $screen-xs-max) {
+        right: auto;
+        left: 0;
+        top: -100px;
+        width: 291px;
+        height: 291px;
+      }
+    }
+    &.news:before {
+      left: 100%;
+      top: 70px;
+      background: url(/bundles/app/images/homeicon-newsbg.svg) 0 0 no-repeat;
+      background-size: 100% auto;
+      width: 718px;
+      height: 608px;
+      margin-left: -200px;
+      @media (max-width: $screen-xs-max) {
+        top: 130px;
+        width: 359px;
+        height: 304px;
+      }
+    }
+  }
+
+}
+
+.block-3 {
+  .bg-icon {
+    &:before {
+      /*    content: url(images/homeicon-team.svg);*/
+      left: 0;
+      top: 0;
+      position: relative;
+      transform: scale(5);
+    }
+
+  }
+  .custom-block.bg-icon-2 {
+    position: relative;
+    &:after {
+      background: url(/bundles/app/images/homeicon-newsbg.svg);
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      /* background-color: white; */
+      content: "";
+      position: absolute;
+      padding: 30%;
+      right: -66%;
+      bottom: -22%;
+      display: inline-block;
+      /* padding: 167px; */
+    }
+  }
+
+}
+
 .bg-img {
-  background: url(../images/homeicon-team-bg.png);
+  background: url(/bundles/app/images/homeicon-team-bg.png);
   background-size: 30%;
   background-repeat: no-repeat;
   background-color: white;
   overflow: hidden;
 }
+
+
 
 @media (max-width: 1280px) {
   .slider {
@@ -62,6 +127,7 @@
   }
 }
 
+/*
 @media(max-width: 1200px) {
   .slider {
     padding: 50px 50px;
@@ -211,3 +277,4 @@
     }
   }
 }
+*/

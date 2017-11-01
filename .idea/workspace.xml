@@ -5,126 +5,80 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Behaviour_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Behaviour_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Context_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Context_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Exposure_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Exposure_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Intervention_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Intervention_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Outcome_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/Outcome_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/_Final layout.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/arrow-back-white.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/artcle.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/behaviour-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/behaviour.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-allresources-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-bs-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-contact-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-cs-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-home-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-news-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-sa-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bg-team-header.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bs-arrow.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bs-diagramdetailed.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bs-explainbg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bs-quote-left.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bs-quote-right.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/bsicon-info.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-email.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-linkedin.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-mailinglist.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-openscience.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-researchgate.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contact-twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contacticn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/contacticon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/context-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/context.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/debug.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-behaviour-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-behaviour-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-context-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-context-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-exposure-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-exposure-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-intervention-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-intervention-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-mechanisms-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-mechanisms-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-outcome-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/diagram-outcome-icon.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/download-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/dropbox.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/exposure.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/expourse-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/expourse.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/fb.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/footer-twitter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/home-sponsors.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homegraphic-bc.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homegraphic-bc.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homegraphic-cs.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homegraphic-sa.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-news.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-newsbg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-team-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-team-bg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-team.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-team.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/homeicon-teambg.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/i-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/icon-field-dropdown.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/icon-field-filter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/icon-showless.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/icon-showmore.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/in.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/interv-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/interv.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/left-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/li.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/logo.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/machine-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/machine.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mail.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mechanisms_off.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mechanisms_on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mob-arrow-filter.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mob-bs-enlarge.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mob-home.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mob-menu-on.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/mob-menu.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-article.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-default.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/news-white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/outcome-hover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/outcome.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/resource-download.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/resource-dropbox.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/rg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/right-arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/sci-frame.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/shadow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/share-fb.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/share-in.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/share-tw.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/team-john.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/team-marie.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/team-pol.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/team-susan.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/team-website.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/triangle-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/tw.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/twitter.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/images/white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/_Final layout.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap-select.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_badges.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_breadcrumbs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_button-groups.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_carousel.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_close.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_code.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_component-animations.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_dropdowns.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_glyphicons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_input-groups.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_jumbotron.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_media.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_modals.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_navbar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_navs.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_normalize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_pager.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_popovers.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_print.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_progress-bars.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_responsive-embed.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_responsive-utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_scaffolding.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_tables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_theme.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_thumbnails.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_tooltip.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_type.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_utilities.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_wells.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_alerts.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_background-variant.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_border-radius.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_buttons.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_center-block.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_clearfix.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_forms.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_gradients.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_grid-framework.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_grid.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_hide-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_image.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_labels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_list-group.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_nav-divider.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_nav-vertical-align.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_opacity.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_pagination.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_panels.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_progress-bar.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_reset-filter.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_reset-text.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_resize.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_responsive-visibility.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_size.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_tab-focus.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_table-row.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_text-emphasis.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_text-overflow.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/mixins/_vendor-prefixes.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/default/index.html.twig" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.01798bc1.ttf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.71394c0c.eot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.b38ef310.woff" afterPath="" />
@@ -175,7 +129,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.2c454669.eot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.a1ecc3b8.woff" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.e23a7dca.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.a996322d2ad7211ab1e9d30215c556a2.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.3952aa0677050194f1efd5ec44c5020e.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Pe-icon-7-stroke.c45f7de0.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Simple-Line-Icons4c82.00ce23ca.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/arrow-back-white.170cc322.svg" afterPath="" />
@@ -183,7 +137,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-bs-header.01a6cb4e.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-contact-header.73bb6bb9.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-cs-header.c55c4375.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-footer.721481e7.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-home-header.bff9221f.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-news-header.64276df3.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bg-sa-header.906b1721.png" afterPath="" />
@@ -194,7 +147,6 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/bs-quote-right.2e373512.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/fontawesome-webfont.912ec66d.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/glyphicons-halflings-regular.89889688.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/homeicon-newsbg.9920e58a.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/homeicon-team-bg.715b3c7d.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/icon-field-dropdown.df4b97be.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/icon-field-filter.115b8f7b.svg" afterPath="" />
@@ -220,28 +172,42 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/video-play.dc34cc9c.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/vimeo-play.dfe7764b.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/youtube-play.e6f0c233.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.fda48e3debea04d3be5d4a24622d9ff7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/home.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_scaffolding.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_scaffolding.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.footer.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.footer.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-2.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-2.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-3.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-3.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Computer-science.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Computer-science.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.all-resources.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.all-resources.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact-us.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact-us.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.detail-page.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.detail-page.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.grant-holders-and-project-team.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.grant-holders-and-project-team.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.latest-news.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.latest-news.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news-article.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news-article.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/custom.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/custom.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.sa.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.sa.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/global.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/global.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/home.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/home.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/allresources.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/allresources.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourdiagram.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourdiagram.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourscience.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourscience.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/computerscience.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/computerscience.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/latestnews.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/latestnews.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/singlenews.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/singlenews.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/singleresource.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/singleresource.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/systemarchitect.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/systemarchitect.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/team.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/team.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/manifest.json" afterPath="$PROJECT_DIR$/web/build/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/vendors/frontend/js/custom.js" afterPath="$PROJECT_DIR$/web/vendors/frontend/js/custom.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -263,41 +229,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="_variables.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_theme.footer.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.footer.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_theme.header.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_theme.home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+            <state relative-caret-position="84">
+              <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -306,21 +252,72 @@
       <file leaf-file-name="global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+            <state relative-caret-position="1197">
+              <caret line="57" column="3" lean-forward="false" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/home.html.twig">
+      <file leaf-file-name="_theme.header.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="75" column="61" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="61" />
+            <state relative-caret-position="387">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme.home.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="74" selection-end-column="67" />
               <folding>
-                <element signature="e#4250#4256#0#HTML" expanded="true" />
+                <element signature="e#12#28#0#Twig" expanded="true" />
+                <element signature="e#185#209#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_hero.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="layout.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/vendors/frontend/js/custom.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="252">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -329,14 +326,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>3f93da</find>
-      <find>6b6b6b</find>
-      <find>0f78d1</find>
-      <find>4A4A4A</find>
-      <find>9B9B9B</find>
-      <find>$font-size-base</find>
-      <find>font-size</find>
-      <find>.in</find>
       <find>72px</find>
       <find>contact</find>
       <find>line-h</find>
@@ -344,7 +333,6 @@
       <find>01459B</find>
       <find>$btn-bg</find>
       <find>$color-blue</find>
-      <find>0F78D1</find>
       <find>9b9b9b</find>
       <find>$border-bottom-color</find>
       <find>$color-white</find>
@@ -358,7 +346,16 @@
       <find>$light-grey</find>
       <find>$grey</find>
       <find>gr</find>
+      <find>../images/</find>
       <find>A7D0FF</find>
+      <find>float</find>
+      <find>mar-0</find>
+      <find>grad</find>
+      <find>navbar-to</find>
+      <find>blue</find>
+      <find>navbar-togg</find>
+      <find>spacer</find>
+      <find>0F78D1</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -370,6 +367,7 @@
       <replace>$pill-tag</replace>
       <replace>$gray-lighter</replace>
       <replace>$gray</replace>
+      <replace>/bundles/app/images/</replace>
     </replaceStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/web/vendors</dir>
@@ -380,9 +378,9 @@
       <dir>$PROJECT_DIR$/app</dir>
       <dir>$PROJECT_DIR$/src</dir>
       <dir>$PROJECT_DIR$</dir>
-      <dir>$PROJECT_DIR$/app/Resources/scss</dir>
       <dir>$PROJECT_DIR$/app/Resources/scss/components/theme</dir>
       <dir>$PROJECT_DIR$/app/Resources/scss/components</dir>
+      <dir>$PROJECT_DIR$/app/Resources/scss</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -391,12 +389,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/CategoryFixtures.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Form/CreateCategoryType.php" />
-        <option value="$PROJECT_DIR$/web/dist/css/style.css" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/web/dist/css/lightgallery.css" />
-        <option value="$PROJECT_DIR$/app/Resources/views/admin/category/createcat.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/news/createnews.html.twig" />
@@ -431,17 +423,23 @@
         <option value="$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Controller/ExceptionController.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/web/app.php" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/app/Resources/scss/custom.scss" />
         <option value="$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss" />
         <option value="$PROJECT_DIR$/app/Resources/scss/bootstrap/_scaffolding.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/global.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" />
         <option value="$PROJECT_DIR$/app/Resources/views/home.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.footer.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-2.scss" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss" />
+        <option value="$PROJECT_DIR$/web/vendors/frontend/js/custom.js" />
+        <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/global.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
       </list>
     </option>
   </component>
@@ -576,7 +574,7 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="default" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
@@ -588,35 +586,17 @@
               <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
               <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="dist" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -674,12 +654,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
-      <workItem from="1509530370280" duration="11092000" />
+      <workItem from="1509530370280" duration="17483000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59692000" />
+    <option name="totallyTimeSpent" value="66083000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="923" y="421" width="1804" height="1189" extended-state="0" />
@@ -693,7 +673,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31809872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31809872" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -717,56 +697,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/kriswallsmith/buzz/lib/Buzz/Message/AbstractMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kriswallsmith/buzz/lib/Buzz/Message/Response.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/RequestHandlerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Form/FormConfigInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4200">
-          <caret line="208" column="33" lean-forward="false" selection-start-line="208" selection-start-column="33" selection-end-line="208" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Validator/Constraints/Resource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="38" lean-forward="false" selection-start-line="16" selection-start-column="38" selection-end-line="16" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/kriswallsmith/buzz/lib/Buzz/Browser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="42" column="24" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/services.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="881">
@@ -970,22 +900,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="8" lean-forward="false" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="91">
@@ -1026,34 +940,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1071">
-          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/scss/bootstrap/_scaffolding.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="26" column="33" lean-forward="false" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/bootstrap.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1063,52 +953,149 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/global.scss">
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science-2.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" lean-forward="false" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+        <state relative-caret-position="609">
+          <caret line="29" column="19" lean-forward="true" selection-start-line="29" selection-start-column="19" selection-end-line="29" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/_variables.scss">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="27" column="30" lean-forward="false" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/home.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="75" column="61" lean-forward="false" selection-start-line="75" selection-start-column="50" selection-end-line="75" selection-end-column="61" />
-          <folding>
-            <element signature="e#4250#4256#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        <state relative-caret-position="357">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="65" column="20" lean-forward="true" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="23" lean-forward="false" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/bootstrap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/bootstrap/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="819">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@symfony/webpack-encore/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="399" column="20" lean-forward="true" selection-start-line="399" selection-start-column="20" selection-end-line="399" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/vendors/frontend/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="36" lean-forward="false" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="73" column="28" lean-forward="false" selection-start-line="73" selection-start-column="28" selection-end-line="74" selection-end-column="67" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+            <element signature="e#185#209#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1197">
+          <caret line="57" column="3" lean-forward="false" selection-start-line="57" selection-start-column="3" selection-end-line="57" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/app/images/homeicon-teambg.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="65" column="22" lean-forward="false" selection-start-line="65" selection-start-column="22" selection-end-line="65" selection-end-column="22" />
           <folding />
         </state>
       </provider>
