@@ -18,9 +18,22 @@
 .block-feature {
   p {
     margin-left: 0;
+    margin-right: 0;
   }
   &.light {
     background: $gray-lighter;
+  }
+  @media (max-width: $screen-sm-min) {
+    text-align: center;
+    img {
+      width: 100%;
+      max-width: 220px;
+    }
+  }
+  @media (max-width: $screen-xs-min) {
+    img {
+      max-width: 160px;
+    }
   }
 }
 

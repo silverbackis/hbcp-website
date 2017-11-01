@@ -55,7 +55,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.2c454669.eot" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.a1ecc3b8.woff" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.e23a7dca.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.cc60d7dd6a1647fce45d751582b72a78.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.a4384dfabbe24b9b291a77dd0cb7e8b7.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/home.f117d7a258e8f54f7fdaeb6fe5f6b0be.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Pe-icon-7-stroke.c45f7de0.svg" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Simple-Line-Icons4c82.00ce23ca.svg" afterPath="" />
@@ -78,7 +78,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/youtube-play.e6f0c233.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/global.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/global.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/manifest.json" afterPath="$PROJECT_DIR$/web/build/manifest.json" />
     </list>
@@ -125,28 +125,28 @@
       <file leaf-file-name="global.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/global.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="742">
-              <caret line="37" column="3" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+            <state relative-caret-position="623">
+              <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_theme.header.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_theme.header.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+            <state relative-caret-position="419">
+              <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_theme.home.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_theme.home.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1092">
-              <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+            <state relative-caret-position="300">
+              <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -227,8 +227,8 @@
       <find>blue</find>
       <find>navbar-togg</find>
       <find>spacer</find>
-      <find>0F78D1</find>
       <find>box-sh</find>
+      <find>0F78D1</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -310,9 +310,9 @@
         <option value="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/global.scss" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/global.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
       </list>
     </option>
   </component>
@@ -527,12 +527,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
-      <workItem from="1509530370280" duration="17708000" />
+      <workItem from="1509530370280" duration="18316000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66308000" />
+    <option name="totallyTimeSpent" value="66916000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="923" y="421" width="1804" height="1189" extended-state="0" />
@@ -933,14 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/app/images/homeicon-teambg.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -949,26 +941,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1092">
-          <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
+        <state relative-caret-position="419">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/scss/global.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="37" column="3" lean-forward="false" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
+        <state relative-caret-position="623">
+          <caret line="63" column="22" lean-forward="false" selection-start-line="63" selection-start-column="22" selection-end-line="63" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/blocks/_theme.header.scss">
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="300">
+          <caret line="20" column="20" lean-forward="false" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
           <folding />
         </state>
       </provider>
