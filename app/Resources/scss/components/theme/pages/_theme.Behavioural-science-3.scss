@@ -31,7 +31,7 @@
   }
   h3 {
 
-    color: $color-blue;
+    color: $blue;
     margin-top: 0;
   }
 }
@@ -63,11 +63,11 @@
     }
     li.active {
 
-      border-bottom: 3px solid $color-blue;
+      border-bottom: 3px solid $blue;
 
       a {
         border: none;
-        color: $color-blue;
+        color: $blue;
       }
     }
   }
@@ -79,17 +79,17 @@
     border-top: none;
   }
   .light {
-    background: $grey-bg-color;
+    background: $gray-bg-color;
   }
   .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border: none;
     &:nth-child(even) {
-      background: $color-white !important;
+      background: $white !important;
     }
   }
   .panel-default > .panel-heading {
     color: $light-black;
-    background-color: $color-white;
+    background-color: $white;
     border-color: $border-panel-color;
     border: none;
     text-align: left;
@@ -100,7 +100,7 @@
     }
   }
   .panel-title {
-    color: $color-blue !important;
+    color: $blue !important;
     font-size: 22px;
     a {
       text-decoration: none;
@@ -113,14 +113,14 @@
     line-height: 28px;
     margin: 24px 0 10px;
     span {
-      color: $color-blue;
+      color: $blue;
       margin: 0 10px;
     }
   }
   .btn-download {
     float: right;
     a {
-      color: $color-blue;
+      color: $blue;
       text-decoration: none;
       padding: 5px 5px;
       width: 107px;
@@ -128,7 +128,7 @@
       background: white;
       margin-top: 18px;
       display: inline-block;
-      border: 1px solid $color-blue;
+      border: 1px solid $blue;
       border-radius: 51px;
       font-size: 16px;
     }

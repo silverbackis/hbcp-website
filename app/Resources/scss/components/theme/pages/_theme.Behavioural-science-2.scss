@@ -8,7 +8,7 @@
       font-weight: 400;
       font-size: 18px;
       margin-top: 90px;
-      color: $color-blue;
+      color: $blue;
       line-height: 25px;
 
       margin-bottom: 50px;
@@ -40,7 +40,7 @@
       margin-top: 0;
       max-width: 266px;
       margin: 0 auto;
-      color: $color-blue;
+      color: $blue;
       line-height: 25px;
       margin-bottom: 20px;
     }
@@ -48,7 +48,7 @@
   .diagram-visaul {
     .res-btn {
       background-color: $res-btn-color;
-      color: $color-white;
+      color: $white;
       padding: 10px 20px;
       position: relative;
       border: none;
@@ -79,11 +79,11 @@
 }
 
 .about-diagram {
-  background: $light-grey;
+  background: $gray-lighter;
   border-top: 1px solid $border-color;
   padding: 50px 0;
   h3, h2 {
-    color: $color-blue;
+    color: $blue;
   }
   p {
     font-size: 13px;
@@ -103,13 +103,13 @@
       margin-top: 0;
       max-width: 266px;
       margin: 0 auto;
-      color: $color-blue;
+      color: $blue;
       line-height: 25px;
       margin-bottom: 20px;
     }
     .btn {
       background-color: $res-btn-color;
-      color: $color-white;
+      color: $white;
       padding: 10px 20px;
       position: relative;
       border: none;

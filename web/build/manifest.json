@@ -49,7 +49,7 @@
   "build/fonts/themify.eot": "/build/fonts/themify.2c454669.eot",
   "build/fonts/themify.ttf": "/build/fonts/themify.e23a7dca.ttf",
   "build/fonts/themify.woff": "/build/fonts/themify.a1ecc3b8.woff",
-  "build/global.css": "/build/global.a996322d2ad7211ab1e9d30215c556a2.css",
+  "build/global.css": "/build/global.3952aa0677050194f1efd5ec44c5020e.css",
   "build/images/Pe-icon-7-stroke.svg?d7yf1v": "/build/images/Pe-icon-7-stroke.c45f7de0.svg",
   "build/images/Simple-Line-Icons4c82.svg?-i3a2kk": "/build/images/Simple-Line-Icons4c82.00ce23ca.svg",
   "build/images/arrow-back-white.svg": "/build/images/arrow-back-white.170cc322.svg",
@@ -57,7 +57,6 @@
   "build/images/bg-bs-header.png": "/build/images/bg-bs-header.01a6cb4e.png",
   "build/images/bg-contact-header.png": "/build/images/bg-contact-header.73bb6bb9.png",
   "build/images/bg-cs-header.png": "/build/images/bg-cs-header.c55c4375.png",
-  "build/images/bg-footer.png": "/build/images/bg-footer.721481e7.png",
   "build/images/bg-home-header.png": "/build/images/bg-home-header.bff9221f.png",
   "build/images/bg-news-header.png": "/build/images/bg-news-header.64276df3.png",
   "build/images/bg-sa-header.png": "/build/images/bg-sa-header.906b1721.png",
@@ -68,7 +67,6 @@
   "build/images/bs-quote-right.svg": "/build/images/bs-quote-right.2e373512.svg",
   "build/images/fontawesome-webfont.svg": "/build/images/fontawesome-webfont.912ec66d.svg",
   "build/images/glyphicons-halflings-regular.svg": "/build/images/glyphicons-halflings-regular.89889688.svg",
-  "build/images/homeicon-newsbg.svg": "/build/images/homeicon-newsbg.9920e58a.svg",
   "build/images/homeicon-team-bg.png": "/build/images/homeicon-team-bg.715b3c7d.png",
   "build/images/icon-field-dropdown.svg": "/build/images/icon-field-dropdown.df4b97be.svg",
   "build/images/icon-field-filter.svg": "/build/images/icon-field-filter.115b8f7b.svg",
@@ -94,5 +92,5 @@
   "build/images/video-play.png": "/build/images/video-play.dc34cc9c.png",
   "build/images/vimeo-play.png": "/build/images/vimeo-play.dfe7764b.png",
   "build/images/youtube-play.png": "/build/images/youtube-play.e6f0c233.png",
-  "build/style.css": "/build/style.fda48e3debea04d3be5d4a24622d9ff7.css"
+  "build/style.css": "/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css"
 }

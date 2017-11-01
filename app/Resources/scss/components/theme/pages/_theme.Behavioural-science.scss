@@ -15,7 +15,7 @@
 }
 
 .panel-body:nth-child(even) {
-  background: $color-white !important;
+  background: $white !important;
 }
 
 .overlay-inline {
@@ -26,8 +26,8 @@
   padding: 60px 0 20px;
 
   .btn {
-    background-color: $btn-bg;
-    color: $color-white;
+    background-color: $hbcp-blue;
+    color: $white;
     padding: 10px 20px;
     position: relative;
     border: none;
@@ -68,15 +68,15 @@
       margin-top: 0;
       max-width: 266px;
       margin: 0 auto;
-      color: $color-blue;
+      color: $blue;
       line-height: 25px;
       margin-bottom: 20px;
     }
   }
   .diagram-visaul {
     .res-btn {
-      background-color: $btn-bg;
-      color: $color-white;
+      background-color: $hbcp-blue;
+      color: $white;
       padding: 10px 20px;
       position: relative;
       border: none;
@@ -115,7 +115,7 @@
   font-weight: 400;
   font-size: 18px;
   margin-top: 90px;
-  color: $color-blue;
+  color: $blue;
   line-height: 25px;
 
   margin-bottom: 50px;

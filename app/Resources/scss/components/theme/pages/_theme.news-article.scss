@@ -5,9 +5,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 50px 0 80px 0;
-  color: $color-white;
+  color: $white;
   a {
-    color: $color-white;
+    color: $white;
     text-decoration: none;
     font-size: 14px;
     margin-left: 20px;
@@ -56,8 +56,8 @@
     }
   }
   .download-btn {
-    background-color: $btn-bg;
-    color: $color-white;
+    background-color: $hbcp-blue;
+    color: $white;
     display: block;
     max-width: 420px;
     margin-top: 20px;
@@ -110,7 +110,7 @@
 
   }
   .drop-sub-heading {
-    color: $border-bottom-color;
+    color: $gray-light;
     text-align: left;
     font-size: 14px;
   }
@@ -126,15 +126,15 @@
       border: 1px solid $border-color;
       border-radius: 10px 0 0 10px;
       padding: 0 20px;
-      background: $color-white;
-      color: $border-bottom-color;
+      background: $white;
+      color: $gray-light;
       font-size: 13px;
       border-right: none;
     }
     .copy-btn {
       background: none;
       height: 35px;
-      color: $color-blue;
+      color: $blue;
       border-radius: 0 14px 014px 0;
       padding: 0 20px;
       border: 1px solid $border-color;
@@ -143,12 +143,12 @@
     }
   }
   h2 {
-    color: $color-blue;
+    color: $blue;
     font-size: 24px;
   }
   p {
     font-size: 20px;
-    color: $color-blue;
+    color: $blue;
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -180,8 +180,8 @@
   padding: 40px 0;
   text-align: center;
   a {
-    background-color: $btn-bg;
-    color: $color-white !important;
+    background-color: $hbcp-blue;
+    color: $white !important;
     padding: 10px 20px;
     position: relative;
     border: none;
@@ -200,7 +200,7 @@
       top: 7px;
     }
     &:focus {
-      color: $color-white !important;
+      color: $white !important;
     }
     &:hover {
       background: $btn-hover;

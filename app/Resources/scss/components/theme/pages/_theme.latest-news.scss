@@ -8,7 +8,7 @@
 .latest-news-section {
   padding: 30px 0 55px;
   &:nth-child(odd) {
-    background: $color-white;
+    background: $white;
   }
   .news-img {
     text-align: center;
@@ -22,12 +22,12 @@
   }
   .news-detail {
     h2 {
-      color: $color-blue;
+      color: $blue;
       font-size: 24px;
     }
     p.sub-heading {
       font-size: 20px;
-      color: $color-blue;
+      color: $blue;
     }
 
     p {
@@ -37,7 +37,7 @@
     }
     .read-more {
       font-size: 14px;
-      color: $color-blue;
+      color: $blue;
     }
   }
 }

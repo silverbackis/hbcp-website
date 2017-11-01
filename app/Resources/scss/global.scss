@@ -1,6 +1,6 @@
+@import "components/_variables";
 @import "bootstrap";
 @import "bootstrap-select";
-@import "components/_variables";
 @import "components/tools/tools";
 @import "components/theme/theme";
 
@@ -10,8 +10,82 @@ body {
   font-weight: 400 !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: $gray;
 }
 
 .Roboto-c {
   font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-website {
+  max-width: 1500px;
+  padding: 0;
+
+  .container-fluid {
+    max-width: 1280px;
+  }
+}
+
+.block {
+  padding: 50px 0;
+  border-bottom: 1px solid $border-color;
+  .container {
+    max-width: 900px;
+  }
+  .spacer {
+    height: 60px;
+    float: left;
+    width: 100%
+  }
+  p {
+    font-size: 16px;
+    margin: 20px 15px;
+  }
+  .btn {
+    @include hbcp-button;
+    min-width: 250px;
+  }
+  h2 {
+    color: $blue;
+  }
+
+  &.block-3 {
+    .bg-icon {
+      &:before {
+        /*    content: url(images/homeicon-team.svg);*/
+        left: 0;
+        top: 0;
+        position: relative;
+        transform: scale(5);
+      }
+
+    }
+    .custom-block.bg-icon-2 {
+      position: relative;
+      &:after {
+        background: url(/bundles/app/images/homeicon-newsbg.svg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        /* background-color: white; */
+        content: "";
+        position: absolute;
+        padding: 30%;
+        right: -66%;
+        bottom: -22%;
+        display: inline-block;
+        /* padding: 167px; */
+      }
+    }
+    .custom-block {
+      max-width: 600px;
+      width: 100%;
+      margin: auto;
+      h2 {
+        color: $blue;
+      }
+    }
+  }
+  img {
+    max-width: 100%;
+  }
 }

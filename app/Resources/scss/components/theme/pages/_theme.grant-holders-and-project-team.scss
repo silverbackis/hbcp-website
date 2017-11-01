@@ -19,16 +19,16 @@
   }
   .member-detail {
     h2 {
-      color: $color-blue;
+      color: $blue;
       font-size: 24px;
     }
     p.sub-heading {
       font-size: 20px;
-      color: $color-blue;
+      color: $blue;
     }
     span {
       font-size: 12px;
-      color: $border-bottom-color;
+      color: $gray-light;
       display: inline-block;
       margin-bottom: 20px;
       &:before {
@@ -52,7 +52,7 @@
     }
     .read-more {
       font-size: 14px;
-      color: $color-blue;
+      color: $blue;
       background: none;
       border: none;
       &:hover {

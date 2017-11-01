@@ -7,7 +7,7 @@
 }
 
 span.filter-option.pull-left {
-  color: $color-blue !important;
+  color: $blue !important;
 }
 
 .cs-section {
@@ -22,7 +22,7 @@ span.filter-option.pull-left {
     padding: 0 0 35px 0;
   }
   .cs-tab {
-    border-bottom: 1px solid $border-bottom-color !important;
+    border-bottom: 1px solid $gray-light !important;
     padding: 30px 0;
     li {
       border: none;
@@ -34,7 +34,7 @@ span.filter-option.pull-left {
         font-size: 20px;
         border: none !important;
         padding: 8px 20px !important;
-        color: $border-bottom-color;
+        color: $gray-light;
         &:hover {
 
           background: none;
@@ -43,11 +43,11 @@ span.filter-option.pull-left {
     }
     li.active {
 
-      border-bottom: 2px solid $color-blue;
+      border-bottom: 2px solid $blue;
 
       a {
         border: none;
-        color: $color-blue;
+        color: $blue;
       }
     }
   }
@@ -60,7 +60,7 @@ span.filter-option.pull-left {
       }
     }
     .dropdown {
-      border-bottom: 1px solid $border-bottom-color;
+      border-bottom: 1px solid $gray-light;
       margin: 0;
       padding: 0;
 
@@ -68,7 +68,7 @@ span.filter-option.pull-left {
       button {
         background: transparent;
         border: none;
-        color: $color-blue;
+        color: $blue;
         font-size: 16px;
         text-align: left;
         padding: 30px 15px;
@@ -98,15 +98,15 @@ span.filter-option.pull-left {
       text-align: left;
       .pad-35 {
         padding: 30px 0 35px;
-        background: $grey-bg-color;
-        border-bottom: 1px solid $border-bottom-color;
+        background: $gray-bg-color;
+        border-bottom: 1px solid $gray-light;
       }
       .t-center {
         text-align: center;
       }
       span {
         font-size: 13px;
-        color: $border-bottom-color;
+        color: $gray-light;
       }
       .select-box {
         display: inline-block;
@@ -138,25 +138,25 @@ span.filter-option.pull-left {
           text-align: left;
           padding: 8px 10px;
           display: block;
-          border-color: $border-bottom-color;
+          border-color: $gray-light;
           border-radius: 10px;
           width: 174px;
           font-size: 14px;
-          color: $color-blue;
+          color: $blue;
           &:focus {
             -webkit-appearance: none;
           }
         }
         .btn-info {
           background: none;
-          color: $color-blue;
-          border: 1px solid $border-bottom-color;
+          color: $blue;
+          border: 1px solid $gray-light;
           background: none;
-          color: $color-blue;
+          color: $blue;
           height: 40px;
           border-radius: 10px;
-          background: $color-white;
-          border: 1px solid $border-bottom-color;
+          background: $white;
+          border: 1px solid $gray-light;
         }
       }
 
@@ -174,14 +174,14 @@ span.filter-option.pull-left {
         }
         .btn-info {
           background: none !important;
-          color: $color-blue;
-          border: 1px solid $border-bottom-color !important;
+          color: $blue;
+          border: 1px solid $gray-light !important;
           background: none;
-          color: $color-blue;
+          color: $blue;
           height: 40px;
           border-radius: 10px;
-          background: $color-white;
-          border: 1px solid $border-bottom-color;
+          background: $white;
+          border: 1px solid $gray-light;
         }
       }
     }
@@ -197,12 +197,12 @@ span.filter-option.pull-left {
   border-top: none;
   text-align: center;
   &:nth-child(even) {
-    background-color: $grey-bg-color !important;
+    background-color: $gray-bg-color !important;
   }
 }
 
 .light {
-  background: $grey-bg-color;
+  background: $gray-bg-color;
 }
 
 .panel-default > .panel-heading + .panel-collapse > .panel-body {
@@ -211,7 +211,7 @@ span.filter-option.pull-left {
 
 .panel-default > .panel-heading {
   color: $light-black;
-  background-color: $color-white;
+  background-color: $white;
   border-color: $border-panel-color;
   border: none;
   text-align: left;
@@ -220,7 +220,7 @@ span.filter-option.pull-left {
 }
 
 .panel-title {
-  color: $color-blue !important;
+  color: $blue !important;
   font-size: 22px;
   a {
     text-decoration: none;
@@ -230,7 +230,7 @@ span.filter-option.pull-left {
 .text-download {
   margin: 24px 0 10px;
   .link-text {
-    color: $color-blue !important;
+    color: $blue !important;
     margin: 0 10px;
     font-size: 12px;
   }
@@ -251,7 +251,7 @@ span.filter-option.pull-left {
   .api-btn {
     display: inline-block;
     text-align: center;
-    background: $api-btn-color;
+    background: $pill-tag;
     font-weight: 500;
     margin-top: 10px;
     height: auto;
@@ -261,7 +261,7 @@ span.filter-option.pull-left {
     pointer-events: none;
     font-size: 14px;
     margin-bottom: 10px;
-    color: $color-blue;
+    color: $blue;
     border-radius: 50px;
     border: 1px solid $border-solid-color;
     padding: 0 15px;
@@ -274,7 +274,7 @@ span.filter-option.pull-left {
   .btn-download {
     float: right;
     a {
-      color: $color-blue;
+      color: $blue;
       text-decoration: none;
       transform: translateY(-16px);
       padding: 5px 5px;
@@ -283,7 +283,7 @@ span.filter-option.pull-left {
       background: white;
       margin-top: 0;
       display: inline-block;
-      border: 1px solid $color-blue;
+      border: 1px solid $blue;
       border-radius: 51px;
       font-size: 16px;
     }
@@ -343,11 +343,11 @@ div.cs-tab {
     padding: 8px 10px;
     display: block;
     max-width: 500px;
-    border-color: $border-bottom-color;
+    border-color: $gray-light;
     border-radius: 10px;
     width: 100%;
     font-size: 14px;
-    color: $color-blue;
+    color: $blue;
     &:focus {
       -webkit-appearance: none;
     }
@@ -357,21 +357,21 @@ div.cs-tab {
   }
   .btn-info {
     background: none;
-    color: $color-blue;
-    border: 1px solid $border-bottom-color;
+    color: $blue;
+    border: 1px solid $gray-light;
     background: none;
-    color: $color-blue;
+    color: $blue;
     height: 40px;
     border-radius: 10px;
-    background: $color-white;
-    border: 1px solid $border-bottom-color;
+    background: $white;
+    border: 1px solid $gray-light;
   }
 }
 
 .d-hd {
   font-size: 13px;
   margin-right: 10px;
-  color: $border-bottom-color;
+  color: $gray-light;
 }
 
 .text-right.inline-div {

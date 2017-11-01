@@ -1,20 +1,33 @@
+@import "../../_variables";
+
 .contact {
-  background-image: url(../images/bg-footer.png);
+  background-image: url('/bundles/app/images/bg-footer.png');
   background-size: cover;
   z-index: 1;
   position: relative;
-  .btn {
-    background-color: #fff;
+  .contact-block {
+    max-width: 640px;
+    width: 100%;
+    margin: auto;
+    color: $white;
+    .btn {
+      @include hbcp-button;
+      background-color: $white;
+      color: $hbcp-blue;
+    }
+    h2 {
+      color: $white;
+    }
   }
 }
 
 .footer {
   .footer-links {
-    padding: 20px 0;
+    padding: 20px 5px;
+    margin: 0;
     li {
+      padding: 0;
       position: relative;
-      margin-right: 5px;
-      padding-right: 15px;
       vertical-align: bottom;
       &:last-child {
         &:after {
@@ -22,16 +35,11 @@
         }
       }
       &:after {
-        content: "";
-        position: absolute;
-        width: 2px;
-        height: 2px;
-        background-color: #6faee3;
-        bottom: 3px;
-        right: 0
+        content: " . ";
+        color: $hbcp-blue;
       }
       a {
-        color: #6faee3;
+        color: $hbcp-blue;
         font-size: 14px;
       }
     }
@@ -44,47 +52,20 @@
     }
   }
   .bottom-footer {
-    padding-bottom: 20px;
-    color: #a7d0ff;
-  }
-}
-
-@media (max-width: 767px) {
-  .footer {
-    .footer-links {
-      padding: 20px 0;
-      li {
-        position: relative;
-        margin-right: 5px;
-        padding-right: 10px;
-        padding-left: 0;
-        &:after {
-          bottom: 4px;
-        }
-        a {
-          font-size: 12px
+    .row {
+      margin: 0;
+      .col-sm-4 {
+        padding: 0;
+        &:not(.text-center) {
+          padding-top: 15px;
         }
       }
     }
-    .bottom-footer {
-      font-size: 14px;
-    }
-  }
-}
-
-@media (max-width: 360px) {
-  .footer {
-    .footer-links {
-      padding: 20px 0;
-      li {
-        position: relative;
-        margin-right: 2px;
-        padding-right: 5px;
-        padding-left: 0;
-      }
-    }
-    .bottom-footer {
-      font-size: 11px;
+    padding-bottom: 15px;
+    color: $pale-blue;
+    font-size: 12px;
+    @media (max-width: $screen-xs-min) {
+      font-size: 10px;
     }
   }
 }

@@ -12,7 +12,7 @@
     max-width: 100px;
   }
   h2 {
-    color: $color-blue;
+    color: $blue;
     font-size: 28px;
   }
 
@@ -24,7 +24,7 @@
 
   .contact-btn {
     background-color: $res-btn-color;
-    color: $color-white;
+    color: $white;
     padding: 10px 20px;
     position: relative;
     box-shadow: 0 5px 0 0 $btn-shadow;
@@ -33,13 +33,13 @@
     margin: 10px 0;
     &:hover {
       background: rgb(139, 195, 243);
-      color: $color-white;
+      color: $white;
     }
 
   }
   .read-more {
     font-size: 14px;
-    color: $color-blue;
+    color: $blue;
   }
 
 }
