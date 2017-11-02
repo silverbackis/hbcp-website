@@ -4,14 +4,13 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
-use AppBundle\Validator\Constraints as AppAssert;
 
 /**
  * Resource
  * @ORM\Table(name="resource")
  * @ORM\Entity(repositoryClass="AppBundle\Repository\ResourcesRepository")
  * @ORM\HasLifecycleCallbacks()
- * @AppAssert\Resource
+ * @\AppBundle\Validator\Constraints\Resource
  */
 class Resource
 {
@@ -98,6 +97,53 @@ class Resource
     private $dropboxSize;
 
     /**
+     * @param null|Category $topCategory
+     * @ORM\PostLoad()
+     * @return Resource
+     */
+    public function setTopCategory()
+    {
+        if (!$this->getCategory()) {
+            $this->topCategory = null;
+        } else {
+            $parent = $this->getCategory()->getParent();
+            while($parent->getParent() && !$parent->getFixed()) {
+                $parent = $parent->getParent();
+            }
+            $this->topCategory = $parent;
+        }
+        return $this;
+    }
+
+    public function getRootCategory()
+    {
+        $root = $this->getCategory();
+        while($root->getParent()) {
+            $root = $root->getParent();
+        }
+        return $root;
+    }
+
+    public function getCategoryChain()
+    {
+        $cats = [];
+        $root = $this->getCategory();
+        if ($root->getFixed()) {
+            $cats[] = 'General';
+        }
+        $cats[] = $root->getName();
+
+        while($root->getParent()) {
+            if ($root->getParent()->getParent()) {
+                $cats[] = $root->getParent()->getName();
+            }
+            $root = $root->getParent();
+        }
+        $cats = array_reverse($cats);
+        return $cats;
+    }
+
+    /**
      * @ORM\PrePersist()
      */
     public function prePersist()
@@ -122,6 +168,11 @@ class Resource
     public function getId()
     {
         return $this->id;
+    }
+
+    public function getIdPadded()
+    {
+        return str_pad($this->id, 4, 0, STR_PAD_LEFT);
     }
 
     /**
@@ -270,24 +321,6 @@ class Resource
     public function getTopCategory()
     {
         return $this->topCategory;
-    }
-
-    /**
-     * @param null|Category $topCategory
-     * @ORM\PostLoad()
-     */
-    public function setTopCategory()
-    {
-        if (!$this->getCategory()) {
-            $this->topCategory = null;
-        } else {
-            $parent = $this->getCategory()->getParent();
-            while($parent->getParent() && !$parent->getFixed()) {
-                $parent = $parent->getParent();
-            }
-            $this->topCategory = $parent;
-        }
-        return $this;
     }
 
     /**

@@ -1,121 +1,118 @@
 {% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/resource.style.css') }}"/>
+{% endblock %}
+
 {% block body %}
-<section class=" article-slider">
+  {% include 'frontend/_hero.html.twig' with {
+  'class': 'default',
+  'icon': null,
+  'header': resource.title,
+  'text': resource.resourceType.name,
+  'link': {
+  'href': path('resources', {
+  slug: resource.rootCategory.name|slugify,
+  parent: resource.rootCategory.id
+  }),
+  'text': 'Back to Resources'
+  }
+  } %}
+  <section class="dropbox-section">
     <div class="container">
+      <div class="col-xs-12">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12 pad-0">
-                <a href="{{app.request.headers.get('referer')}}">Back To Resource</a>
-                <h2 class="text-center">
-                    <span>{{resourcedetail.title}}</span>
-                  
-                </h2>
-                <p class="text-center"> 
-                     {% for resourcename in  allresourcetype %}
-                       {%if resourcedetail.resourceType == resourcename.id %}
-                         {{ resourcename.name }}
-                         {%endif%}
-                    {% endfor %}
-                </p>
-            </div>
+          <div class="col-xs-12 dropbox-info">
+            <img class="dropbox-logo" src="{{ asset('bundles/app/images/resource-dropbox.svg') }}" alt="Dropbox Logo">
+            <p>We use Dropbox to host all our resource documents</p>
+          </div>
         </div>
-    </div>
-</section>
-<section class="dropbox-section light">
-    <div class="container">
-        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4 pad-0drop-img text-right">
-                    <img src="{{ asset('bundles/app/images/resource-dropbox.svg') }}" alt="image">
-                </div>
-                <div class="col-md-8 col-sm-4 col-xs-4 pad-0 drop-txt text-center">
-                    <p>We use Dropbox to host all our resource documents</p>
-                </div>
-            </div>
-            <a href="{{resourcedetail.path}}" target="_blank" class="download-btn btn">
-                <p>Download Resource</p>
-                <span>
-               {% if resourcedetail.resourceInformation is not null %}
-
-                {% set info = resourcedetail.resourceInformation |split('_') %} 
-
-                   {{ info[1]  }}MB
-
-             {% endif %}
-                 </span>
-           
+        <div class="row download-btn-row">
+          <div class="col-xs-12 text-center">
+            <a href="{{resource.path}}" target="_blank" class="btn btn-download">
+              Download Resource
+              <span class="filesize">
+                {{ (resource.dropboxSize/1024/1024)|round(1) }} MiB
+              </span>
             </a>
-            <div class="row">
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-main-heading">Department</div>
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-sub-heading">{{department}}</div>
-            </div>
-            <div class="row">
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-main-heading">Category</div>
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-sub-heading">{{cats}}</div>
-            </div>
-            <div class="row">
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-main-heading">uploaded</div>
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-sub-heading" >
-                 {% if resourcedetail.resourceInformation is not null %}
-                {{info[0]}}
-                {% endif %}
-                </div>
-            </div>
-            <div class="row">
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-main-heading">Resource ID</div>
-                <div class=" col-md-6 col-sm-6 col-xs-6 drop-sub-heading">{{resourcedetail.id}}</div>
-            </div>
+          </div>
         </div>
+        <div class="row dbinfo">
+          <div class="col-xs-6 dbinfo-label text-right">Department</div>
+          <div class="col-xs-6 dbinfo-detail">{{ resource.rootCategory.name }}</div>
+        </div>
+        <div class="row dbinfo">
+          <div class="col-xs-6 dbinfo-label text-right">Category</div>
+          <div class="col-xs-6 dbinfo-detail">{{ resource.categoryChain|join(' / ') }}</div>
+        </div>
+        <div class="row dbinfo">
+          <div class="col-xs-6 dbinfo-label text-right">Uploaded</div>
+          <div class="col-xs-6 dbinfo-detail">{{ resource.dropboxUploaded|date("d/m/Y") }}</div>
+        </div>
+        <div class="row dbinfo">
+          <div class="col-xs-6 dbinfo-label text-right">Resource ID</div>
+          <div class="col-xs-6 dbinfo-detail">{{ resource.idPadded }}</div>
+        </div>
+      </div>
     </div>
-</section>
+  </section>
 
-<section class="share-resource">
+  <section class="share-resource">
     <div class="contanier">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" >
-                <h2>Share Resource</h2>
-               
-                    <div class="input-group">
-                        <input id="reslink" type="text" class="link-input" placeholder="{{ app.request.uri }}" value="{{ app.request.uri }}">
-                        <div class="input-group-btn">
-                            <button class="btn copy-btn" onclick="copyToClipboard('reslink')">Copy Link</button>
-                        </div>
-                    </div>
-              
-                <p>Share with Networks</p>
-                <ul class="social-icons">
-                    <li><a href="javascript:void(0)" id="shareBtn" title="Share on Facebook" ><img src="{{ asset('bundles/app/images/share-fb.svg') }}" alt="social-icon"></a></li>
-                    
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" >
+          <h2>Share Resource</h2>
 
-                    <li><a href="javascript:void(0)" onclick="window.open( 'https://twitter.com/intent/tweet?text={{resourcedetail.title}} {{ app.request.uri}} @HBCP', 'HBCP', 'toolbar=0, status=0, width=626, height=436');return false;"
-
-                  ><img src="{{ asset('bundles/app/images/share-tw.svg') }}" alt="social-icon"></a></li>
-
-
-                    <li><a href="javascript:void(0)" onclick="window.open( 'http://www.linkedin.com/shareArticle?mini=true&url=https://www.ucl.ac.uk/health-psychology/research/HBCP&title={{resourcedetail.title}}&source=HBCP', 'sharer', 'toolbar=0, status=0, width=626, height=436');return false;"><img src="{{ asset('bundles/app/images/share-in.svg') }}" alt="social-icon"></a></li>
-                </ul>
+          <div class="input-group">
+            <input id="reslink" type="text" class="link-input" placeholder="{{ app.request.uri }}" value="{{ app.request.uri }}">
+            <div class="input-group-btn">
+              <button class="btn copy-btn" onclick="copyToClipboard('reslink')">Copy Link</button>
             </div>
+          </div>
+
+          <p>Share with Networks</p>
+          <ul class="list-unstyled list-inline social-icons">
+            <li>
+              <a href="javascript:void(0)" id="shareBtn" title="Share on Facebook" >
+                <img src="{{ asset('bundles/app/images/share-fb.svg') }}" alt="social-icon">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="window.open( 'https://twitter.com/intent/tweet?text={{resource.title}} {{ app.request.uri}} @HBCP', 'HBCP', 'toolbar=0, status=0, width=626, height=436');return false;">
+                <img src="{{ asset('bundles/app/images/share-tw.svg') }}" alt="social-icon">
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0)" onclick="window.open( 'http://www.linkedin.com/shareArticle?mini=true&url=https://www.ucl.ac.uk/health-psychology/research/HBCP&title={{resource.title}}&source=HBCP', 'sharer', 'toolbar=0, status=0, width=626, height=436');return false;">
+                <img src="{{ asset('bundles/app/images/share-in.svg') }}" alt="social-icon">
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
-</section>
-<section class="back-btn">
+  </section>
+  <section class="back-btn text-center">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
-                <a href="{{app.request.headers.get('referer')}}" class="btn">Back To Resource</a>
-            </div>
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a class="btn back-btn-bottom" href="{{ path('resources', {
+            slug: resource.rootCategory.name|slugify,
+            parent: resource.rootCategory.id
+          }) }}" class="btn">Back To Resources</a>
         </div>
+      </div>
     </div>
-</section>
-<script>
-document.getElementById('shareBtn').onclick = function() {
+  </section>
 
-  FB.ui({
-    method: 'share',
-    display: 'popup',
-    href: '{{app.request.uri}}',
-    
-    
-  }, function(response){});
-}
-</script>
+  <script>
+    document.getElementById('shareBtn').onclick = function() {
+      FB.ui({
+        method: 'share',
+        display: 'popup',
+        href: '{{app.request.uri}}',
+      }, function(response){});
+    }
+  </script>
 {% endblock %}

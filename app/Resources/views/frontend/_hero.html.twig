@@ -1,14 +1,19 @@
 <section class="jumbotron {{ slug|default('') }}">
+  {% if link is defined %}
+    <a href="{{ link.href }}" class="jumbotron-link">{{ link.text }}</a>
+  {% endif %}
   <div class="jumbotron-valign">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 jumbotron-text">
+        <div class="col-xs-12 jumbotron-text">
           <h2 class="jumbotron-header">
             <span>{{ header }}</span>
-            <img class="jumbotron-icon hidden visible-sm visible-xs"
-                 src="{{ asset(icon) }}"
-                 alt="{{ icon_alt }}"
-            />
+            {% if icon %}
+              <img class="jumbotron-icon hidden visible-sm visible-xs"
+                   src="{{ asset(icon) }}"
+                   alt="{{ icon_alt }}"
+              />
+            {% endif %}
           </h2>
           <p class="jumbotron-info">
             {{ text }}

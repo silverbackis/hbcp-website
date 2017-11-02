@@ -1,0 +1,165 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.container-fluid .jumbotron {
+  @include hbcp-jumbotron;
+  min-height: 250px;
+  text-align: center;
+  background: linear-gradient(-18deg, $hbcp-blue 20%, $btn-shadow 100%);
+  position: relative;
+
+  .jumbotron-header,
+  .jumbotron-info {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .jumbotron-header {
+    @media (max-width: $screen-md-min) {
+      min-height: 65px;
+      margin-bottom: 0;
+    }
+  }
+  .jumbotron-info {
+    margin-top: 5px;
+    @media (max-width: $screen-md-min) {
+      margin-top: 0;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .jumbotron-link {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    color: $white;
+    padding-left: 20px;
+    &:before {
+      content: "";
+      background-image: url('/bundles/app/images/arrow-back-white.svg');
+      background-size: cover;
+      height: 15px;
+      display: inline-block;
+      margin-right: 6px;
+      vertical-align: middle;
+      width: 10px;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+    @media (max-width: $screen-md-min) {
+      top: 10px;
+      left: -5px;
+      font-size: 12px;
+    }
+  }
+}
+
+.dropbox-info {
+  padding: 25px 0;
+  text-align: center;
+  img,
+  p {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+  }
+  p {
+    padding-left: 5px;
+    max-width: 220px;
+    color: $hbcp-blue;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  @media (max-width: $screen-md-min) {
+    img {
+      width: 40px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
+
+.btn-download,
+.back-btn-bottom {
+  @include hbcp-button;
+}
+
+.btn-download {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  width: 100%;
+  max-width: 420px;
+  font-size: 20px;
+  font-weight: 500;
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: url(/bundles/app/images/resource-download.svg) no-repeat;
+    background-size: 100% auto;
+    width: 37px;
+    height: 37px;
+    top: 50%;
+    left: 40px;
+    margin-top: -18px;
+  }
+
+  .filesize {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+  }
+
+  @media (max-width: $screen-md-min) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 16px;
+    .filesize {
+      font-size: 12px;
+    }
+    &:before {
+      left: 7%;
+      width: 27px;
+      height: 27px;
+      margin-top: -12px;
+    }
+  }
+}
+
+.download-btn-row {
+  margin-bottom: 20px;
+}
+
+.dbinfo {
+  margin: 3px 0;
+
+  .dbinfo-label,
+  .dbinfo-detail {
+    font-size: 14px;
+    color: $gray-light;
+  }
+
+  .dbinfo-label {
+    font-weight: 500;
+  }
+}
+
+.share-resource {
+  background: $gray-lighter;
+  margin: 20px 0;
+}
+
+.back-btn {
+  margin: 30px 0 50px;
+}
+
+.back-btn-bottom {
+  width: 100%;
+  max-width: 300px;
+  display: inline-block;
+}

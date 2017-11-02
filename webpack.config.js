@@ -7,6 +7,7 @@ Encore
   .addStyleEntry('global.style', './app/Resources/scss/global.scss')
   .addStyleEntry('home.style', './app/Resources/scss/components/theme/pages/_theme.home.scss')
   .addStyleEntry('resources.style', './app/Resources/scss/components/theme/pages/_theme.resources.scss')
+  .addStyleEntry('resource.style', './app/Resources/scss/components/theme/pages/_theme.resource.scss')
   .addStyleEntry('news.style', './app/Resources/scss/components/theme/pages/_theme.latest-news.scss')
   .addStyleEntry('style', './web/src/scss/style.scss') // admin
   .enableSassLoader()

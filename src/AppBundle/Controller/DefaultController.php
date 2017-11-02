@@ -92,8 +92,8 @@ class DefaultController extends AbstractController
     public function allResources(string $slug = null, Category $parent = null, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-        $loadDefault = !$parent;
 
+        $loadDefault = !$parent;
         if ($loadDefault) {
             /**
              * @var null|Category $parent
@@ -105,6 +105,7 @@ class DefaultController extends AbstractController
 
         }
 
+        // Validate the slug
         $slugify = $this->container->get('slugify');
         $expectedSlug = $slugify->slugify($parent->getName());
         if (!$loadDefault) {
@@ -121,7 +122,7 @@ class DefaultController extends AbstractController
             }
         }
 
-        // Checks completed
+        // Checks completed - determine categories to display
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
         if ($request->request->get('category')) {
@@ -133,9 +134,10 @@ class DefaultController extends AbstractController
                 }
             }
         }
-
+        // Get the resources - this function will apply resource type filter and order by as well
         $resources = $em->getRepository(Resource::class)->findByCategories($allCats, $request);
 
+        // If we request just the list (ajax filter)
         if ($request->request->get('req') === 'list')
         {
             return new JsonResponse([
@@ -143,12 +145,12 @@ class DefaultController extends AbstractController
             ]);
         }
 
+        // Render full page
         $filterUtils = $this->container->get(FilterUtils::class);
         $filterCategories = $filterUtils->getCategoryFilterOptions($resources);
         $filterTypes = $filterUtils->getResourceTypeFilterOptions($resources);
-
         return $this->render('frontend/resources.html.twig', array(
-            'title'=>'All Project Resources',
+            'title'=> ucwords($parent->getName()) . ' Resources',
             'resources' => $resources,
             'hero' => $categoryUtils->getCategoryHero($parent),
             'slug' => $expectedSlug,
@@ -167,8 +169,19 @@ class DefaultController extends AbstractController
         if (!$resource) {
             return $this->redirectToRoute('resources');
         }
+
+        $slugify = $this->container->get('slugify');
+        $expectedSlug = $slugify->slugify($resource->getTitle());
+        if ($expectedSlug !== $slug) {
+            return $this->redirectToRoute('resource', [
+                'slug' => $expectedSlug,
+                'parent' => $resource->getId()
+            ]);
+        }
+
         return $this->render('frontend/resource.html.twig', [
-           'resource' => $resource
+            'title' => $resource->getTitle(),
+            'resource' => $resource
         ]);
     }
 
