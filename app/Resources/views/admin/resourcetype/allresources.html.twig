@@ -9,7 +9,7 @@
 				<h6 class="panel-title txt-dark">Resource Type</h6>
 			</div>
 			<div class="pull-right">
-				<a href="{{ path('resource_type_item') }}"><button type="button" class="btn btn-success">Create New Resource Type</button></a>
+				<a href="{{ path('admin_resource_type_item') }}"><button type="button" class="btn btn-success">Create New Resource Type</button></a>
 			</div>
 			<div class="clearfix"></div>
 		</div>
@@ -42,12 +42,12 @@
 									<td>{{ resource_type.created |date("d/m/Y H:i") }} </td>
 									<td>{{ resource_type.updated | date("d/m/Y H:i") }}</td>
 									<td>
-										<a href="{{ path('resource_type_item', {resourceType: resource_type.id}) }}">
+										<a href="{{ path('admin_resource_type_item', {resourceType: resource_type.id}) }}">
 											<button class="btn btn-warning btn-icon-anim btn-circle">
 												<i class="fa fa-pencil"></i>
 											</button></a>
 
-										<a class="confirmation" href ="{{ path('resource_type_delete', {resourceType: resource_type.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
+										<a class="confirmation" href ="{{ path('admin_resource_type_delete', {resourceType: resource_type.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
 												<i class="icon-trash"></i>
 											</button></a>
 									</td>

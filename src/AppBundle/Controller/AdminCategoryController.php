@@ -10,20 +10,20 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class AdminCategoryController
  * @package AppBundle\Controller
- * @Route("/admin")
+ * @Route("/admin", name="admin_")
  */
 class AdminCategoryController extends Controller
 {
     /**
-     * @Route("/dashboard" , name="admindashboard")
+     * @Route("/dashboard" , name="dashboard")
      */
-    public function adminSashboard()
+    public function adminDashboard()
     {
         return $this->render('/admin/dashboard/dashboard.html.twig');
     }
 
     /**
-     * @Route("/categories", name="categories")
+     * @Route("/categories", name="category_list")
      */
     public function categoryIndexAction()
     {
@@ -51,7 +51,7 @@ class AdminCategoryController extends Controller
             $em->persist($category);
             $em->flush();
             $this->addFlash('notice', 'Category ' . ($newCat ? 'added' : 'updated'));
-            return $this->redirectToRoute('categories');
+            return $this->redirectToRoute('admin_categories');
         }
         return $this->render('/admin/category/createcat.html.twig',array(
             'form' => $form->createView(),
@@ -68,6 +68,6 @@ class AdminCategoryController extends Controller
         $em->remove($category);
         $em->flush();
         $this->addFlash('notice', 'Category deleted');
-        return $this->redirectToRoute('categories');
+        return $this->redirectToRoute('admin_categories');
     }
 }

@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Request;
 /**
  * Class AdminResourcesController
  * @package AppBundle\Controller
- * @Route("/admin")
+ * @Route("/admin", name="admin_")
  */
 class AdminResourcesController extends Controller
 {
@@ -29,7 +29,7 @@ class AdminResourcesController extends Controller
     }
 
     /**
-     * @Route("/admin/resource/{resource}", name="resource", defaults={"resource":0})
+     * @Route("/resource/{resource}", name="resource", defaults={"resource":0})
      */
     public function createResourceAction(Resource $resource = null, Request $request)
     {
@@ -45,7 +45,7 @@ class AdminResourcesController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($resource);
             $em->flush();
-            return $this->redirectToRoute('resources_list');
+            return $this->redirectToRoute('admin_resources_list');
         }
 
         return $this->render('/admin/resources/createresource.html.twig', [

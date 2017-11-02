@@ -53,7 +53,7 @@ class Resource
     public $topCategory;
 
     /**
-     * @var int
+     * @var Category
      *
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="resources")
      * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
@@ -62,7 +62,7 @@ class Resource
     public $category;
 
     /**
-     * @var int
+     * @var ResourceType
      *
      * @ORM\ManyToOne(targetEntity="AppBundle\Entity\ResourceType")
      * @ORM\JoinColumn(onDelete="SET NULL")
@@ -91,7 +91,7 @@ class Resource
     private $dropboxUploaded;
 
     /**
-     * @var \DateTime
+     * @var integer
      *
      * @ORM\Column(type="integer", nullable=true)
      */
@@ -199,11 +199,11 @@ class Resource
     /**
      * Set category
      *
-     * @param integer $category
+     * @param Category $category
      *
      * @return Resource
      */
-    public function setCategory($category)
+    public function setCategory(Category $category = null)
     {
         $this->category = $category;
 
@@ -213,7 +213,7 @@ class Resource
     /**
      * Get category
      *
-     * @return int
+     * @return Category
      */
     public function getCategory()
     {
@@ -223,11 +223,11 @@ class Resource
     /**
      * Set resourceType
      *
-     * @param integer $resourceType
+     * @param null|ResourceType $resourceType
      *
      * @return Resource
      */
-    public function setResourceType($resourceType)
+    public function setResourceType(ResourceType $resourceType = null)
     {
         $this->resourceType = $resourceType;
 
@@ -237,7 +237,7 @@ class Resource
     /**
      * Get resourceType
      *
-     * @return int
+     * @return null|ResourceType
      */
     public function getResourceType()
     {
@@ -274,10 +274,20 @@ class Resource
 
     /**
      * @param null|Category $topCategory
+     * @ORM\PostLoad()
      */
-    public function setTopCategory(Category $topCategory = null)
+    public function setTopCategory()
     {
-        $this->topCategory = $topCategory;
+        if (!$this->getCategory()) {
+            $this->topCategory = null;
+        } else {
+            $parent = $this->getCategory()->getParent();
+            while($parent->getParent() && !$parent->getFixed()) {
+                $parent = $parent->getParent();
+            }
+            $this->topCategory = $parent;
+        }
+        return $this;
     }
 
     /**

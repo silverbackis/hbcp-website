@@ -3,11 +3,12 @@ $hbcp-blue: #377bbb;
 $pale-blue: #A7D0FF;
 $btn-shadow: #01459b;
 $blue: #0f78d1;
-$gray: #4A4A4A;
-$gray-light: #9b9b9b;
 $white: #fff;
 $pill-tag: #f3f3f3;
-$gray-lighter: #FDFDFD;
+$gray: #4A4A4A;
+$gray-light: #9b9b9b;
+$gray-border: #ccc;
+$gray-lighter: #FAFAFA;
 
 /// Currently unknown colours by dev 2 ///
 $drop-heading: #6d6868;
@@ -66,31 +67,29 @@ $font-size_base: 16px;
     vertical-align: middle;
   }
 
+  .jumbotron-header,
+  .jumbotron-info {
+    padding-right: 540px;
+  }
+
   .jumbotron-header {
     display: table;
     position: relative;
     width: 100%;
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
     > span {
       display: table-cell;
       vertical-align: middle;
     }
   }
 
-  .jumbotron-header,
   .jumbotron-info {
-    padding-right: 540px;
-  }
-
-  h2 {
-    margin: 0;
-    font-size: 30px;
-  }
-
-  p {
     color: $pale-blue;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 20px;
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .jumbotron-icon {
@@ -105,11 +104,12 @@ $font-size_base: 16px;
   @media (max-width: $screen-md-min) {
     min-height: 0;
     padding: 0;
-    background: linear-gradient(-14deg, $hbcp-blue, $btn-shadow);
+    background: linear-gradient(-18deg, $hbcp-blue 20%, $btn-shadow 100%) !important;
 
     .jumbotron-info {
-      background: $btn-shadow;
+      background: rgba($btn-shadow, .5);
       margin: 0;
+      font-size: 16px;
       padding: 30px 25px;
     }
     .jumbotron-header {

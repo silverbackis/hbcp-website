@@ -64,16 +64,16 @@
     <ul class="nav navbar-nav side-nav nicescroll-bar">
       {% set route = app.request.get('_route') %}
       <li>
-        <a {% if route == 'news_list' %}class="active" {% endif %}href="{{ path('news_list') }}"><i class="icon-picture mr-10"></i>News Posts</a>
+        <a {% if route == 'news_list' %}class="active" {% endif %}href="{{ path('admin_news_list') }}"><i class="icon-picture mr-10"></i>News Posts</a>
       </li>
       <li>
-        <a {% if route == 'categories' %}class="active" {% endif %}href="{{ path('categories') }}"><i class="icon-grid mr-10"></i>Category</a>
+        <a {% if route == 'category_list' %}class="active" {% endif %}href="{{ path('admin_category_list') }}"><i class="icon-grid mr-10"></i>Category</a>
       </li>
       <li>
-        <a {% if route == 'resource_type_list' %}class="active" {% endif %}href="{{ path('resource_type_list') }}"><i class="icon-grid mr-10"></i>Resource Type</a>
+        <a {% if route == 'resource_type_list' %}class="active" {% endif %}href="{{ path('admin_resource_type_list') }}"><i class="icon-grid mr-10"></i>Resource Type</a>
       </li>
       <li>
-        <a {% if route == 'resources_list' %}class="active" {% endif %}href="{{ path('resources_list') }}"><i class="icon-grid mr-10"></i>Resource Section</a>
+        <a {% if route == 'resources_list' %}class="active" {% endif %}href="{{ path('admin_resources_list') }}"><i class="icon-grid mr-10"></i>Resources</a>
       </li>
     </ul>
   </div>

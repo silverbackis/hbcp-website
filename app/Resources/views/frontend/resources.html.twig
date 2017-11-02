@@ -2,8 +2,13 @@
 
 {% block stylesheets %}
   {{ parent() }}
-  <link rel="stylesheet" href="{{ asset('build/resources.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('build/resources.style.css') }}"/>
 {% endblock %}
+{% block javascript %}
+  {{ parent() }}
+  <script src="{{ asset('build/resources.scripts.js') }}" type="text/javascript"></script>
+{% endblock %}
+
 {% block body %}
 
   {% include 'frontend/_hero.html.twig' with {
@@ -14,93 +19,104 @@
   } %}
 
   <section class="text-center">
-    <ul class="nav nav-tabs">
-      <li{% if currentPath == path('resources') %} class="active"{% endif %}>
-        <a href="{{ path('resources') }}">Project</a>
-      </li>
-      <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
-        <a href="{{ category_path('behavioural science') }}">Behavioural Science</a>
-      </li>
-      <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
-        <a href="{{ category_path('computer science') }}">Computer Science</a>
-      </li>
-      <li{% if currentPath == category_path('system architecture') %} class="active"{% endif %}>
-        <a href="{{ category_path('system architecture') }}">System Architecture</a>
-      </li>
-    </ul>
-    <div class="filter-row">
-      <div class="container">
-        <form class="form form-inline">
-          <div class="form-group col-12 col-md-4">
-            <label class="text-right filter-label">
-              <span>Category</span>
-            </label>
-            <select class="selectpicker filter" id="catnames" data-live-search="true">
-              <option value="">Select Section</option>
-            </select>
-          </div>
-          <div class="form-group col-12 col-md-4">
-            <label class="text-right filter-label">
-              <span>Resource</span>
-            </label>
-            <select class="selectpicker filter" id="resourceid" data-live-search="true">
-              <option value="">Select Type</option>
-            </select>
-          </div>
-          <div class="form-group col-12 col-md-4">
-            <label class="text-right filter-label">
-              <span>Sort by</span>
-            </label>
-            <select class="selectpicker order" id="datesorter">
-              <option value="asc">Date (Old to New)</option>
-              <option value="desc" selected="selected">Date (New to Old)</option>
-            </select>
-          </div>
-        </form>
+    <div id="departments">
+      <ul class="nav nav-tabs hidden visible-md visible-lg">
+        <li{% if currentPath == path('resources') %} class="active"{% endif %}>
+          <a href="{{ path('resources') }}">Project</a>
+        </li>
+        <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
+          <a href="{{ category_path('behavioural science') }}">Behavioural Science</a>
+        </li>
+        <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
+          <a href="{{ category_path('computer science') }}">Computer Science</a>
+        </li>
+        <li{% if currentPath == category_path('system architecture') %} class="active"{% endif %}>
+          <a href="{{ category_path('system architecture') }}">System Architecture</a>
+        </li>
+      </ul>
+      <div class="row row-mobile-department hidden-md hidden-lg">
+        <label class="text-right filter-label">
+          <span>Department</span>
+        </label>
+        <select class="selectpicker order" id="department-select">
+          <option {% if currentPath == path('resources') %} selected="selected"{% endif %} value="{{ path('resources') }}">Project</option>
+          <option {% if currentPath == category_path('behavioural science') %} selected="selected"{% endif %} value="{{ category_path('behavioural science') }}">Behavioural Science</option>
+          <option {% if currentPath == category_path('computer science') %} selected="selected"{% endif %} value="{{ category_path('computer science') }}">Computer Science</option>
+          <option {% if currentPath == category_path('system architecture') %} selected="selected"{% endif %} value="{{ category_path('system architecture') }}">System Architecture</option>
+        </select>
       </div>
     </div>
-          {#
-<div class="clearfix"></div>
-<div class="sortedata">
-{% for resource in  resources %}
-<div class="panel-body recoon" data-id='{{ resource.created |date("m/d/Y") }}'
-cat-id='{{ resource.category.id }}' res-id='{{ resource.resourceType.id }}'>
-<div class="container">
-<span class="text-download">
-<p>{{ resource.created |date("d/m/Y") }}</p>
-<span> {{ resource.title }}
 
-{% if resource.pathType == 'dropbox' %}
 
-<a class="link-text">
-
-{% for resourcename in  allresourcetypes %}
-{% if resource.resource_type == resourcename.id %}
-{{ resourcename.name }}
-{% endif %}
-{% endfor %}
-
-</a>
-{% elseif  resource.pathType == 'website' %}
-<a class="link-text"> Website</a>
-{% elseif  resource.pathType == 'tool' %}
-<a class="link-text">HBCP Tool</a>
-{% endif %}
-</span>
-</span>
-<span class="btn-download">
-{% if resource.pathType == 'dropbox' %}
-<a href="{{ path('homepage') }}resources/{{ resource.name|slugify }}/{{ resource.id }}"
-target="_blank">Download</a>
-{% elseif  resource.pathType == 'tool' %}
-<a href="{{ resource.path }}" target="_blank">Open Tool</a>
-{% elseif  resource.pathType == 'website' %}
-<a href="{{ resource.path }}" target="_blank">View</a>
-{% endif %}
-</span>
-</div>
-</div>
-{% endfor %}
-</div>#}
+    <div class="row hidden-md hidden-lg">
+      <div class="col-xs-12">
+        <a class="btn-filter-toggle collapsed" role="button" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-left">
+                Filter Resources (<span id="filter-count">0</span> selected)
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="collapse filter-collapse" id="filterCollapse">
+      <div class="filter-row">
+        <div class="container">
+          <form class="row" method="POST" id="filter-form">
+            <div class="col-xs-12">
+              <div class="form-group col-xs-12 col-md-4">
+                <label class="text-right filter-label">
+                  <span>Category</span>
+                </label>
+                <select name="category[]" class="selectpicker filter" id="category-select" data-live-search="true" multiple data-selected-text-format="count > 0" title="Select Categories">
+                  {% for option in filter.categories %}
+                    <option value="{{ option.value }}">{{ option.label }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="form-group col-xs-12 col-md-4">
+                <label class="text-right filter-label">
+                  <span>Types</span>
+                </label>
+                <select name="type[]" class="selectpicker filter" id="type-select" data-live-search="true" multiple data-selected-text-format="count > 1" title="Select Types">
+                  {% for option in filter.types %}
+                    <option value="{{ option.value }}">{{ option.label }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+              <div class="form-group col-xs-12 col-md-4">
+                <label class="text-right filter-label">
+                  <span>Sort by</span>
+                </label>
+                <select name="sortdate" class="selectpicker order" id="order-select">
+                  <option value="desc" selected="selected">Date (New to Old)</option>
+                  <option value="asc">Date (Old to New)</option>
+                </select>
+              </div>
+            </div>
+            <input type="hidden" name="req" value="list" />
+          </form>
+        </div>
+      </div>
+    </div>
+    {% if not resources|length %}
+      <div class="row text-left resource">
+        <div class="col-xs-12">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 text-center">
+                <h3>No resources found</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% else %}
+      <div class="resources-list" id="resources-list">
+        {% include 'frontend/_resourceList.html.twig' %}
+      </div>
+    {% endif %}
   </section>
 {% endblock %}

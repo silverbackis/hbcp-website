@@ -5,6 +5,7 @@
     "autoprefixer": "^7.1.6",
     "bootstrap-sass": "^3.3.7",
     "bootstrap-select": "^1.12.4",
+    "jquery-form": "^4.2.2",
     "node-sass": "^4.5.3",
     "postcss-loader": "^2.0.8",
     "sass-loader": "^6.0.6"

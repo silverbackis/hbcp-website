@@ -9,7 +9,7 @@
 						<h6 class="panel-title txt-dark">Category</h6>
 					</div>
 					<div class="pull-right">
-						<a href="{{ path('category_edit') }}"><button type="button" class="btn btn-success">Create a Category</button></a>
+						<a href="{{ path('admin_category_edit') }}"><button type="button" class="btn btn-success">Create a Category</button></a>
 					</div>
 					<div class="clearfix"></div>
 				</div>
@@ -44,12 +44,12 @@
 											<td>{{ category.created |date("d/m/Y H:i") }} </td>
 											<td>{{ category.updated | date("d/m/Y H:i")  }}</td>
 											<td>
-												<a href="{{ path('category_edit', {category: category.id}) }}">
+												<a href="{{ path('admin_category_edit', {category: category.id}) }}">
 													<button class="btn btn-warning btn-icon-anim btn-circle">
 														<i class="fa fa-pencil"></i>
 													</button>
 												</a>
-												<a class="confirmation" href ="{{ path('category_delete', {category: category.id}) }}">
+												<a class="confirmation" href ="{{ path('admin_category_delete', {category: category.id}) }}">
 													<button class="btn btn-danger btn-icon-anim btn-circle">
 														<i class="icon-trash"></i>
 													</button>

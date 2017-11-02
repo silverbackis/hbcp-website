@@ -5,9 +5,11 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\News;
 use AppBundle\Entity\Resource;
 use AppBundle\Utils\CategoryUtils;
+use AppBundle\Utils\FilterUtils;
 use Cocur\Slugify\SlugifyInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Category;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
@@ -18,7 +20,8 @@ class DefaultController extends AbstractController
     {
         return array_merge(parent::getSubscribedServices(), [
             'slugify' => '?'.SlugifyInterface::class,
-            CategoryUtils::class => '?'.CategoryUtils::class
+            CategoryUtils::class => '?'.CategoryUtils::class,
+            FilterUtils::class => '?'.FilterUtils::class
         ]);
     }
 
@@ -121,14 +124,52 @@ class DefaultController extends AbstractController
         // Checks completed
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
-        $resources = $em->getRepository(Resource::class)->findByCategories($allCats);
+        if ($request->request->get('category')) {
+            foreach ($allCats as $innerCat) {
+                if ($request->request->get('category') == $innerCat->getId())
+                {
+                    $allCats = $categoryUtils->findAllCategories($innerCat);
+                    break;
+                }
+            }
+        }
+
+        $resources = $em->getRepository(Resource::class)->findByCategories($allCats, $request);
+
+        if ($request->request->get('req') === 'list')
+        {
+            return new JsonResponse([
+               'html' => $this->container->get('twig')->render('frontend/_resourceList.html.twig', ['resources' => $resources])
+            ]);
+        }
+
+        $filterUtils = $this->container->get(FilterUtils::class);
+        $filterCategories = $filterUtils->getCategoryFilterOptions($resources);
+        $filterTypes = $filterUtils->getResourceTypeFilterOptions($resources);
 
         return $this->render('frontend/resources.html.twig', array(
             'title'=>'All Project Resources',
             'resources' => $resources,
             'hero' => $categoryUtils->getCategoryHero($parent),
-            'slug' => $expectedSlug
+            'slug' => $expectedSlug,
+            'filter' => [
+                'categories' => $filterCategories,
+                'types' => $filterTypes
+            ]
         ));
+    }
+
+    /**
+     *@Route("/resource/{slug}/{resource}", name="resource")
+     */
+    public function viewResource(string $slug, Resource $resource = null)
+    {
+        if (!$resource) {
+            return $this->redirectToRoute('resources');
+        }
+        return $this->render('frontend/resource.html.twig', [
+           'resource' => $resource
+        ]);
     }
 
     /**

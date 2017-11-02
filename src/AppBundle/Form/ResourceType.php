@@ -39,7 +39,8 @@ class ResourceType extends AbstractType
             ->add('resourceType', EntityType::class, [
                 'class' => \AppBundle\Entity\ResourceType::class,
                 'choice_label' => 'name',
-                'placeholder' => 'Unset'
+                'placeholder' => 'Unset',
+                'required' => false
             ])
             ->add('topCategory', EntityType::class, [
                 'class' => Category::class,

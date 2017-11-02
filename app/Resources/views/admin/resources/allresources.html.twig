@@ -10,7 +10,7 @@
 				</div>
 
 				<div class="pull-right">
-					<a href="{{ path('resource') }}"><button type="button" class="btn btn-success">Create A New </button></a>
+					<a href="{{ path('admin_resource') }}"><button type="button" class="btn btn-success">Create A New </button></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -56,7 +56,7 @@
 										<td>{{ resource.updated | date("d/m/Y H:i")  }}</td>
 
 										<td>
-											<a href="{{ path('resource', {resource: resource.id}) }}">
+											<a href="{{ path('admin_resource', {resource: resource.id}) }}">
 												<button class="btn btn-warning btn-icon-anim btn-circle">
 													<i class="fa fa-pencil"></i>
 												</button>

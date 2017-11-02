@@ -27,7 +27,9 @@ Inner-page-style
 body, html {
   min-width: 320px;
 }
-
+html {
+  font-size: 16px;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 100%;

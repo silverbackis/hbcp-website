@@ -19,6 +19,7 @@ class AppExtension extends \Twig_Extension
     {
         return array(
             new \Twig_SimpleFilter('contentdecode', array($this, 'contentFilter')),
+            new \Twig_SimpleFilter('array_filter', array($this, 'arrayFilter')),
         );
     }
 
@@ -39,5 +40,10 @@ class AppExtension extends \Twig_Extension
     public function categoryPath(string $catName)
     {
         return $this->categoryUtils->getCategoryLinkByName($catName);
+    }
+
+    public function arrayFilter (array $array)
+    {
+        return array_filter($array);
     }
 }

@@ -15,7 +15,6 @@
                          {{ resourcename.name }}
                          {%endif%}
                     {% endfor %}
-
                 </p>
             </div>
         </div>
@@ -90,9 +89,6 @@
                     <li><a href="javascript:void(0)" onclick="window.open( 'https://twitter.com/intent/tweet?text={{resourcedetail.title}} {{ app.request.uri}} @HBCP', 'HBCP', 'toolbar=0, status=0, width=626, height=436');return false;"
 
                   ><img src="{{ asset('bundles/app/images/share-tw.svg') }}" alt="social-icon"></a></li>
-                    
-       
-
 
 
                     <li><a href="javascript:void(0)" onclick="window.open( 'http://www.linkedin.com/shareArticle?mini=true&url=https://www.ucl.ac.uk/health-psychology/research/HBCP&title={{resourcedetail.title}}&source=HBCP', 'sharer', 'toolbar=0, status=0, width=626, height=436');return false;"><img src="{{ asset('bundles/app/images/share-in.svg') }}" alt="social-icon"></a></li>

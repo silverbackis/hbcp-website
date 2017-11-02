@@ -2,6 +2,11 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 
+@mixin tab-text {
+  font-size: 18px;
+  color: $gray-light;
+}
+
 .container-fluid .jumbotron {
   @include hbcp-jumbotron;
 
@@ -28,11 +33,6 @@
   }
 }
 
-@mixin tab-text {
-  font-size: 18px;
-  color: $gray-light;
-}
-
 .nav-tabs {
   border: 0;
   padding: 30px 0;
@@ -57,18 +57,92 @@
   }
 }
 
+.row-mobile-department {
+  padding: 40px 0 20px;
+}
+
+
+
+
+.btn-filter-toggle {
+  display: block;
+  text-align: left;
+  padding: 20px 15px;
+  border: 2px solid $gray-border;
+  border-left: 0;
+  border-right: 0;
+  .text-left {
+    position: relative;
+    &:after {
+      position: absolute;
+      content: "";
+      background: url('/bundles/app/images/mob-arrow-filter.svg') 50% 50% no-repeat;
+      background-size: 100% auto;
+      width: 22px;
+      height: 16px;
+      right: 15px;
+      transition: 0.2s all;
+      top: 50%;
+      margin-top: -8px;
+      pointer-events: none;
+    }
+  }
+  &.collapsed {
+    .text-left:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.filter-collapse {
+  @media (min-width: $screen-md-min) {
+    display: block !important;
+    height: auto !important;
+  }
+  @media (max-width: $screen-md-min) {
+    border-bottom: 2px solid $gray-border;
+  }
+}
+
 .filter-row {
   background: $gray-lighter;
-  border: 1px solid $pill-tag;
+  border: 1px solid $gray-border;
   border-left: 0;
   border-right: 0;
   padding: 30px 0;
+  @media (max-width: $screen-md-min) {
+    border: 0;
+  }
+}
+.filter-row {
+  .col-xs-12 {
+    padding: 0;
+  }
+  .filter-label {
+    font-weight: normal;
+  }
+}
+
+.filter-row,
+.row-mobile-department {
+  .form-group {
+    margin: 0;
+    @media (max-width: $screen-md-min) {
+      margin: 5px 0;
+    }
+  }
   .filter-label {
     @include tab-text;
     display: inline-block;
-    font-weight: normal;
-    margin: 0 10px 0 0;
+    margin: 0;
+    padding-right: 5px;
     vertical-align: middle;
+
+    @media (max-width: $screen-md-min) {
+      font-size: 14px;
+      width: 80px;
+      text-align: right;
+    }
   }
   .bootstrap-select.btn-group {
     .btn-default {
@@ -82,18 +156,120 @@
       width: 26px;
       height: 18px;
       margin-top: -9px;
+      right: 7px;
     }
     &.filter {
-      .dropdown-toggle .caret {
-        background-image: url('/bundles/app/images/icon-field-filter.svg') ;
-        background-size: 20px auto;
+      .dropdown-toggle {
+        padding-right: 40px;
+        .caret {
+          background-image: url('/bundles/app/images/icon-field-filter.svg') ;
+          background-size: 20px auto;
+        }
       }
     }
     &.order {
-      .dropdown-toggle .caret {
-        background-image: url('/bundles/app/images/icon-field-dropdown.svg');
-        background-size: 14px auto;
+      .dropdown-toggle {
+        padding-right: 35px;
+        .caret {
+          background-image: url('/bundles/app/images/icon-field-dropdown.svg');
+          background-size: 14px auto;
+        }
       }
+    }
+    @media (max-width: $screen-md-min) {
+      .btn-default {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.resources-list {
+  transition: opacity .3s;
+  opacity: 1;
+  backface-visibility: hidden;
+  &.loading {
+    opacity: 0.6;
+  }
+}
+.resource {
+  padding: 20px 0;
+  &:nth-child(even) {
+    background: $gray-lighter;
+  }
+  .resource-date {
+    font-size: 13px;
+    color: $gray-light;
+    margin: 0;
+  }
+  .resource-title {
+    display: block;
+    margin: 5px 0 8px 0;
+    font-size: 18px;
+
+    .resource-type {
+      display: inline-block;
+      padding-left: 5px;
+      font-size: 12px;
+      color: $blue;
+    }
+  }
+  .label {
+    font-size: 16px;
+    color: $blue;
+    background: $pill-tag;
+    border: 1px solid $gray-border;
+    border-radius: 20px;
+    font-weight: normal;
+    padding: 5px 20px;
+    display: inline-block;
+  }
+  .resource-btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -17px;
+    color: $blue;
+    text-decoration: none;
+    padding: 5px 0;
+    width: 110px;
+    float: right;
+    background: white;
+    display: inline-block;
+    border: 1px solid $blue;
+    border-radius: 51px;
+    font-size: 16px;
+    text-align: center;
+  }
+  .resource-info {
+    padding-right: 140px;
+  }
+  @media (max-width: $screen-md-min) {
+    .resource-title {
+      font-size: 16px;
+      .resource-type {
+        font-size: 11px;
+      }
+    }
+    .resource-btn {
+      top: auto;
+      margin-top: 0;
+      bottom: 0;
+      font-size: 13px;
+      width: 85px;
+      line-height: 16px;
+    }
+    .resource-info {
+      padding-right: 0;
+    }
+    .label {
+      font-size: 13px;
+      line-height: 16px;
+    }
+    .resource-category-row {
+      padding-right: 140px;
     }
   }
 }

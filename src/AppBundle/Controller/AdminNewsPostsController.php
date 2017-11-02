@@ -12,7 +12,7 @@ use AppBundle\Entity\News;
 /**
  * Class AdminNewsPostsController
  * @package AppBundle\Controller
- * @Route("/admin")
+ * @Route("/admin", name="admin_")
  */
 class AdminNewsPostsController extends Controller
 {
@@ -73,7 +73,7 @@ class AdminNewsPostsController extends Controller
             $em->persist($news);
             $em->flush();
             $this->addFlash('notice', 'News Post ' . ($new ? 'added' : 'updated'));
-            return $this->redirectToRoute('news_list');
+            return $this->redirectToRoute('admin_news_list');
         }
 
         return $this->render('/admin/news/createnews.html.twig', array(
@@ -95,6 +95,6 @@ class AdminNewsPostsController extends Controller
         $em->remove($news);
         $em->flush();
         $this->addFlash('notice', 'News Post Deleted');
-        return $this->redirectToRoute('news_list');
+        return $this->redirectToRoute('admin_news_list');
     }
 }

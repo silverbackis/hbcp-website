@@ -1,0 +1,38 @@
+{% for resource in  resources %}
+  <div class="row text-left resource">
+    <div class="col-xs-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 resource-info">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="resource-date">{{ resource.created |date("d/m/Y") }}</p>
+              </div>
+            </div>
+            <div class="row">
+                  <span class="col-xs-12 resource-title">
+                    {% set isDropbox = resource.pathType|lower == 'dropbox' %}
+                    {% set types = [resource.resourceType.name|default(isDropbox ? 'n/a' : null), not isDropbox ? resource.pathType : null] %}
+                    {{ resource.title }} <span class="resource-type">{{ types|array_filter|join(' | ') }}</span>
+                  </span>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 resource-category-row">
+                <span class="label label-default">{{ resource.category.name }}</span>
+              </div>
+            </div>
+
+            {% if resource.pathType|lower == 'dropbox' %}
+              <a class="resource-btn" href="{{ path('resource', {
+                slug: resource.title|slugify,
+                resource: resource.id
+              }) }}">Download</a>
+            {% else %}
+              <a class="resource-btn" href="{{ resource.path }}" target="_blank" rel="noopener">{{ resource.pathType == 'tool' ? 'Open Tool' : 'View' }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}

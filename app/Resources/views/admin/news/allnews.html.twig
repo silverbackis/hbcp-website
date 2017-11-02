@@ -10,7 +10,7 @@
 				</div>
 
 				<div class="pull-right">
-					<a href="{{ path('news_item') }}"><button type="button" class="btn btn-success">Create News Post</button></a>
+					<a href="{{ path('admin_news_item') }}"><button type="button" class="btn btn-success">Create News Post</button></a>
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -57,12 +57,12 @@
 										</td>
 										<td>{{ news_post.imageCredit }}</td>
 										<td>
-											<a href="{{ path('news_item', {news: news_post.id}) }}">
+											<a href="{{ path('admin_news_item', {news: news_post.id}) }}">
 												<button class="btn btn-warning btn-icon-anim btn-circle">
 													<i class="fa fa-pencil"></i>
 												</button>
 											</a>
-											<a  class="confirmation" href ="{{ path('news_delete', {news: news_post.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
+											<a  class="confirmation" href ="{{ path('admin_news_delete', {news: news_post.id}) }}"><button class="btn btn-danger btn-icon-anim btn-circle">
 													<i class="icon-trash"></i>
 												</button>
 											</a>

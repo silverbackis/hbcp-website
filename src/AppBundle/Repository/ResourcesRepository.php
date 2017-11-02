@@ -3,6 +3,7 @@
 namespace AppBundle\Repository;
 
 use AppBundle\Entity\Resource;
+use Symfony\Component\HttpFoundation\Request;
 
 /**
  * ResourcesRepository
@@ -12,13 +13,33 @@ use AppBundle\Entity\Resource;
  */
 class ResourcesRepository extends \Doctrine\ORM\EntityRepository
 {
-    public function findByCategories(array $categories)
+    public function findByCategories(array $categories, Request $request)
     {
         $qb = $this->getEntityManager()->getRepository(Resource::class)->createQueryBuilder('r');
         $qb
             ->andWhere($qb->expr()->in('r.category', ':cats'))
             ->setParameter('cats', $categories)
         ;
+        if ($request->request->get('type')) {
+            $qb
+                ->andWhere(
+                    $qb->expr()->orX(
+                        $qb->expr()->in('r.resourceType', ':typesfilter'),
+                        $qb->expr()->in('r.pathType', ':typesfilter')
+                    )
+                )
+                ->setParameter('typesfilter', $request->request->get('type'))
+            ;
+        }
+
+        $sortTypes = ['asc', 'desc'];
+        if ($request->request->get('sortdate') && in_array(strtolower($request->request->get('sortdate')), $sortTypes)) {
+            $sortDirection = $request->request->get('sortdate');
+        } else {
+            $sortDirection = 'DESC';
+        }
+        $qb->orderBy('r.created', $sortDirection);
+
         return $qb->getQuery()->getResult();
     }
 }

@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use AppBundle\Form\ResourceTypeType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
@@ -9,7 +10,7 @@ use AppBundle\Entity\ResourceType;
 /**
  * Class AdminResourceTypeController
  * @package AppBundle\Controller
- * @Route("/admin")
+ * @Route("/admin", name="admin_")
  */
 class AdminResourceTypeController extends Controller
 {
@@ -43,7 +44,7 @@ class AdminResourceTypeController extends Controller
             $em->persist($resourceType);
             $em->flush();
             $this->addFlash('notice', 'Resource Type ' . ($new ? 'Added' : 'Updated'));
-            return $this->redirectToRoute('resource_type_list');
+            return $this->redirectToRoute('admin_resource_type_list');
         }
         return $this->render(':admin/resourcetype:createresourcetype.html.twig',array(
             'form' => $form->createView(),
@@ -60,6 +61,6 @@ class AdminResourceTypeController extends Controller
         $em->remove($resourceType);
         $em->flush();
         $this->addFlash('notice', 'Resource Type Deleted');
-        return $this->redirectToRoute('resource_type_list');
+        return $this->redirectToRoute('admin_resource_type_list');
     }
 }
