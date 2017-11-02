@@ -15,7 +15,7 @@ class FilterUtils
         foreach ($resources as $resource)
         {
             $filterCat = $resource->getCategory();
-            $showBreadcrumbs = $filterCat->getParent()->getParent();
+            $showBreadcrumbs = $filterCat->getParent() && $filterCat->getParent()->getParent();
             // Check if category's parent is top level
             if ($showBreadcrumbs) {
                 $filterCat = $filterCat->getParent();
