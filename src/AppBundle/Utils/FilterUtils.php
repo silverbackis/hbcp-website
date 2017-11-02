@@ -21,10 +21,11 @@ class FilterUtils
                 $filterCat = $filterCat->getParent();
             }
             if (!in_array($filterCat->getId(), $filterCats)) {
+                $parent = $filterCat->getParent() ?: $filterCat;
                 $filterCats[] = $filterCat->getId();
 
                 $selectOption = new SelectOption();
-                $selectOption->setValue($filterCat->getParent()->getId());
+                $selectOption->setValue($parent->getId());
                 $selectOption->setLabel($showBreadcrumbs ? $filterCat->getBreadcrumbs() : $filterCat->getName());
                 $options[] = $selectOption;
             }
