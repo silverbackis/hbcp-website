@@ -107,8 +107,12 @@ class Resource
             $this->topCategory = null;
         } else {
             $parent = $this->getCategory()->getParent();
-            while($parent->getParent() && !$parent->getFixed()) {
-                $parent = $parent->getParent();
+            if (!$parent) {
+                $parent = $this->getCategory();
+            } else {
+                while($parent->getParent() && !$parent->getFixed()) {
+                    $parent = $parent->getParent();
+                }
             }
             $this->topCategory = $parent;
         }
