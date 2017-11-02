@@ -69,6 +69,7 @@ $font-size_base: 16px;
   .jumbotron-header {
     display: table;
     position: relative;
+    width: 100%;
     > span {
       display: table-cell;
       vertical-align: middle;

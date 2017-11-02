@@ -15,6 +15,14 @@ use Symfony\Component\HttpFoundation\Request;
 class AdminCategoryController extends Controller
 {
     /**
+     * @Route("/dashboard" , name="admindashboard")
+     */
+    public function adminSashboard()
+    {
+        return $this->render('/admin/dashboard/dashboard.html.twig');
+    }
+
+    /**
      * @Route("/categories", name="categories")
      */
     public function categoryIndexAction()

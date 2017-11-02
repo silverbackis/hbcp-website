@@ -1,0 +1,106 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/resources.css') }}"/>
+{% endblock %}
+{% block body %}
+
+  {% include 'frontend/_hero.html.twig' with {
+  'icon': hero.icon,
+  'icon_alt': hero.icon_alt,
+  'header': hero.header,
+  'text': hero.text
+  } %}
+
+  <section class="text-center">
+    <ul class="nav nav-tabs">
+      <li{% if currentPath == path('resources') %} class="active"{% endif %}>
+        <a href="{{ path('resources') }}">Project</a>
+      </li>
+      <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
+        <a href="{{ category_path('behavioural science') }}">Behavioural Science</a>
+      </li>
+      <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
+        <a href="{{ category_path('computer science') }}">Computer Science</a>
+      </li>
+      <li{% if currentPath == category_path('system architecture') %} class="active"{% endif %}>
+        <a href="{{ category_path('system architecture') }}">System Architecture</a>
+      </li>
+    </ul>
+    <div class="filter-row">
+      <div class="container">
+        <form class="form form-inline">
+          <div class="form-group col-12 col-md-4">
+            <label class="text-right filter-label">
+              <span>Category</span>
+            </label>
+            <select class="selectpicker filter" id="catnames" data-live-search="true">
+              <option value="">Select Section</option>
+            </select>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <label class="text-right filter-label">
+              <span>Resource</span>
+            </label>
+            <select class="selectpicker filter" id="resourceid" data-live-search="true">
+              <option value="">Select Type</option>
+            </select>
+          </div>
+          <div class="form-group col-12 col-md-4">
+            <label class="text-right filter-label">
+              <span>Sort by</span>
+            </label>
+            <select class="selectpicker order" id="datesorter">
+              <option value="asc">Date (Old to New)</option>
+              <option value="desc" selected="selected">Date (New to Old)</option>
+            </select>
+          </div>
+        </form>
+      </div>
+    </div>
+          {#
+<div class="clearfix"></div>
+<div class="sortedata">
+{% for resource in  resources %}
+<div class="panel-body recoon" data-id='{{ resource.created |date("m/d/Y") }}'
+cat-id='{{ resource.category.id }}' res-id='{{ resource.resourceType.id }}'>
+<div class="container">
+<span class="text-download">
+<p>{{ resource.created |date("d/m/Y") }}</p>
+<span> {{ resource.title }}
+
+{% if resource.pathType == 'dropbox' %}
+
+<a class="link-text">
+
+{% for resourcename in  allresourcetypes %}
+{% if resource.resource_type == resourcename.id %}
+{{ resourcename.name }}
+{% endif %}
+{% endfor %}
+
+</a>
+{% elseif  resource.pathType == 'website' %}
+<a class="link-text"> Website</a>
+{% elseif  resource.pathType == 'tool' %}
+<a class="link-text">HBCP Tool</a>
+{% endif %}
+</span>
+</span>
+<span class="btn-download">
+{% if resource.pathType == 'dropbox' %}
+<a href="{{ path('homepage') }}resources/{{ resource.name|slugify }}/{{ resource.id }}"
+target="_blank">Download</a>
+{% elseif  resource.pathType == 'tool' %}
+<a href="{{ resource.path }}" target="_blank">Open Tool</a>
+{% elseif  resource.pathType == 'website' %}
+<a href="{{ resource.path }}" target="_blank">View</a>
+{% endif %}
+</span>
+</div>
+</div>
+{% endfor %}
+</div>#}
+  </section>
+{% endblock %}

@@ -2,6 +2,8 @@
 
 namespace AppBundle\Repository;
 
+use AppBundle\Entity\Resource;
+
 /**
  * ResourcesRepository
  *
@@ -10,4 +12,13 @@ namespace AppBundle\Repository;
  */
 class ResourcesRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findByCategories(array $categories)
+    {
+        $qb = $this->getEntityManager()->getRepository(Resource::class)->createQueryBuilder('r');
+        $qb
+            ->andWhere($qb->expr()->in('r.category', ':cats'))
+            ->setParameter('cats', $categories)
+        ;
+        return $qb->getQuery()->getResult();
+    }
 }

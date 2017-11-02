@@ -1,0 +1,99 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.container-fluid .jumbotron {
+  @include hbcp-jumbotron;
+
+  background-image: url(/bundles/app/images/bg-allresources-header.png);
+  .jumbotron-icon {
+    margin-top: -40px;
+  }
+  @media (max-width: $screen-sm-min) {
+    .jumbotron-icon {
+      margin-top: -26px;
+    }
+  }
+
+  &.behavioural-science {
+    background-image: url(/bundles/app/images/bg-bs-header.png);
+  }
+
+  &.computer-science {
+    background-image: url(/bundles/app/images/bg-cs-header.png);
+  }
+
+  &.system-architecture {
+    background-image: url(/bundles/app/images/bg-sa-header.png);
+  }
+}
+
+@mixin tab-text {
+  font-size: 18px;
+  color: $gray-light;
+}
+
+.nav-tabs {
+  border: 0;
+  padding: 30px 0;
+  li {
+    border: none;
+    float: none;
+    display: inline-block;
+    margin: 0 25px;
+    a {
+      @include tab-text;
+      border: 0 !important;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+  li.active {
+    border-bottom: 2px solid $blue;
+    a {
+      color: $blue !important;
+    }
+  }
+}
+
+.filter-row {
+  background: $gray-lighter;
+  border: 1px solid $pill-tag;
+  border-left: 0;
+  border-right: 0;
+  padding: 30px 0;
+  .filter-label {
+    @include tab-text;
+    display: inline-block;
+    font-weight: normal;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+  }
+  .bootstrap-select.btn-group {
+    .btn-default {
+      color: $blue;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+    .dropdown-toggle .caret {
+      border: 0;
+      background: 50% 50% no-repeat;
+      width: 26px;
+      height: 18px;
+      margin-top: -9px;
+    }
+    &.filter {
+      .dropdown-toggle .caret {
+        background-image: url('/bundles/app/images/icon-field-filter.svg') ;
+        background-size: 20px auto;
+      }
+    }
+    &.order {
+      .dropdown-toggle .caret {
+        background-image: url('/bundles/app/images/icon-field-dropdown.svg');
+        background-size: 14px auto;
+      }
+    }
+  }
+}
