@@ -171,4 +171,4 @@ liip_imagine :
         news_image :
             quality : 80
             filters :
-                thumbnail  : { size : [880, 880], mode : contain }
+                thumbnail  : { size : [880, 880], mode : inset }
