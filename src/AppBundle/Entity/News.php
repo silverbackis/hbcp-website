@@ -190,7 +190,7 @@ class News
     /**
      * Set image
      *
-     * @param null|string $imagePath
+     * @param null|string $image
      *
      * @return News
      */
@@ -212,7 +212,7 @@ class News
 
     public function getImagePath()
     {
-        return $this->image ? explode('/web', $this->image)[1] : null;
+        return $this->image && strpos($this->image, '/web') ? explode('/web', $this->image)[1] : null;
     }
 
     /**
