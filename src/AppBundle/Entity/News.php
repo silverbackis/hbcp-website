@@ -44,7 +44,7 @@ class News
      * @var string
      *
      * @ORM\Column(name="image_path", type="text", nullable=true)
-    * @Assert\File(mimeTypes={ "image/jpeg", "image/png" })
+     * @Assert\File(mimeTypes={ "image/jpeg", "image/png" }, maxSize="4Mi")
      */
     private $image;
 
