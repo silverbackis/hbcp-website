@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="11px" viewBox="0 0 7 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down-sign-to-navigate</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 0 6 10 6 10 1.25236112e-15"></polygon>
+    </defs>
+    <g id="All-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BSDiagram" transform="translate(-1087.000000, -737.000000)">
+            <g id="Group-3" transform="translate(1009.000000, 572.000000)">
+                <g id="button" transform="translate(62.000000, 143.000000)">
+                    <g id="arrow-down-sign-to-navigate" transform="translate(19.500000, 27.500000) rotate(90.000000) translate(-19.500000, -27.500000) translate(14.500000, 24.500000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M4.99983256,6 C4.8206676,6 4.64150264,5.9277358 4.50537076,5.78444116 L0.20557923,1.25841063 C-0.0685264101,0.969882571 -0.0685264101,0.502985305 0.20557923,0.215338518 C0.478847651,-0.071779506 0.922406504,-0.071779506 1.19584237,0.215338518 L4.99983256,4.22018551 L8.80465996,0.216043535 C9.07809583,-0.071779506 9.52148724,-0.071779506 9.7949231,0.216043535 C10.068359,0.503690321 10.068359,0.970587587 9.7949231,1.25841063 L5.49496413,5.78444116 C5.35899969,5.92844081 5.17916496,6 4.99983256,6 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

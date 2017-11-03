@@ -157,3 +157,18 @@ bw_base:
         login_status_check: false
         debug: false
       twitter: false
+
+liip_imagine :
+    resolvers :
+        default :
+            web_path : ~
+    filter_sets :
+        cache : ~
+        news_thumb :
+            quality : 80
+            filters :
+                thumbnail  : { size : [400, 400], mode : outbound }
+        news_image :
+            quality : 80
+            filters :
+                thumbnail  : { size : [880, 880], mode : contain }

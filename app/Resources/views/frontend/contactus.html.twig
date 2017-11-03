@@ -1,101 +1,95 @@
 {% extends 'layout.html.twig' %}
-{% block body %}
-<section class="slider slider-6">
- <div class="container">
-        <div class="row">
-        <div class="col-md-6 col-sm-8 pad-0">
-            <h2>
-                <span>Contact Us</span>
-                <img class="hidden visible-xs" src="{{ asset('bundles/app/images/contacticn.png') }}" alt="mob-home">
-            </h2>
-            <p>Feel free to get in touch if you would like to find out more information on the Human Behaviour Change Project or if you have any feedback on what we have been doing.</p>
-             </div>
-        </div>
-    </div>
-</section>
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/contact.style.css') }}" />
+{% endblock %}
 
-<section class="contact-us-section ">
+{% block body %}
+  {% include 'frontend/_hero.html.twig' with {
+  'icon': 'bundles/app/images/contacticn.png',
+  'icon_alt': 'Contact HBCP Header Icon',
+  'header': 'Contact Us',
+  'text': 'Feel free to get in touch if you would like to find out more information on the Human Behaviour Change Project or if you have any feedback on what we have been doing.'
+  } %}
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-mailinglist.svg') }}"></h2>
-                    <h2>Mailing List</h2>
-                    <p>Sign up to our mailing list and select what parts of the HBCP you would like to be kept up to date with.</p>
-                    <a href="#" class="btn contact-btn">Sign Up</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+          <h2><img src="{{ asset('bundles/app/images/contact-mailinglist.svg') }}"></h2>
+          <h2>Mailing List</h2>
+          <p>Sign up to our mailing list and select what parts of the HBCP you would like to be kept up to date with.</p>
+          <a href="#" class="btn contact-btn">Sign Up</a>
+
         </div>
+      </div>
     </div>
-</section>
-<section class="contact-us-section light ">
+  </section>
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-twitter.svg') }}"></h2>
-                    <h2>Twitter</h2>
-                    <p>Follow us on twitter for the most recent news on all aspects to do with HBCP and other relevant topics.</p>
-                    <a href="#" class="btn contact-btn">Visit Twitter Profile</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+
+          <h2><img src="{{ asset('bundles/app/images/contact-twitter.svg') }}"></h2>
+          <h2>Twitter</h2>
+          <p>Follow us on twitter for the most recent news on all aspects to do with HBCP and other relevant topics.</p>
+          <a href="#" class="btn contact-btn">Visit Twitter Profile</a>
+
         </div>
+      </div>
     </div>
-</section>
-<section class="contact-us-section ">
+  </section>
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-openscience.png') }}"></h2>
-                    <h2>Open Science Framework</h2>
-                    <p>View the most up-to-date information on the structure of how the project is taking shape on our Open Science Framwork page</p>
-                    <a href="#" class="btn contact-btn">Visit Open Science Framework</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+          <h2><img src="{{ asset('bundles/app/images/contact-openscience.png') }}"></h2>
+          <h2>Open Science Framework</h2>
+          <p>View the most up-to-date information on the structure of how the project is taking shape on our Open Science Framwork page</p>
+          <a href="#" class="btn contact-btn">Visit Open Science Framework</a>
         </div>
+      </div>
     </div>
-</section>
-<section class="contact-us-section light ">
+  </section>
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-researchgate.png') }}"></h2>
-                    <h2>Research Gate</h2>
-                    <p>Check out our Research Gate page for information of the research we are doing and to offer advice and something else.</p>
-                    <a href="#" class="btn contact-btn">Visit Research Gate</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+          <h2><img src="{{ asset('bundles/app/images/contact-researchgate.png') }}"></h2>
+          <h2>Research Gate</h2>
+          <p>Check out our Research Gate page for information of the research we are doing and to offer advice and something else.</p>
+          <a href="#" class="btn contact-btn">Visit Research Gate</a>
         </div>
+      </div>
     </div>
-</section>
-<section class="contact-us-section ">
+  </section>
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-linkedin.svg') }}"></h2>
-                    <h2>Linked In</h2>
-                    <p>Find out more about the project and jobs within the project on our LinkedIn Profile. If you are interested in helping us this is the place to find out more details on those involved etc.</p>
-                    <a href="#" class="btn contact-btn">Visit LinkedIn Profile</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+          <h2><img src="{{ asset('bundles/app/images/contact-linkedin.svg') }}"></h2>
+          <h2>Linked In</h2>
+          <p>Find out more about the project and jobs within the project on our LinkedIn Profile. If you are interested in helping us this is the place to find out more details on those involved etc.</p>
+          <a href="#" class="btn contact-btn">Visit LinkedIn Profile</a>
         </div>
+      </div>
     </div>
-</section>
-<section class="contact-us-section light">
+  </section>
+
+  <section class="contact-us-section">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
-                    
-                    <h2><img src="{{ asset('bundles/app/images/contact-email.svg') }}"></h2>
-                    <h2>Email</h2>
-                    <p>If you need to contact us by email you can use the address below. We get a lot of communication so unfortunately cannot reply to everyone that emails us.</p>
-                    <a href="mailto:info@humanbehaviourchange.org" class="read-more">info@humanbehaviourchange.org</a>
-                
-            </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12 news-img">
+          <h2><img src="{{ asset('bundles/app/images/contact-email.svg') }}"></h2>
+          <h2>Email</h2>
+          <p>If you need to contact us by email you can use the address below. We get a lot of communication so unfortunately cannot reply to everyone that emails us.</p>
+          <p><a href="mailto:info@humanbehaviourchange.org">info@humanbehaviourchange.org</a></p>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 {% endblock %}

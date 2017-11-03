@@ -10,6 +10,7 @@ Encore
   .addStyleEntry('team.style', './app/Resources/scss/components/theme/pages/_theme.team.scss')
   .addStyleEntry('news.style', './app/Resources/scss/components/theme/pages/_theme.news.scss')
   .addStyleEntry('news-post.style', './app/Resources/scss/components/theme/pages/_theme.news-post.scss')
+  .addStyleEntry('contact.style', './app/Resources/scss/components/theme/pages/_theme.contact.scss')
   .addStyleEntry('style', './web/src/scss/style.scss') // admin
   .enableSassLoader()
   .enablePostCssLoader((options) => {

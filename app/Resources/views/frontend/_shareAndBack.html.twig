@@ -1,0 +1,49 @@
+<section class="share-resource text-center">
+  <div class="contanier">
+    <div class="row">
+      <div class="col-xs-12" >
+        <h2>{{ share_title }}</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+              <div class="input-group">
+                <input type="text" class="form-control" id="share-link" value="{{ app.request.uri }}" readonly />
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="copy-link" data-clipboard-target="#share-link">Copy Link</button>
+                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Share with Networks</h3>
+        <ul class="list-unstyled list-inline social-icons">
+          <li>
+            <a href="#" id="fb-share" title="Share on Facebook" >
+              <img src="{{ asset('bundles/app/images/share-fb.svg') }}" alt="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" id="tw-share" data-tweet="{{ tweet }}">
+              <img src="{{ asset('bundles/app/images/share-tw.svg') }}" alt="social-icon">
+            </a>
+          </li>
+          <li>
+            <a href="#" id="li-share">
+              <img src="{{ asset('bundles/app/images/share-in.svg') }}" alt="social-icon">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="back-btn text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <a class="btn back-btn-bottom" href="{{ back_href }}" class="btn"><span class="btn-label">{{ back_link }}</span></a>
+      </div>
+    </div>
+  </div>
+</section>

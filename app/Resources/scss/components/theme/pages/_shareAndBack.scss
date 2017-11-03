@@ -1,0 +1,81 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.share-resource {
+  background: $gray-lighter;
+  margin: 20px 0;
+  padding: 30px 0;
+  h2,
+  h3 {
+    color: $blue;
+    font-weight: normal;
+    margin: 0;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .input-group{
+    margin: 15px 0 30px 0;
+    .form-control {
+      background-color: $white;
+      border-color: $gray-border;
+    }
+    .btn {
+      color: $blue;
+      border-left: 0;
+      border-color: $gray-border;
+
+      &:hover,
+      &:active {
+        border-color: $gray-border;
+        background: $pill-tag;
+      }
+
+      &.success {
+        background: $btn-success-bg;
+        color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .social-icons {
+    margin-top: 15px;
+    li {
+      margin: 0 15px;
+    }
+    @media (max-width: $screen-md-min) {
+      img {
+        width: 50px;
+      }
+    }
+  }
+}
+
+.back-btn {
+  margin: 30px 0 50px;
+  .back-btn-bottom {
+    @include hbcp-button;
+    width: 100%;
+    max-width: 300px;
+    display: inline-block;
+    .btn-label {
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        margin-right: 10px;
+        top: 0;
+        height: 100%;
+        background: url('/bundles/app/images/arrow-back-white.svg') 0 50% no-repeat;
+        width: 15px;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/news-post.style.css') }}"/>
+{% endblock %}
+
+{% block body %}
+  {% set extra_html %}
+    <p class="publication-date">Publication Date: {{ news.created |date("d/m/Y") }} </p>
+    {% if news.image %}
+      <div class="text-center">
+        <img class="news-image" src="{{ asset(news.imagePath)|imagine_filter('news_image') }}">
+      </div>
+      {% if news.imageCredit %}
+        <p class="image-credit">
+          Image credit: <span>{{ news.imageCredit }}</span>
+        </p>
+      {% endif %}
+    {% endif %}
+  {% endset %}
+  {% include 'frontend/_hero.html.twig' with {
+    class: 'default',
+    icon: null,
+    header: news.name,
+    text: 'By ' ~ news.author,
+    link: {
+    href: path('news'),
+    text: 'Back to Latest News',
+    extra_html: extra_html
+  }
+  } %}
+  <section class="detail-page-content">
+    <div class="container">
+      <div class="col-xs-12 col-md-8 col-md-offset-2">
+        {{ news.newsContent|raw('html') }}
+      </div>
+    </div>
+  </section>
+  {% include 'frontend/_shareAndBack.html.twig' with {
+  share_title: 'Share News Article',
+  tweet: 'A really interesting news article from HBCP - ' ~ news.name ~ ' ' ~ app.request.uri ~ ' #HBCP',
+  back_href: path('news'),
+  back_link: 'Back To Latest News'
+  } %}
+{% endblock %}

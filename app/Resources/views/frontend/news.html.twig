@@ -3,6 +3,7 @@
   {{ parent() }}
   <link rel="stylesheet" href="{{ asset('build/news.style.css') }}" />
 {% endblock %}
+
 {% block body %}
   {% include 'frontend/_hero.html.twig' with {
   'icon': 'bundles/app/images/news-white.png',
@@ -12,24 +13,24 @@
             between the two and the fact the Project Team seem to be know as investigators.'
   } %}
   {% for news in allnews %}
-    <section class="latest-news-section light">
+    <section class="latest-news-section">
       <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-md-offset-2 col-sm-3 col-xs-12 news-img">
-            {% if news.imagePath is not empty %}
-              <img src="{{ url('homepage') }}uploads/newsimages/{{ news.imagePath }}" alt="image">
-            {% else %}
-              <img src="{{ asset('bundles/app/images/news-default.svg') }}" alt="image">
-            {% endif %}
-          </div>
-          <div class="col-md-5 col-sm-9 col-xs-12 news-detail">
-            <a href="{{ url('homepage') }}news/{{ news.name |slugify }}/{{ news.id }}"><h2>{{ news.name }}</h2></a>
-            <p class="sub-heading">By {{ news.author }}</p>
-
-            <p>Publication date: <span>{{ news.created |date("d F Y") }}</span></p>
-          </div>
+        <a class="row">
+          <a href="{{ path('news_post', {
+            'slug': news.name|slugify,
+            'news': news.id
+          }) }}">
+            <div class="col-md-offset-2 col-md-3 col-xs-12 news-img">
+              <img src="{{ news.imagePath is not empty ? asset(news.imagePath)|imagine_filter('news_thumb') : asset('/bundles/app/images/news-default.svg')  }}" alt="{{ news.name }}" />
+            </div>
+            <div class="col-md-5 col-xs-12 news-detail">
+              <h2>{{ news.name }}</h2>
+              <p class="sub-heading">By {{ news.author }}</p>
+              <p>Publication date: <span>{{ news.created |date("d F Y") }}</span></p>
+            </div>
+          </a>
         </div>
-      </div>
+      </a>
     </section>
   {% endfor %}
 

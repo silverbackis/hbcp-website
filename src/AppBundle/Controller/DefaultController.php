@@ -36,16 +36,20 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/latest-news", name="latestnews")
+     * @Route("/latest-news", name="news")
      */
     public function latestNews(Request $request)
     {
         $news = $this->getDoctrine()
             ->getRepository(News::class)
-            ->findAll();
-        return $this->render('news.html.twig', [
-            'allnews' => $news,
-            'title'=>'Latest News',
+            ->findBy(
+                [],
+                [
+                    'created' => 'DESC'
+                ]
+            );
+        return $this->render('frontend/news.html.twig', [
+            'allnews' => $news
         ]);
     }
 
@@ -56,15 +60,14 @@ class DefaultController extends AbstractController
     {
         $expectedSlug = $this->container->get('slugify')->slugify($news->getName());
         if ($expectedSlug !== $slug) {
-            return $this->redirectToRoute('resources', [
+            return $this->redirectToRoute('admin_resources', [
                 'slug' => $expectedSlug,
                 'news' => $news->getId()
             ]);
         }
 
-        return $this->render('frontend/singlenews.html.twig', [
-            'news' => $news,
-            'title'=> $news->getName()
+        return $this->render('frontend/news-post.html.twig', [
+            'news' => $news
         ]);
     }
 
@@ -111,11 +114,11 @@ class DefaultController extends AbstractController
         if (!$loadDefault) {
             // Project should be loaded as the default resources path
             if ($expectedSlug === 'project') {
-                return $this->redirectToRoute('resources');
+                return $this->redirectToRoute('admin_resources');
             }
             // Ensure we don't have duplicate pages indexed on Google
             if ($expectedSlug !== $slug) {
-                return $this->redirectToRoute('resources', [
+                return $this->redirectToRoute('admin_resources', [
                     'slug' => $expectedSlug,
                     'parent' => $parent->getId()
                 ]);

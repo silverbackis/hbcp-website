@@ -76,7 +76,7 @@
         height: 30px;
         position: absolute;
         background: linear-gradient(180deg, rgba($white, 0%) 0%, rgba($white, 100%) 90%);
-        transition: opacity .3s;
+        transition: opacity .3s, bottom .3s;
         opacity: 1;
       }
       &:not(.in) {

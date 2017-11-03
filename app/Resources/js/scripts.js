@@ -1,7 +1,7 @@
 require('bootstrap-sass');
 require('bootstrap-select');
 import './resources';
-import './resource';
+import './share';
 
 $(function () {
   $('.member-description')
