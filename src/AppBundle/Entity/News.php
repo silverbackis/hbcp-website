@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\HttpFoundation\File\Exception\FileNotFoundException;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
@@ -207,7 +208,11 @@ class News
      */
     public function getImage()
     {
-        return $this->image ? new File($this->image) : null;
+        try{
+            return $this->image ? new File($this->image) : null;
+        } catch (FileNotFoundException $e) {
+            return null;
+        }
     }
 
     public function getImagePath()
