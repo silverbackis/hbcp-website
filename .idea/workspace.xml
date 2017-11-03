@@ -5,119 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/js/share.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_shareAndBack.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_stdHero.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_shareAndBack.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/js/resource.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourscience.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/computerscience.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/systemarchitect.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.01798bc1.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.71394c0c.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.b38ef310.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.0bbfc705.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.6ac7320f.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.b2892aa6.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.dacd16c9.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Iconsd41d.dacd16c9.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.674f50d2.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.af7ae505.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.b06871f2.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.fee66e71.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.448c34a5.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.e18bbf61.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.f4769f9b.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.fa277232.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.4fe6f9ca.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.5fd4c338.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.ecff1170.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.4e2921ae.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.9b287297.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.e9c2f960.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10d41d.9b287297.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.61f3a8a3.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.e4de528c.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.e6763f00.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10d41d.e4de528c.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.0ce002fd.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.3759629b.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.7193d8c5.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10d41d.7193d8c5.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.9341e6c2.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.e8892174.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.ffd2088e.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10d41d.ffd2088e.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.41575b6f.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.7fe2deb0.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.a7dcedf1.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10d41d.a7dcedf1.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.602d0d4d.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.8fe30102.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.b5b4a545.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10d41d.b5b4a545.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.03b5db0c.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.7129dca4.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.eef9b7d7.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10d41d.7129dca4.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.2c454669.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.a1ecc3b8.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.e23a7dca.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.scripts.508d5e6842120b9c13d8.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.style.226894a2e0b0ef9f857a0b909c8b9d57.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/home.style.f55c93661678e98b6522f45458b2cbf1.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Pe-icon-7-stroke.c45f7de0.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Simple-Line-Icons4c82.00ce23ca.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/fontawesome-webfont.912ec66d.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/glyphicons-halflings-regular.89889688.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/lg.0cb1b8af.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-arrows-10.839102e0.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-basic-10.177764ea.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-basic-elaboration-10.b1a9c3a9.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-ecommerce-10.86d8ba2c.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-music-10.83767d2d.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-software-10.6cfc5077.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-weather-10.2a4ea947.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/loading.bbdac9cd.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/mock6.f809c87e.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/sprite-skin-modern.1e83e537.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/themify.9c8e96ec.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/video-play.dc34cc9c.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/vimeo-play.dfe7764b.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/youtube-play.e6f0c233.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/news-post.style.1d33382c9921224048328628822a487c.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/news.style.8ecde2d60ad25f38c03e4f2a78d1501e.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/resource.style.197233ad959a22aa5be1e84dc6c3f207.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/resources.style.0ceb9b6401ec8102b0ef49f7bcab47f2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/team.style.0400277671a4e94f4c05182299a4eab8.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/app" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/bwbase" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bundles/ivoryckeditor" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact-us.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact.scss" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/singlenews.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/news-post.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bg-footer.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bg-footer.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bg-home-header.png" afterPath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/bg-home-header.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/js/scripts.js" afterPath="$PROJECT_DIR$/app/Resources/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news-post.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news-post.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resource.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resource.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.team.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.team.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/news.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/news.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/resource.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/resource.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/manifest.json" afterPath="$PROJECT_DIR$/web/build/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -175,11 +64,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_theme.contact.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_theme.contact.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="573">
               <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -270,7 +169,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/resourcetype/allresources.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminNewsPostsController.php" />
@@ -321,6 +219,7 @@
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -540,12 +439,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
-      <workItem from="1509530370280" duration="65266000" />
+      <workItem from="1509530370280" duration="65360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113866000" />
+    <option name="totallyTimeSpent" value="113960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -592,14 +491,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/responsive.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/bundles/app/images/resource-download.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1047,6 +938,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding />
         </state>
       </provider>
