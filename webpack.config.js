@@ -7,7 +7,9 @@ Encore
   .addStyleEntry('home.style', './app/Resources/scss/components/theme/pages/_theme.home.scss')
   .addStyleEntry('resources.style', './app/Resources/scss/components/theme/pages/_theme.resources.scss')
   .addStyleEntry('resource.style', './app/Resources/scss/components/theme/pages/_theme.resource.scss')
-  .addStyleEntry('news.style', './app/Resources/scss/components/theme/pages/_theme.latest-news.scss')
+  .addStyleEntry('team.style', './app/Resources/scss/components/theme/pages/_theme.team.scss')
+  .addStyleEntry('news.style', './app/Resources/scss/components/theme/pages/_theme.news.scss')
+  .addStyleEntry('news-post.style', './app/Resources/scss/components/theme/pages/_theme.news-post.scss')
   .addStyleEntry('style', './web/src/scss/style.scss') // admin
   .enableSassLoader()
   .enablePostCssLoader((options) => {

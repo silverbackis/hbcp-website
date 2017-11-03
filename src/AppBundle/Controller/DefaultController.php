@@ -43,7 +43,7 @@ class DefaultController extends AbstractController
         $news = $this->getDoctrine()
             ->getRepository(News::class)
             ->findAll();
-        return $this->render('frontend/latestnews.html.twig', [
+        return $this->render('news.html.twig', [
             'allnews' => $news,
             'title'=>'Latest News',
         ]);

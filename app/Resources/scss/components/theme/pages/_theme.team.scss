@@ -1,0 +1,122 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.container-fluid .jumbotron {
+  @include hbcp-jumbotron;
+  background-image: url('/bundles/app/images/bg-team-header.png');
+  .jumbotron-icon {
+    margin-top: -52px;
+  }
+  @media (max-width: $screen-sm-min) {
+    .jumbotron-icon {
+      margin-top: -34px;
+    }
+  }
+}
+
+.project-team-section {
+  padding: 30px 0 55px;
+
+  .team-member {
+    text-align: center;
+    img {
+      max-width: 180px;
+      width: 100%;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+  .member-detail {
+    h2 {
+      color: $blue;
+      font-size: 24px;
+      margin: 0;
+      font-weight: normal;
+    }
+    p.sub-heading {
+      font-size: 18px;
+      color: $blue;
+    }
+    .website-link {
+      font-size: 14px;
+      color: $gray-light;
+      display: inline-block;
+      margin-bottom: 20px;
+      &:before {
+        content: "";
+        background: url(/bundles/app/images/team-website.svg);
+        background-size: 100% 100%;
+        margin: 0 6px 0 0;
+        background-repeat: no-repeat;
+        height: 17px;
+        width: 17px;
+        display: inline-block;
+        padding: 0;
+        position: relative;
+        top: 5px;
+      }
+    }
+    .member-description {
+      min-height: 80px;
+      display: block !important;
+      overflow: hidden;
+      position: relative;
+      p {
+        font-size: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      &:after {
+        content: '';
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        position: absolute;
+        background: linear-gradient(180deg, rgba($white, 0%) 0%, rgba($white, 100%) 90%);
+        transition: opacity .3s;
+        opacity: 1;
+      }
+      &:not(.in) {
+        height: 80px;
+      }
+      &.in {
+        &:after {
+          bottom: -30px;
+          opacity: 0;
+        }
+      }
+    }
+    .read-more {
+      margin-top: 15px;
+      font-size: 14px;
+      color: $blue;
+      background: none;
+      border: none;
+      padding: 0;
+      &:hover {
+        color: $read-more-color;
+      }
+      &:after {
+        content: 'read more';
+      }
+      &.showing:after {
+        content: 'read less';
+      }
+    }
+  }
+  &:nth-child(even) {
+    background: $gray-lighter;
+    .member-detail .member-description:after{
+      background: linear-gradient(180deg, rgba($gray-lighter, 0%) 0%, rgba($gray-lighter, 100%) 90%);
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .project-team-section {
+    text-align: center;
+  }
+}

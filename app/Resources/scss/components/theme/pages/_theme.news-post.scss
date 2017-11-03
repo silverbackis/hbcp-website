@@ -1,5 +1,8 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+/*
 .article-slider {
-
   background-image: url(/bundles/app/images/news-article.png) !important;
   background-position: 100%;
   background-size: cover;
@@ -18,10 +21,6 @@
       content: "";
       background-image: url(/bundles/app/images/arrow-back-white.svg);
       background-size: cover;
-      /* padding: 9px; */
-      /* margin: 3px 0 0 6px; */
-      /* position: absolute; */
-      /* left: -23px; */
       HEIGHT: 15PX;
       DISPLAY: INLINE-BLOCK;
       MARGIN-RIGHT: 6px;
@@ -41,6 +40,7 @@
     margin-top: 10px;
   }
 }
+*/
 
 .dropbox-section {
   padding: 50px 0 70px;

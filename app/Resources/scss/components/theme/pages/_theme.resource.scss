@@ -210,21 +210,24 @@
 
 .back-btn {
   margin: 30px 0 50px;
-  .btn-label {
-    &:before {
-      position: absolute;
-      right: 100%;
-      margin-right: 20px;
-      top: 0;
-      height: 100%;
-      background: url('/bundles/app/images/arrow-back-white.svg') 0 50% no-repeat;
-      width: 15px;
-    }
-  }
 }
 
 .back-btn-bottom {
   width: 100%;
   max-width: 300px;
   display: inline-block;
+  .btn-label {
+    position: relative;
+    display: inline-block;
+    &:before {
+      content: '';
+      position: absolute;
+      right: 100%;
+      margin-right: 10px;
+      top: 0;
+      height: 100%;
+      background: url('/bundles/app/images/arrow-back-white.svg') 0 50% no-repeat;
+      width: 15px;
+    }
+  }
 }
