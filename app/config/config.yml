@@ -85,3 +85,74 @@ ivory_ck_editor:
     toolbars:
         configs:
             minimal: [ [ 'Bold','Italic','Underline','StrikeThrough','-','Undo','Redo','-','Cut','Copy','Paste','Find','Replace' ] ]
+
+sonata_seo:
+    encoding:         UTF-8
+    page:
+        title:      Human Behaviour Change Project (HBCP)
+        metas:
+            name:
+                keywords:             Human,Behaviour,Change,Project,HBCP
+                description:          Human Behaviour Change Project (HBCP)
+                robots:               noindex, nofollow
+            property:
+                'og:site_name':       Human Behaviour Change Project (HBCP)
+                'og:description':     Human Behaviour Change Project (HBCP)
+
+            http-equiv:
+                'Content-Type':         text/html; charset=utf-8
+                #'X-Ua-Compatible':      IE=EmulateIE7
+            charset:
+                UTF-8:    ''
+        head:
+            'xmlns':              http://www.w3.org/1999/xhtml
+            'xmlns:og':           http://opengraphprotocol.org/schema/
+            'xmlns:fb':           "http://www.facebook.com/2008/fbml"
+
+bw_base:
+  page:
+    metas:
+      name:
+        #twitter:site:       '@silverbackis'
+        #twitter:image:      '%opengraph_base%opengraph_image1.png'
+        # auto = same as Sonata SEO title tag
+        twitter:title:      'auto'
+        # auto = same as meta description (from either Sonata SEO or BW Base)
+        twitter:description: 'auto'
+      property:
+        # auto = same as Sonata SEO title tag
+        - { property: "og:title", content: "auto" }
+        # auto = same as meta description (from either Sonata SEO or BW Base)
+        - { property: "og:description", content: "auto" }
+        # auto = get URL from the current request
+        - { property: "og:url", content: "auto" }
+        #- { property: "og:image", content: "%opengraph_base%opengraph_image1.png" }
+        #- { property: "og:image:width", content: "500" }
+        #- { property: "og:image:height", content: "500" }
+        #- { property: "og:image", content: "%opengraph_base%opengraph_image2.png" }
+    links:
+      #rel:
+      #  apple-touch-icon-precomposed:
+      #    - { sizes: 57x57, href: '%favicon_base%apple-touch-icon-57x57.png' }
+      #  icon:
+      #    - { type: image/png, sizes: 196x196, href: '%favicon_base%favicon-196x196.png' }
+    js_sdk:
+      google_analytics:
+        enabled: false
+        id: UA-12345678-01
+        domain: www.yourdomain.com
+      woopra:
+        enabled: false
+        domain: www.yourdomain.com
+      facebook_pixel:
+        enabled: false
+        id: pixelID
+      facebook:
+        enabled: true
+        app_id: 1413052615484471
+        xfbml: true
+        version: 'v2.10'
+        language: en_GB
+        login_status_check: false
+        debug: false
+      twitter: false

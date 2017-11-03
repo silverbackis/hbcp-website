@@ -1,4 +1,4 @@
-require('jquery-form')
+require('jquery-form');
 
 $(function(){
   const $deptSelect = $('#department-select');

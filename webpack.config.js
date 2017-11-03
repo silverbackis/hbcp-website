@@ -3,7 +3,6 @@ let Encore = require('@symfony/webpack-encore');
 Encore
   .autoProvidejQuery()
   .addEntry('global.scripts', './app/Resources/js/scripts.js')
-  .addEntry('resources.scripts', './app/Resources/js/resources.js')
   .addStyleEntry('global.style', './app/Resources/scss/global.scss')
   .addStyleEntry('home.style', './app/Resources/scss/components/theme/pages/_theme.home.scss')
   .addStyleEntry('resources.style', './app/Resources/scss/components/theme/pages/_theme.resources.scss')

@@ -1,6 +1,6 @@
 <section class="jumbotron {{ slug|default('') }}">
   {% if link is defined %}
-    <a href="{{ link.href }}" class="jumbotron-link">{{ link.text }}</a>
+    <a href="{{ link.href }}" class="jumbotron-link"><span>{{ link.text }}</span></a>
   {% endif %}
   <div class="jumbotron-valign">
     <div class="container-fluid">

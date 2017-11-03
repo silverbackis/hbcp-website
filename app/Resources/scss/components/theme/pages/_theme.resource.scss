@@ -34,14 +34,19 @@
     left: 25px;
     color: $white;
     padding-left: 20px;
+    font-size: 15px;
+    > span {
+      display: inline-block;
+      vertical-align: middle;
+    }
     &:before {
+      display: inline-block;
+      vertical-align: middle;
       content: "";
       background-image: url('/bundles/app/images/arrow-back-white.svg');
       background-size: cover;
       height: 15px;
-      display: inline-block;
-      margin-right: 6px;
-      vertical-align: middle;
+      margin-right: 9px;
       width: 10px;
     }
     &:hover {
@@ -152,6 +157,50 @@
 .share-resource {
   background: $gray-lighter;
   margin: 20px 0;
+  padding: 30px 0;
+  h2,
+  h3 {
+    color: $blue;
+    font-weight: normal;
+    margin: 0;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  .input-group{
+    margin: 15px 0 30px 0;
+    .form-control {
+      background-color: $white;
+      border-color: $gray-border;
+    }
+    .btn {
+      color: $blue;
+      border-left: 0;
+      border-color: $gray-border;
+
+      &:hover,
+      &:active {
+        border-color: $gray-border;
+        background: $pill-tag;
+      }
+
+      &.success {
+        background: $btn-success-bg;
+        color: $white;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+  .social-icons {
+    margin-top: 15px;
+    li {
+      margin: 0 15px;
+    }
+  }
 }
 
 .back-btn {

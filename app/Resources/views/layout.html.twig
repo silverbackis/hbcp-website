@@ -1,12 +1,14 @@
 {% set currentPath = path(app.request.attributes.get('_route'),
 app.request.attributes.get('_route_params')) %}
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title id="pageTitle">{{ title|default('') }} - Human Behaviour Change Project (HBCP)</title>
+<!DOCTYPE html>
+<html {{ sonata_seo_html_attributes() }}>
+<head {{ sonata_seo_head_attributes() }}>
+  <title>{% block title %}{{ bwbase_title() }}{% endblock %}</title>
+  {{ sonata_seo_link_canonical() }}
+  {{ sonata_seo_lang_alternates() }}
+  {% block metas %}{{ bwbase_meta_tags() }}{% endblock %}
+  {% block link_tags %}{{ bwbase_link_tags() }}{% endblock %}
+  {% block js_sdk_head %}{{ bwbase_sdks_html('head') }}{% endblock %}
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
   {% block stylesheets %}
@@ -14,6 +16,7 @@ app.request.attributes.get('_route_params')) %}
   {% endblock %}
 </head>
 <body>
+{% block js_sdk_body %}{{ bwbase_sdks_html('body') }}{% endblock %}
 <div class="container-fluid container-website">
   <header class="header">
     <nav class="index-header navbar " id="main-navbar">

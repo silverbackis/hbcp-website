@@ -28,12 +28,12 @@ class ResourcesRepository extends \Doctrine\ORM\EntityRepository
                         $qb->expr()->in('r.pathType', ':typesfilter')
                     )
                 )
-                ->setParameter('typesfilter', $request->request->get('type'))
+                ->setParameter('typesfilter', $request->get('type'))
             ;
         }
 
         $sortTypes = ['asc', 'desc'];
-        if ($request->request->get('sortdate') && in_array(strtolower($request->request->get('sortdate')), $sortTypes)) {
+        if ($request->request->get('sortdate') && in_array(strtolower($request->get('sortdate')), $sortTypes)) {
             $sortDirection = $request->request->get('sortdate');
         } else {
             $sortDirection = 'DESC';

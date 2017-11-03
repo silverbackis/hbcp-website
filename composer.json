@@ -37,7 +37,8 @@
         "symfony/symfony": "3.4.*@dev",
         "twig/twig": "^1.0||^2.0",
         "sensio/generator-bundle": "^3.0",
-        "doctrine/doctrine-fixtures-bundle": "^2.4"
+        "doctrine/doctrine-fixtures-bundle": "^2.4",
+        "silverbackis/bw-base-bundle": "*@dev"
     },
     "require-dev": {
         "symfony/phpunit-bridge": "^3.0"

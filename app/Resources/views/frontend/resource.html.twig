@@ -51,6 +51,10 @@
           <div class="col-xs-6 dbinfo-detail">{{ resource.dropboxUploaded|date("d/m/Y") }}</div>
         </div>
         <div class="row dbinfo">
+          <div class="col-xs-6 dbinfo-label text-right">Listed</div>
+          <div class="col-xs-6 dbinfo-detail">{{ resource.created|date("d/m/Y") }}</div>
+        </div>
+        <div class="row dbinfo">
           <div class="col-xs-6 dbinfo-label text-right">Resource ID</div>
           <div class="col-xs-6 dbinfo-detail">{{ resource.idPadded }}</div>
         </div>
@@ -58,33 +62,38 @@
     </div>
   </section>
 
-  <section class="share-resource">
+  <section class="share-resource text-center">
     <div class="contanier">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12" >
+        <div class="col-xs-12" >
           <h2>Share Resource</h2>
-
-          <div class="input-group">
-            <input id="reslink" type="text" class="link-input" placeholder="{{ app.request.uri }}" value="{{ app.request.uri }}">
-            <div class="input-group-btn">
-              <button class="btn copy-btn" onclick="copyToClipboard('reslink')">Copy Link</button>
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <div class="input-group">
+                  <input type="text" class="form-control" id="share-link" value="{{ app.request.uri }}" readonly />
+                  <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" id="copy-link" data-clipboard-target="#share-link">Copy Link</button>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
 
-          <p>Share with Networks</p>
+          <h3>Share with Networks</h3>
           <ul class="list-unstyled list-inline social-icons">
             <li>
-              <a href="javascript:void(0)" id="shareBtn" title="Share on Facebook" >
+              <a href="#" id="fb-share" title="Share on Facebook" >
                 <img src="{{ asset('bundles/app/images/share-fb.svg') }}" alt="social-icon">
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)" onclick="window.open( 'https://twitter.com/intent/tweet?text={{resource.title}} {{ app.request.uri}} @HBCP', 'HBCP', 'toolbar=0, status=0, width=626, height=436');return false;">
+              <a href="#" id="tw-share" data-tweet="Take a look at this resource I came across - {{resource.title}} {{ app.request.uri}} #HBCP">
                 <img src="{{ asset('bundles/app/images/share-tw.svg') }}" alt="social-icon">
               </a>
             </li>
             <li>
-              <a href="javascript:void(0)" onclick="window.open( 'http://www.linkedin.com/shareArticle?mini=true&url=https://www.ucl.ac.uk/health-psychology/research/HBCP&title={{resource.title}}&source=HBCP', 'sharer', 'toolbar=0, status=0, width=626, height=436');return false;">
+              <a href="#" id="li-share">
                 <img src="{{ asset('bundles/app/images/share-in.svg') }}" alt="social-icon">
               </a>
             </li>
@@ -105,14 +114,4 @@
       </div>
     </div>
   </section>
-
-  <script>
-    document.getElementById('shareBtn').onclick = function() {
-      FB.ui({
-        method: 'share',
-        display: 'popup',
-        href: '{{app.request.uri}}',
-      }, function(response){});
-    }
-  </script>
 {% endblock %}

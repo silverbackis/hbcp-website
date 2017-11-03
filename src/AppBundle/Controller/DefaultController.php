@@ -125,7 +125,7 @@ class DefaultController extends AbstractController
         // Checks completed - determine categories to display
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
-        if ($request->request->get('category')) {
+        if ($request->get('category')) {
             foreach ($allCats as $innerCat) {
                 if ($request->request->get('category') == $innerCat->getId())
                 {

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "25fc210c43376d8b7f1a99dc806d698e",
+    "content-hash": "817ed24caac1db023be3550e513f05b8",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -2010,6 +2010,198 @@
             "time": "2017-10-29T18:48:08+00:00"
         },
         {
+            "name": "silverbackis/bw-base-bundle",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverbackis/BW-BaseBundle.git",
+                "reference": "01c963bab9f1822349c64aca58321b5600fcb850"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverbackis/BW-BaseBundle/zipball/01c963bab9f1822349c64aca58321b5600fcb850",
+                "reference": "01c963bab9f1822349c64aca58321b5600fcb850",
+                "shasum": ""
+            },
+            "require": {
+                "sonata-project/seo-bundle": "^2.0",
+                "symfony/symfony": "^3.2"
+            },
+            "require-dev": {
+                "symfony/phpunit-bridge": "^3.0"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "dev-master": "1.x-dev"
+            },
+            "autoload": {
+                "psr-4": {
+                    "BW\\BaseBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel West",
+                    "email": "daniel@silverback.is",
+                    "homepage": "https://silverback.is"
+                }
+            ],
+            "description": "A Symfony 3 Bundle to be used with British Websites creations. Extends Sonata SEO Bundle and provides functionality to configure link tags (for icons) and some common Javascript SDK Inclusions",
+            "homepage": "https://github.com/silverbackis/BW-BaseBundle",
+            "keywords": [
+                "base",
+                "britishwebsites",
+                "bw",
+                "favicons",
+                "icons",
+                "sdk",
+                "sonta",
+                "symfony"
+            ],
+            "time": "2017-10-05 16:07:13"
+        },
+        {
+            "name": "sonata-project/exporter",
+            "version": "1.7.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/exporter.git",
+                "reference": "8ee7c0e804dc5e162187d8ed440d260adb3f1bce"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/exporter/zipball/8ee7c0e804dc5e162187d8ed440d260adb3f1bce",
+                "reference": "8ee7c0e804dc5e162187d8ed440d260adb3f1bce",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3 || ^7.0"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^2.2",
+                "matthiasnoback/symfony-config-test": "^1.2.1 || ^2.0",
+                "matthiasnoback/symfony-dependency-injection-test": "^0.7.6 || ^1.0",
+                "propel/propel1": "^1.6",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.0",
+                "symfony/dependency-injection": "^2.3 || ^3.0",
+                "symfony/http-foundation": "^2.3 || ^3.0",
+                "symfony/http-kernel": "^2.3 || ^3.0",
+                "symfony/phpunit-bridge": "^2.7 || ^3.0",
+                "symfony/property-access": "^2.3 || ^3.0",
+                "symfony/routing": "^2.3 || ^3.0"
+            },
+            "suggest": {
+                "ext-curl": "*",
+                "propel/propel1": "^1.6",
+                "symfony/property-access": "^2.3 || ^3.0",
+                "symfony/routing": "^2.3 || ^3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Exporter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@gmail.com",
+                    "homepage": "https://sonata-project.org/"
+                }
+            ],
+            "description": "Lightweight Exporter library",
+            "homepage": "https://github.com/sonata-project/Exporter",
+            "keywords": [
+                "client",
+                "csv",
+                "data",
+                "export",
+                "xls"
+            ],
+            "time": "2017-02-09T16:39:40+00:00"
+        },
+        {
+            "name": "sonata-project/seo-bundle",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sonata-project/SonataSeoBundle.git",
+                "reference": "5830a5f23b13b929e310f3c2d1131934020c18c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sonata-project/SonataSeoBundle/zipball/5830a5f23b13b929e310f3c2d1131934020c18c7",
+                "reference": "5830a5f23b13b929e310f3c2d1131934020c18c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "sonata-project/exporter": "^1.2.2",
+                "symfony/framework-bundle": "^2.8 || ^3.0",
+                "symfony/options-resolver": "^2.8 || ^3.0",
+                "twig/twig": "^1.14.2 || ^2.0"
+            },
+            "require-dev": {
+                "guzzle/guzzle": "3.*",
+                "sllh/php-cs-fixer-styleci-bridge": "^2.0",
+                "sonata-project/admin-bundle": "^3.0",
+                "sonata-project/block-bundle": "^3.2",
+                "symfony/console": "^2.8 || ^3.0",
+                "symfony/finder": "^2.8 || ^3.0",
+                "symfony/phpunit-bridge": "^3.3"
+            },
+            "suggest": {
+                "guzzle/guzzle": "3.*",
+                "knplabs/knp-menu-bundle": "Used by the BreadcrumbMenuBuilder"
+            },
+            "type": "symfony-bundle",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Sonata\\SeoBundle\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sonata Community",
+                    "homepage": "https://github.com/sonata-project/SonataSeoBundle/contributors"
+                },
+                {
+                    "name": "Thomas Rabaix",
+                    "email": "thomas.rabaix@sonata-project.org",
+                    "homepage": "https://sonata-project.org"
+                }
+            ],
+            "description": "Symfony SonataSeoBundle",
+            "homepage": "https://sonata-project.org/bundles/seo",
+            "keywords": [
+                "seo",
+                "sonata"
+            ],
+            "time": "2017-10-22T22:01:04+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v5.4.8",
             "source": {
@@ -2811,7 +3003,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "symfony/symfony": 20
+        "symfony/symfony": 20,
+        "silverbackis/bw-base-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

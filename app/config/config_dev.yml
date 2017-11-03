@@ -39,3 +39,9 @@ monolog:
 
 #swiftmailer:
 #    delivery_addresses: ['me@example.com']
+
+bw_base:
+    page:
+        js_sdk:
+            facebook:
+                app_id: 1955426828114566
