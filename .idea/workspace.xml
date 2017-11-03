@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,12 +74,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="231">
+              <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="53">
+              <caret line="124" column="13" lean-forward="false" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+              <folding>
+                <element signature="e#40#66#0#PHP" expanded="true" />
+                <element signature="e#1454#1479#0#PHP" expanded="true" />
+                <element signature="e#1977#2007#0#PHP" expanded="true" />
+                <element signature="e#2187#2217#0#PHP" expanded="true" />
+                <element signature="e#4718#4752#0#PHP" expanded="true" />
+                <element signature="e#5092#5122#0#PHP" expanded="true" />
+                <element signature="e#6095#6124#0#PHP" expanded="true" />
+                <element signature="e#6386#6416#0#PHP" expanded="true" />
+                <element signature="e#6664#6701#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,8 +118,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>setCate</find>
-      <find>prep</find>
       <find>setTop</find>
       <find>even</find>
       <find>col-12</find>
@@ -128,6 +146,8 @@
       <find>back-btn</find>
       <find>allnews</find>
       <find>lates</find>
+      <find>admin_r</find>
+      <find>admin_re</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -198,7 +218,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/team.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_teamMember.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.team.scss" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_stdHero.scss" />
@@ -220,6 +239,7 @@
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
       </list>
     </option>
   </component>
@@ -439,12 +459,12 @@
       <option name="presentableId" value="Default" />
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
-      <workItem from="1509530370280" duration="65360000" />
+      <workItem from="1509530370280" duration="66008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113960000" />
+    <option name="totallyTimeSpent" value="114608000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -718,24 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="38" column="40" lean-forward="false" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="40" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-            <element signature="e#1454#1479#0#PHP" expanded="true" />
-            <element signature="e#1983#2013#0#PHP" expanded="true" />
-            <element signature="e#2193#2223#0#PHP" expanded="true" />
-            <element signature="e#4736#4770#0#PHP" expanded="true" />
-            <element signature="e#5110#5140#0#PHP" expanded="true" />
-            <element signature="e#6113#6142#0#PHP" expanded="true" />
-            <element signature="e#6404#6434#0#PHP" expanded="true" />
-            <element signature="e#6682#6719#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_hero.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -944,9 +946,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="124" column="13" lean-forward="false" selection-start-line="124" selection-start-column="13" selection-end-line="124" selection-end-column="13" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+            <element signature="e#1454#1479#0#PHP" expanded="true" />
+            <element signature="e#1977#2007#0#PHP" expanded="true" />
+            <element signature="e#2187#2217#0#PHP" expanded="true" />
+            <element signature="e#4718#4752#0#PHP" expanded="true" />
+            <element signature="e#5092#5122#0#PHP" expanded="true" />
+            <element signature="e#6095#6124#0#PHP" expanded="true" />
+            <element signature="e#6386#6416#0#PHP" expanded="true" />
+            <element signature="e#6664#6701#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

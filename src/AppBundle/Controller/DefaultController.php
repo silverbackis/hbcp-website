@@ -60,7 +60,7 @@ class DefaultController extends AbstractController
     {
         $expectedSlug = $this->container->get('slugify')->slugify($news->getName());
         if ($expectedSlug !== $slug) {
-            return $this->redirectToRoute('admin_resources', [
+            return $this->redirectToRoute('resources', [
                 'slug' => $expectedSlug,
                 'news' => $news->getId()
             ]);
@@ -105,20 +105,20 @@ class DefaultController extends AbstractController
             if (!$parent) {
                 throw new NotFoundHttpException('Default category not found');
             }
-
         }
 
         // Validate the slug
         $slugify = $this->container->get('slugify');
         $expectedSlug = $slugify->slugify($parent->getName());
+
         if (!$loadDefault) {
             // Project should be loaded as the default resources path
             if ($expectedSlug === 'project') {
-                return $this->redirectToRoute('admin_resources');
+                return $this->redirectToRoute('resources');
             }
             // Ensure we don't have duplicate pages indexed on Google
             if ($expectedSlug !== $slug) {
-                return $this->redirectToRoute('admin_resources', [
+                return $this->redirectToRoute('resources', [
                     'slug' => $expectedSlug,
                     'parent' => $parent->getId()
                 ]);
