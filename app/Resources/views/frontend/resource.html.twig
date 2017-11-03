@@ -10,7 +10,7 @@
   'class': 'default',
   'icon': null,
   'header': resource.title,
-  'text': resource.resourceType.name,
+  'text': resource.resourceType.name|default(null),
   'link': {
   'href': path('resources', {
   slug: resource.rootCategory.name|slugify,

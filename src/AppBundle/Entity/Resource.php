@@ -128,23 +128,31 @@ class Resource
         return $root;
     }
 
+    // Return categories without top level parent
     public function getCategoryChain()
     {
         $cats = [];
         $root = $this->getCategory();
-        if ($root->getFixed()) {
+        if ($root === $this->getRootCategory()) {
             $cats[] = 'General';
         }
-        $cats[] = $root->getName();
-
         while($root->getParent()) {
-            if ($root->getParent()->getParent()) {
-                $cats[] = $root->getParent()->getName();
+            if ($root->getParent()) {
+                $cats[] = $root->getName();
             }
             $root = $root->getParent();
         }
         $cats = array_reverse($cats);
         return $cats;
+    }
+
+    public function getResourceTag()
+    {
+        if ($this->getCategory() == $this->getRootCategory()) {
+            return 'General';
+        }
+        $tagPrefix = $this->getCategory()->getFixed() ? '' : ($this->getCategory()->getParent()->getName() . ' > ');
+        return $tagPrefix.$this->getCategory()->getName();
     }
 
     /**

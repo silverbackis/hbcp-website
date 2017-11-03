@@ -15,9 +15,10 @@ class FilterUtils
         foreach ($resources as $resource)
         {
             $filterCat = $resource->getCategory();
-            $showBreadcrumbs = $filterCat->getParent() && $filterCat->getParent()->getParent();
+            $isGeneral = $filterCat->getParent();
+            $showBreadcrumbs = $isGeneral && $filterCat->getParent()->getParent();
             // Check if category's parent is top level
-            if ($showBreadcrumbs) {
+            if ($showBreadcrumbs && !$filterCat->getFixed()) {
                 $filterCat = $filterCat->getParent();
             }
             if (!in_array($filterCat->getId(), $filterCats)) {
@@ -26,7 +27,9 @@ class FilterUtils
 
                 $selectOption = new SelectOption();
                 $selectOption->setValue($parent->getId());
-                $selectOption->setLabel($showBreadcrumbs ? $filterCat->getBreadcrumbs() : $filterCat->getName());
+                $label = $filterCat->getParent() ? $filterCat->getName() : 'General';
+
+                $selectOption->setLabel($showBreadcrumbs ? $filterCat->getBreadcrumbs() : $label);
                 $options[] = $selectOption;
             }
         }
