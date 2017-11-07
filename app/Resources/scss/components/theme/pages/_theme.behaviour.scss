@@ -1,6 +1,16 @@
 @import "../../_variables";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "resource";
+
+.resource {
+  &:nth-child(odd) {
+    background: $gray-lighter;
+  }
+  &:nth-child(even) {
+    background: transparent;
+  }
+}
 
 .container-fluid .jumbotron {
   @include hbcp-jumbotron;
@@ -21,6 +31,7 @@
 }
 
 section.behaviour-diagram {
+  padding-top: 10px;
   margin: 50px 0 0;
   .diagram-info {
     font-size: 16px;
@@ -84,7 +95,8 @@ section.behaviour-diagram {
               .stroke{
                 transition: fill .3s, stroke .3s;
               }
-              &:hover {
+              &:hover,
+              &.active {
                 .icon {
                   fill: $white;
                 }
@@ -100,12 +112,15 @@ section.behaviour-diagram {
             right: 0;
             width: 33.1349206349206%;
 
-            svg a:hover {
-              .fill {
-                fill: $behaviour;
-              }
-              .stroke {
-                stroke: $behaviour;
+            svg a {
+              &:hover,
+              &.active{
+                .fill {
+                  fill: $behaviour;
+                }
+                .stroke {
+                  stroke: $behaviour;
+                }
               }
             }
           }
@@ -115,12 +130,15 @@ section.behaviour-diagram {
             right: 33.438%;
             width: 33.1349206349206%;
 
-            svg a:hover {
-              .fill {
-                fill: $mechanisms;
-              }
-              .stroke {
-                stroke: $mechanisms;
+            svg a {
+              &:hover,
+              &.active {
+                .fill {
+                  fill: $mechanisms;
+                }
+                .stroke {
+                  stroke: $mechanisms;
+                }
               }
             }
           }
@@ -130,12 +148,15 @@ section.behaviour-diagram {
             left: 0;
             width: 33.1349206349206%;
 
-            svg a:hover {
-              .fill {
-                fill: $intervention;
-              }
-              .stroke {
-                stroke: $intervention;
+            svg a {
+              &:hover,
+              &.active {
+                .fill {
+                  fill: $intervention;
+                }
+                .stroke {
+                  stroke: $intervention;
+                }
               }
             }
           }
@@ -145,12 +166,15 @@ section.behaviour-diagram {
             left: 50.42%;
             width: 36.3095238095238%;
 
-            svg a:hover {
-              .fill {
-                fill: $context;
-              }
-              .stroke {
-                stroke: $context;
+            svg a {
+              &:hover,
+              &.active {
+                .fill {
+                  fill: $context;
+                }
+                .stroke {
+                  stroke: $context;
+                }
               }
             }
           }
@@ -160,12 +184,15 @@ section.behaviour-diagram {
             right: 49.9%;
             width: 36.5079365079365%;
 
-            svg a:hover {
-              .fill {
-                fill: $exposure;
-              }
-              .stroke {
-                stroke: $exposure;
+            svg a {
+              &:hover,
+              &.active {
+                .fill {
+                  fill: $exposure;
+                }
+                .stroke {
+                  stroke: $exposure;
+                }
               }
             }
           }
@@ -178,7 +205,8 @@ section.behaviour-diagram {
             svg {
               a {
                 z-index: 2;
-                :hover {
+                &:hover,
+                &.active {
                   .fill {
                     fill: $outcome;
                   }
@@ -210,6 +238,102 @@ section.select-label {
       width: 100%;
       height: 36px;
       margin-bottom: 5px;
+    }
+  }
+}
+
+section.resources {
+  margin-top: 20px;
+  margin-bottom: 100px;
+  .resource-header {
+    margin-bottom: 40px;
+    h2 {
+      color: $blue;
+      font-size: 26px;
+      font-weight: 400;
+    }
+    p {
+      display: inline-block;
+      position: relative;
+      margin-top: 20px;
+      max-width: 800px;
+      width: 100%;
+      padding: 0 80px;
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        top: -34px;
+        width: 61px;
+        height: 48px;
+        background: 50% 50% no-repeat;
+        background-size: 100% auto;
+      }
+      &:before {
+        background-image: url('/bundles/app/images/bs-quote-left.svg');
+        left: 10px;
+      }
+      &:after {
+        background-image: url('/bundles/app/images/bs-quote-right.svg');
+        right: 10px;
+      }
+    }
+  }
+  .nav-tabs {
+    text-align: center;
+    > li {
+      display: inline-block;
+      float: none;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        border: none;
+        font-size: 20px;
+        color: rgba($blue, .5);
+        padding: 5px 40px;
+        &:hover,
+        &:active,
+        &:focus {
+          color: $blue;
+        }
+      }
+      &.active {
+        border-bottom: 4px solid $hbcp-blue;
+        a {
+          border: none;
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  .behaviour-category {
+    .header {
+      .col-xs-12 {
+        position: relative;
+        min-height: 40px;
+        h4 {
+          color: $blue;
+          font-weight: normal;
+          font-size: 21px;
+          margin-top: 30px;
+        }
+        .expander {
+          position: absolute;
+          right: 0;
+          top: 50%;
+          margin-top: -20px;
+          width: 40px;
+          height: 40px;
+          background: url('/bundles/app/images/icon-showless.svg') 50% 50% no-repeat;
+          background-size: 100% 100%;
+          &.collapsed {
+            background-image: url('/bundles/app/images/icon-showmore.svg');
+          }
+        }
+      }
     }
   }
 }

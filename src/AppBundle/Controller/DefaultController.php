@@ -189,22 +189,69 @@ class DefaultController extends AbstractController
     }
 
     /**
-     *@Route("/behavioural-science", name="behavioural_science")
-     */
-    public function behaviouralScience()
-    {
-        return $this->render('frontend/behaviour.html.twig', [
-            'title' => 'Behavioural Science'
-        ]);
-    }
-
-    /**
      *@Route("/behavioural-science/explain", name="behavioural_science_explain")
      */
     public function behaviouralScienceExplain()
     {
         return $this->render('frontend/behaviourdiagram.html.twig', [
             'title'=>'Explain Behavioural Science Diagram'
+        ]);
+    }
+
+    /**
+     *@Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0})
+     */
+    public function behaviouralScience(string $slug = null, Category $parent = null, Request $request)
+    {
+        $resources = null;
+        $tabs = null;
+        $secondLevelCategory = null;
+        if ($parent) {
+            $em = $this->getDoctrine()->getManager();
+            $categoryRepo = $em->getRepository(Category::class);
+            $bcParent = $categoryRepo->findOneByName('behavioural science');
+            $categoryUtils = $this->container->get(CategoryUtils::class);
+            $allCats = $categoryUtils->findAllCategories($bcParent);
+
+            if ($parent->getFixed() && in_array($parent, $allCats)) {
+                // Validate the slug
+                $slugify = $this->container->get('slugify');
+                $expectedSlug = $slugify->slugify($parent->getName());
+                if ($expectedSlug !== $slug) {
+                    return $this->redirectToRoute('behavioural_science', [
+                        'slug' => $expectedSlug,
+                        'parent' => $parent->getId()
+                    ]);
+                }
+                $isSecondLevel = function (Category $category) {
+                    return $category->getParent() && $category->getParent()->getParent();
+                };
+                $secondLevelCategory = $parent;
+                while($isSecondLevel($secondLevelCategory)) {
+                    $secondLevelCategory = $secondLevelCategory->getParent();
+                }
+                $children = $secondLevelCategory->getChildren();
+                $firstChild = $children->first();
+                $hasTabs = $firstChild && $firstChild->getFixed();
+                $tabs = $hasTabs ? $children : null;
+                if ($hasTabs) {
+                    $isTab = in_array($parent, $children->toArray());
+                    if (!$isTab) {
+                        $parent = $children->first();
+                    }
+                }
+            } else {
+                return $this->redirectToRoute('behavioural_science');
+            }
+        }
+        return $this->render('frontend/behaviour.html.twig', [
+            'title' => 'Behavioural Science',
+            'parent' => $parent,
+            'tabs' => $tabs,
+            'second_level_link' => $this->generateUrl('behavioural_science', [
+                'parent' => $secondLevelCategory ? $secondLevelCategory->getId() : null,
+                'slug' => $secondLevelCategory ? $this->get('slugify')->slugify($secondLevelCategory->getName()) : null
+            ])
         ]);
     }
 }

@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/behaviour.style.8ddf0248adb6922a5b10b5fb45a1142b.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/behaviour.style.c742d283c11284b3541e4d2a665e73b3.css" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_behaviourResources.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_triangle.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-behaviour-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-behaviour-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-context-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-context-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-exposure-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-exposure-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-intervention-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-intervention-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-mechanisms-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-mechanisms-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-outcome-bg.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/AppBundle/Resources/public/images/diagram-outcome-icon.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/behaviour.style.d94c9912e63669abc25a8ca3fb91c3de.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/contact.style.5b87d6cd31e8f0c6a7e97586ff3a8b7f.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.01798bc1.ttf" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.71394c0c.eot" afterPath="" />
@@ -86,9 +101,23 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/resources.style.0ceb9b6401ec8102b0ef49f7bcab47f2.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/team.style.9cb31154b9d112a55625819e9c97f499.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss" afterPath="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" afterPath="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php" afterPath="$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/manifest.json" afterPath="$PROJECT_DIR$/web/build/manifest.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -111,12 +140,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_theme.behaviour.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+      <file leaf-file-name="resources.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="790">
+              <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+              <folding>
+                <element signature="e#12#28#0#Twig" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,18 +155,71 @@
       <file leaf-file-name="behaviour.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            <state relative-caret-position="776">
+              <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+              <folding>
+                <element signature="e#1157#1185#0#Twig" expanded="true" />
+                <element signature="e#2807#2845#0#Twig" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_behaviourResources.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_behaviourResources.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="behaviourtriangle.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig">
+      <file leaf-file-name="_resourceList.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme.resources.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="65" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="3" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_theme.behaviour.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="315" column="25" lean-forward="false" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_resource.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="118" lean-forward="false" selection-start-line="4" selection-start-column="118" selection-end-line="4" selection-end-column="118" />
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CategoryUtils.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -144,10 +228,22 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="143" column="53" lean-forward="false" selection-start-line="143" selection-start-column="53" selection-end-line="143" selection-end-column="53" />
+            <state relative-caret-position="116">
+              <caret line="207" column="36" lean-forward="false" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminCategoryController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="619">
+              <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+              <folding>
+                <element signature="e#1771#1808#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,9 +253,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>type</find>
-      <find>toggl</find>
-      <find>order</find>
       <find>.order</find>
       <find>getId</find>
       <find>download</find>
@@ -187,6 +280,9 @@
       <find>path-1</find>
       <find>icon-i</find>
       <find>explain</find>
+      <find>behaviour</find>
+      <find>diagram</find>
+      <find>resources</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -227,16 +323,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Resources/views/admin/dashboard/dashboard.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/js/resources.js" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss" />
-        <option value="$PROJECT_DIR$/app/config/config_dev.yml" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.grant-holders-and-project-team.scss" />
         <option value="$PROJECT_DIR$/app/Resources/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/team.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_teamMember.html.twig" />
@@ -260,7 +346,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.contact.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/News.php" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -268,16 +353,27 @@
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/_theme.scss" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.backup.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/public/images/Behaviour_on.svg" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/_variables.scss" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" />
+        <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/_behaviourResources.html.twig" />
       </list>
     </option>
   </component>
@@ -302,7 +398,6 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="114" />
     <option name="y" value="23" />
     <option name="width" value="1717" />
     <option name="height" value="1121" />
@@ -401,6 +496,23 @@
               <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -436,6 +548,13 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Entity" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Twig" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
@@ -509,12 +628,12 @@
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
       <workItem from="1509530370280" duration="66968000" />
-      <workItem from="1510053842241" duration="11123000" />
+      <workItem from="1510053842241" duration="18963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126691000" />
+    <option name="totallyTimeSpent" value="134531000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -526,7 +645,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="114" y="23" width="1717" height="1121" extended-state="0" />
+    <frame x="0" y="23" width="1717" height="1121" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32298508" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -580,91 +699,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/js/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/js/share.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="25" lean-forward="false" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resource.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/news-post.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="37" column="10" lean-forward="false" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_shareAndBack.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news-post.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resource.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="97" column="1" lean-forward="false" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_shareAndBack.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_stdHero.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/computerscience.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviourscience.html.twig" />
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.news.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="15" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/News.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -710,28 +744,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviourdiagram.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-577">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="12" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.backup.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -748,14 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="62" column="23" lean-forward="true" selection-start-line="62" selection-start-column="23" selection-end-line="62" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="62" lean-forward="false" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -824,14 +832,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="60" lean-forward="false" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/mechanisms_off.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2490">
@@ -848,16 +848,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="143" column="53" lean-forward="false" selection-start-line="143" selection-start-column="53" selection-end-line="143" selection-end-column="53" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/Intervention_off.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -866,26 +856,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="158" lean-forward="false" selection-start-line="3" selection-start-column="158" selection-end-line="3" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/Context_off.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="29" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="63" lean-forward="true" selection-start-line="18" selection-start-column="63" selection-end-line="18" selection-end-column="63" />
           <folding />
         </state>
       </provider>
@@ -906,30 +880,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="59" lean-forward="false" selection-start-line="8" selection-start-column="59" selection-end-line="9" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/Outcome_off.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -946,26 +896,225 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="176" column="0" lean-forward="true" selection-start-line="176" selection-start-column="0" selection-end-line="176" selection-end-column="0" />
+        <state relative-caret-position="600">
+          <caret line="40" column="69" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="34" lean-forward="false" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#12#33#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/bundles/app/images/bs-quote-left.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_outcome.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="46" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_exposure.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_context.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_intervention.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="93" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_mechanisms.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="93" lean-forward="false" selection-start-line="7" selection-start-column="93" selection-end-line="7" selection-end-column="93" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="97" lean-forward="false" selection-start-line="9" selection-start-column="97" selection-end-line="9" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="30" column="64" lean-forward="false" selection-start-line="30" selection-start-column="64" selection-end-line="30" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="514">
+          <caret line="35" column="56" lean-forward="false" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="56" />
+          <folding>
+            <element signature="e#34#64#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="511">
+          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="65" column="51" lean-forward="false" selection-start-line="65" selection-start-column="51" selection-end-line="65" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviourdiagram.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_triangle.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resource.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+          <folding>
+            <element signature="e#12#28#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.backup.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2999">
+          <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        <state relative-caret-position="776">
+          <caret line="62" column="39" lean-forward="false" selection-start-line="62" selection-start-column="39" selection-end-line="62" selection-end-column="39" />
+          <folding>
+            <element signature="e#1157#1185#0#Twig" expanded="true" />
+            <element signature="e#2807#2845#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="207" column="36" lean-forward="false" selection-start-line="207" selection-start-column="36" selection-end-line="207" selection-end-column="36" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="55" column="30" lean-forward="false" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+          <folding>
+            <element signature="e#1771#1808#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="65" lean-forward="false" selection-start-line="2" selection-start-column="65" selection-end-line="3" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="47" lean-forward="false" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="118" lean-forward="false" selection-start-line="4" selection-start-column="118" selection-end-line="4" selection-end-column="118" />
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="315" column="25" lean-forward="false" selection-start-line="315" selection-start-column="25" selection-end-line="315" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_behaviourResources.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="32" lean-forward="false" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
           <folding />
         </state>
       </provider>

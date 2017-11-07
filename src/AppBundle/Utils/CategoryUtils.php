@@ -51,13 +51,13 @@ class CategoryUtils
         return $children;
     }
 
-    public function getCategoryLinkByName (string $name)
+    public function getCategoryLinkByName (string $name, $routeName = 'resources')
     {
         $category = $this->em->getRepository(Category::class)->findOneByName($name);
         if (!$category) {
             return null;
         }
-        return $this->router->generate('resources', [
+        return $this->router->generate($routeName, [
             'parent' =>  $category->getId(),
             'slug' => $this->slugify->slugify($category->getName())
         ]);

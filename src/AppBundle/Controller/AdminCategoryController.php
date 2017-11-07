@@ -51,7 +51,7 @@ class AdminCategoryController extends Controller
             $em->persist($category);
             $em->flush();
             $this->addFlash('notice', 'Category ' . ($newCat ? 'added' : 'updated'));
-            return $this->redirectToRoute('admin_categories');
+            return $this->redirectToRoute('admin_category_list');
         }
         return $this->render('/admin/category/createcat.html.twig',array(
             'form' => $form->createView(),
@@ -68,6 +68,6 @@ class AdminCategoryController extends Controller
         $em->remove($category);
         $em->flush();
         $this->addFlash('notice', 'Category deleted');
-        return $this->redirectToRoute('admin_categories');
+        return $this->redirectToRoute('admin_category_list');
     }
 }

@@ -1,0 +1,21 @@
+{% if resources|length %}
+  {% set general = general|default(false) %}
+  {% set id = 'collapse-category-' ~ category.id %}
+  <section class="behaviour-category">
+    <div class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h4>{{ general ? 'General' : category.name }}</h4>
+            {% if not general %}
+              <a class="expander collapsed" role="button" data-toggle="collapse" href="#{{ id }}" aria-expanded="false" aria-controls="{{ id }}"></a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="resources{{ not general ? ' collapse' : '' }}" id="{{ id }}">
+      {% include 'frontend/_resourceList.html.twig' with {minimal:true} %}
+    </div>
+  </section>
+{% endif %}

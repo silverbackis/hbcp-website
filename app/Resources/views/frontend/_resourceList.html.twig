@@ -1,14 +1,17 @@
+{% set minimal = minimal|default(false) %}
 {% for resource in  resources %}
-  <div class="row text-left resource">
+  <div class="row text-left resource no-gutters">
     <div class="col-xs-12">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 resource-info">
-            <div class="row">
-              <div class="col-xs-12">
-                <p class="resource-date">{{ resource.created |date("d/m/Y") }}</p>
+            {% if not minimal %}
+              <div class="row">
+                <div class="col-xs-12">
+                  <p class="resource-date">{{ resource.created |date("d/m/Y") }}</p>
+                </div>
               </div>
-            </div>
+            {% endif %}
             <div class="row">
                   <span class="col-xs-12 resource-title">
                     {% set isDropbox = resource.pathType|lower == 'dropbox' %}
@@ -16,11 +19,13 @@
                     {{ resource.title }} <span class="resource-type">{{ types|array_filter|join(' | ') }}</span>
                   </span>
             </div>
-            <div class="row">
-              <div class="col-xs-12 resource-category-row">
-                <span class="label label-default">{{ resource.resourceTag }}</span>
+            {% if not minimal %}
+              <div class="row">
+                <div class="col-xs-12 resource-category-row">
+                  <span class="label label-default">{{ resource.resourceTag }}</span>
+                </div>
               </div>
-            </div>
+            {% endif %}
 
             {% if resource.pathType|lower == 'dropbox' %}
               <a class="resource-btn" href="{{ path('resource', {

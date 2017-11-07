@@ -1,6 +1,7 @@
 @import "../../_variables";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+@import "resource";
 
 @mixin tab-text {
   font-size: 18px;
@@ -194,84 +195,4 @@
     opacity: 0.6;
   }
 }
-.resource {
-  padding: 20px 0;
-  &:nth-child(even) {
-    background: $gray-lighter;
-  }
-  .resource-date {
-    font-size: 13px;
-    color: $gray-light;
-    margin: 0;
-  }
-  .resource-title {
-    display: block;
-    margin: 5px 0 8px 0;
-    font-size: 18px;
 
-    .resource-type {
-      display: inline-block;
-      padding-left: 5px;
-      font-size: 12px;
-      color: $blue;
-    }
-  }
-  .label {
-    font-size: 16px;
-    color: $blue;
-    background: $pill-tag;
-    border: 1px solid $gray-border;
-    border-radius: 20px;
-    font-weight: normal;
-    padding: 5px 20px;
-    display: inline-block;
-    white-space: normal;
-    text-align: left;
-  }
-  .resource-btn {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    margin-top: -17px;
-    color: $blue;
-    text-decoration: none;
-    padding: 5px 0;
-    width: 110px;
-    float: right;
-    background: white;
-    display: inline-block;
-    border: 1px solid $blue;
-    border-radius: 51px;
-    font-size: 16px;
-    text-align: center;
-  }
-  .resource-info {
-    padding-right: 140px;
-  }
-  @media (max-width: $screen-md-min) {
-    .resource-title {
-      font-size: 16px;
-      .resource-type {
-        font-size: 11px;
-      }
-    }
-    .resource-btn {
-      top: auto;
-      margin-top: 0;
-      bottom: 0;
-      font-size: 13px;
-      width: 85px;
-      line-height: 16px;
-    }
-    .resource-info {
-      padding-right: 0;
-    }
-    .label {
-      font-size: 13px;
-      line-height: 16px;
-    }
-    .resource-category-row {
-      padding-right: 140px;
-    }
-  }
-}

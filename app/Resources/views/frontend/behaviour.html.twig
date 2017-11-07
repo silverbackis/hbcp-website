@@ -1,4 +1,5 @@
 {% extends 'layout.html.twig' %}
+{% set diagramAnchor = '#diagram' %}
 
 {% block stylesheets %}
   {{ parent() }}
@@ -14,7 +15,7 @@
             develop a Machine Learning Programme that can analyse and literature and no more text'
   } %}
 
-  <section class="behaviour-diagram">
+  <section class="behaviour-diagram" id="diagram">
     <div class="container-fluid">
       <div class="row no-gutters">
         <div class="col-md-3 text-center diagram-info">
@@ -24,7 +25,7 @@
           </p>
         </div>
         <div class="col-md-6 triangle">
-          {% include 'frontend/behaviourtriangle.html.twig' %}
+          {% include 'frontend/_triangle.html.twig' %}
         </div>
         <div class="col-md-3 text-center diagram-explain">
           <div class="inline-block">
@@ -37,7 +38,41 @@
       </div>
     </div>
   </section>
+  {% if not parent %}
   <section class="select-label text-center">
-    <p>Select section of the Diagram to show the associated resources</p>
+    <p>Select section of the Diagram for an explanation and to show the associated resources</p>
   </section>
+  {% else %}
+  <section class="resources">
+    <div class="resource-header text-center">
+      <h2>{{ tabs ? parent.parent.name : parent.name }}</h2>
+      <p>Some text about the category</p>
+    </div>
+    {% if tabs %}
+      {% set current_tab_href = path('behavioural_science', {slug: parent.name|slugify, parent: parent.id}) %}
+      <ul class="nav nav-tabs">
+      {% for tab in tabs %}
+        {% set tab_href = path('behavioural_science', {slug: tab.name|slugify, parent: tab.id}) %}
+        <li{% if tab_href == current_tab_href %} class="active"{% endif %}><a href="{{ tab_href~diagramAnchor }}">{{ tab.name }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endif %}
+
+    {% set total = parent.resources|length %}
+    {% set resources = parent.resources %}
+    {% include 'frontend/_behaviourResources.html.twig' with {resources:resources, category:parent, general: true} %}
+
+    {% for category in parent.children %}
+      {% set sub_resources = category_resources(category) %}
+      {% set total = total+sub_resources|length %}
+      {% include 'frontend/_behaviourResources.html.twig' with {resources:sub_resources, category:category} %}
+    {% endfor %}
+
+    {% if not total %}
+      <div class="text-center">
+        <h3>No resources found</h3>
+      </div>
+    {% endif %}
+  </section>
+  {% endif %}
 {% endblock %}
