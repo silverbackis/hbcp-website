@@ -856,6 +856,16 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
+bootstrap-sass@^3.3.7:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap-sass/-/bootstrap-sass-3.3.7.tgz#6596c7ab40f6637393323ab0bc80d064fc630498"
+
+bootstrap-select@^1.12.4:
+  version "1.12.4"
+  resolved "https://registry.yarnpkg.com/bootstrap-select/-/bootstrap-select-1.12.4.tgz#7f15d3c0ce978868d9c09c70f96624f55fa02ee1"
+  dependencies:
+    jquery ">=1.8"
+
 brace-expansion@^1.1.7:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.8.tgz#c07b211c7c952ec1f8efd51a77ef0d1d3990a292"
@@ -1082,6 +1092,14 @@ clean-webpack-plugin@^0.1.16:
   resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.17.tgz#71c57242e6d47204d46f809413176e7bed28ec49"
   dependencies:
     rimraf "^2.6.1"
+
+clipboard@^1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-1.7.1.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
 
 cliui@^2.1.0:
   version "2.1.0"
@@ -1489,6 +1507,10 @@ del@^3.0.0:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delayed-stream/-/delayed-stream-1.0.0.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+
+delegate@^3.1.2:
+  version "3.1.3"
+  resolved "https://registry.yarnpkg.com/delegate/-/delegate-3.1.3.tgz#9a8251a777d7025faa55737bc3b071742127a9fd"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -1962,6 +1984,10 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+
 for-in@^0.1.3:
   version "0.1.8"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-0.1.8.tgz#d8773908e31256109952b1fdb9b3fa867d2775e1"
@@ -2143,6 +2169,12 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.4"
     minimatch "~3.0.2"
+
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/good-listener/-/good-listener-1.2.2.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  dependencies:
+    delegate "^3.1.2"
 
 graceful-fs@^4.1.2, graceful-fs@^4.1.6:
   version "4.1.11"
@@ -2609,7 +2641,13 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jquery@^3.2.1:
+jquery-form@^4.2.2:
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/jquery-form/-/jquery-form-4.2.2.tgz#9f96fb141ec9cbe0cdaf58b4d3f1dcbb009cdd52"
+  dependencies:
+    jquery ">=1.7.2"
+
+jquery@>=1.7.0, jquery@>=1.7.2, jquery@>=1.8, jquery@^3.2.1:
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.2.1.tgz#5c4d9de652af6cd0a770154a631bba12b015c787"
 
@@ -2727,6 +2765,60 @@ lcid@^1.0.0:
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
   dependencies:
     invert-kv "^1.0.0"
+
+lg-autoplay@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lg-autoplay/-/lg-autoplay-1.0.4.tgz#2591ea2b84043a5cd5d8cb1969c502921a77ba2c"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-fullscreen@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/lg-fullscreen/-/lg-fullscreen-1.0.1.tgz#6207ca819d91e1b6fa6b6d37705e269bc01d2f53"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-hash@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/lg-hash/-/lg-hash-1.0.3.tgz#172bffb15ddcb78dfff7bc3dd0a58e07fa87e793"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-pager@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/lg-pager/-/lg-pager-1.0.2.tgz#e9d928de8f9fa440151d0eab8265dcfb9accb041"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-share@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-share/-/lg-share-1.1.0.tgz#d903680634f4b8ddf45d07b1985b2e776aefd398"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-thumbnail@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-thumbnail/-/lg-thumbnail-1.1.0.tgz#91344d9cca35807d44f9f8346d04589c15cc16b2"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-video@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-video/-/lg-video-1.1.0.tgz#78004e488a36a77423140fd599d3cd05006f2790"
+  dependencies:
+    jquery ">=1.7.0"
+
+lg-zoom@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lg-zoom/-/lg-zoom-1.1.0.tgz#726cdc34748dbd7c1372feedb3017be509e10951"
+  dependencies:
+    jquery ">=1.7.0"
+
+lightgallery@^1.6.4:
+  version "1.6.4"
+  resolved "https://registry.yarnpkg.com/lightgallery/-/lightgallery-1.6.4.tgz#8b9f3b112aec1be7f6d46af5232579206b55f9b2"
+  dependencies:
+    jquery ">=1.7.0"
 
 load-json-file@^1.0.0:
   version "1.1.0"
@@ -4190,6 +4282,10 @@ select-hose@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/select-hose/-/select-hose-2.0.0.tgz#625d8658f865af43ec962bfc376a37359a4994ca"
 
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/select/-/select-1.1.2.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+
 selfsigned@^1.9.1:
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/selfsigned/-/selfsigned-1.10.1.tgz#bf8cb7b83256c4551e31347c6311778db99eec52"
@@ -4613,6 +4709,10 @@ timers-browserify@^2.0.2:
   resolved "https://registry.yarnpkg.com/timers-browserify/-/timers-browserify-2.0.4.tgz#96ca53f4b794a5e7c0e1bd7cc88a372298fa01e6"
   dependencies:
     setimmediate "^1.0.4"
+
+tiny-emitter@^2.0.0:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/tiny-emitter/-/tiny-emitter-2.0.2.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
 
 to-arraybuffer@^1.0.0:
   version "1.0.1"

@@ -1,0 +1,195 @@
+@import "../../_variables";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/mixins";
+@import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
+
+.container-fluid .jumbotron {
+  @include hbcp-jumbotron;
+  background-image: url('/bundles/app/images/bg-bs-header.png');
+  .jumbotron-icon {
+    margin-top: -52px;
+  }
+
+  @media (max-width: $screen-sm-min) {
+    .jumbotron-icon {
+      margin-top: -34px;
+    }
+  }
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+section.behaviour-diagram {
+  margin: 30px 0;
+  .diagram-info {
+    font-size: 16px;
+    .info-icon {
+      width: 26.5px;
+      margin-bottom: 10px;
+    }
+  }
+  .diagram-explain {
+    background: url('/bundles/app/images/bs-explainbg.svg') 50% 50% no-repeat;
+    background-size: contain;
+    max-width: 329px;
+    padding: 45px 0 50px;
+    .inline-block {
+      position: relative;
+      width: 70%;
+    }
+    p {
+      position: relative;
+      width: 100%;
+      color: $blue;
+      font-size: 18px;
+    }
+    .btn-explain {
+      @include hbcp-button;
+      font-size: 14px;
+      padding: 12px 20px;
+      width: auto;
+      min-width: 0;
+    }
+  }
+
+  .diagram {
+    .layout {
+      width: 100%;
+      max-width: 504px;
+      position: relative;
+      img {
+        width: 100%;
+        visibility: hidden;
+      }
+      .items {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .item {
+          position: absolute;
+          line-height: 0;
+
+          svg {
+            width: 100%;
+            a {
+              position: relative;
+              z-index: 1;
+              .icon,
+              .fill,
+              .stroke{
+                transition: fill .3s, stroke .3s;
+              }
+              &:hover {
+                .icon {
+                  fill: $white;
+                }
+                .fill {
+                  fill: #000;
+                }
+              }
+            }
+          }
+
+          &.behaviour {
+            bottom: 0;
+            right: 0;
+            width: 33.1349206349206%;
+
+            svg a:hover {
+              .fill {
+                fill: $behaviour;
+              }
+              .stroke {
+                stroke: $behaviour;
+              }
+            }
+          }
+
+          &.mechanisms {
+            bottom: 0;
+            right: 33.43%;
+            width: 33.1349206349206%;
+
+            svg a:hover {
+              .fill {
+                fill: $mechanisms;
+              }
+              .stroke {
+                stroke: $mechanisms;
+              }
+            }
+          }
+
+          &.intervention {
+            bottom: 0;
+            left: 0;
+            width: 33.1349206349206%;
+
+            svg a:hover {
+              .fill {
+                fill: $intervention;
+              }
+              .stroke {
+                stroke: $intervention;
+              }
+            }
+          }
+
+          &.context {
+            bottom: 29.2%;
+            left: 50.45%;
+            width: 36.3095238095238%;
+
+            svg a:hover {
+              .fill {
+                fill: $context;
+              }
+              .stroke {
+                stroke: $context;
+              }
+            }
+          }
+
+          &.exposure {
+            bottom: 29.2%;
+            right: 49.9%;
+            width: 36.5079365079365%;
+
+            svg a:hover {
+              .fill {
+                fill: $exposure;
+              }
+              .stroke {
+                stroke: $exposure;
+              }
+            }
+          }
+
+          &.outcome {
+            top: 0;
+            left: 27.85%;
+            width: 45.0396825396825%;
+
+            svg {
+              a {
+                z-index: 2;
+                :hover {
+                  .fill {
+                    fill: $outcome;
+                  }
+                  .stroke {
+                    stroke: $outcome;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
