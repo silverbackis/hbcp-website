@@ -2,7 +2,7 @@
   <div class="layout inline-block">
     <img src="{{ asset('/bundles/app/images/_Final layout.png') }}" alt="Behavioural Science Diagram Placeholder" />
     <div class="items">
-      {% include 'frontend/triangle/_outcome.html.twig' %}
+      {% include 'frontend/triangle/_outcome.html.twig' with {href: path('behavioural_science', { category: 'outcome' })} %}
       {% include 'frontend/triangle/_exposure.html.twig' %}
       {% include 'frontend/triangle/_context.html.twig' %}
       {% include 'frontend/triangle/_intervention.html.twig' %}
