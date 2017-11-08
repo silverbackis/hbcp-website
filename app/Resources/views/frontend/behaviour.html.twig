@@ -45,8 +45,9 @@
   {% else %}
   <section class="resources">
     <div class="resource-header text-center">
-      <h2>{{ tabs ? parent.parent.name : parent.name }}</h2>
-      <p>Some text about the category</p>
+      {% set second_level_parent = tabs ? parent.parent : parent %}
+      <h2>{{ second_level_parent.name }}</h2>
+      <p>{{ (second_level_parent.name|slugify~'.description')|trans({}, 'category') }}</p>
     </div>
     {% if tabs %}
       {% set current_tab_href = path('behavioural_science', {slug: parent.name|slugify, parent: parent.id}) %}

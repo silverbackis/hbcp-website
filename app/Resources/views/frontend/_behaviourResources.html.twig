@@ -8,13 +8,13 @@
           <div class="col-xs-12">
             <h4>{{ general ? 'General' : category.name }}</h4>
             {% if not general %}
-              <a class="expander collapsed" role="button" data-toggle="collapse" href="#{{ id }}" aria-expanded="false" aria-controls="{{ id }}"></a>
+              <a class="expander" role="button" data-toggle="collapse" href="#{{ id }}" aria-expanded="true" aria-controls="{{ id }}"></a>
             {% endif %}
           </div>
         </div>
       </div>
     </div>
-    <div class="resources{{ not general ? ' collapse' : '' }}" id="{{ id }}">
+    <div class="resources{{ not general ? ' collapse in' : '' }}" id="{{ id }}">
       {% include 'frontend/_resourceList.html.twig' with {minimal:true} %}
     </div>
   </section>

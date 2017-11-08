@@ -193,13 +193,13 @@ class DefaultController extends AbstractController
      */
     public function behaviouralScienceExplain()
     {
-        return $this->render('frontend/behaviourdiagram.html.twig', [
+        return $this->render('frontend/behaviourDiagramExplain.html.twig', [
             'title'=>'Explain Behavioural Science Diagram'
         ]);
     }
 
     /**
-     *@Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0})
+     *@Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0}, requirements={"parent"="\d+"})
      */
     public function behaviouralScience(string $slug = null, Category $parent = null, Request $request)
     {

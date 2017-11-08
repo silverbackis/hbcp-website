@@ -1,0 +1,82 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/behaviour.style.css') }}" />
+{% endblock %}
+
+{% block body %}
+  {% include 'frontend/_hero.html.twig' with {
+  'icon': 'bundles/app/images/homegraphic-bc.png',
+  'icon_alt': 'Behavioural Science',
+  'header': 'Behavioural Science',
+  'text': 'The Human Behaviour Change Project is a collaboration between world leading institution to create and
+            develop a Machine Learning Programme that can analyse and literature and no more text'
+  } %}
+
+  <section class="behaviour-diagram detailed" id="diagram">
+    <div class="container-fluid">
+      <div class="row no-gutters">
+        <div class="col-md-3 text-center diagram-info">
+          <img src="{{ asset('bundles/app/images/bsicon-info.svg') }}" alt="Info info - lower case 'i'" class="info-icon" />
+          <p>
+            This is a more in-depth version of the behavioural science diagram showing <span class="inline-block">the connections.</span>
+          </p>
+        </div>
+        <div class="col-md-6 triangle">
+          <div class="diagram text-center">
+            <div class="layout inline-block">
+              <img src="{{ asset('bundles/app/images/bs-diagramdetailed.png') }}" alt="Behavioural Science Detailed Diagram" />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 text-center diagram-explain">
+          {%  block back_to_diagram %}
+            <div class="inline-block">
+              <p>View resources via the interactive Diagram</p>
+              <a href="{{ path('behavioural_science') }}" class="btn btn-block btn-explain back">
+                Back to Resources
+              </a>
+            </div>
+          {% endblock %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="explain-diagram">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <h2>About the Diagram </h2>
+          <h3>The Connections </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. </p>
+          <h3>How to use the diagram </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+            ut aliquip ex ea commodo consequat. </p>
+          <h3>Use case scenario </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            View resources via the </p>
+        </div>
+      </div>
+      <div class="row row-diagram-explain">
+        <div class="col-xs-12">
+          <div class="col-md-4 col-md-offset-4 text-center diagram-explain">
+            {{ block('back_to_diagram') }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

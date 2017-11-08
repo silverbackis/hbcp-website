@@ -1,0 +1,12 @@
+outcome:
+  description: Outcome description
+exposure:
+  description: Exposure description
+context:
+  description: Context description
+intervention:
+  description: Intervention description
+mechanisms:
+  description: Mechanisms description
+behaviour:
+  description: Behaviour description
