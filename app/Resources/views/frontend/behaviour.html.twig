@@ -8,7 +8,7 @@
 
 {% block body %}
   {% include 'frontend/_hero.html.twig' with {
-  'icon': 'bundles/app/images/homegraphic-bc.png',
+  'icon': 'bundles/app/images/homegraphic-bc.svg',
   'icon_alt': 'Behavioural Science',
   'header': 'Behavioural Science',
   'text': header_text
@@ -22,6 +22,9 @@
           <p>
             {{ 'behavioural_science.info'|trans }}
           </p>
+          <a href="{{ path('behavioural_science_explain') }}" class="btn btn-block btn-explain">
+            Explain Diagram
+          </a>
         </div>
         <div class="col-md-6 triangle">
           {% include 'frontend/_triangle.html.twig' %}

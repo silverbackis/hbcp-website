@@ -83,7 +83,6 @@ body {
   h2 {
     color: $blue;
     font-weight: normal;
-    margin-top: 0;
   }
   img {
     max-width: 100%;
@@ -95,5 +94,11 @@ body {
     p {
       font-size: 15px;
     }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .mt-md-0 {
+    margin-top: 0;
   }
 }
