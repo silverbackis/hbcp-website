@@ -41,6 +41,9 @@ services:
     AppBundle\Validator\Constraints\ResourceValidator:
         arguments:
             $dropboxOauth: '%dropbox_oauth%'
+
+    Sonata\SeoBundle\Seo\SeoPageInterface:
+      alias: 'sonata.seo.page'
     
     
        

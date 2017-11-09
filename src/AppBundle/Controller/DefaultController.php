@@ -8,11 +8,13 @@ use AppBundle\Utils\CategoryUtils;
 use AppBundle\Utils\FilterUtils;
 use Cocur\Slugify\SlugifyInterface;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sonata\SeoBundle\Seo\SeoPageInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Category;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class DefaultController extends AbstractController
 {
@@ -21,8 +23,17 @@ class DefaultController extends AbstractController
         return array_merge(parent::getSubscribedServices(), [
             'slugify' => '?'.SlugifyInterface::class,
             CategoryUtils::class => '?'.CategoryUtils::class,
-            FilterUtils::class => '?'.FilterUtils::class
+            FilterUtils::class => '?'.FilterUtils::class,
+            SeoPageInterface::class => SeoPageInterface::class,
+            TranslatorInterface::class => TranslatorInterface::class
         ]);
+    }
+
+    private function setSeo(string $title = null, string $description) {
+        $seoPage = $this->container->get(SeoPageInterface::class);
+        $seoPage
+            ->setTitle(join(' - ', array_filter([$title, $seoPage->getTitle()])))
+            ->addMeta('name', 'description', $description);
     }
 
     /**
@@ -30,8 +41,10 @@ class DefaultController extends AbstractController
      */
     public function home(Request $request)
     {
+        $description = $this->get(TranslatorInterface::class)->trans('home.description');
+        $this->setSeo('', $description);
         return $this->render('frontend/homepage.html.twig', [
-            'title'=>'Welcome'
+            'header_text' => $description
         ]);
     }
 
@@ -40,6 +53,9 @@ class DefaultController extends AbstractController
      */
     public function latestNews(Request $request)
     {
+        $description = $this->get(TranslatorInterface::class)->trans('news.description');
+        $this->setSeo('Latest News', $description);
+
         $news = $this->getDoctrine()
             ->getRepository(News::class)
             ->findBy(
@@ -49,7 +65,8 @@ class DefaultController extends AbstractController
                 ]
             );
         return $this->render('frontend/news.html.twig', [
-            'allnews' => $news
+            'allnews' => $news,
+            'header_text' => $description
         ]);
     }
 
@@ -66,6 +83,8 @@ class DefaultController extends AbstractController
             ]);
         }
 
+        $this->setSeo($news->getName(), $news->getName() . ' - ' . substr(strip_tags($news->getNewsContent()), 0, 250));
+
         return $this->render('frontend/news-post.html.twig', [
             'news' => $news
         ]);
@@ -76,8 +95,13 @@ class DefaultController extends AbstractController
      */
     public function contactUs()
     {
+        $description = $this->get(TranslatorInterface::class)->trans('contact.description');
+        $this->setSeo('Contact Us', $description);
+
         return $this->render('frontend/contactus.html.twig',array(
-            'title'=>'Contact Us'));
+            'title'=>'Contact Us',
+            'header_text' => $description
+        ));
     }
 
     /**
@@ -85,8 +109,12 @@ class DefaultController extends AbstractController
      */
     public function teamMembers()
     {
+        $description = $this->get(TranslatorInterface::class)->trans('project_team.description');
+        $this->setSeo('Project Team & Grant Holders', $description);
+
         return $this->render('frontend/team.html.twig',array(
-            'title'=>'Grant Holders'));
+            'header_text' =>$description
+        ));
     }
 
     /**
@@ -152,10 +180,16 @@ class DefaultController extends AbstractController
         $filterUtils = $this->container->get(FilterUtils::class);
         $filterCategories = $filterUtils->getCategoryFilterOptions($resources);
         $filterTypes = $filterUtils->getResourceTypeFilterOptions($resources);
+
+        $title = ucwords($parent->getName()) . ' Resources';
+        $hero = $categoryUtils->getCategoryHero($parent);
+        $this->setSeo($title, $hero['text']);
+
+
         return $this->render('frontend/resources.html.twig', array(
-            'title'=> ucwords($parent->getName()) . ' Resources',
+            'title'=> $title,
             'resources' => $resources,
-            'hero' => $categoryUtils->getCategoryHero($parent),
+            'hero' => $hero,
             'slug' => $expectedSlug,
             'filter' => [
                 'categories' => $filterCategories,
@@ -182,6 +216,8 @@ class DefaultController extends AbstractController
             ]);
         }
 
+        $this->setSeo($resource->getTitle(), $resource->getTitle());
+
         return $this->render('frontend/resource.html.twig', [
             'title' => $resource->getTitle(),
             'resource' => $resource
@@ -193,8 +229,11 @@ class DefaultController extends AbstractController
      */
     public function behaviouralScienceExplain()
     {
+        $description = $this->get(TranslatorInterface::class)->trans('behavioural_science.description');
+        $this->setSeo('Explain Behavioural Science Diagram', $description);
+
         return $this->render('frontend/behaviourDiagramExplain.html.twig', [
-            'title'=>'Explain Behavioural Science Diagram'
+            'header_text' => $description
         ]);
     }
 
@@ -244,14 +283,23 @@ class DefaultController extends AbstractController
                 return $this->redirectToRoute('behavioural_science');
             }
         }
+
+        $description = $this->get(TranslatorInterface::class)->trans('behavioural_science.description');
+        $titleArray = [
+            $secondLevelCategory ? $secondLevelCategory->getName() : null,
+            $parent && $secondLevelCategory!==$parent ? $parent->getName() : null,
+            'Behavioural Science Diagram'
+        ];
+        $this->setSeo(join(' - ', array_filter($titleArray)), $description);
+
         return $this->render('frontend/behaviour.html.twig', [
-            'title' => 'Behavioural Science',
             'parent' => $parent,
             'tabs' => $tabs,
             'second_level_link' => $this->generateUrl('behavioural_science', [
                 'parent' => $secondLevelCategory ? $secondLevelCategory->getId() : null,
                 'slug' => $secondLevelCategory ? $this->get('slugify')->slugify($secondLevelCategory->getName()) : null
-            ])
+            ]),
+            'header_text' => $description
         ]);
     }
 }
