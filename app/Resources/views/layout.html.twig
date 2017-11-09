@@ -55,7 +55,7 @@ app.request.attributes.get('_route_params')) %}
             <img src="{{ asset('bundles/app/images/contacticon.svg') }}" alt="Contact Icon">
           </div>
           <h2>Contact Us</h2>
-          <p>We use range of social and media networks to keep our stakeholders, investigators and those interested in the project up-to-date with developments. You can contact us through any of these networks and also sign up to our mailing list.</p>
+          <p>{{ 'layout.contact'|trans }}</p>
           <a href="{{ path('contactus') }}" class="btn">Contact</a>
         </div>
       </div>
@@ -71,7 +71,7 @@ app.request.attributes.get('_route_params')) %}
       <div class="row">
         <div class="col-sm-4 col-xs-5">&copy; {{ 'now'|date('Y') }} HBCP</div>
         <div class="col-sm-4 col-xs-2 text-center"><a href="#"><img src="{{ asset('bundles/app/images/footer-twitter.svg') }}" alt="Twitter Logo"></a></div>
-        <div class="col-sm-4 col-xs-5 text-right">Site by British Websites</div>
+        <div class="col-sm-4 col-xs-5 text-right">Site by <a href="https://www.britishwebsites.co.uk" target="_blank" rel="noopener">British Websites</a></div>
       </div>
     </div>
   </footer>

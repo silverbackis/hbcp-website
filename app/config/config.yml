@@ -120,6 +120,12 @@ bw_base:
         # auto = same as meta description (from either Sonata SEO or BW Base)
         twitter:description: 'auto'
         viewport: 'width=device-width,height=device-height,initial-scale=1,maximum-scale=1,minimum-scale=1'
+        msapplication-TileColor: '#FFFFFF'
+        msapplication-TileImage: '%favicon_base%mstile-144x144.png'
+        msapplication-square70x70logo: '%favicon_base%mstile-70x70.png'
+        msapplication-square150x150logo: '%favicon_base%mstile-150x150.png'
+        msapplication-wide310x150logo: '%favicon_base%mstile-310x150.png'
+        msapplication-square310x310logo: '%favicon_base%mstile-310x310.png'
       property:
         # auto = same as Sonata SEO title tag
         - { property: "og:title", content: "auto" }
@@ -132,11 +138,23 @@ bw_base:
         #- { property: "og:image:height", content: "500" }
         #- { property: "og:image", content: "%opengraph_base%opengraph_image2.png" }
     links:
-      #rel:
-      #  apple-touch-icon-precomposed:
-      #    - { sizes: 57x57, href: '%favicon_base%apple-touch-icon-57x57.png' }
-      #  icon:
-      #    - { type: image/png, sizes: 196x196, href: '%favicon_base%favicon-196x196.png' }
+      rel:
+        apple-touch-icon-precomposed:
+          - { sizes: 57x57, href: '%favicon_base%apple-touch-icon-57x57.png' }
+          - { sizes: 60x60, href: '%favicon_base%apple-touch-icon-60x60.png' }
+          - { sizes: 72x72, href: '%favicon_base%apple-touch-icon-72x72.png' }
+          - { sizes: 76x76, href: '%favicon_base%apple-touch-icon-76x76.png' }
+          - { sizes: 114x114, href: '%favicon_base%apple-touch-icon-114x114.png' }
+          - { sizes: 120x120, href: '%favicon_base%apple-touch-icon-120x120.png' }
+          - { sizes: 144x144, href: '%favicon_base%apple-touch-icon-144x144.png' }
+          - { sizes: 152x152, href: '%favicon_base%apple-touch-icon-152x152.png' }
+        icon:
+          - { type: image/png, sizes: 16x16, href: '%favicon_base%favicon-16x16.png' }
+          - { type: image/png, sizes: 32x32, href: '%favicon_base%favicon-32x32.png' }
+          - { type: image/png, sizes: 96x96, href: '%favicon_base%favicon-96x96.png' }
+          - { type: image/png, sizes: 128x128, href: '%favicon_base%favicon-128.png' }
+          - { type: image/png, sizes: 196x196, href: '%favicon_base%favicon-196x196.png' }
+          - { type: image/x-icon, href: '%favicon_base%favicon.ico' }
     js_sdk:
       google_analytics:
         enabled: false

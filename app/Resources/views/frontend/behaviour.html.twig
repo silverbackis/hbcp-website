@@ -11,8 +11,7 @@
   'icon': 'bundles/app/images/homegraphic-bc.png',
   'icon_alt': 'Behavioural Science',
   'header': 'Behavioural Science',
-  'text': 'The Human Behaviour Change Project is a collaboration between world leading institution to create and
-            develop a Machine Learning Programme that can analyse and literature and no more text'
+  'text': 'behavioural_science.description'|trans
   } %}
 
   <section class="behaviour-diagram" id="diagram">
@@ -21,7 +20,7 @@
         <div class="col-md-3 text-center diagram-info">
           <img src="{{ asset('bundles/app/images/bsicon-info.svg') }}" alt="Info info - lower case 'i'" class="info-icon" />
           <p>
-            This Diagram is a visualisation of the flow of some to something else to <span class="inline-block">produce an outcome.</span>
+            {{ 'behavioural_science.info'|trans }}
           </p>
         </div>
         <div class="col-md-6 triangle">
@@ -47,7 +46,7 @@
     <div class="resource-header text-center">
       {% set second_level_parent = tabs ? parent.parent : parent %}
       <h2>{{ second_level_parent.name }}</h2>
-      <p>{{ (second_level_parent.name|slugify~'.description')|trans({}, 'category') }}</p>
+      <p>{{ ('behavioural_science' ~ (second_level_parent.name|slugify)~'.description')|trans }}</p>
     </div>
     {% if tabs %}
       {% set current_tab_href = path('behavioural_science', {slug: parent.name|slugify, parent: parent.id}) %}

@@ -6,6 +6,7 @@ use AppBundle\Entity\Category;
 use Cocur\Slugify\SlugifyInterface;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\Translation\TranslatorInterface;
 
 class CategoryUtils
 {
@@ -21,15 +22,22 @@ class CategoryUtils
      * @var RouterInterface
      */
     private $router;
+
+    /**
+     * @var TranslatorInterface
+     */
+    private $translator;
     public function __construct(
         SlugifyInterface $slugify,
         EntityManagerInterface $em,
-        RouterInterface $router
+        RouterInterface $router,
+        TranslatorInterface $translator
     )
     {
         $this->slugify = $slugify;
         $this->em = $em;
         $this->router = $router;
+        $this->translator = $translator;
     }
 
     public function findAllCategories(Category $category) {
@@ -71,7 +79,7 @@ class CategoryUtils
                     'icon' => 'bundles/app/images/homegraphic-bc.png',
                     'icon_alt' => 'Hero icon - Behavioural Science Resources',
                     'header' => 'Behavioural Science',
-                    'text' => 'The Human Behaviour Change Project is a collaboration between world leading institution to create and develop a Machine Learning Programme that can analyse and literature and no more text'
+                    'text' => $this->translator->trans('behavioural_science.description')
                 ];
                 break;
             case "computer science":
@@ -79,7 +87,7 @@ class CategoryUtils
                     'icon' => 'bundles/app/images/homegraphic-cs.svg',
                     'icon_alt' => 'Hero icon - Computer Science Resources',
                     'header' => 'Computer Science',
-                    'text' => 'The Human Behaviour Change Project is a collaboration between world leading institution to create and develop a Machine Learning Programme that can analyse and literature and no more text'
+                    'text' => $this->translator->trans('computer_science.description')
                 ];
                 break;
             case "system architecture":
@@ -87,7 +95,7 @@ class CategoryUtils
                     'icon' => 'bundles/app/images/homegraphic-sa.svg',
                     'icon_alt' => 'Hero icon - System Architecture Resources',
                     'header' => 'System Architecture',
-                    'text' => 'The Human Behaviour Change Project is a collaboration between world leading institution to create and develop a Machine Learning Programme that can analyse and literature and no more text'
+                    'text' => $this->translator->trans('system_architecture.description')
                 ];
                 break;
             default:
@@ -95,8 +103,7 @@ class CategoryUtils
                     'icon' => 'bundles/app/images/mob-home.png',
                     'icon_alt' => 'Hero icon - All HBCP Resources',
                     'header' => 'All Resources',
-                    'text' => 'The Human Behaviour Change Project is a collaboration between world leading institution to create and
-                        develop a Machine Learning Programme that can analyse and literature and no more text'
+                    'text' => $this->translator->trans('all_resources.description')
                 ];
                 break;
         }

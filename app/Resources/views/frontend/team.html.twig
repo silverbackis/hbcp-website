@@ -1,5 +1,19 @@
 {% extends 'layout.html.twig' %}
 
+{% import _self as team %}
+
+{% macro member(key) %}
+  {% set prefix = 'project_team.' ~ key ~ '.' %}
+  {% include 'frontend/_teamMember.html.twig' with {
+  image: (prefix ~ 'image')|trans,
+  image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'role')|trans,
+  header: (prefix ~ 'name')|trans,
+  sub_header: (prefix ~ 'role')|trans,
+  website: (prefix ~ 'link')|trans,
+  description: (prefix ~ 'description')|trans,
+  key: key
+  } %}
+{% endmacro %}
 
 {% block stylesheets %}
   {{ parent() }}
@@ -11,66 +25,15 @@
   'icon': 'bundles/app/images/white.png',
   'icon_alt': 'Grant Holders and Project Team Header Icon',
   'header': 'Grant Holders and Project Team',
-  'text': 'Some text will go here relating to the Grant Holders and Project Team. Maybe explaining the difference between the two and the fact the Project Team seem to be know as investigators.'
+  'text': 'project_team.description'|trans
   } %}
 
-  {# SUSAN #}
-  {% set susan_description %}
-    <p>Susan Michie is Professor of Health Psychology and Director of the Centre for Behaviour Change at UCL. Susan's research focuses on developing the science...</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-  {% endset %}
-  {% include 'frontend/_teamMember.html.twig' with {
-    image: 'bundles/app/images/team-susan.png',
-    image_alt: 'Professor Susan Michie (UCL) - Principal Investigator',
-    header: 'Professor Susan Michie (UCL)',
-    sub_header: 'Principal Investigator',
-    website: '#',
-    description: susan_description,
-    counter: 1
-  } %}
-
-  {# JOHN #}
-  {% set john_description %}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-  {% endset %}
-  {% include 'frontend/_teamMember.html.twig' with {
-    image: 'bundles/app/images/team-john.png',
-    image_alt: 'Professor John Shawe-Taylor (UCL) - Co-Investigator',
-    header: 'Professor John Shawe-Taylor (UCL)',
-    sub_header: 'Co-Investigator',
-    website: '#',
-    description: john_description,
-    counter: 2
-  } %}
-
-  {# MARIE #}
-  {% set marie_description %}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-  {% endset %}
-  {% include 'frontend/_teamMember.html.twig' with {
-    image: 'bundles/app/images/team-marie.png',
-    image_alt: 'Professor Marie Johnston (University of Aberdeen) - Co-Investigator',
-    header: 'Professor Marie Johnston (University of Aberdeen)',
-    sub_header: 'Co-Investigator',
-    website: '#',
-    description: marie_description,
-    counter: 3
-  } %}
-
-  {# Pol #}
-  {% set pol_description %}
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis..</p>
-  {% endset %}
-  {% include 'frontend/_teamMember.html.twig' with {
-    image: 'bundles/app/images/team-pol.png',
-    image_alt: 'Pol Mac Aonghusa (IBM Research Lab, Dublin) - Co-Investigator',
-    header: 'Pol Mac Aonghusa (IBM Research Lab, Dublin)',
-    sub_header: 'Co-Investigator',
-    website: '#',
-    description: pol_description,
-    counter: 4
-  } %}
+  {{ team.member('susan') }}
+  {{ team.member('james') }}
+  {{ team.member('john') }}
+  {{ team.member('pol') }}
+  {{ team.member('marie') }}
+  {{ team.member('mike') }}
+  {{ team.member('robert') }}
+  {{ team.member('niccola') }}
 {% endblock %}
