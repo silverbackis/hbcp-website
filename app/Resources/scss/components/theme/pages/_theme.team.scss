@@ -114,9 +114,22 @@
       background: linear-gradient(180deg, rgba($gray-lighter, 0%) 0%, rgba($gray-lighter, 100%) 90%);
     }
   }
+
+  @media(max-width: $screen-sm-min) {
+    .team-member {
+      img {
+        max-width: 120px;
+      }
+    }
+    .member-detail {
+      h2 {
+        margin-top: 20px;
+      }
+    }
+  }
 }
 
-@media(max-width: 768px) {
+@media(max-width: $screen-sm-min) {
   .project-team-section {
     text-align: center;
   }

@@ -49,7 +49,7 @@ project_team:
     name: Professor James Thomas (UCL - Institute of Education)
     role: Co-Investigator
     link: https://iris.ucl.ac.uk/iris/browse/profile?upi=JTHOA32
-    image: false
+    image: team-james.png
     description: |
       James Thomas is Professor of Social Research & Policy at the EPPI-Centre, UCL where he is Principal Investigator of the Department of Health Systematic Reviews Facility. This work involves conducting policy-relevant systematic reviews alongside the provision of training, national and international coordination work in evidence-based health promotion and public health, and the creation and maintenance of online evidence databases. James Thomas’s research career is centred on improving policy and decision-making through more creative use and appreciation of existing knowledge. It covers substantive disciplinary fields – such as health promotion, public health and education – and also the development of tools and methods that support this work conducted both within University College London (UCL) and in the wider community.
 
@@ -93,7 +93,7 @@ project_team:
     name: Professor Mike Kelly (University of Cambridge)
     role: Co-Investigator
     link: http://www.phpc.cam.ac.uk/people/pcu-group/pcu-visiting-staff/mike-kelly/
-    image: false
+    image: team-mike.png
     description: |
       Professor Mike Kelly is Senior Visiting Fellow in the Department of Public Health and Primary Care at the Institute of Public Health and a member of St John’s College at the University of Cambridge. He has an honorary chair at UCL. Between 2005 and 2014 he was Director of the Centre for Public Health at NICE. He was educated at the universities of York, Leicester and Dundee and had an academic career lasting twenty seven years before moving into the National Health Service to lead the Research Team at the Health Development Agency and then moving on to NICE. His research interest include health related behaviour change and health inequalities.
 
@@ -102,20 +102,13 @@ project_team:
     name: Professor Robert West (UCL)
     role: Co-Investigator
     link: http://www.rjwest.co.uk/
-    image: false
+    image: team-robert.png
     description: |
       Robert West is Professor of Health Psychology and Director of Tobacco Studies at the Cancer Research UK Health Behaviour Research Centre, University College London, UK. Professor West completed his PhD in Psychology in 1983 at University College London and worked as a postdoctoral researcher in the area of smoking at the Institute of Psychiatry until 1985 when he took up a lecturing position at Royal Holloway, London University. He continued his research into smoking and also began researching traffic accident involvement. In 1991 Professor West joined St George's, University of London, where he was made professor in 1996. He took up his present position in 2003.
 
       Professor West's research includes clinical trials of new smoking cessation treatments, studies of the acute effects of cigarette withdrawal and population studies of smoking patterns. He has published more than 500 scientific works and is co-author of the English National Smoking Cessation Guidelines that provided the blueprint for the UK-wide network of smoking cessation services. He is also Past-President of the Society for Research in Nicotine and Tobacco.
 
       Professor West is a member of the Editorial Board of the Cochrane Collaboration Tobacco Review Group, and Editor-in-Chief of the journal Addiction. He is author of the books, Theory of Addiction, Models of Addiction, The SmokeFree Formula, and Fast Facts: Smoking Cessation.
-  niccola:
-    name: Niccola Hutchinson-Pascal (UCL)
-    role: Co-Investigator
-    link: false
-    image: false
-    description: |
-      Niccola is the Project Manager at UCL ensuring the smooth running of this groundbreaking project. Previously she has worked for Sport England leading on a series of innovative customer focused behaviour change pilots working to ascertain the most effective methods of behaviour change in relation to increased physical activity. Niccola studied at both Brunel University and London Metropolitan University graduating with a BSC Sports Science and MA in Sport Management. Niccola has a wealth of experience in marketing, events management and project management across a wide variety of different sectors.
 
 news:
   description: The latest updates and news from the Human Behaviour-Change Project team.

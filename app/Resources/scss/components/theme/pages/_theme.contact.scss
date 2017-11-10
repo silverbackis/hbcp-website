@@ -30,6 +30,7 @@
     color: $blue;
     font-size: 28px;
     margin-top: 0;
+    font-weight: 400;
   }
   p {
     font-size: 16px;
@@ -48,6 +49,21 @@
     &:hover {
       background: rgb(139, 195, 243);
       color: $white;
+    }
+  }
+  @media(max-width: $screen-sm-min) {
+    img {
+      max-width: 80px;
+      max-height: 50px;
+    }
+    .news-img {
+      img {
+        max-height: 30px;
+      }
+    }
+    h2 {
+      font-size: 21px;
+      margin-top: 10px;
     }
   }
 }

@@ -106,7 +106,7 @@ class Resource
         if (!$this->getCategory()) {
             $this->topCategory = null;
         } else {
-            $parent = $this->getCategory()->getParent();
+            $parent = $this->getCategory();
             if (!$parent) {
                 $parent = $this->getCategory();
             } else {

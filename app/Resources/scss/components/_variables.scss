@@ -56,6 +56,10 @@ $font-size_base: 16px;
     background: $btn-shadow;
     color: $white;
   }
+
+  @media (max-width: $screen-xs-max) {
+    font-size: 15px;
+  }
 }
 
 @mixin hbcp-jumbotron {
@@ -146,6 +150,14 @@ $font-size_base: 16px;
       font-size: 14px;
     }
   }
+  @media (max-width: $screen-xs-min) {
+    .jumbotron-header {
+      font-size: 16px;
+    }
+    .jumbotron-info {
+      font-size: 13px;
+    }
+  }
 }
 
 @mixin hbcp-jumbotron-behaviour {
@@ -156,7 +168,8 @@ $font-size_base: 16px;
   }
   @media (max-width: $screen-sm-min) {
     .jumbotron-icon {
-      margin-top: -32px;
+      width: 95px;
+      margin-top: -37px;
     }
   }
 }

@@ -4,6 +4,12 @@
 
 .resource {
   padding: 20px 0;
+  h3 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: $gray-light;
+  }
   &:nth-child(even) {
     background: $gray-lighter;
   }
@@ -57,6 +63,9 @@
     padding-right: 140px;
   }
   @media (max-width: $screen-md-min) {
+    h3 {
+      font-size: 18px;
+    }
     .resource-title {
       font-size: 16px;
       .resource-type {

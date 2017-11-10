@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="11px" height="7px" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
-    <title>arrow-down-sign-to-navigate</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="All-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="CS" transform="translate(-284.000000, -346.000000)" fill="#0F78D1">
-            <g id="arrow-down-sign-to-navigate" transform="translate(284.000000, 346.000000)">
-                <path d="M5.6685592,6.16389736 C5.47752412,6.16389736 5.28648905,6.090697 5.1413381,5.94554605 L0.55667483,1.36088278 C0.264409019,1.06861697 0.264409019,0.595671258 0.55667483,0.304298134 C0.848047954,0.0134606223 1.32099367,0.0134606223 1.61254533,0.304298134 L5.6685592,4.36102615 L9.72546575,0.305012284 C10.0170174,0.0134606223 10.4897846,0.0134606223 10.7813363,0.305012284 C11.0728879,0.596385408 11.0728879,1.06933112 10.7813363,1.36088278 L6.19649445,5.94554605 C6.05152204,6.09141115 5.85977281,6.16389736 5.6685592,6.16389736 Z" id="Fill-1" transform="translate(5.668738, 3.125034) rotate(180.000000) translate(-5.668738, -3.125034) "></path>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg width="11" height="7" viewBox="0 0 11 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><title>arrow-down-sign-to-navigate</title><desc>Created with Sketch.</desc><g id="All-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="CS" transform="translate(-284.000000, -346.000000)" fill="#0F78D1"><g id="arrow-down-sign-to-navigate" transform="translate(284.000000, 346.000000)"><path d="M5.6685592,6.16389736 C5.47752412,6.16389736 5.28648905,6.090697 5.1413381,5.94554605 L0.55667483,1.36088278 C0.264409019,1.06861697 0.264409019,0.595671258 0.55667483,0.304298134 C0.848047954,0.0134606223 1.32099367,0.0134606223 1.61254533,0.304298134 L5.6685592,4.36102615 L9.72546575,0.305012284 C10.0170174,0.0134606223 10.4897846,0.0134606223 10.7813363,0.305012284 C11.0728879,0.596385408 11.0728879,1.06933112 10.7813363,1.36088278 L6.19649445,5.94554605 C6.05152204,6.09141115 5.85977281,6.16389736 5.6685592,6.16389736 Z" id="Fill-1" transform="translate(5.668738, 3.125034) rotate(180.000000) translate(-5.668738, -3.125034)"/></g></g></g></svg>
