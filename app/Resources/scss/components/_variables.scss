@@ -139,11 +139,24 @@ $font-size_base: 16px;
     }
     .jumbotron-header {
       font-size: 18px;
-      padding-right: 133px;
+      padding-right: 140px;
       min-height: 83px;
     }
     .jumbotron-info {
       font-size: 14px;
+    }
+  }
+}
+
+@mixin hbcp-jumbotron-behaviour {
+  background-image: url('/bundles/app/images/bg-bs-header.png');
+  .jumbotron-icon {
+    width: 160px;
+    margin-top: -62px;
+  }
+  @media (max-width: $screen-sm-min) {
+    .jumbotron-icon {
+      margin-top: -32px;
     }
   }
 }

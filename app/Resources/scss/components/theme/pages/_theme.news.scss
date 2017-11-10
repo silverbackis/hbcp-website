@@ -6,11 +6,12 @@
   @include hbcp-jumbotron;
   background-image: url(/bundles/app/images/bg-news-header.png);
   .jumbotron-icon {
-    margin-top: -52px;
+    margin-top: -53px;
   }
   @media (max-width: $screen-sm-min) {
     .jumbotron-icon {
-      margin-top: -34px;
+      width: 70px;
+      margin-top: -30px;
     }
   }
 }

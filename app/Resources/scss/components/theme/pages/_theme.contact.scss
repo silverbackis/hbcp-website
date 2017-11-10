@@ -6,10 +6,12 @@
   @include hbcp-jumbotron;
   background-image: url('/bundles/app/images/bg-contact-header.png');
   .jumbotron-icon {
+    width: 102px;
     margin-top: -52px;
   }
   @media (max-width: $screen-sm-min) {
     .jumbotron-icon {
+      width: 68px;
       margin-top: -34px;
     }
   }

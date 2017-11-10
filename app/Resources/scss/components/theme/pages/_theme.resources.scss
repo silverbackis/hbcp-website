@@ -10,27 +10,38 @@
 
 .container-fluid .jumbotron {
   @include hbcp-jumbotron;
-
-  background-image: url(/bundles/app/images/bg-allresources-header.png);
-  .jumbotron-icon {
-    margin-top: -40px;
-  }
-  @media (max-width: $screen-sm-min) {
-    .jumbotron-icon {
-      margin-top: -26px;
-    }
-  }
+  background-image: url('/bundles/app/images/bg-allresources-header.png');
 
   &.behavioural-science {
-    background-image: url(/bundles/app/images/bg-bs-header.png);
+    @include hbcp-jumbotron-behaviour;
   }
 
   &.computer-science {
-    background-image: url(/bundles/app/images/bg-cs-header.png);
+    background-image: url('/bundles/app/images/bg-cs-header.png');
+    .jumbotron-icon {
+      width: 160px;
+      margin-top: -52px;
+    }
+    @media (max-width: $screen-sm-min) {
+      .jumbotron-icon {
+        width: 110px;
+        margin-top: -35px;
+      }
+    }
   }
 
   &.system-architecture {
-    background-image: url(/bundles/app/images/bg-sa-header.png);
+    background-image: url('/bundles/app/images/bg-sa-header.png');
+    .jumbotron-icon {
+      width: 175px;
+      margin-top: -50px;
+    }
+    @media (max-width: $screen-sm-min) {
+      .jumbotron-icon {
+        width: 110px;
+        margin-top: -32px;
+      }
+    }
   }
 }
 

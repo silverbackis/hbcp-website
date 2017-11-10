@@ -14,16 +14,7 @@
 
 .container-fluid .jumbotron {
   @include hbcp-jumbotron;
-  background-image: url('/bundles/app/images/bg-bs-header.png');
-  .jumbotron-icon {
-    margin-top: -52px;
-  }
-
-  @media (max-width: $screen-sm-min) {
-    .jumbotron-icon {
-      margin-top: -34px;
-    }
-  }
+  @include hbcp-jumbotron-behaviour;
 }
 
 .inline-block {
@@ -175,7 +166,7 @@ section.behaviour-diagram {
           }
 
           &.context {
-            bottom: 29.24%;
+            bottom: 29.29%;
             left: 50.42%;
             width: 36.3095238095238%;
 
@@ -193,7 +184,7 @@ section.behaviour-diagram {
           }
 
           &.exposure {
-            bottom: 29.24%;
+            bottom: 29.29%;
             right: 49.9%;
             width: 36.5079365079365%;
 

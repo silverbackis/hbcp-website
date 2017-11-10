@@ -76,7 +76,7 @@ class CategoryUtils
         switch(strtolower($category->getName())) {
             case "behavioural science":
                 $hero = [
-                    'icon' => 'bundles/app/images/homegraphic-bc.png',
+                    'icon' => 'bundles/app/images/homegraphic-bc.svg',
                     'icon_alt' => 'Hero icon - Behavioural Science Resources',
                     'header' => 'Behavioural Science',
                     'text' => $this->translator->trans('behavioural_science.description')
