@@ -53,4 +53,16 @@ class AdminResourcesController extends Controller
             'form' => $form->createView()
         ]);
     }
+
+    /**
+     * @Route("/resource/delete/{resource}", name="resource_delete")
+     */
+    public function deleteResourceAction(Resource $resource = null, Request $request)
+    {
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($resource);
+        $em->flush();
+        $this->addFlash('notice', 'Resource Deleted');
+        return $this->redirectToRoute('admin_resources_list');
+    }
 }

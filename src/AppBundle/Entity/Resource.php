@@ -55,7 +55,7 @@ class Resource
      * @var Category
      *
      * @ORM\ManyToOne(targetEntity="Category", inversedBy="resources")
-     * @ORM\JoinColumn(name="category_id", referencedColumnName="id")
+     * @ORM\JoinColumn(name="category_id", referencedColumnName="id", onDelete="SET NULL")
      * @Assert\NotNull(message="Please select a category")
      */
     public $category;
