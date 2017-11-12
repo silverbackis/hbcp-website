@@ -47,7 +47,7 @@
 										<td>{{ resource.title }}</td>
 										<td>{{ resource.pathType }}</td>
 										<td>
-											{{ resource.category.name }}
+											{{ resource.category ? resource.category.name : '** REMOVED **' }}
 										</td>
 										<td>
 											{{ resource.resourceType.name|default('none') }}

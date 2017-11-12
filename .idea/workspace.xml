@@ -7,8 +7,6 @@
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -110,11 +108,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="allresources.html.twig" pinned="false" current-in-tab="false">
+      <file leaf-file-name="allresources.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
+            <state relative-caret-position="210">
+              <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
               <folding>
                 <element signature="e#12#33#0#Twig" expanded="true" />
               </folding>
@@ -122,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resource.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Resource.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="502">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="412">
+              <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -258,8 +256,8 @@
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/ResourceType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php" />
-        <option value="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
+        <option value="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
       </list>
     </option>
   </component>
@@ -451,12 +449,12 @@
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
       <workItem from="1509530370280" duration="66968000" />
-      <workItem from="1510053842241" duration="45934000" />
+      <workItem from="1510053842241" duration="46080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161502000" />
+    <option name="totallyTimeSpent" value="161648000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -897,21 +895,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="60" column="54" lean-forward="false" selection-start-line="60" selection-start-column="54" selection-end-line="60" selection-end-column="54" />
-          <folding>
-            <element signature="e#12#33#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="412">
+          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+          <folding>
+            <element signature="e#12#33#0#Twig" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
