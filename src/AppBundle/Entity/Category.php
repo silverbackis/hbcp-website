@@ -262,15 +262,17 @@ class Category
         return $this->children;
     }
 
-    public function getBreadcrumbs($includeSelf = null)
+    public function getBreadcrumbs($includeSelf = null, $includeRoot = true)
     {
         $names = [];
-        if ($includeSelf === true || (is_null($includeSelf) && $this->getFixed())) {
+        $parent = $this->getParent();
+        if (($includeRoot || $parent) && $includeSelf === true || (is_null($includeSelf) && $this->getFixed())) {
             $names[] = $this->getName();
         }
-        $parent = $this->getParent();
         while($parent) {
-            $names[] = $parent->getName();
+            if ($includeRoot || $parent->getParent()) {
+                $names[] = $parent->getName();
+            }
             $parent = $parent->getParent();
         }
         $names = array_reverse($names);
@@ -309,5 +311,14 @@ class Category
     public function getResources()
     {
         return $this->resources;
+    }
+
+    public function getRoot()
+    {
+        $root = $this;
+        while($root->getParent()) {
+            $root = $root->getParent();
+        }
+        return $root;
     }
 }

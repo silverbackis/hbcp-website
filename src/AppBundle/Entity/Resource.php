@@ -148,11 +148,8 @@ class Resource
 
     public function getResourceTag()
     {
-        if ($this->getCategory() == $this->getRootCategory()) {
-            return 'General';
-        }
-        $tagPrefix = $this->getCategory()->getFixed() ? '' : ($this->getCategory()->getParent()->getName() . ' > ');
-        return $tagPrefix.$this->getCategory()->getName();
+        $categoryCrumbs = $this->getCategory()->getBreadcrumbs(true, false);
+        return $categoryCrumbs === '' ? 'General' : $categoryCrumbs;
     }
 
     /**

@@ -157,11 +157,19 @@ class DefaultController extends AbstractController
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
         if ($request->get('category')) {
+            $resetAllCats = false;
             foreach ($allCats as $innerCat) {
-                if ($request->request->get('category') == $innerCat->getId())
+                if (in_array($innerCat->getId(), $request->request->get('category')))
                 {
-                    $allCats = $categoryUtils->findAllCategories($innerCat);
-                    break;
+                    if (!$resetAllCats) {
+                        $resetAllCats = true;
+                        $allCats = [];
+                    }
+                    if ($innerCat->getParent()) {
+                        $allCats = array_merge($allCats, $categoryUtils->findAllCategories($innerCat));
+                    } else {
+                        $allCats[] = $innerCat;
+                    }
                 }
             }
         }

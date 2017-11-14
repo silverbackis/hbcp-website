@@ -12,9 +12,17 @@ class UserFixtures extends Fixture
         // Get our userManager, you must implement `ContainerAwareInterface`
         $userManager = $this->container->get('fos_user.user_manager');
         $user = $userManager->createUser();
-        $user->setUsername('adminuser');
-        $user->setEmail('admin@humanbehaviourchange.org');
-        $user->setPlainPassword('12345');
+        $user->setUsername('hbcp');
+        $user->setEmail('info@humanbehaviourchange.org');
+        $user->setPlainPassword('mAgj3*1!');
+        $user->setEnabled(true);
+        $user->setRoles(array('ROLE_ADMIN'));
+        $userManager->updateUser($user, true);
+
+        $user = $userManager->createUser();
+        $user->setUsername('silverback');
+        $user->setEmail('info@silverbackis');
+        $user->setPlainPassword('NM1&Xe5s$KZ8');
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $userManager->updateUser($user, true);

@@ -5,8 +5,94 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="29f358e4-822b-43cb-b396-a488a96a14ae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/behaviour.style.1718f7e222968069e7ec04560aa54e72.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/contact.style.cc7abf622d5d676ef7744175bff379d4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.01798bc1.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.71394c0c.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Pe-icon-7-stroke.b38ef310.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.0bbfc705.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.6ac7320f.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.b2892aa6.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Icons4c82.dacd16c9.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/Simple-Line-Iconsd41d.dacd16c9.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.674f50d2.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.af7ae505.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.b06871f2.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/fontawesome-webfont.fee66e71.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.448c34a5.woff2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.e18bbf61.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.f4769f9b.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/glyphicons-halflings-regular.fa277232.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.4fe6f9ca.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.5fd4c338.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/lg.ecff1170.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.4e2921ae.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.9b287297.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10.e9c2f960.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-arrows-10d41d.9b287297.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.61f3a8a3.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.e4de528c.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10.e6763f00.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-10d41d.e4de528c.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.0ce002fd.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.3759629b.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10.7193d8c5.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-basic-elaboration-10d41d.7193d8c5.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.9341e6c2.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.e8892174.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10.ffd2088e.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-ecommerce-10d41d.ffd2088e.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.41575b6f.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.7fe2deb0.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10.a7dcedf1.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-music-10d41d.a7dcedf1.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.602d0d4d.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.8fe30102.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10.b5b4a545.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-software-10d41d.b5b4a545.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.03b5db0c.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.7129dca4.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10.eef9b7d7.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/linea-weather-10d41d.7129dca4.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.2c454669.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.a1ecc3b8.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/fonts/themify.e23a7dca.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.scripts.ff93809544122b9fafe6.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/global.style.3a9d056f8ee988044c6999eb8d026203.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/home.style.5d10bb4617f146c7fec3552ac685dcdf.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Pe-icon-7-stroke.c45f7de0.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/Simple-Line-Icons4c82.00ce23ca.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/fontawesome-webfont.912ec66d.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/glyphicons-halflings-regular.89889688.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/lg.0cb1b8af.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-arrows-10.839102e0.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-basic-10.177764ea.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-basic-elaboration-10.b1a9c3a9.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-ecommerce-10.86d8ba2c.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-music-10.83767d2d.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-software-10.6cfc5077.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/linea-weather-10.2a4ea947.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/loading.bbdac9cd.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/mock6.f809c87e.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/sprite-skin-modern.1e83e537.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/themify.9c8e96ec.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/video-play.dc34cc9c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/vimeo-play.dfe7764b.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/images/youtube-play.e6f0c233.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/news-post.style.76907ac02416d7c042066d6cbbc055c8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/news.style.871ecd33a63af2bbf87b9077fc33315f.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/resource.style.0e0f636ff79c7f1ecef0ee01020725d8.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/resources.style.4863dd9b11355d2ab7bba2e84319c262.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/style.21f1a51c6fe7a1e158d127fe76846e8b.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/build/team.style.7d2d66a6d36998a8f343f642b420d05b.css" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" afterPath="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/UserFixtures.php" afterPath="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/UserFixtures.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php" afterPath="$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/build/manifest.json" afterPath="$PROJECT_DIR$/web/build/manifest.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,21 +114,73 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="contactus.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig">
+      <file leaf-file-name="resources.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
+            <state relative-caret-position="488">
+              <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_theme.behaviour.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+      <file leaf-file-name="_resourceList.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="223">
-              <caret line="252" column="5" lean-forward="false" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="388">
+              <caret line="170" column="32" lean-forward="false" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
+              <folding>
+                <element signature="e#40#66#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserFixtures.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/UserFixtures.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FilterUtils.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Category.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="328">
+              <caret line="272" column="32" lean-forward="false" selection-start-line="272" selection-start-column="32" selection-end-line="272" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Resource.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="151" column="68" lean-forward="false" selection-start-line="151" selection-start-column="68" selection-end-line="151" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -51,80 +189,8 @@
       <file leaf-file-name="behaviour.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="messages.en.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_theme.resources.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="200" column="9" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_resource.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResourceType.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Form/ResourceType.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="84" column="21" lean-forward="false" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminResourcesController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="allresources.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
-              <folding>
-                <element signature="e#12#33#0#Twig" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Resource.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+            <state relative-caret-position="443">
+              <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -134,11 +200,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$hero</find>
-      <find>select</find>
-      <find>btn-ex</find>
-      <find>bc</find>
-      <find>BC</find>
       <find>homegraphic-bc.png</find>
       <find>homeicon-team.png</find>
       <find>homeicon-</find>
@@ -159,11 +220,16 @@
       <find>diagram-in</find>
       <find>7px 25</find>
       <find>resource</find>
-      <find>h3</find>
       <find>getTopCategory</find>
       <find>topCate</find>
       <find>dump</find>
       <find>categ</find>
+      <find>h2</find>
+      <find>h3</find>
+      <find>tag</find>
+      <find>resources</find>
+      <find>getR</find>
+      <find>category'</find>
     </findStrings>
     <replaceStrings>
       <replace>0</replace>
@@ -207,8 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.backup.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/public/images/Behaviour_on.svg" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviourtriangle.html.twig" />
@@ -220,7 +284,6 @@
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/triangle/_behaviour.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Repository/ResourcesRepository.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Twig/AppExtension.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminCategoryController.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_behaviourResources.html.twig" />
@@ -231,10 +294,8 @@
         <option value="$PROJECT_DIR$/app/Resources/views/layout.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/_teamMember.html.twig" />
         <option value="$PROJECT_DIR$/app/config/services.yml" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/app/Resources/scss/global.scss" />
         <option value="$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig" />
-        <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.home.scss" />
         <option value="$PROJECT_DIR$/src/AppBundle/Utils/CategoryUtils.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Resources/public/images/team-white.svg" />
@@ -256,8 +317,13 @@
         <option value="$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/ResourceType.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig" />
+        <option value="$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Resource.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Category.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/UserFixtures.php" />
       </list>
     </option>
   </component>
@@ -282,8 +348,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 7.2" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-19" />
-    <option name="y" value="24" />
+    <option name="x" value="37" />
+    <option name="y" value="23" />
     <option name="width" value="1551" />
     <option name="height" value="1121" />
   </component>
@@ -348,6 +414,14 @@
             <path>
               <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
               <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Resources" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -362,6 +436,21 @@
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Controller" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HBCP" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="AppBundle" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="DataFixtures" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="ORM" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="HBCP" type="b2602c69:ProjectViewProjectNode" />
@@ -393,8 +482,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -449,12 +538,13 @@
       <updated>1509356672501</updated>
       <workItem from="1509356673683" duration="48600000" />
       <workItem from="1509530370280" duration="66968000" />
-      <workItem from="1510053842241" duration="46080000" />
+      <workItem from="1510053842241" duration="46226000" />
+      <workItem from="1510677730975" duration="2540000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161648000" />
+    <option name="totallyTimeSpent" value="164334000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -466,18 +556,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-19" y="24" width="1551" height="1121" extended-state="0" />
-    <editor active="true" />
+    <frame x="37" y="23" width="1551" height="1121" extended-state="0" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28363153" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.286945" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32985595" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3177388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3177388" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -485,6 +573,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299817" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -520,50 +609,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/layout.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="59" column="14" lean-forward="true" selection-start-line="59" selection-start-column="14" selection-end-line="59" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1695">
-          <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/homeicon-team.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/team-website.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_teamMember.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" lean-forward="false" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/news-post.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#12#28#0#Twig" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -571,50 +620,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="45" column="30" lean-forward="false" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.grid.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1832">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.breakpoints.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.v-center.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.grid.scss" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.breakpoints.scss" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.scss" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/tools/_tools.v-center.scss" />
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.Behavioural-science.scss" />
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/rg.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -635,39 +648,13 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/li.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/in.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/li.png" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/in.png" />
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Resources/public/images/debug.log" />
     <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/homepage.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="184" column="41" lean-forward="false" selection-start-line="184" selection-start-column="41" selection-end-line="184" selection-end-column="41" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -683,7 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -691,7 +677,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="31" lean-forward="false" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -699,7 +684,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="35" lean-forward="false" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -707,7 +691,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -715,7 +698,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="66" lean-forward="false" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="66" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -723,7 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="17" lean-forward="false" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -731,7 +712,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,7 +719,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="34" lean-forward="true" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -747,7 +726,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="645">
           <caret line="128" column="23" lean-forward="false" selection-start-line="128" selection-start-column="23" selection-end-line="128" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -755,7 +733,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="50" lean-forward="false" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -763,7 +740,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -771,7 +747,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="79" column="18" lean-forward="false" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -779,7 +754,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
           <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -787,23 +761,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="29" lean-forward="false" selection-start-line="36" selection-start-column="29" selection-end-line="36" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -811,7 +768,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
           <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -827,31 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-7">
           <caret line="93" column="23" lean-forward="false" selection-start-line="93" selection-start-column="23" selection-end-line="93" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="252" column="5" lean-forward="false" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="200" column="9" lean-forward="false" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="83" column="23" lean-forward="false" selection-start-line="83" selection-start-column="23" selection-end-line="83" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -859,14 +790,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
           <caret line="37" column="41" lean-forward="false" selection-start-line="37" selection-start-column="41" selection-end-line="37" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminNewsPostsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="97" column="57" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="97" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="14" lean-forward="false" selection-start-line="23" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
+        <state relative-caret-position="599">
+          <caret line="40" column="36" lean-forward="false" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -879,37 +817,117 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminNewsPostsController.php">
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_resource.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="97" column="57" lean-forward="true" selection-start-line="89" selection-start-column="8" selection-end-line="97" selection-end-column="57" />
+        <state relative-caret-position="105">
+          <caret line="7" column="20" lean-forward="true" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.resources.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/translations/messages.en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/scss/components/theme/pages/_theme.behaviour.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="252" column="5" lean-forward="false" selection-start-line="252" selection-start-column="5" selection-end-line="252" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/contactus.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="74" column="51" lean-forward="false" selection-start-line="74" selection-start-column="51" selection-end-line="74" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AdminResourcesController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
+        <state relative-caret-position="793">
           <caret line="57" column="66" lean-forward="false" selection-start-line="57" selection-start-column="51" selection-end-line="57" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/resources.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="113" column="20" lean-forward="false" selection-start-line="113" selection-start-column="20" selection-end-line="113" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/_resourceList.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="68" lean-forward="false" selection-start-line="18" selection-start-column="68" selection-end-line="18" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Resources/views/frontend/behaviour.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="72" column="0" lean-forward="false" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Resource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="55" column="6" lean-forward="false" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+        <state relative-caret-position="280">
+          <caret line="151" column="68" lean-forward="false" selection-start-line="151" selection-start-column="68" selection-end-line="151" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/admin/resources/allresources.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Utils/FilterUtils.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="49" column="81" lean-forward="false" selection-start-line="49" selection-start-column="81" selection-end-line="49" selection-end-column="81" />
+        <state relative-caret-position="240">
+          <caret line="16" column="50" lean-forward="false" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="272" column="32" lean-forward="false" selection-start-line="272" selection-start-column="32" selection-end-line="272" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="170" column="32" lean-forward="false" selection-start-line="170" selection-start-column="32" selection-end-line="170" selection-end-column="32" />
           <folding>
-            <element signature="e#12#33#0#Twig" expanded="true" />
+            <element signature="e#40#66#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/DataFixtures/ORM/UserFixtures.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="26" column="45" lean-forward="true" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
