@@ -14,7 +14,7 @@ class UserFixtures extends Fixture
         $user = $userManager->createUser();
         $user->setUsername('hbcp');
         $user->setEmail('info@humanbehaviourchange.org');
-        $user->setPlainPassword('mAgj3*1!');
+        $user->setPlainPassword($this->container->getParameter('hbcp_pass'));
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $userManager->updateUser($user, true);
@@ -22,7 +22,7 @@ class UserFixtures extends Fixture
         $user = $userManager->createUser();
         $user->setUsername('silverback');
         $user->setEmail('info@silverbackis');
-        $user->setPlainPassword('NM1&Xe5s$KZ8');
+        $user->setPlainPassword($this->container->getParameter('silverback_pass'));
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
         $userManager->updateUser($user, true);

@@ -19,3 +19,5 @@ parameters:
     secret: ThisTokenIsNotSoSecretChangeIt
     news_directory: '%kernel.project_dir%/web/uploads/newsimages'
     dropbox_oauth: ~
+    hbcp_pass: ~
+    silverback_pass: ~
