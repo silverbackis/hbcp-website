@@ -21,7 +21,7 @@ class UserFixtures extends Fixture
 
         $user = $userManager->createUser();
         $user->setUsername('silverback');
-        $user->setEmail('info@silverbackis');
+        $user->setEmail('info@silverback.is');
         $user->setPlainPassword($this->container->getParameter('silverback_pass'));
         $user->setEnabled(true);
         $user->setRoles(array('ROLE_ADMIN'));
