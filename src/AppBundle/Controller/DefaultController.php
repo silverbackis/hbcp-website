@@ -246,7 +246,9 @@ class DefaultController extends AbstractController
     }
 
     /**
-     *@Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0}, requirements={"parent"="\d+"})
+     * @Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0}, requirements={"parent"="\d+"})
+     * @throws \LogicException
+     * @throws \Psr\Container\ContainerExceptionInterface
      */
     public function behaviouralScience(string $slug = null, Category $parent = null, Request $request)
     {
@@ -298,7 +300,7 @@ class DefaultController extends AbstractController
             $parent && $secondLevelCategory!==$parent ? $parent->getName() : null,
             'Behavioural Science Diagram'
         ];
-        $this->setSeo(join(' - ', array_filter($titleArray)), $description);
+        $this->setSeo(implode(' - ', array_filter($titleArray)), $description);
 
         return $this->render('frontend/behaviour.html.twig', [
             'parent' => $parent,

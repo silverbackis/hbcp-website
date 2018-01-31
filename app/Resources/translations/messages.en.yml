@@ -17,7 +17,7 @@ behavioural_science:
   exposure:
     description: Factors relating to the extent and nature of the target population’s access to and engagement with the intervention. Consists of reach and engagement.
   context:
-    description: Everything apart from the intervention itself, that may influence the outcome of the intervention. Includes population and setting.
+    description: Everything, apart from the intervention itself, that may influence the outcome of the intervention. Includes population and setting.
   intervention:
     description: A product, service, activity or structural change, intended to achieve behaviour change. May be specified in terms of intervention content and the way this is delivered.
   mechanisms:
@@ -26,13 +26,13 @@ behavioural_science:
     description: Bodily activities that are controlled by the brain.
 
 computer_science:
-  description: Here you will find resources relating to the computer science aspects of the HBCP.  Please use the drop-down menus to narrow your selection.
+  description: Here you will find resources relating to the computer Science aspects of the HBCP.  Please use the drop-down menus to narrow your selection.
 
 system_architecture:
   description: Here you will find resources relating to the system architecture aspects of the HBCP.  Please use the drop-down menus to narrow your selection.
 
 all_resources:
-  description: Here you will find resources relating to all aspects of the HBCP.  Please use the drop-down menus to narrow your selection to those most of interest to you.
+  description: Here you will find resources relating to the HBCP.  Please use the drop-down menus to narrow your selection to those of most interest to you.
 
 project_team:
   description: The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and system architects.

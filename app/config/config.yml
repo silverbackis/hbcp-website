@@ -157,9 +157,9 @@ bw_base:
           - { type: image/x-icon, href: '%favicon_base%favicon.ico' }
     js_sdk:
       google_analytics:
-        enabled: false
-        id: UA-12345678-01
-        domain: www.yourdomain.com
+        enabled: true
+        id: UA-88746089-2
+        domain: www.humanbehaviourchange.org
       woopra:
         enabled: false
         domain: www.yourdomain.com
