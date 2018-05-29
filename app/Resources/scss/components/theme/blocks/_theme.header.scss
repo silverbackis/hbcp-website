@@ -31,10 +31,10 @@ Header-style
     }
     .navbar-collapse {
       .navbar-nav {
-        li {
+        > li {
           height: 78px;
           display: table;
-          a {
+          > a {
             display: table-cell;
             vertical-align: bottom;
             float: none;
@@ -50,6 +50,10 @@ Header-style
               color: $hbcp-blue;
               background-color: transparent !important;
             }
+          }
+          > .dropdown-menu {
+            left: 0;
+            right: auto;
           }
           &.active {
             a {

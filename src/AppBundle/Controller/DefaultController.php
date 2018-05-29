@@ -33,7 +33,7 @@ class DefaultController extends AbstractController
     {
         $seoPage = $this->container->get(SeoPageInterface::class);
         $seoPage
-            ->setTitle(join(' - ', array_filter([$title, $seoPage->getTitle()])))
+            ->setTitle(implode(' - ', array_filter([$title, $seoPage->getTitle()])))
             ->addMeta('name', 'description', $description);
     }
 
@@ -106,6 +106,18 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * @Route("/about", name="about")
+     */
+    public function about(Request $request)
+    {
+        $description = $this->get(TranslatorInterface::class)->trans('home.description');
+        $this->setSeo('', $description);
+        return $this->render('frontend/homepage.html.twig', [
+            'header_text' => $description
+        ]);
+    }
+
+    /**
      *@Route("/project-team", name="projecteam")
      */
     public function teamMembers()
@@ -116,6 +128,18 @@ class DefaultController extends AbstractController
         return $this->render('frontend/team.html.twig', array(
             'header_text' =>$description
         ));
+    }
+
+    /**
+     * @Route("/grantholders", name="grantholders")
+     */
+    public function grantholders(Request $request)
+    {
+        $description = $this->get(TranslatorInterface::class)->trans('home.description');
+        $this->setSeo('', $description);
+        return $this->render('frontend/homepage.html.twig', [
+            'header_text' => $description
+        ]);
     }
 
     /**
@@ -308,6 +332,18 @@ class DefaultController extends AbstractController
                 'parent' => $secondLevelCategory ? $secondLevelCategory->getId() : null,
                 'slug' => $secondLevelCategory ? $this->get('slugify')->slugify($secondLevelCategory->getName()) : null
             ]),
+            'header_text' => $description
+        ]);
+    }
+
+    /**
+     * @Route("/privacy-policy", name="privacy")
+     */
+    public function privacy(Request $request)
+    {
+        $description = $this->get(TranslatorInterface::class)->trans('home.description');
+        $this->setSeo('', $description);
+        return $this->render('frontend/homepage.html.twig', [
             'header_text' => $description
         ]);
     }

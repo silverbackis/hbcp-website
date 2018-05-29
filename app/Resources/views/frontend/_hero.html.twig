@@ -15,7 +15,7 @@
               />
             {% endif %}
           </h2>
-          {% if text %}
+          {% if text is defined and text %}
           <p class="jumbotron-info">
             {{ text }}
           </p>

@@ -1,79 +1,92 @@
 @import "../../_variables";
 
-.contact {
-  background-image: url('/bundles/app/images/bg-footer.png');
-  background-size: cover;
+.contact.block {
+  background-color: $hbcp-blue;
   z-index: 1;
   position: relative;
-  .contact-block {
-    max-width: 640px;
-    width: 100%;
-    margin: auto;
+  color: $white;
+  .container-fluid {
+    max-width: none;
+  }
+  .btn {
+    @include hbcp-button;
+    background-color: $white;
+    color: $hbcp-blue;
+    font-size: 14px;
+    padding: 6px 10px;
+    min-width: 120px;
+    margin-top: .5rem;
+  }
+  a {
     color: $white;
-    .btn {
-      @include hbcp-button;
-      background-color: $white;
-      color: $hbcp-blue;
+    margin: 3px 0;
+    display: inline-block;
+    &.twitter,
+    &.open-science {
+      padding-left: 30px;
+      background: 0 50% no-repeat;
+      background-size: auto 100%;
     }
-    h2 {
-      color: $white;
+    &.twitter {
+      background-image: url('/bundles/app/images/twitter.png');
+    }
+    &.open-science {
+      background-image: url('/bundles/app/images/open-science.png');
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  p,
+  h4 {
+    margin: 0;
+    line-height: 25px;
+  }
+  @media (max-width: $screen-md-min) {
+    .text-left,
+    .text-right {
+      text-align: center !important;
+    }
+    .text-right {
+      margin-top: .5rem;
     }
   }
 }
 
-.footer {
-  .footer-links {
-    padding: 20px 5px;
-    margin: 0;
-    li {
-      padding: 0;
-      position: relative;
-      vertical-align: bottom;
-      &:last-child {
-        &:after {
-          content: none;
-        }
-      }
-      &:after {
-        content: " . ";
-        color: $hbcp-blue;
-      }
-      a {
-        color: $hbcp-blue;
-        font-size: 14px;
-        @media (max-width: $screen-md-min) {
-          font-size: 13px;
-        }
-        @media (max-width: $screen-xs-min) {
-          font-size: 12px;
-        }
-      }
-      &:last-child {
-        margin-right: 20px;
-        @media (max-width: $screen-md-min) {
-          margin-right: 0;
-        }
-      }
-    }
-  }
-  .bottom-footer {
-    .row {
-      margin: 0;
-      .col-sm-4 {
-        padding: 0;
-        &:not(.text-center) {
-          padding-top: 15px;
-        }
-      }
-    }
-    padding-bottom: 15px;
+.container-website .footer {
+  .container-fluid {
+    max-width: none;
+    padding: 15px;
     color: $pale-blue;
     font-size: 12px;
+    line-height: 38px;
     @media (max-width: $screen-xs-min) {
       font-size: 10px;
     }
     a {
       color: inherit;
+    }
+
+    .sponsor-logos {
+      height: 38px;
+    }
+
+    @media (max-width: $screen-md-min) {
+      .text-left,
+      .text-right {
+        text-align: center !important;
+      }
+      .text-right {
+        margin-top: .5rem;
+      }
+
+      .sponsor-logos {
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+      }
     }
   }
 }
