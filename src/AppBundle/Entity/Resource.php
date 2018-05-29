@@ -34,7 +34,7 @@ class Resource
      * @var string
      *
      * @ORM\Column(type="string", length=20)
-     * @Assert\Choice({"Dropbox", "Website", "Tool"})
+     * @Assert\Choice({"OSF", "Dropbox", "Website", "Tool"})
      */
     private $pathType;
 
@@ -110,7 +110,7 @@ class Resource
             if (!$parent) {
                 $parent = $this->getCategory();
             } else {
-                while($parent->getParent() && !$parent->getFixed()) {
+                while ($parent->getParent() && !$parent->getFixed()) {
                     $parent = $parent->getParent();
                 }
             }
@@ -122,7 +122,7 @@ class Resource
     public function getRootCategory()
     {
         $root = $this->getCategory();
-        while($root->getParent()) {
+        while ($root->getParent()) {
             $root = $root->getParent();
         }
         return $root;
@@ -136,7 +136,7 @@ class Resource
         if ($root === $this->getRootCategory()) {
             $cats[] = 'General';
         }
-        while($root->getParent()) {
+        while ($root->getParent()) {
             if ($root->getParent()) {
                 $cats[] = $root->getName();
             }

@@ -3,8 +3,7 @@
 namespace AppBundle\Form;
 
 use AppBundle\Entity\News;
-use Doctrine\ORM\EntityManagerInterface;
-use Ivory\CKEditorBundle\Form\Type\CKEditorType;
+use FOS\CKEditorBundle\Form\Type\CKEditorType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;

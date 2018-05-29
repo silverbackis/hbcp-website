@@ -1,6 +1,7 @@
 <?php
 
 namespace AppBundle\Repository;
+
 use AppBundle\Entity\Category;
 use Doctrine\Common\Collections\ArrayCollection;
 
@@ -23,21 +24,19 @@ class CategoryRepository extends \Doctrine\ORM\EntityRepository
         /**
          * @var Category $category
          */
-        foreach ($categories as $category)
-        {
+        foreach ($categories as $category) {
             $this->checkChildren($category, $fixed);
         }
         return $this->deepest;
     }
-    private function checkChildren (Category $category, $fixed)
+    private function checkChildren(Category $category, $fixed)
     {
         if (count($category->getChildren())) {
             $acceptableChildren = 0;
             /**
              * @var Category $child
              */
-            foreach ($category->getChildren() as $child)
-            {
+            foreach ($category->getChildren() as $child) {
                 if ($fixed && !$child->getFixed()) {
                     continue;
                 }
@@ -48,8 +47,7 @@ class CategoryRepository extends \Doctrine\ORM\EntityRepository
                 return;
             }
         }
-        if ($fixed || !$category->getFixed())
-        {
+        if ($fixed || !$category->getFixed()) {
             $this->deepest[] = $category;
         }
     }

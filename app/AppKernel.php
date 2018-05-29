@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             new AppBundle\AppBundle(),
             new FOS\UserBundle\FOSUserBundle(),
-            new Ivory\CKEditorBundle\IvoryCKEditorBundle(),
+            new FOS\CKEditorBundle\FOSCKEditorBundle(),
             new Cocur\Slugify\Bridge\Symfony\CocurSlugifyBundle(),
             new Doctrine\Bundle\FixturesBundle\DoctrineFixturesBundle(),
             new Sonata\SeoBundle\SonataSeoBundle(),

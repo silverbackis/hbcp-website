@@ -37,8 +37,7 @@ class AdminResourceTypeController extends Controller
         $new = $resourceType === null;
         $form = $this->createForm(ResourceTypeType::class, $resourceType);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid())
-        {
+        if ($form->isSubmitted() && $form->isValid()) {
             $resourceType = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($resourceType);
@@ -46,7 +45,7 @@ class AdminResourceTypeController extends Controller
             $this->addFlash('notice', 'Resource Type ' . ($new ? 'Added' : 'Updated'));
             return $this->redirectToRoute('admin_resource_type_list');
         }
-        return $this->render(':admin/resourcetype:createresourcetype.html.twig',array(
+        return $this->render(':admin/resourcetype:createresourcetype.html.twig', array(
             'form' => $form->createView(),
             'new' => $new
         ));

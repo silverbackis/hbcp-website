@@ -40,12 +40,12 @@ class News
      */
     private $author;
 
-     /**
-     * @var string
-     *
-     * @ORM\Column(name="image_path", type="text", nullable=true)
-     * @Assert\File(mimeTypes={ "image/jpeg", "image/png" }, maxSize="4Mi")
-     */
+    /**
+    * @var string
+    *
+    * @ORM\Column(name="image_path", type="text", nullable=true)
+    * @Assert\File(mimeTypes={ "image/jpeg", "image/png" }, maxSize="4Mi")
+    */
     private $image;
 
     /**
@@ -80,12 +80,10 @@ class News
     /**
      * @Assert\Callback
      */
-    public function validate (ExecutionContextInterface $context, $payload)
+    public function validate(ExecutionContextInterface $context, $payload)
     {
-        if ($this->getImage())
-        {
-            if (!$this->getImageCredit())
-            {
+        if ($this->getImage()) {
+            if (!$this->getImageCredit()) {
                 $context->buildViolation('An image credit is required when you upload an image')
                     ->atPath('imageCredit')
                     ->addViolation();
@@ -208,7 +206,7 @@ class News
      */
     public function getImage()
     {
-        try{
+        try {
             return $this->image ? new File($this->image) : null;
         } catch (FileNotFoundException $e) {
             return null;
@@ -245,7 +243,7 @@ class News
     }
 
 
-      /**
+    /**
      * Set newsContent
      *
      * @param string $newsContent
@@ -269,4 +267,3 @@ class News
         return $this->newsContent;
     }
 }
-

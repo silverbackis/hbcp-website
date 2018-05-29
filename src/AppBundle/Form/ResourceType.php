@@ -48,8 +48,7 @@ class ResourceType extends AbstractType
                 'choice_label' => function (Category $category) {
                     return $category->getBreadcrumbs(true);
                 },
-                'choice_attr' => function (Category $category)
-                {
+                'choice_attr' => function (Category $category) {
                     return [
                         'data-choices' => $this->serializer->serialize(
                             $this->getChoicesForCategory($category),
@@ -62,6 +61,7 @@ class ResourceType extends AbstractType
             ])
             ->add('pathType', ChoiceType::class, [
                 'choices' => [
+                    'OSF',
                     'Dropbox',
                     'Website',
                     'Tool'
@@ -112,7 +112,7 @@ class ResourceType extends AbstractType
         ));
     }
 
-    private function getChoicesForCategory (Category $category)
+    private function getChoicesForCategory(Category $category)
     {
         $collection = [$category];
         $choices = new ArrayCollection(array_merge($collection, $category->getChildren()->toArray()));

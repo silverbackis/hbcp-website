@@ -29,7 +29,8 @@ class DefaultController extends AbstractController
         ]);
     }
 
-    private function setSeo(string $title = null, string $description) {
+    private function setSeo(string $title = null, string $description)
+    {
         $seoPage = $this->container->get(SeoPageInterface::class);
         $seoPage
             ->setTitle(join(' - ', array_filter([$title, $seoPage->getTitle()])))
@@ -98,7 +99,7 @@ class DefaultController extends AbstractController
         $description = $this->get(TranslatorInterface::class)->trans('contact.description');
         $this->setSeo('Contact Us', $description);
 
-        return $this->render('frontend/contactus.html.twig',array(
+        return $this->render('frontend/contactus.html.twig', array(
             'title'=>'Contact Us',
             'header_text' => $description
         ));
@@ -112,7 +113,7 @@ class DefaultController extends AbstractController
         $description = $this->get(TranslatorInterface::class)->trans('project_team.description');
         $this->setSeo('Project Team & Grant Holders', $description);
 
-        return $this->render('frontend/team.html.twig',array(
+        return $this->render('frontend/team.html.twig', array(
             'header_text' =>$description
         ));
     }
@@ -159,8 +160,7 @@ class DefaultController extends AbstractController
         if ($request->get('category')) {
             $resetAllCats = false;
             foreach ($allCats as $innerCat) {
-                if (in_array($innerCat->getId(), $request->request->get('category')))
-                {
+                if (in_array($innerCat->getId(), $request->request->get('category'))) {
                     if (!$resetAllCats) {
                         $resetAllCats = true;
                         $allCats = [];
@@ -177,8 +177,7 @@ class DefaultController extends AbstractController
         $resources = $em->getRepository(Resource::class)->findByCategories($allCats, $request);
 
         // If we request just the list (ajax filter)
-        if ($request->request->get('req') === 'list')
-        {
+        if ($request->request->get('req') === 'list') {
             return new JsonResponse([
                'html' => $this->container->get('twig')->render('frontend/_resourceList.html.twig', ['resources' => $resources])
             ]);
@@ -276,7 +275,7 @@ class DefaultController extends AbstractController
                     return $category->getParent() && $category->getParent()->getParent();
                 };
                 $secondLevelCategory = $parent;
-                while($isSecondLevel($secondLevelCategory)) {
+                while ($isSecondLevel($secondLevelCategory)) {
                     $secondLevelCategory = $secondLevelCategory->getParent();
                 }
                 $children = $secondLevelCategory->getChildren();

@@ -8,30 +8,29 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\Routing\Router;
 
-class LoginSuccessHandler implements AuthenticationSuccessHandlerInterface {
-
+class LoginSuccessHandler implements AuthenticationSuccessHandlerInterface
+{
     protected $router;
     protected $authorizationChecker;
 
-    public function __construct(Router $router, AuthorizationChecker $authorizationChecker) {
+    public function __construct(Router $router, AuthorizationChecker $authorizationChecker)
+    {
         $this->router = $router;
         $this->authorizationChecker = $authorizationChecker;
     }
     
     
 
-    public function onAuthenticationSuccess(Request $request, TokenInterface $token) {
-
+    public function onAuthenticationSuccess(Request $request, TokenInterface $token)
+    {
         $response = null;
 
         if ($this->authorizationChecker->isGranted('ROLE_ADMIN')) {
             $response = new RedirectResponse($this->router->generate('admin_resources_list'));
-        } else if ($this->authorizationChecker->isGranted('ROLE_USER')) {
+        } elseif ($this->authorizationChecker->isGranted('ROLE_USER')) {
             $response = new RedirectResponse($this->router->generate('admin_dashboard'));
         }
 
         return $response;
     }
-
 }
-

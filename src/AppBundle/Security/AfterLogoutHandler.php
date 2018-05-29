@@ -16,15 +16,11 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException ;
 use Symfony\Component\Security\Core\Authentication\Token\Storage\TokenStorageInterface;
 use Symfony\Component\Security\Http\HttpUtils;
 
-
 class AfterLogoutHandler implements LogoutSuccessHandlerInterface
 {
-    
-
-     public function onLogoutSuccess(Request $request) 
+    public function onLogoutSuccess(Request $request)
     {
-       $response = new RedirectResponse($this->router->generate('homepage'));
+        $response = new RedirectResponse($this->router->generate('homepage'));
         return $response;
     }
 }
-

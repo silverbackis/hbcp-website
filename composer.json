@@ -26,6 +26,7 @@
         "doctrine/doctrine-fixtures-bundle": "^2.4",
         "doctrine/orm": "^2.5",
         "egeloen/ckeditor-bundle": "^6.0",
+        "friendsofsymfony/ckeditor-bundle": "^1.1",
         "friendsofsymfony/user-bundle": "~2.0",
         "incenteev/composer-parameter-handler": "^2.0",
         "kriswallsmith/buzz": "^0.15.1",
@@ -38,10 +39,11 @@
         "symfony/monolog-bundle": "^3.1.0",
         "symfony/polyfill-apcu": "^1.0",
         "symfony/swiftmailer-bundle": "^2.3.10",
-        "symfony/symfony": "3.4.0-BETA4@dev",
+        "symfony/symfony": "^3.4",
         "twig/twig": "^1.0||^2.0"
     },
     "require-dev": {
+        "roave/security-advisories": "dev-master",
         "symfony/phpunit-bridge": "^3.0"
     },
     "scripts": {
@@ -49,7 +51,6 @@
             "Incenteev\\ParameterHandler\\ScriptHandler::buildParameters",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::clearCache",
-            "Ivory\\CKEditorBundle\\Composer\\CKEditorScriptHandler::install",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installAssets",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::installRequirementsFile",
             "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::prepareDeploymentTarget"

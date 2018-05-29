@@ -29,7 +29,7 @@ class AdminCategoryController extends Controller
     {
         $categories = $this->getDoctrine()
             ->getRepository(Category::class)
-            ->findBy(array('fixed'=> '0'),array('created' => 'DESC') );
+            ->findBy(array('fixed'=> '0'), array('created' => 'DESC'));
 
         return $this->render('/admin/category/allcats.html.twig', array(
             'categories' => $categories
@@ -44,8 +44,7 @@ class AdminCategoryController extends Controller
         $newCat = $category === null;
         $form = $this->createForm(CategoryType::class, $category);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid())
-        {
+        if ($form->isSubmitted() && $form->isValid()) {
             $category = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($category);
@@ -53,7 +52,7 @@ class AdminCategoryController extends Controller
             $this->addFlash('notice', 'Category ' . ($newCat ? 'added' : 'updated'));
             return $this->redirectToRoute('admin_category_list');
         }
-        return $this->render('/admin/category/createcat.html.twig',array(
+        return $this->render('/admin/category/createcat.html.twig', array(
             'form' => $form->createView(),
             'new' => $newCat
         ));

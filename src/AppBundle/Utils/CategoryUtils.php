@@ -32,22 +32,22 @@ class CategoryUtils
         EntityManagerInterface $em,
         RouterInterface $router,
         TranslatorInterface $translator
-    )
-    {
+    ) {
         $this->slugify = $slugify;
         $this->em = $em;
         $this->router = $router;
         $this->translator = $translator;
     }
 
-    public function findAllCategories(Category $category) {
+    public function findAllCategories(Category $category)
+    {
         // get all the categories that a resource can be in
         $categories = [$category];
         $categories = array_merge($categories, $this->getCategoryChildren($category));
         return $categories;
     }
 
-    private function getCategoryChildren (Category $category)
+    private function getCategoryChildren(Category $category)
     {
         $children = [];
         foreach ($category->getChildren() as $child) {
@@ -59,7 +59,7 @@ class CategoryUtils
         return $children;
     }
 
-    public function getCategoryLinkByName (string $name, $routeName = 'resources')
+    public function getCategoryLinkByName(string $name, $routeName = 'resources')
     {
         $category = $this->em->getRepository(Category::class)->findOneByName($name);
         if (!$category) {
@@ -73,7 +73,7 @@ class CategoryUtils
 
     public function getCategoryHero(Category $category)
     {
-        switch(strtolower($category->getName())) {
+        switch (strtolower($category->getName())) {
             case "behavioural science":
                 $hero = [
                     'icon' => 'bundles/app/images/homegraphic-bc.svg',

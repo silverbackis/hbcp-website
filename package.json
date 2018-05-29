@@ -1,5 +1,5 @@
 {
-  "license": "proprietary",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "@symfony/webpack-encore": "^0.16.0",
     "autoprefixer": "^7.1.6",

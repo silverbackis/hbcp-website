@@ -43,17 +43,14 @@ class AdminNewsPostsController extends Controller
         $oldImage = $news->getImage();
         $form = $this->createForm(NewsType::class, $news);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid())
-        {
+        if ($form->isSubmitted() && $form->isValid()) {
             /**
              * @var News $news
              */
             $news = $form->getData();
 
-            if ($news->getImage())
-            {
-                if ($oldImage)
-                {
+            if ($news->getImage()) {
+                if ($oldImage) {
                     unlink($oldImage->getRealPath());
                 }
                 /** @var \Symfony\Component\HttpFoundation\File\UploadedFile $file */
@@ -88,8 +85,7 @@ class AdminNewsPostsController extends Controller
     public function newsDeleteAction(News $news)
     {
         $em = $this->getDoctrine()->getManager();
-        if ($news->getImage())
-        {
+        if ($news->getImage()) {
             unlink($news->getImage()->getRealPath());
         }
         $em->remove($news);

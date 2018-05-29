@@ -38,5 +38,4 @@ class SelectOption
     {
         $this->label = $label;
     }
-
 }

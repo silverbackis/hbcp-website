@@ -1,7 +1,6 @@
 <?php
 namespace AppBundle\Twig;
 
-
 use AppBundle\Entity\Category;
 use AppBundle\Entity\Resource;
 use AppBundle\Utils\CategoryUtils;
@@ -15,8 +14,7 @@ class AppExtension extends \Twig_Extension
     public function __construct(
         CategoryUtils $categoryUtils,
         EntityManagerInterface $em
-    )
-    {
+    ) {
         $this->categoryUtils = $categoryUtils;
         $this->em = $em;
     }
@@ -49,12 +47,12 @@ class AppExtension extends \Twig_Extension
         return $this->categoryUtils->getCategoryLinkByName($catName, $routeName);
     }
 
-    public function arrayFilter (array $array)
+    public function arrayFilter(array $array)
     {
         return array_filter($array);
     }
 
-    public function getResources (Category $category)
+    public function getResources(Category $category)
     {
         return $this->em->getRepository(Resource::class)->findByCategories([$category]);
     }

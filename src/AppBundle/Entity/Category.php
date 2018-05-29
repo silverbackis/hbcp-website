@@ -269,14 +269,14 @@ class Category
         if (($includeRoot || $parent) && $includeSelf === true || (is_null($includeSelf) && $this->getFixed())) {
             $names[] = $this->getName();
         }
-        while($parent) {
+        while ($parent) {
             if ($includeRoot || $parent->getParent()) {
                 $names[] = $parent->getName();
             }
             $parent = $parent->getParent();
         }
         $names = array_reverse($names);
-        return join (" > ", $names);
+        return join(" > ", $names);
     }
 
     /**
@@ -316,7 +316,7 @@ class Category
     public function getRoot()
     {
         $root = $this;
-        while($root->getParent()) {
+        while ($root->getParent()) {
             $root = $root->getParent();
         }
         return $root;

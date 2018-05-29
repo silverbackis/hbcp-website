@@ -6,14 +6,14 @@ use AppBundle\Model\SelectOption;
 
 class FilterUtils
 {
-    public function getCategoryFilterOptions(array $resources) {
+    public function getCategoryFilterOptions(array $resources)
+    {
         $options = [];
         $filterCats = [];
         /**
          * @var \AppBundle\Entity\Resource $resource
          */
-        foreach ($resources as $resource)
-        {
+        foreach ($resources as $resource) {
             $filterCat = $resource->getCategory();
 
             if (!in_array($filterCat->getId(), $filterCats)) {
@@ -29,15 +29,14 @@ class FilterUtils
         return $options;
     }
 
-    public function getResourceTypeFilterOptions (array $resources)
+    public function getResourceTypeFilterOptions(array $resources)
     {
         $types = [];
         $options = [];
         /**
          * @var \AppBundle\Entity\Resource $resource
          */
-        foreach ($resources as $resource)
-        {
+        foreach ($resources as $resource) {
             if (strtolower($resource->getPathType()) == 'dropbox') {
                 if ($resource->getResourceType()) {
                     if (!in_array($resource->getResourceType()->getId(), $types)) {

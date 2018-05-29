@@ -56,6 +56,9 @@ $font-size_base: 16px;
     background: $btn-shadow;
     color: $white;
   }
+  &:focus {
+    color: $white;
+  }
 
   @media (max-width: $screen-xs-max) {
     font-size: 15px;

@@ -41,7 +41,7 @@ class CategoryFixtures extends Fixture
         $manager->flush();
     }
 
-    private function generateCategory ($catName, Category $parent = null)
+    private function generateCategory($catName, Category $parent = null)
     {
         $category = new Category();
         $category->setName($catName);

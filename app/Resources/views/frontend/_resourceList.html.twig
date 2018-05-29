@@ -14,8 +14,9 @@
             {% endif %}
             <div class="row">
                   <span class="col-xs-12 resource-title">
-                    {% set isDropbox = resource.pathType|lower == 'dropbox' %}
-                    {% set types = [resource.resourceType.name|default(isDropbox ? 'n/a' : null), not isDropbox ? resource.pathType : null] %}
+                    {% set pathType = resource.pathType|lower %}
+                    {% set isDropboxOrOsf = pathType == 'dropbox' or pathType == 'osf' %}
+                    {% set types = [resource.resourceType.name|default(isDropboxOrOsf ? 'n/a' : null), not isDropboxOrOsf ? resource.pathType : null] %}
                     {{ resource.title }} <span class="resource-type">{{ types|array_filter|join(' | ') }}</span>
                   </span>
             </div>
@@ -27,7 +28,7 @@
               </div>
             {% endif %}
 
-            {% if resource.pathType|lower == 'dropbox' %}
+            {% if isDropboxOrOsf %}
               <a class="resource-btn" href="{{ path('resource', {
                 slug: resource.title|slugify,
                 resource: resource.id

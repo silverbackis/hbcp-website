@@ -1,5 +1,6 @@
 <?php
 namespace AppBundle\Controller;
+
 use AppBundle\Entity\Resource;
 use AppBundle\Form\ResourceType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -39,8 +40,7 @@ class AdminResourcesController extends Controller
         }
         $form = $this->createForm(ResourceType::class, $resource);
         $form->handleRequest($request);
-        if ($form->isSubmitted() && $form->isValid())
-        {
+        if ($form->isSubmitted() && $form->isValid()) {
             $resource = $form->getData();
             $em = $this->getDoctrine()->getManager();
             $em->persist($resource);
