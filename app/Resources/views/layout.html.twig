@@ -48,8 +48,8 @@
               <ul class="dropdown-menu">
                 <li{% if currentPath == path('about') %} class="active"{% endif %}>
                   <a href="{{ path('about') }}">About the project</a></li>
-                <li{% if currentPath == path('behavioural_science') %} class="active"{% endif %}>
-                  <a href="{{ path('behavioural_science') }}">Behavioural Science</a></li>
+                <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
+                  <a href="{{ category_path('behavioural science') }}">Behavioural Science</a></li>
                 <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
                   <a href="{{ category_path('computer science') }}">Computer Science</a></li>
                 <li{% if currentPath == category_path('system architecture')%} class="active"{% endif %}>

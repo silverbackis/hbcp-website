@@ -1,8 +1,12 @@
 {% extends 'layout.html.twig' %}
+{% set diagramAnchor = '#diagram' %}
+{% set second_level_link = '' %}
 
 {% block stylesheets %}
   {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/home.style.css') }}" />
   <link rel="stylesheet" href="{{ asset('build/resources.style.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('build/behaviour.style.css') }}" />
 {% endblock %}
 
 {% block body %}
@@ -12,7 +16,16 @@
   'icon_alt': hero.icon_alt,
   'header': hero.header
   } %}
-
+  <section class="block light block-feature text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-0">About the Ontology</h2>
+          <p>Lipsum</p>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="text-center">
     <div id="departments">
       <ul class="nav nav-tabs hidden visible-md visible-lg">
@@ -41,8 +54,34 @@
         </select>
       </div>
     </div>
-
-
+    {% if currentPath == category_path('behavioural science') %}
+      <section class="behaviour-diagram" id="diagram">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            <div class="col-md-3 text-center diagram-info">
+              <img src="{{ asset('bundles/app/images/bsicon-info.svg') }}" alt="Info info - lower case 'i'" class="info-icon" />
+              <p>
+                {{ 'behavioural_science.info'|trans }}
+              </p>
+              <a href="{{ path('behavioural_science_explain') }}" class="btn btn-block btn-explain">
+                Explain Diagram
+              </a>
+            </div>
+            <div class="col-md-6 triangle">
+              {% include 'frontend/_triangle.html.twig' %}
+            </div>
+            <div class="col-md-3 text-center diagram-explain">
+              <div class="inline-block">
+                <p>What to know more about this diagram?</p>
+                <a href="{{ path('behavioural_science_explain') }}" class="btn btn-block btn-explain">
+                  Explain Diagram
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    {% endif %}
     <div class="row hidden-md hidden-lg">
       <div class="col-xs-12">
         <a class="btn-filter-toggle collapsed" role="button" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
