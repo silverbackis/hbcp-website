@@ -16,7 +16,20 @@
     </p>
   </section>
 
-  <section class="block light block-feature">
+  <section class="block light block-feature text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-0">Human Behaviour Change Project</h2>
+          <p>Lipsum</p>
+          <p>Text</p>
+          <a href="{{ path('about') }}" class="btn">About the Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-feature">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-push-6">
@@ -31,7 +44,7 @@
     </div>
   </section>
 
-  <section class="block block-feature">
+  <section class="block light block-feature">
     <div class="container">
       <div class="row">
         <div class="col-sm-6">
@@ -46,7 +59,7 @@
     </div>
   </section>
 
-  <section class="block light block-feature">
+  <section class="block block-feature">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-push-6">
@@ -61,25 +74,32 @@
     </div>
   </section>
 
-  <section class="block block-bottom text-center">
+  <section class="block light block-bottom text-center">
     <div class="container">
       <div class="row">
-        <div class="custom-block team">
-          <div class="icon">
-            <img src="{{ asset('bundles/app/images/homeicon-team.svg') }}" alt="team-icon">
+        <div class="col-md-12">
+          <div class="custom-block team">
+            <div class="icon">
+              <img src="{{ asset('bundles/app/images/homeicon-team.svg') }}" alt="team-icon">
+            </div>
+            <h2>Meet The Team</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <a href="{{ path('grantholders') }}" class="btn">Grant Holders</a>
+              </div>
+              <div class="col-md-6">
+                <a href="{{ path('projecteam') }}" class="btn">Research Team</a>
+              </div>
+            </div>
           </div>
-          <h2>Who's Involved</h2>
-          <p>{{ 'home.whos_involved'|trans }}</p>
-          <a href="{{ path('projecteam') }}" class="btn">Grant Holders & Project Team</a>
-        </div>
-        <div class="spacer"></div>
-        <div class="custom-block news">
-          <div class="icon">
-            <img src="{{ asset('bundles/app/images/homeicon-news.svg') }}" alt="news-icon">
+          <div class="spacer"></div>
+          <div class="custom-block news">
+            <div class="icon">
+              <img src="{{ asset('bundles/app/images/homeicon-news.svg') }}" alt="news-icon">
+            </div>
+            <h2>HBCP News</h2>
+            <a href="{{ path('news') }}" class="btn">Latest News</a>
           </div>
-          <h2>HBCP News</h2>
-          <p>{{ 'home.news'|trans }}</p>
-          <a href="{{ path('news') }}" class="btn">Latest News</a>
         </div>
       </div>
     </div>

@@ -6,8 +6,6 @@ home:
   behavioural_science: Behavioural scientists are developing an “ontology” of behaviour change interventions, organising the fragmented scientific literature into a form that enables efficient accumulation of knowledge.
   computer_science: Computer scientists are developing algorithms to automatically annotate intervention reports, populating a database structured according to the ontology.  Machine learning and reasoning algorithms will synthesise the data.
   system_architecture: System architects will develop an interface to facilitate querying and updating the knowledge base, and the system as a whole
-  whos_involved: The HBCP, funded by the Wellcome Trust, is a collaboration between behavioural scientists, computer scientists and system architects, based at University College London, the Universities of Cambridge and Aberdeen, and IBM Research Laboratory, Ireland.
-  news: Keep up to date with the latest news from the HBCP, including the progress of the project, conference presentations, blogs and other dissemination, and collaborations.
 
 behavioural_science:
   description: The behavioural scientists are developing an “ontology” of behaviour change interventions that will organise the fragmented information in the scientific literature into a form that enables efficient accumulation of knowledge.
@@ -114,7 +112,6 @@ news:
   description: The latest updates and news from the Human Behaviour-Change Project team.
 
 contact:
-  description: Please get in touch if you would like to learn more about the Human Behaviour-Change Project or if you have any comments or suggestions on what we have been doing
   mailing_list: Sign up to our mailing list and select which aspects of the HBCP you would like to be kept up to date with.
   twitter: Follow us on Twitter for the most recent news on all aspects of the HBCP and other relevant topics.
   open_science: We document our methods and materials on the HBCP Open Science Framework page.

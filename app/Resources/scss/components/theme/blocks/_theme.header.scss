@@ -31,6 +31,14 @@ Header-style
     }
     .navbar-collapse {
       .navbar-nav {
+        .open {
+          >a,
+          >a:focus,
+          >a:hover {
+            background: transparent;
+          }
+        }
+
         > li {
           height: 78px;
           display: table;

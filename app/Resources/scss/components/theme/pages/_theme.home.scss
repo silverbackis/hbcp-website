@@ -51,12 +51,12 @@
     }
     &.team:before {
       right: 100%;
-      margin-right: -180px;
-      top: -220px;
-      background: url(/bundles/app/images/homeicon-teambg.svg) 0 0 no-repeat;
+      margin-right: -120px;
+      top: -230px;
+      background: url('/bundles/app/images/homeicon-teambg.svg') 0 0 no-repeat;
       background-size: 100% auto;
-      width: 582px;
-      height: 582px;
+      width: 520px;
+      height: 520px;
       @media (max-width: $screen-xs-max) {
         right: auto;
         left: 0;
@@ -68,7 +68,7 @@
     &.news:before {
       left: 100%;
       top: 70px;
-      background: url(/bundles/app/images/homeicon-newsbg.svg) 0 0 no-repeat;
+      background: url('/bundles/app/images/homeicon-newsbg.svg') 0 0 no-repeat;
       background-size: 100% auto;
       width: 718px;
       height: 608px;
