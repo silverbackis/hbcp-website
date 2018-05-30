@@ -49,20 +49,27 @@
       content: "";
       position: absolute;
     }
-    &.team:before {
-      right: 100%;
-      margin-right: -120px;
-      top: -230px;
-      background: url('/bundles/app/images/homeicon-teambg.svg') 0 0 no-repeat;
-      background-size: 100% auto;
-      width: 520px;
-      height: 520px;
-      @media (max-width: $screen-xs-max) {
-        right: auto;
-        left: 0;
-        top: -100px;
-        width: 291px;
-        height: 291px;
+    &.team {
+      @media (max-width: $screen-md-min) {
+        .research-team {
+          margin-top: .5rem;
+        }
+      }
+      &:before {
+        right: 100%;
+        margin-right: -120px;
+        top: -230px;
+        background: url('/bundles/app/images/homeicon-teambg.svg') 0 0 no-repeat;
+        background-size: 100% auto;
+        width: 520px;
+        height: 520px;
+        @media (max-width: $screen-xs-max) {
+          right: auto;
+          left: 0;
+          top: -100px;
+          width: 291px;
+          height: 291px;
+        }
       }
     }
     &.news:before {

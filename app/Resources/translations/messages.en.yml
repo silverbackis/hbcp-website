@@ -7,6 +7,9 @@ home:
   computer_science: Computer scientists are developing algorithms to automatically annotate intervention reports, populating a database structured according to the ontology.  Machine learning and reasoning algorithms will synthesise the data.
   system_architecture: System architects will develop an interface to facilitate querying and updating the knowledge base, and the system as a whole
 
+about:
+    description: Find out more about the Human Behaviour Change Project
+
 behavioural_science:
   description: The behavioural scientists are developing an “ontology” of behaviour change interventions that will organise the fragmented information in the scientific literature into a form that enables efficient accumulation of knowledge.
   info: This diagram is a simplified representation of the top level of the Behaviour Change Intervention Ontology

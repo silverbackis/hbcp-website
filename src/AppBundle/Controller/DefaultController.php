@@ -110,9 +110,9 @@ class DefaultController extends AbstractController
      */
     public function about(Request $request)
     {
-        $description = $this->get(TranslatorInterface::class)->trans('home.description');
+        $description = $this->get(TranslatorInterface::class)->trans('about.description');
         $this->setSeo('', $description);
-        return $this->render('frontend/homepage.html.twig', [
+        return $this->render('frontend/about.html.twig', [
             'header_text' => $description
         ]);
     }

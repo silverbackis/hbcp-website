@@ -6,24 +6,29 @@
 {% block body %}
   {% include 'frontend/_hero.html.twig' with {
     'icon': 'bundles/app/images/mob-home.png',
-    'icon_alt': 'Home hero header icon - head wire-frame at globe',
-    'header': 'Advancing and Applying the science of Behaviour Change through Machine-Learning'
+    'icon_alt': 'About the Human Behaviour Change Project',
+    'header': 'About the Project'
   } %}
-
-  <section class="logo-bar">
-    <p class="text-center">
-      <img src="{{ asset('bundles/app/images/home-sponsors.svg') }}" alt="HBCP Sponsor Logos">
-    </p>
-  </section>
 
   <section class="block light block-feature text-center">
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="mt-0">Human Behaviour Change Project</h2>
+          <h2 class="mt-0">The Vision</h2>
           <p>Lipsum</p>
           <p>Text</p>
-          <a href="{{ path('about') }}" class="btn">About the Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-feature text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2 class="mt-0">How each discipline will work</h2>
+          <p>Lipsum</p>
+          <p>Text</p>
         </div>
       </div>
     </div>
@@ -69,37 +74,6 @@
           <h2 class="mt-md-0">System Architecture</h2>
           <p>{{ 'home.system_architecture'|trans }}</p>
           <a href="{{ category_path('system architecture') }}" class="btn">System Architecture Resources</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block light block-bottom text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="custom-block team">
-            <div class="icon">
-              <img src="{{ asset('bundles/app/images/homeicon-team.svg') }}" alt="team-icon">
-            </div>
-            <h2>Meet The Team</h2>
-            <div class="row">
-              <div class="col-md-6">
-                <a href="{{ path('grantholders') }}" class="btn">Grant Holders</a>
-              </div>
-              <div class="col-md-6">
-                <a href="{{ path('projecteam') }}" class="btn research-team">Research Team</a>
-              </div>
-            </div>
-          </div>
-          <div class="spacer"></div>
-          <div class="custom-block news">
-            <div class="icon">
-              <img src="{{ asset('bundles/app/images/homeicon-news.svg') }}" alt="news-icon">
-            </div>
-            <h2>HBCP News</h2>
-            <a href="{{ path('news') }}" class="btn">Latest News</a>
-          </div>
         </div>
       </div>
     </div>
