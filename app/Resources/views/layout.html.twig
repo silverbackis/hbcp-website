@@ -65,10 +65,10 @@
                  aria-expanded="false"
               >Who's Involved <span class="caret"></span></a>
               <ul class="dropdown-menu">
-                <li{% if currentPath == path('projecteam') %} class="active"{% endif %}>
-                  <a href="{{ path('projecteam') }}">Project team</a></li>
                 <li{% if currentPath == path('grantholders') %} class="active"{% endif %}>
                   <a href="{{ path('grantholders') }}">Grant holders</a></li>
+                <li{% if currentPath == path('projecteam') %} class="active"{% endif %}>
+                  <a href="{{ path('projecteam') }}">Project team</a></li>
               </ul>
             </li>
             <li{% if currentPath == path('news') %} class="active"{% endif %}>
@@ -96,8 +96,8 @@
         </div>
         <div class="col-md-6 text-right">
           <ul>
-            <li><a href="mailto:info@humanbehaviourchange.org">info@humanbehaviourchange.org</a></li>
-            <li><a href="https://twitter.com/search?q=%23humanbehaviourchange" target="_blank" rel="noopener" class="twitter">#HumanBehaviourChange</a></li>
+            <li><a href="mailto:humanbehaviourchange@ucl.ac.uk">humanbehaviourchange@ucl.ac.uk</a></li>
+            <li><a href="https://twitter.com/hbcproject" target="_blank" rel="noopener" class="twitter">@HBCProject</a></li>
             <li><a href="https://osf.io/efp4x/" target="_blank" rel="noopener" class="open-science">HBCP on Open Science</a></li>
           </ul>
           <a href="{{ path('contactus') }}" class="btn btn-small">Contact</a>

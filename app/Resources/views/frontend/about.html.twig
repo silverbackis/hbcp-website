@@ -15,8 +15,10 @@
       <div class="row">
         <div class="col-12">
           <h2 class="mt-0">The Vision</h2>
-          <p>Lipsum</p>
-          <p>Text</p>
+          <p>The scientific literature on behaviour change is vast and accumulating at an accelerating rate. However, this literature is fragmented and is inconsistently and incompletely reported. Much of it is therefore wasted. Current efforts to synthesise this evidence can take years, miss much that is relevant and fail to detect patterns that produce new knowledge.</p>
+          <p>Advances in computing mean it is possible to apply Natural Language Processing and Machine Learning technologies to reveal insights from large volumes of unstructured text.</p>
+          <p>We are building a Knowledge System to identify relevant information in the world literature on behaviour change interventions, extract it into an organised form, and synthesise it to generate new insights about behaviour change.</p>
+          <p>This Knowledge System can then be interrogated on demand to answer users’ questions about behaviour change. It will provide up-to-date answers drawing on knowledge integrated from a more extensive literature than humans have the capacity to review in a timely fashion.  The system will also be able to explain the bases for its recommendations as well as estimate the confidence with which such statements can be made.</p>
         </div>
       </div>
     </div>
@@ -27,38 +29,22 @@
       <div class="row">
         <div class="col-12">
           <h2 class="mt-0">How each discipline will work</h2>
-          <p>Lipsum</p>
-          <p>Text</p>
+          <p>Our interdisciplinary team spans three areas of expertise: Behavioural Science, Computer Science and System Architecture, working closely together in iterative fashion.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="block block-feature">
+  <section class="block block-feature light">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 col-sm-push-6">
-          <img src="{{ asset('bundles/app/images/homegraphic-bc.svg') }}" alt="Homegraphic Behavioural Science">
+          <img src="{{ asset('bundles/app/images/homegraphic-bc.svg') }}" alt="Behavioural Science Illustration">
         </div>
         <div class="col-sm-6 col-sm-pull-6">
           <h2 class="mt-md-0">Behavioural Science</h2>
-          <p>{{ 'home.behavioural_science'|trans }}</p>
-          <a href="{{ category_path('behavioural science') }}" class="btn">Behavioural Science Resources</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="block light block-feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-6">
-          <img src="{{ asset('bundles/app/images/homegraphic-cs.svg') }}" alt="Homegraphic Computer Science">
-        </div>
-        <div class="col-sm-6">
-          <h2 class="mt-md-0">Computer Science</h2>
-          <p>{{ 'home.computer_science'|trans }}</p>
-          <a href="{{ category_path('computer science') }}" class="btn">Computer Science Resources</a>
+          <p>The Behavioural Science team is developing a Behaviour Change Intervention Ontology (BCIO) – a set of definitions for entities and relationships used to describe behaviour change interventions, their contexts, effects and evaluations.  The BCIO is being used to structure the evidence in intervention evaluation reports. It is also forming a basis for behavioural scientists to train the Knowledge System, using annotated reports and feedback, to extract information automatically from the reports.</p>
+          <a href="{{ category_path('behavioural science') }}" class="btn">Behavioural Science</a>
         </div>
       </div>
     </div>
@@ -67,13 +53,28 @@
   <section class="block block-feature">
     <div class="container">
       <div class="row">
+        <div class="col-sm-6">
+          <img src="{{ asset('bundles/app/images/homegraphic-cs.svg') }}" alt="Computer Science Illustration">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="mt-md-0">Computer Science</h2>
+          <p>The Computer Science team is developing Natural Language Processing, Machine Learning and reasoning algorithms to automatically extract relevant information from behaviour change intervention reports, and synthesise this to generate insights about behaviour change. The aim is to develop algorithms which, given a set of behaviour change intervention reports, can automatically extract key information to populate the central database, and, from that information can identify trends and predict outcomes from proposed interventions.</p>
+          <a href="{{ category_path('computer science') }}" class="btn">Computer Science</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block block-feature light">
+    <div class="container">
+      <div class="row">
         <div class="col-sm-6 col-sm-push-6">
-          <img src="{{ asset('bundles/app/images/homegraphic-sa.svg') }}" alt="Homegraphic System Architecture">
+          <img src="{{ asset('bundles/app/images/homegraphic-sa.svg') }}" alt="System Architecture Illustration">
         </div>
         <div class="col-sm-6 col-sm-pull-6">
           <h2 class="mt-md-0">System Architecture</h2>
-          <p>{{ 'home.system_architecture'|trans }}</p>
-          <a href="{{ category_path('system architecture') }}" class="btn">System Architecture Resources</a>
+          <p>The System Architecture team is working to develop user and machine interfaces for the system. Multiple interfaces are being developed including 1) software used by the Behavioural Science team to annotate reports according to the Behaviour Change Intervention Ontology 2) the main user interface which will allow users (e.g. researchers, policy makers, practitioners) to query the system, and 3) machine interfaces allowing the system to exchange information with other relevant systems including online research publication databases.</p>
+          <a href="{{ category_path('system architecture') }}" class="btn">System Architecture</a>
         </div>
       </div>
     </div>

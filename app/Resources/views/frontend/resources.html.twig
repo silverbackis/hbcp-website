@@ -20,41 +20,31 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="mt-0">About the Ontology</h2>
-          <p>Lipsum</p>
+          {% if currentPath == category_path('behavioural science') %}
+            {% include 'frontend/resource_descriptions/behavioural_science.twig' %}
+          {% elseif currentPath == category_path('computer science') %}
+            {% include 'frontend/resource_descriptions/computer_science.twig' %}
+          {% elseif currentPath == category_path('system architecture') %}
+            {% include 'frontend/resource_descriptions/system_architecture.twig' %}
+          {% endif %}
         </div>
       </div>
     </div>
   </section>
   <section class="text-center">
-    {% if currentPath == category_path('behavioural science') %}
-      <section class="behaviour-diagram" id="diagram">
-        <div class="container-fluid">
-          <div class="row no-gutters">
-            <div class="col-md-3 text-center diagram-info">
-              <img src="{{ asset('bundles/app/images/bsicon-info.svg') }}" alt="Info info - lower case 'i'" class="info-icon" />
-              <p>
-                {{ 'behavioural_science.info'|trans }}
-              </p>
-              <a href="{{ path('behavioural_science_explain') }}" class="btn btn-block btn-explain">
-                Explain Diagram
-              </a>
-            </div>
-            <div class="col-md-6 triangle">
-              {% include 'frontend/_triangle.html.twig' %}
-            </div>
-            <div class="col-md-3 text-center diagram-explain">
-              <div class="inline-block">
-                <p>What to know more about this diagram?</p>
-                <a href="{{ path('behavioural_science_explain') }}" class="btn btn-block btn-explain">
-                  Explain Diagram
-                </a>
-              </div>
-            </div>
-          </div>
+    <section class="diagram" id="diagram">
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          {% if currentPath == category_path('behavioural science') %}
+             {% include 'frontend/diagrams/_triangle.html.twig' %}
+          {% elseif currentPath == category_path('computer science') %}
+            <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
+          {% elseif currentPath == category_path('system architecture') %}
+            <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
+          {% endif %}
         </div>
-      </section>
-    {% endif %}
+      </div>
+    </section>
     <div class="row hidden-md hidden-lg">
       <div class="col-xs-12">
         <a class="btn-filter-toggle collapsed" role="button" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">

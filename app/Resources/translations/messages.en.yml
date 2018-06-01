@@ -3,15 +3,15 @@ layout:
 
 home:
   description: The Human Behaviour-Change Project (HBCP) is a ground-breaking collaboration between behavioural scientists, computer scientists and system architects, aiming to revolutionise methods for synthesising evidence about behaviour change and generate novel insights into behaviour change.
-  behavioural_science: Behavioural scientists are developing an “ontology” of behaviour change interventions, organising the fragmented scientific literature into a form that enables efficient accumulation of knowledge.
-  computer_science: Computer scientists are developing algorithms to automatically annotate intervention reports, populating a database structured according to the ontology.  Machine learning and reasoning algorithms will synthesise the data.
-  system_architecture: System architects will develop an interface to facilitate querying and updating the knowledge base, and the system as a whole
+  behavioural_science: "Behavioural Scientists are developing an ‘ontology’ (The Behaviour Change Intervention Ontology – BCIO): a defined set of entities and their relationships. This will be used to organise information in a form that enables efficient accumulation of knowledge and enables links to other knowledge systems. They are also extracting information by hand to provide a reference set for the automated information extraction system."
+  computer_science: "Computer Scientists are developing algorithms to automatically extract information from published reports. This is being used to populate a database of research findings structured according to the Behaviour Change Intervention Ontology (BCIO).  Machine Learning and reasoning algorithms are being developed to generate insights and answer queries from these data."
+  system_architecture: "System Architects are developing user and machine interfaces for the Knowledge System. These will allow the system to be queried by practitioners, policy makers and researchers, and to interact with other automated systems."
 
 about:
     description: Find out more about the Human Behaviour Change Project
 
 behavioural_science:
-  description: The behavioural scientists are developing an “ontology” of behaviour change interventions that will organise the fragmented information in the scientific literature into a form that enables efficient accumulation of knowledge.
+  description: The behavioural science team is developing an ontology specific to behaviour change interventions – the Behaviour Change Intervention Ontology (BCIO).
   info: This diagram is a simplified representation of the top level of the Behaviour Change Intervention Ontology
   outcome:
     description: The absolute numerical value of the target behaviour that is associated with a particular behaviour change intervention scenario (an experimental condition in a behaviour change intervention evaluation).
@@ -32,34 +32,31 @@ computer_science:
 system_architecture:
   description: Here you will find resources relating to the system architecture aspects of the HBCP.  Please use the drop-down menus to narrow your selection.
 
-all_resources:
-  description: Here you will find resources relating to the HBCP.  Please use the drop-down menus to narrow your selection to those of most interest to you.
-
-project_team:
-  description: The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and system architects.
+grant_holders:
+  description: "This project is funded by a Wellcome Collaborative Award in Science [201524/Z/16/Z]. Wellcome Collaborative awards aim to ‘promote the development of new ideas and speed the pace of discovery’ by funding ‘teams of researchers, consisting of independent research groups, to work together on the most important scientific problems that can only be solved through collaborative efforts’"
   susan:
-    name: Professor Susan Michie (UCL)
-    role: Principal Investigator
+    name: Prof. Susan Michie (PI)
+    institution: University College London
     link: http://iris.ucl.ac.uk/iris/browse/profile?upi=SFMIC21
-    image: team-susan.png
+    image: susan.png
     description: |
-      Susan Michie is Director of the Centre for Behaviour Change and of the Health Psychology Research Group at UCL. She leads an extensive programme of research developing the science of behaviour change interventions and applying that science to intervention development and evaluation. This includes the MRC- funded Theory and Techniques project, the Wellcome Trust-funded Human Behaviour-Change Project, the NIHR funded UCL membership of the School for Public Health Research and a programme of digital research in collaboration with Professor Robert West. She works with a wide range of disciplines, practitioners and policy-makers, fostering interdisciplinary working and the translation of evidence into practice. To further these aims, she founded the Centre for Behaviour Change which has a rich programme of events, training and research.
+      Susan Michie is Director of the <a href="http://www.ucl.ac.uk/behaviour-change" target="_blank" rel="noopener">Centre for Behaviour Change</a> and of the Health Psychology Research Group at UCL. She leads an extensive programme of research developing the science of behaviour change interventions and applying that science to intervention development and evaluation. This includes the MRC- funded <a href="http://www.ucl.ac.uk/behaviour-change-techniques" target="_blank" rel="noopener">Theory and Techniques project</a>, the Wellcome Trust-funded Human Behaviour-Change Project, the NIHR funded UCL membership of the School for Public Health Research and a programme of digital research in collaboration with Professor Robert West. She works with a wide range of disciplines, practitioners and policy-makers, fostering interdisciplinary working and the translation of evidence into practice. To further these aims, she founded the Centre for Behaviour Change which has a rich programme of events, training and research.
 
       Susan studied Experimental Psychology at Oxford University, followed by Clinical Psychology at the Institute of Psychiatry, London University and a DPhil in Developmental Psychology. She is a chartered clinical and health psychologist, and elected Fellow of the Academy of Social Sciences, the US Society of Behavioral Medicine, the US Academy of Behavioral Medicine Research, the European Health Psychology Society and the British Psychological Society.
   james:
-    name: Professor James Thomas (UCL - Institute of Education)
-    role: Co-Investigator
+    name: Prof. James Thomas
+    institution: University College London - Institute of Education
     link: https://iris.ucl.ac.uk/iris/browse/profile?upi=JTHOA32
-    image: team-james.png
+    image: james.jpg
     description: |
       James Thomas is Professor of Social Research & Policy at the EPPI-Centre, UCL where he is Principal Investigator of the Department of Health Systematic Reviews Facility. This work involves conducting policy-relevant systematic reviews alongside the provision of training, national and international coordination work in evidence-based health promotion and public health, and the creation and maintenance of online evidence databases. James Thomas’s research career is centred on improving policy and decision-making through more creative use and appreciation of existing knowledge. It covers substantive disciplinary fields – such as health promotion, public health and education – and also the development of tools and methods that support this work conducted both within University College London (UCL) and in the wider community.
 
-      He has written extensively on research synthesis, including meta-analysis and methods for combining qualitative and quantitative research in ‘mixed method’ reviews; and also designed EPPI-Reviewer, software which manages data through all stages of a systematic review, which has recently been adopted by NICE and Cochrane to support evidence synthesis in these organisations. He is currently co-lead of the Cochrane ‘Project Transform’ which is implementing novel technologies and procecess (including machine learning and crowdsourcing) to improve the efficiency of systematic reviews and increase their responsiveness to user needs and timescales.
+        He has written extensively on research synthesis, including meta-analysis and methods for combining qualitative and quantitative research in ‘mixed method’ reviews; and also designed EPPI-Reviewer, software which manages data through all stages of a systematic review, which has recently been adopted by NICE and Cochrane to support evidence synthesis in these organisations. He is currently co-lead of the Cochrane ‘Project Transform’ which is implementing novel technologies and process (including machine learning and crowdsourcing) to improve the efficiency of systematic reviews and increase their responsiveness to user needs and timescales.
   john:
-    name: Professor John Shawe-Taylor (UCL)
-    role: Co-Investigator
-    link: false
-    image: team-john.png
+    name: Prof. John Shawe-Taylor
+    institution: University College London
+    link: http://www.engineering.ucl.ac.uk/people/john-shawe-taylor/
+    image: john.jpg
     description: |
       John Shawe-Taylor is Professor of Computer Science at UCL and has contributed to a number of fields ranging from graph theory through cryptography to statistical learning theory and its applications. However, his main contributions have been in the development of the analysis and subsequent algorithmic definition of principled machine learning algorithms founded in statistical learning theory. This work has helped to drive a fundamental rebirth in the field of machine learning with the introduction of kernel methods and support vector machines, including the mapping of these approaches onto novel domains including work in computer vision, document classification and brain scan analysis. More recently he has worked on interactive learning and reinforcement learning, both of which will be relevant to the current proposal.
 
@@ -67,43 +64,40 @@ project_team:
 
       He has published over 300 papers with an H index of 60 and over 42000 citations (Google scholar). Two books co-authored with Nello Cristianini have become standard monographs for the study of kernel methods and support vector machines and together have attracted 21000 citations.
   pol:
-    name: Pol Mac Aonghusa (IBM Research Lab, Dublin)
-    role: Co-Investigator
-    link: false
-    image: team-pol.png
+    name: Pol Aonghusa
+    institution: IBM
+    link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-aonghusa
+    image: pol.jpg
     description: |
       Pol Mac Aonghusa is a Senior Research Manager at the IBM Research Lab in Dublin responsible for research projects in Artificial Intelligence, Semantic Web Technologies and Data Privacy.
-
-      My research interests for the past 5 years have been in applying semantic web technologies to problems in machine learning and optimization. Our early work won prizes in the International Semantic Web Challenge in 2012 and 2013. More recently we have been investigating how to assist Social Care-workers and Care Teams make more informed decisions with incomplete and uncertain data. I am pleased that parts of this work are now in transition to our IBM Watson Health solution portfolio.
-
-      My personal research interests are in online privacy as a pragmatic tradeoff between perceptions of utility, risk and cost. Users are prepared to trade an acceptable amount of risk in return for utility gained. I'm currently looking at how users can actively detect, understand and adapt their privacy utility-risk-cost balance as they interact with systems.
-
-      In addition to applied research for IBM products Pol is also responsible for several EU funded research projects. These include ProAct (Assisted Independent Living for people with Multiple Co-morbidities) and PETRA (Multi-model Journey Planning).
+       My research interests for the past 5 years have been in applying semantic web technologies to problems in machine learning and optimization. Our early work won prizes in the International Semantic Web Challenge in 2012 and 2013. More recently we have been investigating how to assist Social Care-workers and Care Teams make more informed decisions with incomplete and uncertain data. I am pleased that parts of this work are now in transition to our IBM Watson Health solution portfolio.
+       My personal research interests are in online privacy as a pragmatic tradeoff between perceptions of utility, risk and cost. Users are prepared to trade an acceptable amount of risk in return for utility gained. I'm currently looking at how users can actively detect, understand and adapt their privacy utility-risk-cost balance as they interact with systems.
+       In addition to applied research for IBM products Pol is also responsible for several EU funded research projects. These include ProAct (Assisted Independent Living for people with Multiple Co-morbidities) and PETRA (Multi-model Journey Planning).
   marie:
-    name: Professor Marie Johnston (University of Aberdeen)
-    role: Co-Investigator
-    link: https://www.abdn.ac.uk/clsm/profiles/m.johnston
-    image: team-marie.png
+    name: Prof. Marie Johnston
+    institution: University of Aberdeen
+    link: https://www.abdn.ac.uk/iahs/research/health-psychology/profiles/m.johnston
+    image: mjohnston.jpg
     description: |
       Marie Johnston is Emeritus Professor of Health Psychology at the University of Aberdeen and a registered Health and Clinical Psychologist. Her research focusses on behaviour and behaviour change, including the importance of theory and measurement as well as the development and evaluation of interventions. She investigates behaviour in the context of health, illness and healthcare with much of this work on behaviour in disabling conditions including stroke and arthritis.  She has over 400 publications and her research has recently been supported by MRC, CRUK, CSO, Arthritis Research, NIHR and NIH.
 
       Her awards include fellowships of the Academy of Learned Societies for the Social Sciences, the Academy of Medical Sciences, the Royal Society of Edinburgh, the Royal College of Physicians of Edinburgh, the American Society of Behavioral Medicine and the European Health Psychology Society. She received the British Psychological Society (BPS) President’s Award and Honorary Fellowship.  She was the founder chair of Health Psychology within the BPS and second President of the European Health Psychology Society.
 
-      Her work has had impact on government policy, including the implementation of the Stroke Workbook to reduce disability and changes in the remuneration of dentists to increase evidence-based care for children's teeth. The Health Behaviour Change Competency Framework developed with Diane Dixon is used to develop NHS Scotland education strategy.
+      Her work has had impact on government policy, including the implementation of the <a href="http://www.theheartmanual.com/Programmes/Pages/Stroke-Workbook.aspx" target="_blank" rel="noopener">Stroke Workbook to reduce disability</a> and changes in the remuneration of dentists to increase evidence-based care for children's teeth. The Health Behaviour Change Competency Framework developed with Diane Dixon is used to develop <a href="http://www.healthscotland.com/documents/4877.aspx" target="_blank" rel="noopener">NHS Scotland education strategy</a>.
   mike:
-    name: Professor Mike Kelly (University of Cambridge)
-    role: Co-Investigator
+    name: Prof. Mike Kelly
+    institution: University of Cambridge
     link: http://www.phpc.cam.ac.uk/people/pcu-group/pcu-visiting-staff/mike-kelly/
-    image: team-mike.png
+    image: mkelly.jpg
     description: |
       Professor Mike Kelly is Senior Visiting Fellow in the Department of Public Health and Primary Care at the Institute of Public Health and a member of St John’s College at the University of Cambridge. He has an honorary chair at UCL. Between 2005 and 2014 he was Director of the Centre for Public Health at NICE. He was educated at the universities of York, Leicester and Dundee and had an academic career lasting twenty seven years before moving into the National Health Service to lead the Research Team at the Health Development Agency and then moving on to NICE. His research interest include health related behaviour change and health inequalities.
 
       In 2010 he was awarded the Alwyn Smith Prize of the Faculty of Public Health in recognition of his work on cardiovascular disease and alcohol misuse prevention. Professor Kelly is Fellow of the Faculty of Public Health, Honorary Fellow Royal College of Physicians (his citation was for his work on occupational health) and Fellow of the Royal College of Physicians of Edinburgh. In 2014 he was awarded an honorary doctorate by the University of York for his contribution to evidence based policy.
   robert:
-    name: Professor Robert West (UCL)
-    role: Co-Investigator
+    name: Prof. Robert West
+    institution: University College London
     link: http://www.rjwest.co.uk/
-    image: team-robert.png
+    image: rwest.jpg
     description: |
       Robert West is Professor of Health Psychology and Director of Tobacco Studies at the Cancer Research UK Health Behaviour Research Centre, University College London, UK. Professor West completed his PhD in Psychology in 1983 at University College London and worked as a postdoctoral researcher in the area of smoking at the Institute of Psychiatry until 1985 when he took up a lecturing position at Royal Holloway, London University. He continued his research into smoking and also began researching traffic accident involvement. In 1991 Professor West joined St George's, University of London, where he was made professor in 1996. He took up his present position in 2003.
 
@@ -111,15 +105,149 @@ project_team:
 
       Professor West is a member of the Editorial Board of the Cochrane Collaboration Tobacco Review Group, and Editor-in-Chief of the journal Addiction. He is author of the books, Theory of Addiction, Models of Addiction, The SmokeFree Formula, and Fast Facts: Smoking Cessation.
 
+project_team:
+  description: "The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and system architects."
+  debasis:
+    name: Debasis Ganguly
+    institution: IBM
+    link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-Debasis.Ganguly1
+    image: Debasis_Ganguly.jpg
+    description: |
+        Debasis is a researcher at IBM Research Labs, Dublin, Ireland. He completed his PhD and postdoctoral research at the ADAPT centre, Dublin City University. His research interests primarily include incorporating term relationships, including the use of topic models and word/document vector embeddings, into retrieval and feedback models for improving search effectiveness. He is also interested in cross-language and multilingual document search, a particular example of which is the case of retrieving relevant information from a collection of code mixed documents.
+
+        He serves as the program committee member of top-tier conferences, e.g. SIGIR, NAACL, NLDB etc. He is also actively engaged in organizing workshops on recent topics in information retrieval and natural language processing.
+
+        As a researcher, he is keen to commercialize his research with industry partnerships. In the past, he was actively involved in managing academia-industry partnership projects.
+  lea:
+    name: Léa A. Deleris
+    institution: IBM
+    link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-lea.deleris
+    image: lea.jpg
+    description: |
+        Léa A. Deleris is a Research Staff Member and Manager at IBM Research-Ireland.
+
+        In her current position, she oversees a team of researchers working on projects related to health care and social care leveraging cognitive computing technologies such as artificial intelligence, decision sciences and natural language processing. She is also the local cognitive computing lead for IBM Research – Ireland, coordinating internally and externally the lab activities and exposure in that domain
+
+        Her personal research interests lie in decision theory, risk analysis and natural language processing. Her work presents a mixture of applied and conceptual work, including (i) leveraging natural language processing techniques to facilitate the retrieval of risk information and its aggregation into decision support models, (ii) applications of analytics to help care workers make better decisions in the social care domain and (iii) investigating ways to make decision making more cognitive and thereby more accessible.
+  alisonm:
+      name: Dr Alison O’Mara-Eves
+      institution: University College London - Institute of Education
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=AJOMA15
+      image: alison.jpg
+      description: |
+        Dr Alison O’Mara-Eves is a Senior Researcher the EPPI-Centre, UCL Institute of Education.
+
+        Alison’s broad specialism is systematic review methods. There are two main strands within this theme: (1) developing and testing synthesis methods, with a particular interest in quantitative synthesis including statistical meta-analysis, and (2) evaluating the use of emerging text mining techniques for facilitating the production of systematic reviews. She also teaches Masters-level and short courses on research synthesis methods.
+
+        Alison’s has worked on over 30 systematic reviews and evidence syntheses across a range of topics. Her substantive interests primarily relate to social psychology, education, and public health. She is particularly interested in self-perceptions, wellbeing, and interventions for behaviour change.
+  alisonw:
+      name: Dr Alison Wright
+      institution: University College London
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=AWRIG61
+      image: Alison_Wright_HBCP.jpg
+      description: |
+        Dr Alison Wright is a Senior Research Associate, leading the team of behavioural science researchers working on the Human Behaviour Change project. Her research interests focus on applying psychological science to develop and evaluate behaviour change interventions. She has worked on a diverse range of topics, including treatment adherence, health care utilisation, physical activity after stroke and preventing occupational dermatitis in nurses
+  emma:
+      name: Dr Emma Norris
+      institution: University College London
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=NORRI53
+      image: Emma_Norris.jpg
+      description: |
+        Emma is a Research Associate at UCL working on this project. Her PhD, completed at UCL, involved the development and testing of behaviour change interventions to integrate physical activity into primary school teaching. She has research experience in systematic reviews and mixed-methods intervention evaluation. She is interested in using health psychology theory and principles to improve a broad range of public health issues, with specific interests in physical activity and technological interventions.
+  ailbhe:
+      name: Dr Ailbhe Finnerty
+      institution: University College London
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=ANFIN63
+      image: ailbhe-finnerty2.JPG
+      description: |
+        Ailbhe is a Research Associate at UCL working on this project. Her PhD, completed at the University of Trento, Italy, focused on using more advanced research methodology and techniques for collecting and analysing data, from computer science disciplines, to study social behaviours and phenomenon. The aim was to examine psychological phenomenon, once carried out in the lab, in a wider social context, to be able to reliably and unobtrusively measure social behaviour, such as, communication and interaction through wearable sensors, social media and mobile phone data.
+
+        Prior to joining UCL, she worked for a digital marketing agency where she had the opportunity to apply knowledge from her research on understanding human behaviour to real life business cases. She has research experience and an interest in wide range of topics, such as, behaviour change interventions, computational methods of understanding personality, social networking and social media, crowdsourcing and the virtual workplace, organisational psychology and the role of nonverbal behaviour in social settings.
+  marta:
+      name: Dr Marta Marques
+      institution: University College London
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=MMORE85
+      image: Marta_Marques.jpg
+      description: |
+        Marta is a Research Associate at UCL working on this project. She obtained her PhD in Health Psychology from Leiden University, in 2015. She is a chartered clinical and health psychologist. Prior to joining UCL, she worked as a post-doctoral researcher at the University of Lisbon where she collaborated in various projects focusing on the motivational and self-regulation processes underlying health behaviour change and its applications to complex behaviour change interventions (e.g. H2020 funded project “NoHoW: Evidence-based ICT tools for weight loss maintenance”), and at the University of Newcastle (project “Formative evaluation of the early phases of the NHS Diabetes Prevention Program”). Marta is a member of the European Health Psychology Society Executive Committee, Associate Editor of the Health Psychology Bulletin, and co-editor-in-chief of Psychology, Community & Health. Her research focuses on applying health behaviour change theories to develop and evaluate complex interventions targeting a range of health behaviours (e.g. physical activity), in the self-regulation and motivational processes underlying health behaviour change, and methods for the development of the science of behaviour change.
+  gillian:
+    name: Gillian Stokes
+    institution: University College London - Institute of Education
+    link: https://iris.ucl.ac.uk/iris/browse/profile?upi=GSTOK68
+    image: Gillian_Stokes.jpg
+    description: |
+        Gillian is a Research Officer and systematic reviewer at UCL, Institute of Education. Her expertise in public health is founded on a career spanning media and communications, health care practice and public health research. She has four years’ experience in academia working on health related systematic reviews, stakeholder involvement in health related primary research and systematic reviews. Gillian has a research interest in accessibility to and the methods used to communicate health related information through the use of online methods. Further, how particular groups access and use online information, in particular social media, and its impact on health decisions and behaviours. Her research specialism is public involvement in health research with a particular interest in children’s participation in pharmaceutical and dental research and has a keen interest in developing involvement methods for stakeholders.
+  patrick:
+    name: Dr Patrick O'Driscoll
+    institution: University College London
+    link: false
+    image: Patrick_ODriscoll.JPG
+    description: |
+        Patrick is a senior programmer at the EPPI-Centre, UCL Institute of Education. He is working on the new version of EPPI Reviewer software, ER5.
+
+        Previously Patrick worked within the finance industry building web applications for fund managers and quantitative analysts.
+
+        He has extensive experience within the commercial and academic sectors and a PhD in Financial Optimisation and has published in this area.
+  candice:
+    name: Candice Moore
+    institution: University College London
+    link: false
+    image: candice_moore.jpg
+    description: |
+        Candice Moore is the Research Administrator at UCL helping to support and facilitate the work of the Human Behaviour-Change Project Team. Previously she has worked as an administrator for a variety of research projects in developmental psychology, including a large-scale educational intervention, within the Centre for Brain and Cognitive Development at Birkbeck, University of London.
+
+        Candice is also completing a master’s degree in Cognitive and Decision Sciences within the Brain Sciences department at UCL.
+  paulina:
+    name: Paulina Schnek
+    institution: University College London
+    link: false
+    image: Paulina.png
+    description: |
+        Paulina is a PhD Student, working with the Human Behaviour Change Project (HBCP). Her current research supports the development of a pilot ontology for mechanisms of action (MoAs; i.e. processes, mediating the influence of behaviour change techniques on behavioural outcomes) based on the behaviour change theories. The pilot ontology will be used to identify and iteratively annotate MoAs in published behaviour change interventions to develop automated information extraction algorithms. Moving forward, Paulina will continue to study BCT-MoA-behaviour links, with respect to the context of behaviour change interventions.
+
+        Before joining the HBCP team, Paulina completed a BSc (Hons) in Psychology at UCL in 2016, and earned a MSc in Risk, Economy and Society at the LSE in 2017.
+  gaurav:
+    name: Gaurav Singh
+    institution: University College London
+    link: https://www.researchgate.net/profile/Gaurav_Singh174
+    image: Gaurav.jpg
+    description: |
+        Gaurav Singh is a full-time PhD candidate in the field of machine learning in the dept. of Computer Science at University College, London. He is focused on bringing efficiency to the task of biomedical text retrieval and annotation using machine learning and artificial intelligence. His research includes using deep learning models trained on small labelled set, to summarise and annotate medical documents to save time and human effort.
+  yufang:
+    name: Yufang Hou
+    institution: IBM
+    link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-YHou
+    image: Yufang.jpg
+    description: |
+        Yufang Hou is a research staff member at IBM Research Ireland and she is currently working on extracting information from scientific research papers in the smoking cessation domain. Her primary research interest lies in the the area of natural language processing (NLP) where she focuses on the tasks of natural language understanding in the discourse level, such as information status recognition, indirect anaphora resolution and coreference resolution. She is also interested in computational argumentation and information extraction. Before joining IBM, she was a Postdoc researcher at <a href="http://www.cl.uni-heidelberg.de/clgroupaf/" target="_blank" rel="noopener">the department of Computational Linguistics at Heidelberg University</a> where she worked on information extraction across sentence boundaries and sentiment analysis in poems. Yufang completed her PhD at Heidelberg Institute for Theoretical Studies (HITS) on unrestricted bridging resolution and she developed algorithms for bridging anaphora recognition as well as antecedent selection. Her PhD was funded by the Research Training Group Coherence in Language Processing at Heidelberg University.
+  francesca:
+      name: Francesca Bonin
+      institution: IBM
+      link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-FBonin
+      image: Francesca.jpg
+      description: |
+        Francesca Bonin is a Research Scientist at IBM Research Ireland, working on Cognitive Computing and Natural Language Processing (NLP).
+
+        She holds a PhD in Natural Language Processing at Trinity College Dublin (Ireland), a MSc. in Language Technologies and a B.A. in Digital Humanities from the University of Pisa (Italy).
+
+        Her research interests includes NLP, Social Signal Processing, Multimodal Interaction and AI. Recently she has been part of the IBM Debater Project, focusing on debating technology.
+
+        Before joining IBM, she has been focusing on Information Extraction and social signal processing from dialogues and meetings.
+
+        She has been co-chair of several workshops on Multimodal Interaction and she currently serves the community as program committee member of the main international conferences in NLP and Speech Technologies.
+
 news:
   description: The latest updates and news from the Human Behaviour-Change Project team.
 
 contact:
-  mailing_list: Sign up to our mailing list and select which aspects of the HBCP you would like to be kept up to date with.
+  description: Get in touch with the Human Behaviour Change Project team.
+  mailing_list: Sign up to our mailing list to receive updates about the project.
   twitter: Follow us on Twitter for the most recent news on all aspects of the HBCP and other relevant topics.
   open_science: We document our methods and materials on the HBCP Open Science Framework page.
   research_gate: Follow us on ResearchGate for news and details of recent publications.
-  linkedin: Find out more about the project, make connections and learn of job opportunities within the project on LinkedIn.
   email: |
-    If you are not able to get the information you need from our other channels, our email is:
-    <a href="mailto:info@humanbehaviourchange.org">info@humanbehaviourchange.org</a>
+    Feel free to get in touch with us directly if you have any questions. Our email address is:
+    <a href="mailto:humanbehaviourchange@ucl.ac.uk">humanbehaviourchange@ucl.ac.uk</a>
+
+privacy:
+  description: Read the Human Behaviour Change Project privacy policy here

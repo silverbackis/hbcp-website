@@ -78,7 +78,7 @@ class DefaultController extends AbstractController
     {
         $expectedSlug = $this->container->get('slugify')->slugify($news->getName());
         if ($expectedSlug !== $slug) {
-            return $this->redirectToRoute('resources', [
+            return $this->redirectToRoute('news_post', [
                 'slug' => $expectedSlug,
                 'news' => $news->getId()
             ]);
@@ -111,7 +111,7 @@ class DefaultController extends AbstractController
     public function about(Request $request)
     {
         $description = $this->get(TranslatorInterface::class)->trans('about.description');
-        $this->setSeo('', $description);
+        $this->setSeo('About', $description);
         return $this->render('frontend/about.html.twig', [
             'header_text' => $description
         ]);
@@ -123,7 +123,7 @@ class DefaultController extends AbstractController
     public function teamMembers()
     {
         $description = $this->get(TranslatorInterface::class)->trans('project_team.description');
-        $this->setSeo('Project Team & Grant Holders', $description);
+        $this->setSeo('Project Team', $description);
 
         return $this->render('frontend/team.html.twig', array(
             'header_text' =>$description
@@ -131,15 +131,13 @@ class DefaultController extends AbstractController
     }
 
     /**
-     * @Route("/grantholders", name="grantholders")
+     * @Route("/grant-holders", name="grantholders")
      */
     public function grantholders(Request $request)
     {
-        $description = $this->get(TranslatorInterface::class)->trans('home.description');
-        $this->setSeo('', $description);
-        return $this->render('frontend/homepage.html.twig', [
-            'header_text' => $description
-        ]);
+        $description = $this->get(TranslatorInterface::class)->trans('grant_holders.description');
+        $this->setSeo('Grant Holders', $description);
+        return $this->render('frontend/grantholders.html.twig');
     }
 
     /**
@@ -223,7 +221,10 @@ class DefaultController extends AbstractController
     }
 
     /**
-     *@Route("/resource/{slug}/{resource}", name="resource")
+     * @param string $slug
+     * @param Resource|null $resource
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @Route("/resource/{slug}/{resource}", name="resource")
      */
     public function viewResource(string $slug, Resource $resource = null)
     {
@@ -266,10 +267,8 @@ class DefaultController extends AbstractController
      */
     public function privacy(Request $request)
     {
-        $description = $this->get(TranslatorInterface::class)->trans('home.description');
-        $this->setSeo('', $description);
-        return $this->render('frontend/homepage.html.twig', [
-            'header_text' => $description
-        ]);
+        $description = $this->get(TranslatorInterface::class)->trans('privacy.description');
+        $this->setSeo('Privacy Policy', $description);
+        return $this->render('frontend/privacy.html.twig');
     }
 }

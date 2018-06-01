@@ -1,0 +1,33 @@
+{% extends 'layout.html.twig' %}
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/home.style.css') }}" />
+{% endblock %}
+{% block body %}
+  {% include 'frontend/_hero.html.twig' with {
+    'icon': 'bundles/app/images/mob-home.png',
+    'icon_alt': 'About the Human Behaviour Change Project',
+    'header': 'Privacy Policy'
+  } %}
+
+  <section class="block block-feature text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>The Human Behaviour Change Project team take your privacy and data security seriously.</p>
+          <p>As a visitor to our website, we collect limited anonymised information from you. We share these cookies with Google Analytics who provide us with reports which allow us to enhance the user experience of our website. Google store this information for a maximum of 26 months, before automatically deleting it.  We may use this information to:</p>
+          <ul>
+            <li>manage our web system and troubleshoot problems</li>
+            <li>identify areas of the website that are more difficult to access so that we can improve the structure to make these areas more accessible</li>
+            <li>identify areas of the website which are accessed most frequently, so we can update the website with more useful information</li>
+          </ul>
+          <p>We will not use this information for any other purposes than those mentioned above.</p>
+          Please see <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google’s privacy statement</a> for more information on how they use your cookies, and to find out how you can opt-out of google analytics via your browser.
+          <p>We also have access to some personal information when you access our website, including your IP address. We only use this information to track suspicios behaviour and to prevent attacks.</p>
+          <p>If you have any questions about the way we use your information, don’t hesitate to get in touch with us by sending an email to <a href="mailto:humanbehaviourchange@ucl.ac.uk">humanbehaviourchange@ucl.ac.uk</a>.</p>
+
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

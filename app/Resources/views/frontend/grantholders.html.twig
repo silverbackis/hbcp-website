@@ -3,7 +3,7 @@
 {% import _self as team %}
 
 {% macro member(key) %}
-  {% set prefix = 'project_team.' ~ key ~ '.' %}
+  {% set prefix = 'grant_holders.' ~ key ~ '.' %}
   {% include 'frontend/_teamMember.html.twig' with {
   image: (prefix ~ 'image')|trans,
   image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'role')|trans,
@@ -23,23 +23,15 @@
 {% block body %}
   {% include 'frontend/_hero.html.twig' with {
   'icon': 'bundles/app/images/team-white.svg',
-  'icon_alt': 'Project Team Header Icon',
-  'header': 'Project Team'
+  'icon_alt': 'Grant Holders Header Icon',
+  'header': 'Grant Holders'
   } %}
 
-  {{ team.member('debasis') }}
-  {{ team.member('lea') }}
-  {{ team.member('alisonm') }}
-  {{ team.member('alisonw') }}
-  {{ team.member('emma') }}
-  {{ team.member('ailbhe') }}
-  {{ team.member('marta') }}
-  {{ team.member('gillian') }}
-  {{ team.member('patrick') }}
-  {{ team.member('candice') }}
-  {{ team.member('paulina') }}
-  {{ team.member('gaurav') }}
-  {{ team.member('yufang') }}
-  {{ team.member('francesca') }}
-
+  {{ team.member('susan') }}
+  {{ team.member('james') }}
+  {{ team.member('john') }}
+  {{ team.member('pol') }}
+  {{ team.member('marie') }}
+  {{ team.member('mike') }}
+  {{ team.member('robert') }}
 {% endblock %}

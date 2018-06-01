@@ -100,9 +100,9 @@ Header-style
       }
       .navbar-collapse {
         .navbar-nav {
-          li {
+          > li {
             height: 63px;
-            a {
+            > a {
               padding-bottom: 8px;
             }
           }
@@ -120,9 +120,9 @@ Header-style
       }
       .navbar-collapse {
         .navbar-nav {
-          li {
+          > li {
             height: 45px;
-            a {
+            > a {
               padding-left: 6px;
               padding-right: 6px;
               font-size: 14px;
@@ -159,11 +159,11 @@ Header-style
         width: 100%;
         left: 0;
         margin: 0;
-        .navbar-nav li {
+        .navbar-nav > li {
           height: auto;
           display: block;
           text-align: center;
-          a {
+          > a {
             padding: 10px;
             font-size: 16px;
             display: inline-block;
