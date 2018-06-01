@@ -6,7 +6,7 @@
   {% set prefix = 'grant_holders.' ~ key ~ '.' %}
   {% include 'frontend/_teamMember.html.twig' with {
   image: (prefix ~ 'image')|trans,
-  image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'role')|trans,
+  image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'institution')|trans,
   header: (prefix ~ 'name')|trans,
   sub_header: (prefix ~ 'institution')|trans,
   website: (prefix ~ 'link')|trans,
@@ -26,7 +26,7 @@
   'icon_alt': 'Grant Holders Header Icon',
   'header': 'Grant Holders'
   } %}
-
+  {% include 'frontend/_teamTabs.twig' %}
   {{ team.member('susan') }}
   {{ team.member('james') }}
   {{ team.member('john') }}

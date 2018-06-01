@@ -63,12 +63,12 @@
                  role="button"
                  aria-haspopup="true"
                  aria-expanded="false"
-              >Who's Involved <span class="caret"></span></a>
+              >Project Team <span class="caret"></span></a>
               <ul class="dropdown-menu">
                 <li{% if currentPath == path('grantholders') %} class="active"{% endif %}>
                   <a href="{{ path('grantholders') }}">Grant holders</a></li>
                 <li{% if currentPath == path('projecteam') %} class="active"{% endif %}>
-                  <a href="{{ path('projecteam') }}">Project team</a></li>
+                  <a href="{{ path('projecteam') }}">Research team</a></li>
               </ul>
             </li>
             <li{% if currentPath == path('news') %} class="active"{% endif %}>

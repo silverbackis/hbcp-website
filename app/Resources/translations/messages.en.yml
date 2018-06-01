@@ -69,10 +69,13 @@ grant_holders:
     link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-aonghusa
     image: pol.jpg
     description: |
-      Pol Mac Aonghusa is a Senior Research Manager at the IBM Research Lab in Dublin responsible for research projects in Artificial Intelligence, Semantic Web Technologies and Data Privacy.
-       My research interests for the past 5 years have been in applying semantic web technologies to problems in machine learning and optimization. Our early work won prizes in the International Semantic Web Challenge in 2012 and 2013. More recently we have been investigating how to assist Social Care-workers and Care Teams make more informed decisions with incomplete and uncertain data. I am pleased that parts of this work are now in transition to our IBM Watson Health solution portfolio.
-       My personal research interests are in online privacy as a pragmatic tradeoff between perceptions of utility, risk and cost. Users are prepared to trade an acceptable amount of risk in return for utility gained. I'm currently looking at how users can actively detect, understand and adapt their privacy utility-risk-cost balance as they interact with systems.
-       In addition to applied research for IBM products Pol is also responsible for several EU funded research projects. These include ProAct (Assisted Independent Living for people with Multiple Co-morbidities) and PETRA (Multi-model Journey Planning).
+        Pol Mac Aonghusa is a Senior Research Manager at the IBM Research Lab in Dublin responsible for research projects in Artificial Intelligence, Semantic Web Technologies and Data Privacy.
+
+        My research interests for the past 5 years have been in applying semantic web technologies to problems in machine learning and optimization. Our early work won prizes in the International Semantic Web Challenge in 2012 and 2013. More recently we have been investigating how to assist Social Care-workers and Care Teams make more informed decisions with incomplete and uncertain data. I am pleased that parts of this work are now in transition to our IBM Watson Health solution portfolio.
+
+        My personal research interests are in online privacy as a pragmatic tradeoff between perceptions of utility, risk and cost. Users are prepared to trade an acceptable amount of risk in return for utility gained. I'm currently looking at how users can actively detect, understand and adapt their privacy utility-risk-cost balance as they interact with systems.
+
+        In addition to applied research for IBM products Pol is also responsible for several EU funded research projects. These include ProAct (Assisted Independent Living for people with Multiple Co-morbidities) and PETRA (Multi-model Journey Planning).
   marie:
     name: Prof. Marie Johnston
     institution: University of Aberdeen

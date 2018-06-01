@@ -1,0 +1,10 @@
+<section class="text-center">
+  <ul class="nav nav-tabs hidden visible-md visible-lg">
+    <li{% if currentPath == path('grantholders') %} class="active"{% endif %}>
+      <a href="{{ path('grantholders') }}">Grant Holders</a>
+    </li>
+    <li{% if currentPath == path('projecteam') %} class="active"{% endif %}>
+      <a href="{{ path('projecteam') }}">Research Team</a>
+    </li>
+  </ul>
+</section>

@@ -3,11 +3,6 @@
 @import "~bootstrap-sass/assets/stylesheets/bootstrap/variables";
 @import "resource";
 
-@mixin tab-text {
-  font-size: 18px;
-  color: $gray-light;
-}
-
 .container-fluid .jumbotron {
   @include hbcp-jumbotron;
   background-image: url('/bundles/app/images/bg-allresources-header.png');
@@ -41,30 +36,6 @@
         width: 110px;
         margin-top: -32px;
       }
-    }
-  }
-}
-
-.nav-tabs {
-  border: 0;
-  padding: 30px 0;
-  li {
-    border: none;
-    float: none;
-    display: inline-block;
-    margin: 0 25px;
-    a {
-      @include tab-text;
-      border: 0 !important;
-      &:hover {
-        background: none;
-      }
-    }
-  }
-  li.active {
-    border-bottom: 2px solid $blue;
-    a {
-      color: $blue !important;
     }
   }
 }

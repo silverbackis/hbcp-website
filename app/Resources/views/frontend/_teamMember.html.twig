@@ -13,7 +13,7 @@
         <a class="website-link" href="{{ website }}" target="_blank" rel="noopener">Visit Website</a>
         {% endif %}
         <div class="member-description collapse" id="team-description-{{ key }}">
-          {{ description|nl2br }}
+          {{ description|raw|nl2br }}
         </div>
         <button class="read-more" data-toggle="collapse" data-target="#team-description-{{ key }}"></button>
       </div>

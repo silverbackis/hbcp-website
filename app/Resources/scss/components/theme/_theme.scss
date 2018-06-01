@@ -61,6 +61,10 @@ body {
   }
 }
 
+.jumbotron + .block {
+  border-top: 1px solid $border-color;
+}
+
 .block {
   padding: 50px 0;
   border-bottom: 1px solid $border-color;
@@ -105,4 +109,29 @@ body {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.nav-tabs {
+  border: 0;
+  border-bottom: 1px solid $gray-border;
+  padding: 30px 0;
+  li {
+    border: none;
+    float: none;
+    display: inline-block;
+    margin: 0 25px;
+    a {
+      @include tab-text;
+      border: 0 !important;
+      &:hover {
+        background: none;
+      }
+    }
+  }
+  li.active {
+    border-bottom: 2px solid $blue;
+    a {
+      color: $blue !important;
+    }
+  }
 }

@@ -6,7 +6,7 @@
   {% set prefix = 'project_team.' ~ key ~ '.' %}
   {% include 'frontend/_teamMember.html.twig' with {
   image: (prefix ~ 'image')|trans,
-  image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'role')|trans,
+  image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'institution')|trans,
   header: (prefix ~ 'name')|trans,
   sub_header: (prefix ~ 'institution')|trans,
   website: (prefix ~ 'link')|trans,
@@ -26,6 +26,7 @@
   'icon_alt': 'Project Team Header Icon',
   'header': 'Project Team'
   } %}
+  {% include 'frontend/_teamTabs.twig' %}
 
   {{ team.member('debasis') }}
   {{ team.member('lea') }}
