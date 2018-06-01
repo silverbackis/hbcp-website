@@ -19,7 +19,11 @@ class FilterUtils
                 $selectOption = new SelectOption();
                 $selectOption->setValue($filterCat->getId());
                 $label = $filterCat->getBreadcrumbs(true, false);
-                $selectOption->setLabel($label === '' ? 'Project' : $label);
+                if ($label !== '') {
+                    $selectOption->setLabel($label);
+                } else {
+                    $selectOption->setLabel(strtolower($filterCat->getName()) === 'project' ? 'Project' : 'General');
+                }
                 $options[] = $selectOption;
 
                 $filterCats[] = $filterCat->getId();
