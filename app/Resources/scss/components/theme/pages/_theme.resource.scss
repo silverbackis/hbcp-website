@@ -4,10 +4,13 @@
 @import "stdHero";
 @import "shareAndBack";
 
-.dropbox-info {
+.resource-hosting-info {
   padding: 25px 0;
   text-align: center;
-  img,
+  .logo {
+    max-height: 70px;
+  }
+  .logo,
   p {
     display: inline-block;
     vertical-align: middle;
@@ -21,7 +24,7 @@
     font-size: 16px;
   }
   @media (max-width: $screen-md-min) {
-    img {
+    .logo {
       width: 40px;
     }
     p {

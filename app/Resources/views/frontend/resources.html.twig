@@ -27,33 +27,6 @@
     </div>
   </section>
   <section class="text-center">
-    <div id="departments">
-      <ul class="nav nav-tabs hidden visible-md visible-lg">
-        <li{% if currentPath == path('resources') %} class="active"{% endif %}>
-          <a href="{{ path('resources') }}">Project</a>
-        </li>
-        <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
-          <a href="{{ category_path('behavioural science') }}">Behavioural Science</a>
-        </li>
-        <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
-          <a href="{{ category_path('computer science') }}">Computer Science</a>
-        </li>
-        <li{% if currentPath == category_path('system architecture') %} class="active"{% endif %}>
-          <a href="{{ category_path('system architecture') }}">System Architecture</a>
-        </li>
-      </ul>
-      <div class="row row-mobile-department hidden-md hidden-lg">
-        <label class="text-right filter-label">
-          <span>Department</span>
-        </label>
-        <select class="selectpicker order" id="department-select">
-          <option {% if currentPath == path('resources') %} selected="selected"{% endif %} value="{{ path('resources') }}">Project</option>
-          <option {% if currentPath == category_path('behavioural science') %} selected="selected"{% endif %} value="{{ category_path('behavioural science') }}">Behavioural Science</option>
-          <option {% if currentPath == category_path('computer science') %} selected="selected"{% endif %} value="{{ category_path('computer science') }}">Computer Science</option>
-          <option {% if currentPath == category_path('system architecture') %} selected="selected"{% endif %} value="{{ category_path('system architecture') }}">System Architecture</option>
-        </select>
-      </div>
-    </div>
     {% if currentPath == category_path('behavioural science') %}
       <section class="behaviour-diagram" id="diagram">
         <div class="container-fluid">

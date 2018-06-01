@@ -143,59 +143,53 @@ class DefaultController extends AbstractController
     }
 
     /**
-     *@Route("/resources/{slug}/{parent}", name="resources", defaults={"slug": "", "parent": 0})
+     * @param string|null $slug
+     * @param Category $parent
+     * @param Request $request
+     * @return JsonResponse|\Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @throws \Twig_Error_Loader
+     * @throws \Twig_Error_Runtime
+     * @throws \Twig_Error_Syntax
+     * @Route("/resources/{slug}/{parent}", name="resources")
      */
-    public function allResources(string $slug = null, Category $parent = null, Request $request)
+    public function allResources(string $slug = null, Category $parent, Request $request)
     {
         $em = $this->getDoctrine()->getManager();
-
-        $loadDefault = !$parent;
-        if ($loadDefault) {
-            /**
-             * @var null|Category $parent
-             */
-            $parent = $em->getRepository(Category::class)->findOneByName('project');
-            if (!$parent) {
-                throw new NotFoundHttpException('Default category not found');
-            }
-        }
 
         // Validate the slug
         $slugify = $this->container->get('slugify');
         $expectedSlug = $slugify->slugify($parent->getName());
 
-        if (!$loadDefault) {
-            // Project should be loaded as the default resources path
-            if ($expectedSlug === 'project') {
-                return $this->redirectToRoute('resources');
-            }
-            // Ensure we don't have duplicate pages indexed on Google
-            if ($expectedSlug !== $slug) {
-                return $this->redirectToRoute('resources', [
-                    'slug' => $expectedSlug,
-                    'parent' => $parent->getId()
-                ]);
-            }
+        // Ensure we don't have duplicate pages indexed on Google
+        if ($expectedSlug !== $slug) {
+            return $this->redirectToRoute('resources', [
+                'slug' => $expectedSlug,
+                'parent' => $parent->getId()
+            ]);
         }
 
         // Checks completed - determine categories to display
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
+        $allCats[] = $em->getRepository(Category::class)->findOneByName('project');
+
         if ($request->get('category')) {
             $resetAllCats = false;
+            $mergeCats = [];
             foreach ($allCats as $innerCat) {
-                if (in_array($innerCat->getId(), $request->request->get('category'))) {
+                if (\in_array($innerCat->getId(), $request->get('category'), false)) {
                     if (!$resetAllCats) {
                         $resetAllCats = true;
                         $allCats = [];
                     }
                     if ($innerCat->getParent()) {
-                        $allCats = array_merge($allCats, $categoryUtils->findAllCategories($innerCat));
+                        $mergeCats[] = $categoryUtils->findAllCategories($innerCat);
                     } else {
                         $allCats[] = $innerCat;
                     }
                 }
             }
+            $allCats = array_merge($allCats, ...$mergeCats);
         }
         // Get the resources - this function will apply resource type filter and order by as well
         $resources = $em->getRepository(Resource::class)->findByCategories($allCats, $request);
@@ -215,7 +209,6 @@ class DefaultController extends AbstractController
         $title = ucwords($parent->getName()) . ' Resources';
         $hero = $categoryUtils->getCategoryHero($parent);
         $this->setSeo($title, $hero['text']);
-
 
         return $this->render('frontend/resources.html.twig', array(
             'title'=> $title,
@@ -264,74 +257,6 @@ class DefaultController extends AbstractController
         $this->setSeo('Explain Behavioural Science Diagram', $description);
 
         return $this->render('frontend/behaviourDiagramExplain.html.twig', [
-            'header_text' => $description
-        ]);
-    }
-
-    /**
-     * @Route("/behavioural-science/{slug}/{parent}", name="behavioural_science", defaults={"slug"="", "id"=0}, requirements={"parent"="\d+"})
-     * @throws \LogicException
-     * @throws \Psr\Container\ContainerExceptionInterface
-     */
-    public function behaviouralScience(string $slug = null, Category $parent = null, Request $request)
-    {
-        $resources = null;
-        $tabs = null;
-        $secondLevelCategory = null;
-        if ($parent) {
-            $em = $this->getDoctrine()->getManager();
-            $categoryRepo = $em->getRepository(Category::class);
-            $bcParent = $categoryRepo->findOneByName('behavioural science');
-            $categoryUtils = $this->container->get(CategoryUtils::class);
-            $allCats = $categoryUtils->findAllCategories($bcParent);
-
-            if ($parent->getFixed() && in_array($parent, $allCats)) {
-                // Validate the slug
-                $slugify = $this->container->get('slugify');
-                $expectedSlug = $slugify->slugify($parent->getName());
-                if ($expectedSlug !== $slug) {
-                    return $this->redirectToRoute('behavioural_science', [
-                        'slug' => $expectedSlug,
-                        'parent' => $parent->getId()
-                    ]);
-                }
-                $isSecondLevel = function (Category $category) {
-                    return $category->getParent() && $category->getParent()->getParent();
-                };
-                $secondLevelCategory = $parent;
-                while ($isSecondLevel($secondLevelCategory)) {
-                    $secondLevelCategory = $secondLevelCategory->getParent();
-                }
-                $children = $secondLevelCategory->getChildren();
-                $firstChild = $children->first();
-                $hasTabs = $firstChild && $firstChild->getFixed();
-                $tabs = $hasTabs ? $children : null;
-                if ($hasTabs) {
-                    $isTab = in_array($parent, $children->toArray());
-                    if (!$isTab) {
-                        $parent = $children->first();
-                    }
-                }
-            } else {
-                return $this->redirectToRoute('behavioural_science');
-            }
-        }
-
-        $description = $this->get(TranslatorInterface::class)->trans('behavioural_science.description');
-        $titleArray = [
-            $secondLevelCategory ? $secondLevelCategory->getName() : null,
-            $parent && $secondLevelCategory!==$parent ? $parent->getName() : null,
-            'Behavioural Science Diagram'
-        ];
-        $this->setSeo(implode(' - ', array_filter($titleArray)), $description);
-
-        return $this->render('frontend/behaviour.html.twig', [
-            'parent' => $parent,
-            'tabs' => $tabs,
-            'second_level_link' => $this->generateUrl('behavioural_science', [
-                'parent' => $secondLevelCategory ? $secondLevelCategory->getId() : null,
-                'slug' => $secondLevelCategory ? $this->get('slugify')->slugify($secondLevelCategory->getName()) : null
-            ]),
             'header_text' => $description
         ]);
     }

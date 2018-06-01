@@ -44,7 +44,8 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "symfony/phpunit-bridge": "^3.0"
+        "symfony/phpunit-bridge": "^3.0",
+        "symfony/profiler-pack": "^1.0"
     },
     "scripts": {
         "symfony-scripts": [

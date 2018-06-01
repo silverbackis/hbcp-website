@@ -146,9 +146,13 @@ class Resource
         return $cats;
     }
 
-    public function getResourceTag()
+    public function getResourceTag(): string
     {
-        $categoryCrumbs = $this->getCategory()->getBreadcrumbs(true, false);
+        $category = $this->getCategory();
+        if (strtolower($category->getName()) === 'project') {
+            return 'Project';
+        }
+        $categoryCrumbs = $category->getBreadcrumbs(true, false);
         return $categoryCrumbs === '' ? 'General' : $categoryCrumbs;
     }
 

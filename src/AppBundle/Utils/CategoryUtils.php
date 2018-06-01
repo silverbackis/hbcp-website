@@ -39,7 +39,11 @@ class CategoryUtils
         $this->translator = $translator;
     }
 
-    public function findAllCategories(Category $category)
+    /**
+     * @param Category $category
+     * @return Category[]
+     */
+    public function findAllCategories(Category $category): array
     {
         // get all the categories that a resource can be in
         $categories = [$category];
@@ -47,16 +51,17 @@ class CategoryUtils
         return $categories;
     }
 
-    private function getCategoryChildren(Category $category)
+    private function getCategoryChildren(Category $category): array
     {
         $children = [];
+        $toMerge = [];
         foreach ($category->getChildren() as $child) {
             $children[] = $child;
-            if (count($child->getChildren())) {
-                $children = array_merge($children, $this->getCategoryChildren($child));
+            if (\count($child->getChildren())) {
+                $toMerge[] = $this->getCategoryChildren($child);
             }
         }
-        return $children;
+        return array_merge($children, ...$toMerge);
     }
 
     public function getCategoryLinkByName(string $name, $routeName = 'resources')

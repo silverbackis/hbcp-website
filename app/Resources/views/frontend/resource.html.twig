@@ -23,10 +23,17 @@
     <div class="container">
       <div class="col-xs-12">
         <div class="row">
-          <div class="col-xs-12 dropbox-info">
-            <img class="dropbox-logo" src="{{ asset('bundles/app/images/resource-dropbox.svg') }}" alt="Dropbox Logo">
-            <p>We use Dropbox to host all our resource documents</p>
+          {% if resource.pathType|lower == 'dropbox' %}
+          <div class="col-xs-12 resource-hosting-info dropbox">
+            <img class="logo" src="{{ asset('bundles/app/images/resource-dropbox.svg') }}" alt="Dropbox Logo">
+            <p>We use Dropbox to host this resource document</p>
           </div>
+          {% elseif resource.pathType|lower == 'osf' %}
+            <div class="col-xs-12 resource-hosting-info osf">
+              <img class="logo" src="{{ asset('bundles/app/images/contact-openscience.png') }}" alt="Open Science Framework Logo">
+              <p>We use Open Science Framework to host this resource document</p>
+            </div>
+          {% endif %}
         </div>
         <div class="row download-btn-row">
           <div class="col-xs-12 text-center">
@@ -63,7 +70,7 @@
   </section>
   {% include 'frontend/_shareAndBack.html.twig' with {
     share_title: 'Share Resource',
-    tweet: 'Take a look at this resource I came across - ' ~ resource.title ~ ' ' ~ app.request.uri ~ ' #HBCP',
+    tweet: 'Take a look at this resource I came across - ' ~ resource.title ~ ' ' ~ app.request.uri ~ ' #HumanBehaviourChange',
     back_href: path('resources', {slug: resource.rootCategory.name|slugify, parent: resource.rootCategory.id}),
     back_link: 'Back To Resources'
   } %}
