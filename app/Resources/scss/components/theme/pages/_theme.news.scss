@@ -62,5 +62,10 @@
 @media(max-width: 768px) {
   .latest-news-section {
     text-align: center;
+    .news-detail {
+      h2 {
+        margin-top: .5rem;
+      }
+    }
   }
 }

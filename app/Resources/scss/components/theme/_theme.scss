@@ -87,6 +87,9 @@ body {
   h2 {
     color: $blue;
     font-weight: normal;
+    &:first-child {
+      margin-top: 0;
+    }
   }
   img {
     max-width: 100%;
