@@ -1,6 +1,6 @@
 /// Known Colors Variables From Design Handover ///
 $hbcp-blue: #377bbb;
-$pale-blue: #A7D0FF;
+$pale-blue: lighten($hbcp-blue, 10%);
 $btn-shadow: #01459b;
 $blue: #0f78d1;
 $white: #fff;

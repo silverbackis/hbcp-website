@@ -30,6 +30,9 @@ Header-style
       }
     }
     .navbar-collapse {
+      @media (max-width: $screen-sm-min) {
+        border-bottom: 2px solid $gray-border;
+      }
       .navbar-nav {
         .open {
           >a,

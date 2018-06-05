@@ -1,11 +1,11 @@
 {% extends 'layout.html.twig' %}
 {% block stylesheets %}
   {{ parent() }}
-  <link rel="stylesheet" href="{{ asset('build/home.style.css') }}" />
+  <link rel="stylesheet" href="{{ asset('build/about.style.css') }}" />
 {% endblock %}
 {% block body %}
   {% include 'frontend/_hero.html.twig' with {
-    'icon': 'bundles/app/images/mob-home.png',
+    'icon': 'bundles/app/images/about-white.svg',
     'icon_alt': 'About the Human Behaviour Change Project',
     'header': 'About the Project'
   } %}

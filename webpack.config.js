@@ -5,6 +5,7 @@ Encore
   .addEntry('global.scripts', './app/Resources/js/scripts.js')
   .addStyleEntry('global.style', './app/Resources/scss/global.scss')
   .addStyleEntry('home.style', './app/Resources/scss/components/theme/pages/_theme.home.scss')
+  .addStyleEntry('about.style', './app/Resources/scss/components/theme/pages/_theme.about.scss')
   .addStyleEntry('resources.style', './app/Resources/scss/components/theme/pages/_theme.resources.scss')
   .addStyleEntry('resource.style', './app/Resources/scss/components/theme/pages/_theme.resource.scss')
   .addStyleEntry('team.style', './app/Resources/scss/components/theme/pages/_theme.team.scss')
