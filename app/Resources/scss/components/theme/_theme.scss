@@ -140,6 +140,9 @@ body {
 }
 
 .block-feature {
+  &.light {
+    background: $gray-lighter;
+  }
   p {
     margin-left: 0;
     margin-right: 0;

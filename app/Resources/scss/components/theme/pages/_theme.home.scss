@@ -16,9 +16,6 @@
 }
 
 .block-feature {
-  &.light {
-    background: $gray-lighter;
-  }
   @media (max-width: $screen-sm-min) {
     text-align: center;
     img {
