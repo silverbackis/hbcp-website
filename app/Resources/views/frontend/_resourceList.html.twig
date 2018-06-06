@@ -27,7 +27,7 @@
               <a class="resource-btn" href="{{ path('resource', {
                 slug: resource.title|slugify,
                 resource: resource.id
-              }) }}">Download</a>
+              }) }}">View</a>
             {% else %}
               <a class="resource-btn" href="{{ resource.path }}" target="_blank" rel="noopener">{{ resource.pathType == 'tool' ? 'Open Tool' : 'View' }}</a>
             {% endif %}

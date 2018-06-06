@@ -1,31 +1,35 @@
 {
-  "license": "SEE LICENSE IN LICENSE",
-  "devDependencies": {
-    "@symfony/webpack-encore": "^0.16.0",
-    "autoprefixer": "^7.1.6",
-    "bootstrap-sass": "^3.3.7",
-    "bootstrap-select": "^1.12.4",
-    "clipboard": "^1.7.1",
-    "jquery-form": "^4.2.2",
-    "node-sass": "^4.5.3",
-    "postcss-loader": "^2.0.8",
-    "sass-loader": "^6.0.6"
-  },
-  "dependencies": {
-    "font-awesome": "^4.7.0",
-    "jquery": "^3.2.1",
-    "lg-autoplay": "^1.0.4",
-    "lg-fullscreen": "^1.0.1",
-    "lg-hash": "^1.0.3",
-    "lg-pager": "^1.0.2",
-    "lg-share": "^1.1.0",
-    "lg-thumbnail": "^1.1.0",
-    "lg-video": "^1.1.0",
-    "lg-zoom": "^1.1.0",
-    "lightgallery": "^1.6.4"
-  },
-  "browserslist": [
-    "last 4 versions",
-    "> 0.5%"
-  ]
+    "license": "SEE LICENSE IN LICENSE",
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.16.0",
+        "autoprefixer": "^7.1.6",
+        "bootstrap-sass": "^3.3.7",
+        "bootstrap-select": "^1.12.4",
+        "clipboard": "^1.7.1",
+        "jquery-form": "^4.2.2",
+        "node-sass": "^4.5.3",
+        "postcss-loader": "^2.0.8",
+        "sass-loader": "^6.0.6"
+    },
+    "dependencies": {
+        "font-awesome": "^4.7.0",
+        "jquery": "^3.2.1",
+        "lg-autoplay": "^1.0.4",
+        "lg-fullscreen": "^1.0.1",
+        "lg-hash": "^1.0.3",
+        "lg-pager": "^1.0.2",
+        "lg-share": "^1.1.0",
+        "lg-thumbnail": "^1.1.0",
+        "lg-video": "^1.1.0",
+        "lg-zoom": "^1.1.0",
+        "lightgallery": "^1.6.4"
+    },
+    "browserslist": [
+        "last 4 versions",
+        "> 0.5%"
+    ],
+    "scripts": {
+        "dev-server": "encore dev-server --hot",
+        "build": "encore production"
+    }
 }
