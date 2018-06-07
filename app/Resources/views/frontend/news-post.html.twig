@@ -8,7 +8,7 @@
 {% block body %}
   {% set extra_html %}
     <p class="publication-date">Publication Date: {{ news.created |date("d/m/Y") }} </p>
-    {% if news.image %}
+    {% if news.imagePath %}
       <div class="text-center image-center">
         <img class="news-image" src="{{ asset(news.imagePath)|imagine_filter('news_image') }}">
       </div>
