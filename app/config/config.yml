@@ -94,7 +94,7 @@ sonata_seo:
             name:
                 keywords:             Human,Behaviour,Change,Project,HBCP
                 description:          Human Behaviour Change Project (HBCP)
-                robots:               noindex, nofollow
+                #robots:               noindex, nofollow
             property:
                 'og:site_name':       Human Behaviour Change Project (HBCP)
                 'og:description':     Human Behaviour Change Project (HBCP)
