@@ -17,7 +17,7 @@
 </head>
 <body>
 {% block js_sdk_body %}{{ bwbase_sdks_html('body') }}{% endblock %}
-<div class="container-fluid container-website">
+<div class="container-fluid container-website text-justify">
   <header class="header">
     <nav class="index-header navbar " id="main-navbar">
       <div class="container-fluid">
@@ -37,6 +37,9 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav navbar-right hbcpmenu">
+            <li{% if currentPath == path('homepage') %} class="active"{% endif %}>
+              <a href="{{ path('homepage') }}">Home</a>
+            </li>
             <li class="dropdown">
               <a href="#"
                  class="dropdown-toggle"
