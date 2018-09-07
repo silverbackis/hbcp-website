@@ -140,10 +140,16 @@ body {
 }
 
 .block-feature {
+  h2 {
+    text-align: center;
+  }
   &.light {
     background: $gray-lighter;
   }
   p {
+    &:not(.text-center) {
+      text-align: justify;
+    }
     margin-left: 0;
     margin-right: 0;
   }

@@ -111,7 +111,7 @@ grant_holders:
 project_team:
   description: "The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and system architects."
   debasis:
-    name: Debasis Ganguly
+    name: Dr. Debasis Ganguly
     institution: IBM
     link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-Debasis.Ganguly1
     image: Debasis_Ganguly.jpg
@@ -122,7 +122,7 @@ project_team:
 
         As a researcher, he is keen to commercialize his research with industry partnerships. In the past, he was actively involved in managing academia-industry partnership projects.
   lea:
-    name: Léa A. Deleris
+    name: Dr. Léa A. Deleris
     institution: IBM
     link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-lea.deleris
     image: lea.jpg
@@ -217,14 +217,14 @@ project_team:
     description: |
         Gaurav Singh is a full-time PhD candidate in the field of machine learning in the dept. of Computer Science at University College, London. He is focused on bringing efficiency to the task of biomedical text retrieval and annotation using machine learning and artificial intelligence. His research includes using deep learning models trained on small labelled set, to summarise and annotate medical documents to save time and human effort.
   yufang:
-    name: Yufang Hou
+    name: Dr. Yufang Hou
     institution: IBM
     link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-YHou
     image: Yufang.jpg
     description: |
         Yufang Hou is a research staff member at IBM Research Ireland and she is currently working on extracting information from scientific research papers in the smoking cessation domain. Her primary research interest lies in the the area of natural language processing (NLP) where she focuses on the tasks of natural language understanding in the discourse level, such as information status recognition, indirect anaphora resolution and coreference resolution. She is also interested in computational argumentation and information extraction. Before joining IBM, she was a Postdoc researcher at <a href="http://www.cl.uni-heidelberg.de/clgroupaf/" target="_blank" rel="noopener">the department of Computational Linguistics at Heidelberg University</a> where she worked on information extraction across sentence boundaries and sentiment analysis in poems. Yufang completed her PhD at Heidelberg Institute for Theoretical Studies (HITS) on unrestricted bridging resolution and she developed algorithms for bridging anaphora recognition as well as antecedent selection. Her PhD was funded by the Research Training Group Coherence in Language Processing at Heidelberg University.
   francesca:
-      name: Francesca Bonin
+      name: Dr. Francesca Bonin
       institution: IBM
       link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-FBonin
       image: Francesca.jpg
