@@ -40,21 +40,19 @@ class FilterUtils
          * @var \AppBundle\Entity\Resource $resource
          */
         foreach ($resources as $resource) {
-            $pt = strtolower($resource->getPathType());
-            if (\in_array($pt, ['osf', 'dropbox'], true)) {
-                $resourceType = $resource->getResourceType();
-                if (
-                    $resourceType &&
-                    !\in_array($resourceType->getId(), $types, true)
-                ) {
-                    $types[] = $resourceType->getId();
+            $resourceType = $resource->getResourceType();
+            if (
+                $resourceType &&
+                !\in_array($resourceType->getId(), $types, true)
+            ) {
+                $types[] = $resourceType->getId();
 
-                    $selectOption = new SelectOption();
-                    $selectOption->setValue($resourceType->getId());
-                    $selectOption->setLabel($resourceType->getName());
-                    $options[] = $selectOption;
-                }
-            } elseif (!\in_array($resource->getPathType(), $types, true)) {
+                $selectOption = new SelectOption();
+                $selectOption->setValue($resourceType->getId());
+                $selectOption->setLabel($resourceType->getName());
+                $options[] = $selectOption;
+            }
+            if (!\in_array($resource->getPathType(), $types, true)) {
                 $types[] = $resource->getPathType();
 
                 $selectOption = new SelectOption();
