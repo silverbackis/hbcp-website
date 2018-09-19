@@ -52,14 +52,14 @@ class FilterUtils
                 $selectOption->setLabel($resourceType->getName());
                 $options[] = $selectOption;
             }
-            if (!\in_array($resource->getPathType(), $types, true)) {
-                $types[] = $resource->getPathType();
-
-                $selectOption = new SelectOption();
-                $selectOption->setValue($resource->getPathType());
-                $selectOption->setLabel($resource->getPathType());
-                $options[] = $selectOption;
-            }
+//            if (!\in_array($resource->getPathType(), $types, true)) {
+//                $types[] = $resource->getPathType();
+//
+//                $selectOption = new SelectOption();
+//                $selectOption->setValue($resource->getPathType());
+//                $selectOption->setLabel($resource->getPathType());
+//                $options[] = $selectOption;
+//            }
         }
         return $options;
     }
