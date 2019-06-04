@@ -3,7 +3,7 @@
 {% import _self as team %}
 
 {% macro member(key) %}
-  {% set prefix = 'project_team.' ~ key ~ '.' %}
+  {% set prefix = 'consultants_collaborators.' ~ key ~ '.' %}
   {% include 'frontend/_teamMember.html.twig' with {
   image: (prefix ~ 'image')|trans,
   image_alt: (prefix ~ 'name')|trans ~ ' ' ~ (prefix ~ 'institution')|trans,
@@ -27,23 +27,7 @@
   'header': 'Project Team'
   } %}
   {% include 'frontend/_teamTabs.twig' %}
-
-  {{ team.member('francesca') }}
-  {{ team.member('ailbhe') }}
-  {{ team.member('debasis') }}
-  {{ team.member('yufang') }}
-  {{ team.member('candice') }}
-  {{ team.member('emma') }}
-  {{ team.member('patrick') }}
-  {{ team.member('alisonm') }}
-  {{ team.member('paulina') }}
-  {{ team.member('gaurav') }}
-  {{ team.member('gillian') }}
-  {{ team.member('alisonw') }}
-  {{ team.member('charles') }}
-  {{ team.member('martin') }}
-  {{ team.member('silje') }}
-  {{ team.member('clement') }}
-  {{ team.member('emily') }}
-  {{ team.member('eva') }}
+  {{ team.member('marta') }}
+  {{ team.member('janna') }}
+  {{ team.member('bryan') }}
 {% endblock %}

@@ -121,17 +121,6 @@ project_team:
         He serves as the program committee member of top-tier conferences, e.g. SIGIR, NAACL, NLDB etc. He is also actively engaged in organizing workshops on recent topics in information retrieval and natural language processing.
 
         As a researcher, he is keen to commercialize his research with industry partnerships. In the past, he was actively involved in managing academia-industry partnership projects.
-  lea:
-    name: Dr. Léa A. Deleris
-    institution: IBM
-    link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-lea.deleris
-    image: lea.jpg
-    description: |
-        Léa A. Deleris is a Research Staff Member and Manager at IBM Research-Ireland.
-
-        In her current position, she oversees a team of researchers working on projects related to health care and social care leveraging cognitive computing technologies such as artificial intelligence, decision sciences and natural language processing. She is also the local cognitive computing lead for IBM Research – Ireland, coordinating internally and externally the lab activities and exposure in that domain
-
-        Her personal research interests lie in decision theory, risk analysis and natural language processing. Her work presents a mixture of applied and conceptual work, including (i) leveraging natural language processing techniques to facilitate the retrieval of risk information and its aggregation into decision support models, (ii) applications of analytics to help care workers make better decisions in the social care domain and (iii) investigating ways to make decision making more cognitive and thereby more accessible.
   alisonm:
       name: Dr Alison O’Mara-Eves
       institution: University College London - Institute of Education
@@ -166,13 +155,7 @@ project_team:
         Ailbhe is a Research Associate at UCL working on this project. Her PhD, completed at the University of Trento, Italy, focused on using more advanced research methodology and techniques for collecting and analysing data, from computer science disciplines, to study social behaviours and phenomenon. The aim was to examine psychological phenomenon, once carried out in the lab, in a wider social context, to be able to reliably and unobtrusively measure social behaviour, such as, communication and interaction through wearable sensors, social media and mobile phone data.
 
         Prior to joining UCL, she worked for a digital marketing agency where she had the opportunity to apply knowledge from her research on understanding human behaviour to real life business cases. She has research experience and an interest in wide range of topics, such as, behaviour change interventions, computational methods of understanding personality, social networking and social media, crowdsourcing and the virtual workplace, organisational psychology and the role of nonverbal behaviour in social settings.
-  marta:
-      name: Dr Marta Marques
-      institution: University College London
-      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=MMORE85
-      image: Marta_Marques.jpg
-      description: |
-        Marta is a Research Associate at UCL working on this project. She obtained her PhD in Health Psychology from Leiden University, in 2015. She is a chartered clinical and health psychologist. Prior to joining UCL, she worked as a post-doctoral researcher at the University of Lisbon where she collaborated in various projects focusing on the motivational and self-regulation processes underlying health behaviour change and its applications to complex behaviour change interventions (e.g. H2020 funded project “NoHoW: Evidence-based ICT tools for weight loss maintenance”), and at the University of Newcastle (project “Formative evaluation of the early phases of the NHS Diabetes Prevention Program”). Marta is a member of the European Health Psychology Society Executive Committee, Associate Editor of the Health Psychology Bulletin, and co-editor-in-chief of Psychology, Community & Health. Her research focuses on applying health behaviour change theories to develop and evaluate complex interventions targeting a range of health behaviours (e.g. physical activity), in the self-regulation and motivational processes underlying health behaviour change, and methods for the development of the science of behaviour change.
+
   gillian:
     name: Gillian Stokes
     institution: University College London - Institute of Education
@@ -197,9 +180,7 @@ project_team:
     link: false
     image: candice_moore.jpg
     description: |
-        Candice Moore is the Research Administrator at UCL helping to support and facilitate the work of the Human Behaviour-Change Project Team. Previously she has worked as an administrator for a variety of research projects in developmental psychology, including a large-scale educational intervention, within the Centre for Brain and Cognitive Development at Birkbeck, University of London.
-
-        Candice is also completing a master’s degree in Cognitive and Decision Sciences within the Brain Sciences department at UCL.
+        Candice Moore is a Research Assistant at UCL. Previously she has worked on a variety of research projects in developmental psychology, including a large-scale educational intervention, and completed an MSc in Cognitive and Decision Sciences at UCL.
   paulina:
     name: Paulina Schenk
     institution: University College London
@@ -238,6 +219,85 @@ project_team:
         Before joining IBM, she has been focusing on Information Extraction and social signal processing from dialogues and meetings.
 
         She has been co-chair of several workshops on Multimodal Interaction and she currently serves the community as program committee member of the main international conferences in NLP and Speech Technologies.
+  charles:
+      name: Charles Jochim
+      institution: IBM
+      link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-CHARLESJ
+      image: Charles-Jochim.png
+      description: |
+          Charles Jochim is a Research Staff Member at IBM Research Ireland.  His research interests are generally in statistical natural language processing (NLP) and more specifically he has worked on multilingual information retrieval, patent search, text classification, information extraction, and argumentation mining.
+
+          At IBM, Charles has been a part of the Risk Management Collaboratory and most recently IBM's Project Debater aiming to debate humans on complex topics.
+          Charles obtained a PhD in computer science from the University of Stuttgart and before that an MA in computational linguistics from Indiana University.
+
+  martin:
+     name: Martin Gleize
+     institution: IBM
+     link: https://researcher.watson.ibm.com/researcher/view.php?person=ie-Martin.Gleize
+     image: Martin-Gleize.JPG
+     description: |
+         Martin is a Research Staff Member at IBM Research Ireland. He received his bachelor and master's degrees in computer science at the ENS in France. He graduated from the Université Paris-Saclay with a Ph.D in computer science in 2016, after working at LIMSI-CNRS on natural language inference. His research interests include question answering, textual entailment, and more generally topics pertaining to open domain semantics in the field of computational linguistics.
+
+  silje:
+     name: Silje Zink
+     institution: University College London
+     link: https://iris.ucl.ac.uk/iris/browse/profile?upi=SZINK65
+     image: Silje-Zink.jpg
+     description: |
+         Silje is a Research Assistant on the Human Behaviour Change Project (HBCP) and Theory Specification Project (TSP). Following her BSc (Hons) in Psychology obtained at the University of Manchester, Silje went on to do an MSc in Health Psychology at the University of Nottingham in 2017/2018, where she conducted research on the use of standardised anxiety measures for assessing dental fear and anxiety in paediatric populations. Her research interests include the use of Health Psychology theory and techniques to facilitate behaviour change, behaviour change intervention design and development, and using health psychology theory and techniques to improve a broad range of public health issues.
+
+  clement:
+      name: Clement Veall
+      institution: University College London
+      link: false
+      image: Clement-Veall.jpg
+      description: |
+          Clement is the Research Administrator at UCL helping to support and facilitate the work of the Human Behaviour-Change Project Team. Previously, he has worked in administration and marketing at other universities in London.
+
+          Clement is also completing an MSc in Language Sciences with Specialism in Linguistics with Neuroscience within the Division of Psychology and Language Sciences at UCL.
+
+  emily:
+      name: Emily Hayes
+      institution: University College London
+      link: false
+      image: Emily-Hayes.jpg
+      description: |
+          Emily is a Research Assistant at UCL working on this project. She completed an MSc in Health Psychology at UCL in 2017 and her research examined older adult health literacy, in relation to childhood and adulthood socioeconomic position. Prior to joining HBCP, Emily worked for a digital health start-up that provides an app for medication management and adherence. She has also worked on a Knowledge Transfer Partnership, investigating workplace wellbeing through qualitative and quantitative research. She is interested in digital health and behaviour-change interventions to reduce health inequalities.
+
+  eva:
+      name: Eva Jermutus
+      institution: University College London
+      link: false
+      image: Eva-Jermutus.jpg
+      description: |
+          Eva is a PhD Student working with the Human Behaviour Change Project (HBCP). Her research interests lie in the fields of decision-making and cognitive processes influencing the human-machine interaction. In particular, Eva is interested in users’ expectations of and trust in AI-driven systems such as the HBCP Knowledge System.
+
+          Eva completed a MA (Hons) in Psychology & Management at the University of St Andrews in 2017 and earned a MSc in Economic Psychology at Tilburg University in 2018. She then worked in programmatic advertising before joining UCL in 2019.
+
+consultants_collaborators:
+    description: "The Human Behaviour-Change Project consultants and collaborators."
+    marta:
+        name: Marta M. Marques
+        institution: Trinity College Dublin
+        link: https://iris.ucl.ac.uk/iris/browse/profile?upi=MMORE85
+        image: Marta_Marques.jpg
+        description: |
+            Marta Marques obtained her PhD in Health Psychology from Leiden University, in 2015, and is a chartered clinical and health psychologist. Marta holds a Marie Skłodowska-Curie (EDGE) fellowship at the ADAPT Centre and Trinity Centre for Practice & Health Care Innovation, Trinity College Dublin, and she is an Honorary Research Fellow at the Centre for Behaviour Change, University College London.  Marta is a close collaborator of the Behaviour Science team in the Human Behaviour Change Project, being involved in the development of the BCI Ontology.  Her current project focuses on the development of ontologies of personalization, tailoring and adaptation. This work is being developed in collaboration with: 1) IBM-Research Ireland, with whom Marta is exploring how the behaviour change ontologies can be used to classify large datasets of digital data; and 2) EUH2020 ProACT project (http://proact2020.eu/), in which Marta is exploring how an ontology of personalization can help developing individualized goal recommendation for physical activity and multiple health behaviours.
+    janna:
+        name: Janna Hastings
+        institution: Ontology consultant
+        link: false
+        image: Janna-Hastings.JPG
+        description: |
+            Janna Hastings has worked on ontology research and development for more than a decade across multiple disciplines. She develops the Mental Functioning Ontology and related projects, and until 2015 she was ontology lead and project coordinator for the ChEBI chemical ontology, during which time she also worked on related biological ontologies. She holds a PhD in Biological Sciences, an MSc in Computer Science and an MA in Philosophy.
+
+    bryan:
+        name: Bryan Vernon
+        institution: Ethics consultant
+        link: https://www.ncl.ac.uk/sme/staff/profile/bryanvernon.html#background
+        image: Bryan-Vernon.jpeg
+        description: |
+            "Product champion" for Ethics Teaching and Learning in Newcastle MBBS, Bryan has pioneered seminar-based ethics teaching throughout the course in an accessible form. He is Honorary Treasurer of the Institute of Medical Ethics and an honorary chaplain to both Newcastle University and Newcastle Hospitals NHS Trust. He is a member of the Newcastle Hospitals Clinical Ethics Committee and chairs the Northumberland, Tyne and Wear NHS Trust Ethics Advisory Group. He is an Anglican priest, a father of three and a grandfather of seven.
 
 news:
   description: The latest updates and news from the Human Behaviour-Change Project team.

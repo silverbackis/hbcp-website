@@ -141,6 +141,16 @@ class DefaultController extends AbstractController
     }
 
     /**
+     * @Route("/consultants-collaborators", name="consultants_collaborators")
+     */
+    public function consultantsCollaborators(Request $request)
+    {
+        $description = $this->get(TranslatorInterface::class)->trans('consultants_collaborators.description');
+        $this->setSeo('Consultants and Collaborators', $description);
+        return $this->render('frontend/consultants_collaborators.html.twig');
+    }
+
+    /**
      * @param string|null $slug
      * @param Category $parent
      * @param Request $request
