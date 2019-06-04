@@ -72,6 +72,8 @@
                   <a href="{{ path('grantholders') }}">Grant holders</a></li>
                 <li{% if currentPath == path('projecteam') %} class="active"{% endif %}>
                   <a href="{{ path('projecteam') }}">Research team</a></li>
+                <li{% if currentPath == path('consultants_collaborators') %} class="active"{% endif %}>
+                  <a href="{{ path('consultants_collaborators') }}">Consultants and Collaborators</a></li>
               </ul>
             </li>
             <li{% if currentPath == path('news') %} class="active"{% endif %}>
