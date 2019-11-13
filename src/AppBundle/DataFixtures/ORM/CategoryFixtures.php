@@ -20,7 +20,7 @@ class CategoryFixtures extends Fixture
         $project = $this->generateCategory('Project');
         $behaviouralScience = $this->generateCategory('Behavioural Science');
         $computerScience = $this->generateCategory('Computer Science');
-        $systemArchitecture = $this->generateCategory('System Architecture');
+        $systemArchitecture = $this->generateCategory('Systems Architecture');
 
         $bsGeneral = $this->generateCategory('General', $behaviouralScience);
         $outcome = $this->generateCategory('Outcome Behaviour', $behaviouralScience);

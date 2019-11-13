@@ -98,8 +98,8 @@ class CategoryUtils
             case "system architecture":
                 $hero = [
                     'icon' => 'bundles/app/images/homegraphic-sa.svg',
-                    'icon_alt' => 'Hero icon - System Architecture Resources',
-                    'header' => 'System Architecture',
+                    'icon_alt' => 'Hero icon - Systems Architecture Resources',
+                    'header' => 'Systems Architecture',
                     'text' => $this->translator->trans('system_architecture.description')
                 ];
                 break;
