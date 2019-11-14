@@ -79,11 +79,17 @@
   padding: 40px 0 20px;
 }
 
+.tabs-outer-container + .text-center {
+  .btn-filter-toggle {
+    border-top: 0;
+  }
+}
 .btn-filter-toggle {
   display: block;
   text-align: left;
   padding: 20px 15px;
-  border-bottom: 2px solid $gray-border;
+  border: solid $gray-border;
+  border-width: 2px 0;
   .text-left {
     position: relative;
     &:after {

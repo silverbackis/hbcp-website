@@ -96,6 +96,7 @@ section.diagram {
       position: relative;
       img {
         width: 100%;
+        max-width: none;
         &.invisible {
           visibility: hidden;
         }
@@ -433,6 +434,7 @@ section.resources {
 
 section.explain-diagram {
   margin: 2rem 0 4rem;
+  text-align: justify;
   h2,
   h3 {
     font-weight: normal;
@@ -447,6 +449,10 @@ section.explain-diagram {
   }
   .row-diagram-explain {
     margin: 30px auto 60px;
+  }
+  p {
+    margin-left: 0;
+    margin-right: 0;
   }
 
   @media (max-width: $screen-md-min) {
