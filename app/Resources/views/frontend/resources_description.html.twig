@@ -19,7 +19,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-
           {% if currentPath == category_path('behavioural science', 'resources_description') %}
             {% include 'frontend/resource_descriptions/behavioural_science.twig' %}
           {% elseif currentPath == category_path('computer science', 'resources_description') %}
@@ -31,17 +30,39 @@
       </div>
     </div>
   </section>
-  <section class="text-center">
-    <section class="diagram" id="diagram">
-      <div class="container-fluid">
-        <div class="row no-gutters">
-          {% if currentPath == category_path('computer science', 'resources_description') %}
-            <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
-          {% elseif currentPath == category_path('systems architecture', 'resources_description') %}
-            <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
-          {% endif %}
+  {% if currentPath == category_path('behavioural science', 'resources_description') %}
+    <section class="explain-diagram">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <h2>About the Diagram </h2>
+            <p>The entities of the intervention scenario part of the BCIO are listed below, with illustrative examples:</p>
+            <ul>
+              <li>Intervention – Opportunistic brief advice on smoking cessation (content) by a doctor, lasting an average of 30 seconds (delivery)</li>
+              <li>Context –Adult smokers (population) attending a routine primary care appointment for a health problem in the UK (setting)</li>
+              <li>Target behaviour –  Cessation of cigarette smoking for at least six months</li>
+              <li>Mechanisms – Increase in desire to stop smoking and confidence in quitting leading to a quit attempt</li>
+              <li>Exposure – 80% of smokers attending for an appointment receive the advice</li>
+              <li>Outcome – 7% of the participants stopped smoking for at least six months</li>
+            </ul>
+            <p>The entities interact as shown by the arrows in the diagram. The content and delivery of an intervention influence the target behaviour through one or more mechanisms of action. The context moderates the influence of 1) the intervention on the mechanisms of action and 2) the mechanisms of action on the behaviour. Exposure moderates the influence of the intervention on the mechanisms of action and is itself influenced by the intervention and context.</p>
+          </div>
         </div>
       </div>
     </section>
-  </section>
+  {% else %}
+    <section class="text-center">
+      <section class="diagram" id="diagram">
+        <div class="container-fluid">
+          <div class="row no-gutters">
+            {% if currentPath == category_path('computer science', 'resources_description') %}
+              <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
+            {% elseif currentPath == category_path('systems architecture', 'resources_description') %}
+              <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
+            {% endif %}
+          </div>
+        </div>
+      </section>
+    </section>
+  {% endif %}
 {% endblock %}

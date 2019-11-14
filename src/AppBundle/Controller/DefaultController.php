@@ -304,12 +304,7 @@ class DefaultController extends AbstractController
      */
     public function behaviouralScienceExplain()
     {
-        $description = $this->get(TranslatorInterface::class)->trans('behavioural_science.description');
-        $this->setSeo('Explain Behavioural Science Diagram', $description);
-
-        return $this->render('frontend/behaviourDiagramExplain.html.twig', [
-            'header_text' => $description
-        ]);
+        return $this->redirect('/resources/behavioural-science/2/description', Response::HTTP_MOVED_PERMANENTLY);
     }
 
     /**
