@@ -3,16 +3,18 @@
   { label: 'Resources', href: category_path(category_name, 'resources') }
 ]
 %}
-<div class="container-fluid tabs-container">
-  <div class="row">
-    <div class="col-xs-12">
-      <ul class="nav nav-tabs is-hero">
-        {% for tab in tabs %}
-        <li class="nav-item">
-          <a class="nav-link{% if currentPath == tab.href %} active{% endif %}" href="{{ tab.href }}">{{ tab.label }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+<div class="tabs-outer-container">
+  <div class="container-fluid tabs-container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav nav-tabs is-hero">
+          {% for tab in tabs %}
+            <li class="nav-item">
+              <a class="nav-link{% if currentPath == tab.href %} active{% endif %}" href="{{ tab.href }}">{{ tab.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
     </div>
   </div>
 </div>
