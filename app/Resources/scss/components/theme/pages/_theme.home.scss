@@ -34,7 +34,7 @@
   overflow: hidden;
   .custom-block {
     position: relative;
-    max-width: 600px;
+    max-width: 900px;
     width: 100%;
     margin: auto;
     &.team:before,
@@ -63,6 +63,9 @@
           width: 291px;
           height: 291px;
         }
+      }
+      .btn {
+        min-width: 100%
       }
     }
     &.news:before {
