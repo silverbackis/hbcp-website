@@ -11,10 +11,15 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sonata\SeoBundle\Seo\SeoPageInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use AppBundle\Entity\Category;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Translation\TranslatorInterface;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+use function in_array;
 
 class DefaultController extends AbstractController
 {
@@ -29,7 +34,7 @@ class DefaultController extends AbstractController
         ]);
     }
 
-    private function setSeo(string $title = null, string $description)
+    private function setSeo(?string $title, string $description)
     {
         $seoPage = $this->container->get(SeoPageInterface::class);
         $seoPage
@@ -150,20 +155,7 @@ class DefaultController extends AbstractController
         return $this->render('frontend/consultants_collaborators.html.twig');
     }
 
-    /**
-     * @param string|null $slug
-     * @param Category $parent
-     * @param Request $request
-     * @return JsonResponse|\Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
-     * @throws \Twig_Error_Loader
-     * @throws \Twig_Error_Runtime
-     * @throws \Twig_Error_Syntax
-     * @Route("/resources/{slug}/{parent}", name="resources")
-     */
-    public function allResources(string $slug = null, Category $parent, Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-
+    private function validateResourceSlug(?string $slug, Category $parent) {
         // Validate the slug
         $slugify = $this->container->get('slugify');
         $expectedSlug = $slugify->slugify($parent->getName());
@@ -175,7 +167,54 @@ class DefaultController extends AbstractController
                 'parent' => $parent->getId()
             ]);
         }
+        return null;
+    }
 
+    /**
+     * @param string|null $slug
+     * @param Category $parent
+     * @param Request $request
+     * @return JsonResponse|RedirectResponse|Response
+     * @Route("/resources/{slug}/{parent}/description", name="resources_description")
+     */
+    public function resourcesDescription(?string $slug, Category $parent, Request $request)
+    {
+        $redirect = $this->validateResourceSlug($slug, $parent);
+        if ($redirect) {
+            return $redirect;
+        }
+        $title = ucwords($parent->getName()) . ' Resources Description';
+
+        $categoryUtils = $this->container->get(CategoryUtils::class);
+        $hero = $categoryUtils->getCategoryHero($parent);
+        $this->setSeo($title, $hero['text']);
+
+        return $this->render('frontend/resources_description.html.twig', array(
+            'title'=> $title,
+            'hero' => $hero,
+            'slug' => $slug,
+            'category_name' => $parent->getName()
+        ));
+    }
+
+    /**
+     * @param string|null $slug
+     * @param Category $parent
+     * @param Request $request
+     * @return JsonResponse|RedirectResponse|Response
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     * @Route("/resources/{slug}/{parent}", name="resources")
+     */
+    public function allResources(?string $slug, Category $parent, Request $request)
+    {
+        $redirect = $this->validateResourceSlug($slug, $parent);
+        if ($redirect) {
+            return $redirect;
+        }
+
+        $em = $this->getDoctrine()->getManager();
         // Checks completed - determine categories to display
         $categoryUtils = $this->container->get(CategoryUtils::class);
         $allCats = $categoryUtils->findAllCategories($parent);
@@ -185,7 +224,7 @@ class DefaultController extends AbstractController
             $resetAllCats = false;
             $mergeCats = [];
             foreach ($allCats as $innerCat) {
-                if (\in_array($innerCat->getId(), $request->get('category'), false)) {
+                if (in_array($innerCat->getId(), $request->get('category'), false)) {
                     if (!$resetAllCats) {
                         $resetAllCats = true;
                         $allCats = [];
@@ -222,18 +261,19 @@ class DefaultController extends AbstractController
             'title'=> $title,
             'resources' => $resources,
             'hero' => $hero,
-            'slug' => $expectedSlug,
+            'slug' => $slug,
             'filter' => [
                 'categories' => $filterCategories,
                 'types' => $filterTypes
-            ]
+            ],
+            'category_name' => $parent->getName()
         ));
     }
 
     /**
      * @param string $slug
      * @param Resource|null $resource
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse|\Symfony\Component\HttpFoundation\Response
+     * @return RedirectResponse|Response
      * @Route("/resource/{slug}/{resource}", name="resource")
      */
     public function viewResource(string $slug, Resource $resource = null)

@@ -5,8 +5,11 @@ use AppBundle\Entity\Category;
 use AppBundle\Entity\Resource;
 use AppBundle\Utils\CategoryUtils;
 use Doctrine\ORM\EntityManagerInterface;
+use Twig\Extension\AbstractExtension;
+use Twig\TwigFilter;
+use Twig\TwigFunction;
 
-class AppExtension extends \Twig_Extension
+class AppExtension extends AbstractExtension
 {
     private $categoryUtils;
     private $em;
@@ -22,16 +25,16 @@ class AppExtension extends \Twig_Extension
     public function getFilters()
     {
         return array(
-            new \Twig_SimpleFilter('contentdecode', array($this, 'contentFilter')),
-            new \Twig_SimpleFilter('array_filter', array($this, 'arrayFilter')),
+            new TwigFilter('contentdecode', array($this, 'contentFilter')),
+            new TwigFilter('array_filter', array($this, 'arrayFilter')),
         );
     }
 
     public function getFunctions()
     {
         return array(
-            new \Twig_SimpleFunction('category_path', array($this, 'categoryPath')),
-            new \Twig_SimpleFunction('category_resources', array($this, 'getResources'))
+            new TwigFunction('category_path', array($this, 'categoryPath')),
+            new TwigFunction('category_resources', array($this, 'getResources'))
         );
     }
 

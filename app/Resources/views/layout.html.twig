@@ -51,12 +51,12 @@
               <ul class="dropdown-menu">
                 <li{% if currentPath == path('about') %} class="active"{% endif %}>
                   <a href="{{ path('about') }}">About the project</a></li>
-                <li{% if currentPath == category_path('behavioural science') %} class="active"{% endif %}>
-                  <a href="{{ category_path('behavioural science') }}">Behavioural Science</a></li>
-                <li{% if currentPath == category_path('computer science') %} class="active"{% endif %}>
-                  <a href="{{ category_path('computer science') }}">Computer Science</a></li>
-                <li{% if currentPath == category_path('systems architecture')%} class="active"{% endif %}>
-                  <a href="{{ category_path('systems architecture') }}">Systems Architecture</a></li>
+                <li{% if currentPath == category_path('behavioural science', 'resources_description') %} class="active"{% endif %}>
+                  <a href="{{ category_path('behavioural science', 'resources_description') }}">Behavioural Science</a></li>
+                <li{% if currentPath == category_path('computer science', 'resources_description') %} class="active"{% endif %}>
+                  <a href="{{ category_path('computer science', 'resources_description') }}">Computer Science</a></li>
+                <li{% if currentPath == category_path('systems architecture', 'resources_description')%} class="active"{% endif %}>
+                  <a href="{{ category_path('systems architecture', 'resources_description') }}">Systems Architecture</a></li>
               </ul>
             </li>
             <li class="dropdown">

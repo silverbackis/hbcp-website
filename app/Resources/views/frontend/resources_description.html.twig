@@ -1,0 +1,47 @@
+{% extends 'layout.html.twig' %}
+
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" href="{{ asset('build/home.style.css') }}" />
+  <link rel="stylesheet" href="{{ asset('build/resources.style.css') }}"/>
+  <link rel="stylesheet" href="{{ asset('build/behaviour.style.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+  {% include 'frontend/_hero.html.twig' with {
+    'icon': hero.icon,
+    'icon_alt': hero.icon_alt,
+    'header': hero.header
+  } %}
+  {% include 'frontend/_resourcesTabs.html.twig' %}
+  <section class="block light block-feature">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+
+          {% if currentPath == category_path('behavioural science', 'resources_description') %}
+            {% include 'frontend/resource_descriptions/behavioural_science.twig' %}
+          {% elseif currentPath == category_path('computer science', 'resources_description') %}
+            {% include 'frontend/resource_descriptions/computer_science.twig' %}
+          {% elseif currentPath == category_path('systems architecture', 'resources_description') %}
+            {% include 'frontend/resource_descriptions/system_architecture.twig' %}
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text-center">
+    <section class="diagram" id="diagram">
+      <div class="container-fluid">
+        <div class="row no-gutters">
+          {% if currentPath == category_path('computer science', 'resources_description') %}
+            <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
+          {% elseif currentPath == category_path('systems architecture', 'resources_description') %}
+            <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </section>
+{% endblock %}

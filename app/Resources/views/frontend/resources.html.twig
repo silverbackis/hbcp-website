@@ -10,39 +10,23 @@
 {% block body %}
 
   {% include 'frontend/_hero.html.twig' with {
-  'icon': hero.icon,
-  'icon_alt': hero.icon_alt,
-  'header': hero.header
+    'icon': hero.icon,
+    'icon_alt': hero.icon_alt,
+    'header': hero.header
   } %}
-  <section class="block light block-feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          {% if currentPath == category_path('behavioural science') %}
-            {% include 'frontend/resource_descriptions/behavioural_science.twig' %}
-          {% elseif currentPath == category_path('computer science') %}
-            {% include 'frontend/resource_descriptions/computer_science.twig' %}
-          {% elseif currentPath == category_path('systems architecture') %}
-            {% include 'frontend/resource_descriptions/system_architecture.twig' %}
-          {% endif %}
-        </div>
-      </div>
-    </div>
-  </section>
+  {% include 'frontend/_resourcesTabs.html.twig' %}
+  {% if currentPath == category_path('behavioural science', 'resources') %}
   <section class="text-center">
     <section class="diagram" id="diagram">
       <div class="container-fluid">
         <div class="row no-gutters">
-          {% if currentPath == category_path('behavioural science') %}
-             {% include 'frontend/diagrams/_triangle.html.twig' %}
-          {% elseif currentPath == category_path('computer science') %}
-            <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
-          {% elseif currentPath == category_path('systems architecture') %}
-            <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
-          {% endif %}
+          {% include 'frontend/diagrams/_triangle.html.twig' %}
         </div>
       </div>
     </section>
+  </section>
+  {% endif %}
+  <section class="text-center">
     <div class="row hidden-md hidden-lg">
       <div class="col-xs-12">
         <a class="btn-filter-toggle collapsed" role="button" data-toggle="collapse" href="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">

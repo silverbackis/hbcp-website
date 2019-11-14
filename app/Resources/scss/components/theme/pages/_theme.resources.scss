@@ -40,12 +40,31 @@
   }
 }
 
+.tabs-container {
+  position: relative;
+  .row {
+    position: absolute;
+    transform: translateY(-100%);
+    .col-xs-12 {
+      padding: 0;
+      .nav-tabs.is-hero {
+        border-bottom: 0;
+        .nav-link {
+          background: rgba($white, .7);
+          border: 0;
+          &.active,
+          &:hover {
+            background: $gray-bg-color
+          }
+        }
+      }
+    }
+  }
+}
+
 .row-mobile-department {
   padding: 40px 0 20px;
 }
-
-
-
 
 .btn-filter-toggle {
   display: block;
