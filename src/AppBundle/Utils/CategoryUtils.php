@@ -95,7 +95,7 @@ class CategoryUtils
                     'text' => $this->translator->trans('computer_science.description')
                 ];
                 break;
-            case "system architecture":
+            case "systems architecture":
                 $hero = [
                     'icon' => 'bundles/app/images/homegraphic-sa.svg',
                     'icon_alt' => 'Hero icon - Systems Architecture Resources',

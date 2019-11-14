@@ -22,7 +22,7 @@
             {% include 'frontend/resource_descriptions/behavioural_science.twig' %}
           {% elseif currentPath == category_path('computer science') %}
             {% include 'frontend/resource_descriptions/computer_science.twig' %}
-          {% elseif currentPath == category_path('system architecture') %}
+          {% elseif currentPath == category_path('systems architecture') %}
             {% include 'frontend/resource_descriptions/system_architecture.twig' %}
           {% endif %}
         </div>
@@ -37,7 +37,7 @@
              {% include 'frontend/diagrams/_triangle.html.twig' %}
           {% elseif currentPath == category_path('computer science') %}
             <img src="{{ asset('bundles/app/images/diagram-computer-science.png') }}" class="diagram-image" />
-          {% elseif currentPath == category_path('system architecture') %}
+          {% elseif currentPath == category_path('systems architecture') %}
             <img src="{{ asset('bundles/app/images/diagram-system-architecture.png') }}" class="diagram-image" />
           {% endif %}
         </div>

@@ -2,7 +2,7 @@ layout:
   contact: We use a range of networks to keep our key groups of stakeholders up-to-date with the HBCP’s most recent progress and outputs. You can connect with us through any of these networks and also sign up to our mailing list.
 
 home:
-  description: The Human Behaviour-Change Project (HBCP) is a ground-breaking collaboration between behavioural scientists, computer scientists and system architects, aiming to revolutionise methods for synthesising evidence about behaviour change and generate novel insights into behaviour change.
+  description: The Human Behaviour-Change Project (HBCP) is a ground-breaking collaboration between behavioural scientists, computer scientists and systems architects, aiming to revolutionise methods for synthesising evidence about behaviour change and generate novel insights into behaviour change.
   behavioural_science: "Behavioural Scientists are developing an ‘ontology’ (The Behaviour Change Intervention Ontology – BCIO): a defined set of entities and their relationships. This will be used to organise information in a form that enables efficient accumulation of knowledge and enables links to other knowledge systems. They are also extracting information by hand to provide a reference set for the automated information extraction system."
   computer_science: "Computer Scientists are developing algorithms to automatically extract information from published reports. This is being used to populate a database of research findings structured according to the Behaviour Change Intervention Ontology (BCIO).  Machine Learning and reasoning algorithms are being developed to generate insights and answer queries from these data."
   system_architecture: "System Architects are developing user and machine interfaces for the Knowledge System. These will allow the system to be queried by practitioners, policy makers and researchers, and to interact with other automated systems."
@@ -109,7 +109,7 @@ grant_holders:
       Professor West is a member of the Editorial Board of the Cochrane Collaboration Tobacco Review Group, and Editor-in-Chief of the journal Addiction. He is author of the books, Theory of Addiction, Models of Addiction, The SmokeFree Formula, and Fast Facts: Smoking Cessation.
 
 project_team:
-  description: "The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and system architects."
+  description: "The Human Behaviour-Change Project is a collaboration between behavioural scientists, computer scientists and systems architects."
   debasis:
     name: Dr. Debasis Ganguly
     institution: IBM
