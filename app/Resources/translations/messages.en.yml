@@ -5,7 +5,7 @@ home:
   description: The Human Behaviour-Change Project (HBCP) is a ground-breaking collaboration between behavioural scientists, computer scientists and systems architects, aiming to revolutionise methods for synthesising evidence about behaviour change and generate novel insights into behaviour change.
   behavioural_science: "Behavioural Scientists are developing an ‘ontology’ (The Behaviour Change Intervention Ontology – BCIO): a defined set of entities and their relationships. This will be used to organise information in a form that enables efficient accumulation of knowledge and enables links to other knowledge systems. They are also extracting information by hand to provide a reference set for the automated information extraction system."
   computer_science: "Computer Scientists are developing algorithms to automatically extract information from published reports. This is being used to populate a database of research findings structured according to the Behaviour Change Intervention Ontology (BCIO).  Machine Learning and reasoning algorithms are being developed to generate insights and answer queries from these data."
-  system_architecture: "System Architects are developing user and machine interfaces for the Knowledge System. These will allow the system to be queried by practitioners, policy makers and researchers, and to interact with other automated systems."
+  system_architecture: "Systems Architects are developing user and machine interfaces for the Knowledge System. These will allow the system to be queried by practitioners, policy makers and researchers, and to interact with other automated systems."
 
 about:
     description: Find out more about the Human Behaviour Change Project
