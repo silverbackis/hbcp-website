@@ -13,7 +13,7 @@
     },
     "dependencies": {
         "font-awesome": "^4.7.0",
-        "jquery": "^3.2.1",
+        "jquery": "^3.5.0",
         "lg-autoplay": "^1.0.4",
         "lg-fullscreen": "^1.0.1",
         "lg-hash": "^1.0.3",
