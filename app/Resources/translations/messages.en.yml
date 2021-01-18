@@ -102,7 +102,7 @@ grant_holders:
     link: http://www.rjwest.co.uk/
     image: rwest.jpg
     description: |
-      Robert West is Professor of Health Psychology and Director of Tobacco Studies at the Cancer Research UK Health Behaviour Research Centre, University College London, UK. Professor West completed his PhD in Psychology in 1983 at University College London and worked as a postdoctoral researcher in the area of smoking at the Institute of Psychiatry until 1985 when he took up a lecturing position at Royal Holloway, London University. He continued his research into smoking and also began researching traffic accident involvement. In 1991 Professor West joined St George's, University of London, where he was made professor in 1996. He took up his present position in 2003.
+      Robert West is Emeritus Professor of Health Psychology and Director of Tobacco Studies at the Cancer Research UK Health Behaviour Research Centre, University College London, UK. Professor West completed his PhD in Psychology in 1983 at University College London and worked as a postdoctoral researcher in the area of smoking at the Institute of Psychiatry until 1985 when he took up a lecturing position at Royal Holloway, London University. He continued his research into smoking and also began researching traffic accident involvement. In 1991 Professor West joined St George's, University of London, where he was made professor in 1996. He took up his present position in 2003.
 
       Professor West's research includes clinical trials of new smoking cessation treatments, studies of the acute effects of cigarette withdrawal and population studies of smoking patterns. He has published more than 500 scientific works and is co-author of the English National Smoking Cessation Guidelines that provided the blueprint for the UK-wide network of smoking cessation services. He is also Past-President of the Society for Research in Nicotine and Tobacco.
 
@@ -139,13 +139,15 @@ project_team:
       image: Alison_Wright_HBCP.jpg
       description: |
         Dr Alison Wright is a Senior Research Associate, leading the team of behavioural science researchers working on the Human Behaviour Change project. Her research interests focus on applying psychological science to develop and evaluate behaviour change interventions. She has worked on a diverse range of topics, including treatment adherence, health care utilisation, physical activity after stroke and preventing occupational dermatitis in nurses
+
   emma:
       name: Dr Emma Norris
-      institution: University College London
-      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=NORRI53
+      institution: Brunel University
+      link: https://www.brunel.ac.uk/people/emma-norris
       image: Emma_Norris.jpg
       description: |
-        Emma is a Research Associate at UCL working on this project. Her PhD, completed at UCL, involved the development and testing of behaviour change interventions to integrate physical activity into primary school teaching. She has research experience in systematic reviews and mixed-methods intervention evaluation. She is interested in using health psychology theory and principles to improve a broad range of public health issues, with specific interests in physical activity and technological interventions.
+        Emma is a Lecturer in Public Health at Brunel University and an Associate at UCL's Centre for Behaviour Change. She worked on the Human Behaviour-Change Project's behavioural science team from 2017-2020 and continues collaboration with the team. Emma is interested in using health psychology theory and principles to improve a broad range of public health issues, with specific interests in physical activity and technological interventions.
+
   ailbhe:
       name: Dr Ailbhe Finnerty
       institution: University College London
@@ -187,16 +189,9 @@ project_team:
     link: false
     image: Paulina.png
     description: |
-        Paulina is a PhD Student, working with the Human Behaviour Change Project (HBCP). Her current research supports the development of a pilot ontology for mechanisms of action (MoAs; i.e. processes, mediating the influence of behaviour change techniques on behavioural outcomes) based on the behaviour change theories. The pilot ontology will be used to identify and iteratively annotate MoAs in published behaviour change interventions to develop automated information extraction algorithms. Moving forward, Paulina will continue to study BCT-MoA-behaviour links, with respect to the context of behaviour change interventions.
+        Paulina is a PhD Student, working with the Human Behaviour-Change Project (HBCP). Her current research supports the development of a pilot ontology for mechanisms of action (MoAs; i.e. processes, mediating the influence of behaviour change techniques on behavioural outcomes) based on the behaviour change theories. The pilot ontology will be used to identify and iteratively annotate MoAs in published behaviour change interventions to develop automated information extraction algorithms. Moving forward, Paulina will continue to study BCT-MoA-behaviour links, with respect to the context of behaviour change interventions.
 
         Before joining the HBCP team, Paulina completed a BSc (Hons) in Psychology at UCL in 2016, and earned a MSc in Risk, Economy and Society at the LSE in 2017.
-  gaurav:
-    name: Gaurav Singh
-    institution: University College London
-    link: https://www.researchgate.net/profile/Gaurav_Singh174
-    image: Gaurav.jpg
-    description: |
-        Gaurav Singh is a full-time PhD candidate in the field of machine learning in the dept. of Computer Science at University College, London. He is focused on bringing efficiency to the task of biomedical text retrieval and annotation using machine learning and artificial intelligence. His research includes using deep learning models trained on small labelled set, to summarise and annotate medical documents to save time and human effort.
   yufang:
     name: Dr. Yufang Hou
     institution: IBM
@@ -244,7 +239,7 @@ project_team:
      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=SZINK65
      image: Silje-Zink.jpg
      description: |
-         Silje is a Research Assistant on the Human Behaviour Change Project (HBCP) and Theory Specification Project (TSP). Following her BSc (Hons) in Psychology obtained at the University of Manchester, Silje went on to do an MSc in Health Psychology at the University of Nottingham in 2017/2018, where she conducted research on the use of standardised anxiety measures for assessing dental fear and anxiety in paediatric populations. Her research interests include the use of Health Psychology theory and techniques to facilitate behaviour change, behaviour change intervention design and development, and using health psychology theory and techniques to improve a broad range of public health issues.
+         Silje is a Research Assistant on the Human Behaviour-Change Project (HBCP) and Theory Specification Project (TSP). Following her BSc (Hons) in Psychology obtained at the University of Manchester, Silje went on to do an MSc in Health Psychology at the University of Nottingham in 2017/2018, where she conducted research on the use of standardised anxiety measures for assessing dental fear and anxiety in paediatric populations. Her research interests include the use of Health Psychology theory and techniques to facilitate behaviour change, behaviour change intervention design and development, and using health psychology theory and techniques to improve a broad range of public health issues.
 
   clement:
       name: Clement Veall
@@ -252,9 +247,9 @@ project_team:
       link: false
       image: Clement-Veall.jpg
       description: |
-          Clement is the Research Administrator at UCL helping to support and facilitate the work of the Human Behaviour-Change Project Team. Previously, he has worked in administration and marketing at other universities in London.
+        Clement is the Research Administrator at UCL helping to support and facilitate the work of the Human Behaviour-Change Project Team. Previously, he has worked in administration and marketing at other universities in London.
 
-          Clement is also completing an MSc in Language Sciences with Specialism in Linguistics with Neuroscience within the Division of Psychology and Language Sciences at UCL.
+        Clement completed his MSc in Language Sciences with Specialism in Linguistics with Neuroscience.
 
   emily:
       name: Emily Hayes
@@ -270,9 +265,25 @@ project_team:
       link: false
       image: Eva-Jermutus.jpg
       description: |
-          Eva is a PhD Student working with the Human Behaviour Change Project (HBCP). Her research interests lie in the fields of decision-making and cognitive processes influencing the human-machine interaction. In particular, Eva is interested in users’ expectations of and trust in AI-driven systems such as the HBCP Knowledge System.
+          Eva is a PhD Student working with the Human Behaviour-Change Project (HBCP). Her research interests lie in the fields of decision-making and cognitive processes influencing the human-machine interaction. In particular, Eva is interested in users’ expectations of and trust in AI-driven systems such as the HBCP Knowledge System.
 
           Eva completed a MA (Hons) in Psychology & Management at the University of St Andrews in 2017 and earned a MSc in Economic Psychology at Tilburg University in 2018. She then worked in programmatic advertising before joining UCL in 2019.
+
+  oscar:
+      name: Oscar Castro
+      institution: University College London
+      link: https://iris.ucl.ac.uk/iris/browse/profile?upi=OMCAS50
+      image: oscar.png
+      description: |
+        Oscar is a Research Assistant at UCL working on this project. He completed his BSc (Hons) in psychology at the University of Valencia (Spain), and his MSc in sport and exercise psychology at the University of Jyväskylä (Finland). He then moved to Australia to pursue his PhD at the University of Southern Queensland. His thesis consisted of using the Behaviour Change Wheel framework to develop and pilot an intervention to reduce sedentary behaviour in university students. Oscar’s research focuses on health behaviour change. In particular, he is interested in physical activity and sedentary behaviour, with an emphasis on evidence synthesis and the development/evaluation of theory-based interventions.
+
+  ella:
+      name: Ella Howes
+      institution: University College London
+      link: false
+      image: ella.png
+      description: |
+        Ella is working as a research assistant, focusing mainly on dissemination and engagement of the project outputs. She completed her BSc (Hons) at UCL in Human Sciences and her MSc also at UCL in Behaviour Change. Her final project was focused on understanding parents’ experiences of seeking advice about talking about weight with their children on an internet forum, in order to better understand how they can be supported in efforts to do so.
 
 consultants_collaborators:
     description: "The Human Behaviour-Change Project consultants and collaborators."
@@ -303,7 +314,7 @@ news:
   description: The latest updates and news from the Human Behaviour-Change Project team.
 
 contact:
-  description: Get in touch with the Human Behaviour Change Project team.
+  description: Get in touch with the Human Behaviour-Change Project team.
   mailing_list: Sign up to our mailing list to receive updates about the project.
   twitter: Follow us on Twitter for the most recent news on all aspects of the HBCP and other relevant topics.
   open_science: We document our methods and materials on the HBCP Open Science Framework page.
@@ -313,4 +324,4 @@ contact:
     <a href="mailto:humanbehaviourchange@ucl.ac.uk">humanbehaviourchange@ucl.ac.uk</a>
 
 privacy:
-  description: Read the Human Behaviour Change Project privacy policy here
+  description: Read the Human Behaviour-Change Project privacy policy here

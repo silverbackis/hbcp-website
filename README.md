@@ -1,4 +1,4 @@
-Human Behaviour Change Project - Website
+Human Behaviour-Change Project - Website
 ======
 Using Symfony 3.4
 
