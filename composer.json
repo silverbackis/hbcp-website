@@ -60,7 +60,10 @@
         ]
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "plesk/composer-command-info": true
+        }
     },
     "extra": {
         "symfony-app-dir": "app",
