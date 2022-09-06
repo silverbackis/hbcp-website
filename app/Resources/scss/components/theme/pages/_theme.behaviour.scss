@@ -76,6 +76,9 @@ section.diagram {
   &.detailed {
     padding: 40px 0 0;
     border: 0;
+    .layout {
+      border: 1px solid $gray-border;
+    }
   }
   //.diagram-info {
   //  font-size: 16px;

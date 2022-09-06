@@ -297,10 +297,10 @@ consultants_collaborators:
     janna:
         name: Janna Hastings
         institution: Ontology consultant
-        link: false
+        link: https://jannahastings.github.io/
         image: Janna-Hastings.JPG
         description: |
-            Janna Hastings has worked on ontology research and development for more than a decade across multiple disciplines. She develops the Mental Functioning Ontology and related projects, and until 2015 she was ontology lead and project coordinator for the ChEBI chemical ontology, during which time she also worked on related biological ontologies. She holds a PhD in Biological Sciences, an MSc in Computer Science and an MA in Philosophy.
+          Janna Hastings is Assistant Professor of Medical Knowledge and Decision Support, University of Zurich and University of St. Gallen, Switzerland. Janna has worked on ontology research and development for more than a decade across multiple disciplines. She develops the Mental Functioning Ontology and related projects, and until 2015 she was ontology lead and project coordinator for the ChEBI chemical ontology, during which time she also worked on related biological ontologies. She holds a PhD in Biological Sciences, an MSc in Computer Science and an MA in Philosophy.
 
     bryan:
         name: Bryan Vernon
